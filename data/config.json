@@ -1,0 +1,22 @@
+{
+    "net-file": "config/net.net.xml",
+    "route-files": "config/routes.trip.xml",
+    "route-mista": "config/configActivitybasedDemandGeneration/routes_mista.trip.xml",
+    "additional-files": "config/additional.add.xml",
+    "additional-random": "config/additionalforRANDOMTRIPS.add.xml",
+    "gui-settings-file": "config/viewssettings.xml",
+    "trips-file": "config/trips.trips.xml",
+    "statistic-output":"storing/project.statistics.xml",
+    "tripinfo-output": "storing/triping.xml",
+    "stat": "config/configActivitybasedDemandGeneration/stat.xml",
+    
+    "random-trip" : "Tools/randomTrips.py",
+    "convert-fleet" : "Tools/convert_fleet.py",
+
+    "period": "1",
+    "delay": "80",
+    "step": "0.5",
+    "Max_time" : 100000,
+    "destin flag" : "False"
+    
+}

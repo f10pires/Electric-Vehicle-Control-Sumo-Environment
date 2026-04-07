@@ -1,0 +1,8 @@
+{
+    "ev1":{
+        "type": "evehicle",
+        "Emax": 40,
+        "initial route": ["E103","Route","E165"]
+
+    }
+}
