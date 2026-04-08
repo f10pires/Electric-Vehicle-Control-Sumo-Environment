@@ -276,58 +276,6 @@ class EV:
 
         pass
 
-    class Actions :  ###### mudar a lógica completamente !
-        def __init__(self, ev):
-            self.ev = ev
-
-        def continue_travel(self, dest=None):
-            return
-        
-        def recharge_substation(self,dest):                                              # dest vector = [station edge, station id]
-            ev = self.ev
-
-            traci.vehicle.changeTarget(ev.id, dest[0])
-            traci.vehicle.setChargingStationStop(ev.id, dest[1], duration=43200,flags=1)
-            return 
-        
-        def stopParking(self,dest):                                                      # dest vector = [parking edge, parking_id]
-            ev = self.ev
-            traci.vehicle.changeTarget(ev.id, dest[0])
-            traci.vehicle.setParkingAreaStop(ev.id, dest[1], duration=43200)
-            return
-        
-        def skip_stop(self,dest = None):
-            ev = self.ev
-            traci.vehicle.resume(ev.id)
-            return
-        
-        def create_route(self,dest):                                                     # destination vector = [destination id, route id,edge initial]
-            ev = self.ev
-            route = traci.simulation.findRoute(dest[2], dest[0], vType=ev.type)
-            traci.route.add(dest[1], route.edges)
-            return 
-               
-        def newroute(self,dest):                                                         # destination vector = [destination id]
-            ev = self.ev
-
-            current_route = traci.vehicle.getRoute(ev.id)
-
-            route = traci.simulation.findRoute(ev.final_dest, dest[0], vType=ev.type)
-            
-            if ev.penultimate_dest == ev.edge : 
-                new_route = [current_route[-2]] + [current_route[-1]] + list(route.edges)[1:]
-                traci.vehicle.setRoute(ev.id, new_route)
-
-            if ev.final_dest == ev.edge :
-                traci.vehicle.setRoute(ev.id, route.edges)
-            
-            return 
-        
-        def returnfinaldest(self,dest = None):  
-            ev = self.ev
-            traci.vehicle.changeTarget(ev.id, ev.final_dest)
-            return
-        pass
     
     class Interpreter_and_set :
         def __init__(self, ev):
@@ -459,10 +407,6 @@ class EV:
     def step(self, vector, dest):
         if self.id not in traci.vehicle.getIDList():
             return
-        
-        if np.sum(vector) != 1:
-            #ERROR!
-            return   
         
         self.actions_dic[int(np.argmax(vector))](dest)
 
