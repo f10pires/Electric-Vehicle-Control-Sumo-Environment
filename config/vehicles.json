@@ -2,7 +2,9 @@
     "ev1":{
         "type": "evehicle",
         "Emax": 40,
-        "initial route": ["E103","Route","E165"]
+        "initial_route": {"destination_id":"E103",
+                            "route_id":"Route",
+                            "initial_edge":"E165"}
 
     }
 }

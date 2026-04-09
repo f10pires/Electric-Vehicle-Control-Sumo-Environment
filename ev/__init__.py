@@ -1,21 +1,22 @@
 import numpy as np
 import traci
 from pathlib import Path
+from .__action__ import Action  
 import csv
 
 class EV:
-    def __init__(self, id:str,type:str,dest:str, reflength):
+    def __init__(self, id:str,vehicle_type:str,params:dict, reflength):
         # -----------------------------
         # Vehicle identification
         # -----------------------------
         self.id = id                                                                # Vehicle ID
-        self.type = type                                                            # Vehicle type
+        self.vType = vehicle_type                                                   # Vehicle type
 
         # -----------------------------
         # Instance of classes
         # -----------------------------  
         self.up = self.Update(self)
-        self.action = self.Actions(self)
+        self.action = Action(id,vehicle_type)
         self.registration = self.Registers(self)
         self.int_and_set = self.Interpreter_and_set(self)
 
@@ -25,13 +26,13 @@ class EV:
         self.actions_dic = {
             0: self.action.continue_travel,
             1: self.action.skip_stop,
-            2: self.action.stopParking,
+            2: self.action.stop_parking,
             3: self.action.recharge_substation}
         
         # -----------------------------
         # Add the vehicle
         # -----------------------------
-        self._addveh(dest)
+        self._addveh(params)
 
         # -----------------------------
         # Energy state
@@ -385,30 +386,32 @@ class EV:
                     ev.total_dist,
                     ev.dest,
                     ev.dist_to_dest,
-                    ev.type,
+                    ev.vType,
                     ev.soc,
                     TIME       
                 ])
         
     """Add vehicle"""
-    def _addveh(self,dest):                                                              # dest vector = [destination_edge, route_id]
-        self.action.create_route(dest)
+    def _addveh(self,params: dict):
+        
+        self.action.create_route(params)
 
         traci.vehicle.add(
                     vehID=self.id,
-                    routeID=dest[1],
-                    typeID=self.type,
+                    routeID=params["route_id"],
+                    typeID=self.vType,
                     depart=traci.simulation.getTime()
         )
 
+        self.action.set_route(params)
         return
         
     """Entry and Exit"""
-    def step(self, vector, dest):
+    def step(self, vector, params):
         if self.id not in traci.vehicle.getIDList():
             return
         
-        self.actions_dic[int(np.argmax(vector))](dest)
+        self.actions_dic[int(np.argmax(vector))](params)
 
         return
 
@@ -422,4 +425,3 @@ class EV:
             min(self.gap / 50, 1)
         ]
         return obs
-    

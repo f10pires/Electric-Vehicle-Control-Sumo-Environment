@@ -1,8 +1,8 @@
 from datetime import datetime, timedelta
 from parking import PARKING
 import gymnasium as gym
-from sumo import Sumo
 from evse import EVSE
+from sumo import Sumo
 import numpy as np
 from ev import EV
 import random
@@ -29,7 +29,7 @@ class SingleEV(gym.Env):
 
         self.id = list(vehicle.keys())[0]
         self.type = vehicle[self.id]["type"]
-        self.init_route = vehicle[self.id]["initial route"]
+        self.init_route = vehicle[self.id]["initial_route"]
        
         self.ev = EV(self.id, self.type, self.init_route, config["mod dist"])
         

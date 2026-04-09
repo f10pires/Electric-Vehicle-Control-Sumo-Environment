@@ -31,15 +31,23 @@ def main():
     while traci.simulation.getTime() < simulation.max_time:
         env.ev.up.general_up()
         env.ev.int_and_set.color()
-        env.ev.step([1,0,0,0,0,0,0,0],[])
+        env.ev.step([1,0,0,0,0,0,0,0],{})
         env.ev.registration.register(traci.simulation.getTime())
         
-        if env.ev.edge == env.ev.final_dest : 
-            w= random.choice([x for x in simulation.streets if x != env.ev.final_dest])
-            env.ev.action.newroute([w])
-            env.ev.up.all_up()
+        if env.ev.edge == env.ev.penultimate_dest :
+            env.ev.action.slow_down({"current_speed": env.ev.speed,
+                                      "final_speed": 0,
+                                      "distance_to_destination":env.ev.dist_to_final - 5})
 
+        if env.ev.edge == env.ev.final_dest and env.ev.speed == 0: 
+
+            #w= random.choice([x for x in simulation.streets if x != env.ev.final_dest])
         
+            #env.ev.action.new_route({"destination_id": w})
+            env.ev.up.all_up()
+            env.ev.action.stop_car({})
+        
+
         simulation.step()
 
 
