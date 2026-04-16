@@ -1,11 +1,10 @@
-import numpy as np
 import traci
-from pathlib import Path
+import numpy as np
 from .__action__ import Action  
-import csv
+from .__interpreter_and_set__ import Interpreter_and_set
 
 class EV:
-    def __init__(self, id:str,vehicle_type:str,params:dict, reflength):
+    def __init__(self,id:str,vehicle_type:str,params:dict,reflength):
         # -----------------------------
         # Vehicle identification
         # -----------------------------
@@ -15,10 +14,8 @@ class EV:
         # -----------------------------
         # Instance of classes
         # -----------------------------  
-        self.up = self.Update(self)
         self.action = Action(id,vehicle_type)
-        self.registration = self.Registers(self)
-        self.int_and_set = self.Interpreter_and_set(self)
+        self.int_and_set = Interpreter_and_set(id)
 
         # -----------------------------
         # Actions
@@ -60,11 +57,6 @@ class EV:
         self.acceleration = 0.0                                                     # current aceleration (m/s²)
         self.max_speed = traci.vehicle.getMaxSpeed(self.id)                         # Max speed (m/s)
         self.max_accel = traci.vehicle.getAccel(self.id)                            # Mac aceleration (m/s²)
-
-        # -----------------------------
-        # Stop state (bitmask)
-        # -----------------------------
-        self.stop_state = 0                                                         # Current stop state (bitmask)
 
         # -----------------------------
         # Distances
@@ -116,281 +108,155 @@ class EV:
         # -----------------------------
         # Initial initialization
         # -----------------------------
-        self.up.all_up()
+        self.all_up()
         pass
-        
-    class Update :
-        def __init__(self, ev):
-            self.ev = ev
-
-        def update_energy(self):
-            ev = self.ev
-            ev.energy = round(float(traci.vehicle.getParameter(ev.id, "device.battery.chargeLevel")) / 1000, 2)
-            ev.energy_loaded = round(float(traci.vehicle.getParameter(ev.id, "device.battery.energyCharged")) / 1000, 2)
-            ev.capacity = round(float(traci.vehicle.getParameter(ev.id, "device.battery.capacity")) / 1000, 2)
-            ev.soc = round(100 * ev.energy / ev.capacity, 2) 
-
-        def update_route(self):
-            ev = self.ev
-            route_id = traci.vehicle.getRouteID(ev.id)
-            edges = traci.route.getEdges(route_id)
-            ev.edge = traci.vehicle.getRoadID(ev.id)
-            ev.dest = edges[-1]
-
-        def update_finalroute(self):
-            ev = self.ev
-            route_id = traci.vehicle.getRouteID(ev.id)
-            edges = traci.route.getEdges(route_id)
-            if len(edges) >=2 :
-                ev.final_dest = edges[-1]
-                ev.penultimate_dest = edges[-2]
-            else :
-                ev.final_dest = edges[-1]
-                ev.penultimate_dest = ev.final_dest           
-        
-        def update_motion(self):
-            ev = self.ev
-            ev.speed = round(traci.vehicle.getSpeed(ev.id), 2)
-            ev.consumption = round(traci.vehicle.getElectricityConsumption(ev.id) / 1000, 2)
-            ev.speedKm = round(ev.speed * 3.6, 2)
-            ev.acceleration= round(traci.vehicle.getAcceleration(ev.id),2)
-
-        def update_distances(self):
-            ev = self.ev
-            ev.dist_to_dest = round(
-                traci.vehicle.getDrivingDistance(
-                    ev.id,
-                    ev.dest,
-                    traci.lane.getLength(f"{ev.dest}_0")
-                ),
-                2
-            )
-
-            ev.dist_to_final = round(
-                traci.vehicle.getDrivingDistance(
-                    ev.id,
-                    ev.final_dest,
-                    traci.lane.getLength(f"{ev.final_dest}_0")
-                ),
-                2
-            )
-
-            ev.total_dist = round(traci.vehicle.getDistance(ev.id), 2)
-
-            ev.current_pos = traci.vehicle.getLanePosition(ev.id)
-
-            ev.leader =  traci.vehicle.getLeader(ev.id) #(near veh_id, dist to near veh_id)
-
-            
-            if ev.leader is not None:
-                ev.gap = ev.leader[1] #dist to near veh
-            else:
-                ev.gap = np.inf
-
-            return
-
-        def update_distance_to_location(self, target_edge: str, target_pos: float = 0.0):
-            ev = self.ev
-            if ev.edge == "" or ev.edge.startswith(":"):
-                    ev.dist_to_local = np.inf
-                    return
-            
-            dist = traci.simulation.getDistanceRoad(
-                    ev.edge,
-                    ev.current_pos,
-                    target_edge,
-                    target_pos,
-                    isDriving=True
-                )
-            
-            if dist < 0:
-                    ev.dist_to_local = np.inf
-            else:
-                    ev.dist_to_local = dist
-
-            return
-        
-        def distances_to_parkings(self):
-            ev = self.ev
-
-            if ev.edge == "" or ev.edge.startswith(":"):
-                return {park: np.inf for park in ev.parkings}
-
-            distances = {}
-
-            for parking in ev.parkings:
-                edge_id = ev.parking_edges[parking]
-                pos = ev.parking_pos[parking]
-
-                dist = traci.simulation.getDistanceRoad(
-                    ev.edge,
-                    ev.current_pos,
-                    edge_id,
-                    pos,
-                    isDriving=True
-                )
-
-                distances[parking] = np.inf if dist < 0 else round(dist, 2)
-
-            return distances
-        
-        def distances_to_stations(self):
-            ev = self.ev
-
-            if ev.edge == "" or ev.edge.startswith(":"):
-                return {station: np.inf for station in ev.stations}
-
-            distances = {}
-
-            for evse in ev.stations:
-                edge_id = ev.station_edges[evse]
-                pos = ev.station_pos[evse]
-
-                dist = traci.simulation.getDistanceRoad(
-                    ev.edge,
-                    ev.current_pos,
-                    edge_id,
-                    pos,
-                    isDriving=True
-                )
-
-                distances[evse] = np.inf if dist < 0 else round(dist, 2)
-
-            return distances
-        
-        def general_up(self): 
-            self.update_energy()
-            self.update_motion()
-            self.update_route()
-            self.update_distances()
-            
-            return
-        
-        def all_up(self): 
-            self.update_energy()
-            self.update_motion()
-            self.update_route()
-            self.update_finalroute()
-            self.update_distances()
-            
-            return
-
-        pass
-
     
-    class Interpreter_and_set :
-        def __init__(self, ev):
-            self.ev = ev
+    # -----------------------------
+    # Information update
+    # -----------------------------
+    def update_energy(self):
+        self.energy = round(float(traci.vehicle.getParameter(self.id, "device.battery.chargeLevel")) / 1000, 2)
+        self.energy_loaded = round(float(traci.vehicle.getParameter(self.id, "device.battery.energyCharged")) / 1000, 2)
+        self.capacity = round(float(traci.vehicle.getParameter(self.id, "device.battery.capacity")) / 1000, 2)
+        self.soc = round(100 * self.energy / self.capacity, 2) 
+
+    def update_route(self):
+        edges =  self._get_route_edges()
+        self.edge = traci.vehicle.getRoadID(self.id)
+        self.dest = edges[-1]
+
+    def update_finalroute(self):
+        edges = self._get_route_edges()
+        if len(edges) >=2 :
+            self.final_dest = edges[-1]
+            self.penultimate_dest = edges[-2]
+        else :
+            self.final_dest = edges[-1]
+            self.penultimate_dest = self.final_dest           
+    
+    def _get_route_edges(self):
+        route_id = traci.vehicle.getRouteID(self.id)
+        return traci.route.getEdges(route_id)
+    
+    def update_motion(self):
+        self.speed = round(traci.vehicle.getSpeed(self.id), 2)
+        self.consumption = round(traci.vehicle.getElectricityConsumption(self.id) / 1000, 2)
+        self.speedKm = round(self.speed * 3.6, 2)
+        self.acceleration= round(traci.vehicle.getAcceleration(self.id),2)
+
+    def update_distances(self):
+        self.dist_to_dest = round(
+            traci.vehicle.getDrivingDistance(
+                self.id,
+                self.dest,
+                traci.lane.getLength(f"{self.dest}_0")
+            ),
+            2
+        )
+
+        self.dist_to_final = round(
+            traci.vehicle.getDrivingDistance(
+                self.id,
+                self.final_dest,
+                traci.lane.getLength(f"{self.final_dest}_0")
+            ),
+            2
+        )
+
+        self.total_dist = round(traci.vehicle.getDistance(self.id), 2)
+
+        self.current_pos = traci.vehicle.getLanePosition(self.id)
+
+        self.leader =  traci.vehicle.getLeader(self.id) #(near veh_id, dist to near veh_id)
+
+        if self.leader is not None:
+            self.gap = self.leader[1] #dist to near veh
+        else:
+            self.gap = np.inf
+
+        return
+
+    def update_distance_to_location(self, target_edge: str, target_pos: float = 0.0):
+        if self.edge == "" or self.edge.startswith(":"):
+                self.dist_to_local = np.inf
+                return
         
-        def stop(self):
-            ev = self.ev
-            
-            state = int(traci.vehicle.getStopState(ev.id))
-            ev.stop_state = state
-
-            states = []
-
-            if state & 1:
-                states.append("stopped")
-            if state & 2:
-                states.append("parking")
-            if state & 4:
-                states.append("triggered")
-            if state & 8:
-                states.append("container triggered")
-            if state & 16:
-                states.append("bus stop")
-            if state & 32:
-                states.append("container stop")
-            if state & 64:
-                states.append("charging station")
-            if state & 128:
-                states.append("parking area")
-
-            return states if states else ["moving"]
-
-        def color(self):
-            ev = self.ev
-
-            if ev.soc <= 10:
-                color = (139, 0, 0, 255)        # dark red (extreme)
-            elif ev.soc <= 20:
-                color = (255, 0, 0, 255)        # red
-            elif ev.soc <= 30:
-                color = (255, 69, 0, 255)       # dark orange
-            elif ev.soc <= 40:
-                color = (255, 140, 0, 255)      # low orange
-            elif ev.soc <= 50:
-                color = (255, 165, 0, 255)      # orange
-            elif ev.soc <= 60:
-                color = (255, 215, 0, 255)      # yellow gold
-            elif ev.soc <= 70:
-                color = (255, 255, 0, 255)      # yellow
-            elif ev.soc <= 80:
-                color = (173, 255, 47, 255)     # low green
-            elif ev.soc <= 90:
-                color = (127, 255, 0, 255)      # light green
-            else:
-                color = (0, 255, 0, 255)        # green (full batery)
-            
-            traci.vehicle.setColor(ev.id, color)
-            return
+        dist = traci.simulation.getDistanceRoad(
+                self.edge,
+                self.current_pos,
+                target_edge,
+                target_pos,
+                isDriving=True
+            )
         
-        pass
-           
-    class Registers: 
+        if dist < 0:
+                self.dist_to_local = np.inf
+        else:
+                self.dist_to_local = dist
+
+        return
+    
+    def distances_to_parkings(self):
+        if self.edge == "" or self.edge.startswith(":"):
+            return {park: np.inf for park in self.parkings}
+
+        distances = {}
+
+        for parking in self.parkings:
+            edge_id = self.parking_edges[parking]
+            pos = self.parking_pos[parking]
+
+            dist = traci.simulation.getDistanceRoad(
+                self.edge,
+                self.current_pos,
+                edge_id,
+                pos,
+                isDriving=True
+            )
+
+            distances[parking] = np.inf if dist < 0 else round(dist, 2)
+
+        return distances
+    
+    def distances_to_stations(self):
+        if self.edge == "" or self.edge.startswith(":"):
+            return {station: np.inf for station in self.stations}
+
+        distances = {}
+
+        for evse in self.stations:
+            edge_id = self.station_edges[evse]
+            pos = self.station_pos[evse]
+
+            dist = traci.simulation.getDistanceRoad(
+                self.edge,
+                self.current_pos,
+                edge_id,
+                pos,
+                isDriving=True
+            )
+
+            distances[evse] = np.inf if dist < 0 else round(dist, 2)
+
+        return distances
+    
+    def general_up(self): 
+        self.update_energy()
+        self.update_motion()
+        self.update_route()
+        self.update_distances()
         
-        def __init__(self, ev):
-            self.ev = ev
+        return
+    
+    def all_up(self): 
+        self.update_energy()
+        self.update_motion()
+        self.update_route()
+        self.update_finalroute()
+        self.update_distances()
         
-            base_dir = Path(__file__).resolve().parent.parent 
-            self.pasta_results = base_dir / "sumo" / "results"
-            self.pasta_results.mkdir(parents=True, exist_ok=True) 
-            
-            self.arquivo_csv = self.pasta_results / f"{ev.id}.csv"
-
-            self.setup_results_and_headers()
-            
-        def setup_results_and_headers(self):
-
-            # Remove only this EV's CSV file (if it exists)
-            if self.arquivo_csv.exists():
-                self.arquivo_csv.unlink()
-
-            cabecalho = [
-                "== ID ==",
-                "== Velocity (km/h) ==",
-                "== Current route ==",
-                "== Distance traveled (m) ==",
-                "== Destination ==",
-                "== Distance to destination (m) ==",
-                "== Type ==",
-                "== Battery level (%) ==",
-                "== Timestamp =="
-            ]
-
-            # Create file and write header
-            with open(self.arquivo_csv, mode="w", newline="", encoding="utf-8") as file:
-                writer = csv.writer(file)
-                writer.writerow(cabecalho)
-
-        def register(self, TIME):
-            ev = self.ev
-
-            with open(self.arquivo_csv, mode="a", newline="", encoding="utf-8") as file:
-                writer = csv.writer(file)
-                writer.writerow([
-                    ev.id,
-                    ev.speedKm,
-                    ev.edge,
-                    ev.total_dist,
-                    ev.dest,
-                    ev.dist_to_dest,
-                    ev.vType,
-                    ev.soc,
-                    TIME       
-                ])
-        
+        return
+    
     """Add vehicle"""
     def _addveh(self,params: dict):
         
@@ -407,7 +273,7 @@ class EV:
         return
         
     """Entry and Exit"""
-    def step(self, vector, params):
+    def step(self, vector: list, params :dict):
         if self.id not in traci.vehicle.getIDList():
             return
         

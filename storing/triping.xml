@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 2026-04-09 14:49:01 by Eclipse SUMO GUI Version 1.24.0
+<!-- generated on 2026-04-16 20:46:17 by Eclipse SUMO GUI Version 1.24.0
 <sumoConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
 
     <input>
@@ -18,12 +18,16 @@
         <step-length value="0.5"/>
     </time>
 
+    <processing>
+        <time-to-teleport value="-1"/>
+    </processing>
+
     <report>
         <duration-log.statistics value="true"/>
     </report>
 
     <traci_server>
-        <remote-port value="61845"/>
+        <remote-port value="58379"/>
     </traci_server>
 
     <random_number>
@@ -41,19 +45,8 @@
 -->
 
 <tripinfos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/tripinfo_file.xsd">
-    <tripinfo id="randUni1062:1" depart="12.00" departLane="-E46_0" departPos="6.95" departSpeed="0.00" departDelay="0.00" arrival="88.50" arrivalLane="E103_0" arrivalPos="21.35" arrivalSpeed="0.45" duration="76.50" routeLength="646.58" waitingTime="0.00" waitingCount="0" stopTime="0.00" timeLoss="24.93" rerouteNo="1" devices="tripinfo_randUni1062:1 routing_randUni1062:1 battery_randUni1062:1" vType="ElectricBus" speedFactor="1.00" vaporized="">
-        <battery depleted="0" actualBatteryCapacity="39140.03" totalEnergyConsumed="1841.96" totalEnergyRegenerated="981.99"/>
-    </tripinfo>
-    <tripinfo id="randUni1478:1" depart="41.00" departLane="-E215_0" departPos="26.13" departSpeed="0.00" departDelay="0.00" arrival="122.00" arrivalLane="-E29_0" arrivalPos="13.24" arrivalSpeed="0.24" duration="81.00" routeLength="913.50" waitingTime="0.00" waitingCount="0" stopTime="0.00" timeLoss="15.82" rerouteNo="1" devices="tripinfo_randUni1478:1 routing_randUni1478:1" vType="random" speedFactor="1.07" vaporized=""/>
-    <tripinfo id="randUni1433:1" depart="42.00" departLane="E129_0" departPos="32.15" departSpeed="0.00" departDelay="0.00" arrival="143.00" arrivalLane="-E188_0" arrivalPos="10.35" arrivalSpeed="1.17" duration="101.00" routeLength="1150.08" waitingTime="0.00" waitingCount="0" stopTime="0.00" timeLoss="23.48" rerouteNo="1" devices="tripinfo_randUni1433:1 routing_randUni1433:1" vType="random" speedFactor="1.16" vaporized=""/>
-    <tripinfo id="randUni140:1" depart="46.00" departLane="E213_0" departPos="10.63" departSpeed="0.00" departDelay="0.00" arrival="164.50" arrivalLane="-E154_0" arrivalPos="24.29" arrivalSpeed="0.51" duration="118.50" routeLength="1085.92" waitingTime="0.00" waitingCount="0" stopTime="0.00" timeLoss="19.64" rerouteNo="1" devices="tripinfo_randUni140:1 routing_randUni140:1" vType="random" speedFactor="0.88" vaporized=""/>
-    <tripinfo id="randUni1376:1" depart="139.00" departLane="-E24_0" departPos="4.88" departSpeed="0.00" departDelay="0.00" arrival="192.50" arrivalLane="E161_0" arrivalPos="35.34" arrivalSpeed="0.77" duration="53.50" routeLength="579.52" waitingTime="0.00" waitingCount="0" stopTime="0.00" timeLoss="11.50" rerouteNo="1" devices="tripinfo_randUni1376:1 routing_randUni1376:1" vType="random" speedFactor="1.03" vaporized=""/>
-    <tripinfo id="randUni563:1" depart="108.00" departLane="E32_0" departPos="22.73" departSpeed="0.00" departDelay="0.00" arrival="197.00" arrivalLane="-E157_0" arrivalPos="27.17" arrivalSpeed="0.43" duration="89.00" routeLength="917.59" waitingTime="0.00" waitingCount="0" stopTime="0.00" timeLoss="14.71" rerouteNo="1" devices="tripinfo_randUni563:1 routing_randUni563:1" vType="random" speedFactor="0.93" vaporized=""/>
-    <tripinfo id="randUni551:1" depart="126.00" departLane="-watt_1" departPos="84.96" departSpeed="0.00" departDelay="0.00" arrival="208.00" arrivalLane="E117_0" arrivalPos="59.38" arrivalSpeed="0.28" duration="82.00" routeLength="944.16" waitingTime="0.00" waitingCount="0" stopTime="0.00" timeLoss="16.11" rerouteNo="1" devices="tripinfo_randUni551:1 routing_randUni551:1" vType="random" speedFactor="1.08" vaporized=""/>
-    <tripinfo id="randUni1282:1" depart="355.00" departLane="-E214_0" departPos="18.18" departSpeed="0.00" departDelay="0.00" arrival="385.50" arrivalLane="-E201_0" arrivalPos="8.33" arrivalSpeed="0.32" duration="30.50" routeLength="277.14" waitingTime="0.00" waitingCount="0" stopTime="0.00" timeLoss="11.66" rerouteNo="1" devices="tripinfo_randUni1282:1 routing_randUni1282:1" vType="random" speedFactor="1.13" vaporized=""/>
-    <tripinfo id="randUni1806:1" depart="443.00" departLane="-E73_0" departPos="5.20" departSpeed="0.00" departDelay="0.00" arrival="476.50" arrivalLane="-E55_0" arrivalPos="31.92" arrivalSpeed="0.64" duration="33.50" routeLength="254.21" waitingTime="0.00" waitingCount="0" stopTime="0.00" timeLoss="9.58" rerouteNo="1" devices="tripinfo_randUni1806:1 routing_randUni1806:1" vType="random" speedFactor="0.84" vaporized=""/>
-    <tripinfo id="randUni367:1" depart="403.00" departLane="E131_0" departPos="14.01" departSpeed="0.00" departDelay="0.00" arrival="497.00" arrivalLane="E79_0" arrivalPos="22.58" arrivalSpeed="0.22" duration="94.00" routeLength="830.29" waitingTime="0.00" waitingCount="0" stopTime="0.00" timeLoss="19.93" rerouteNo="1" devices="tripinfo_randUni367:1 routing_randUni367:1" vType="random" speedFactor="0.88" vaporized=""/>
-    <tripinfo id="ev1" depart="0.00" departLane="E165_0" departPos="5.10" departSpeed="0.00" departDelay="0.00" arrival="507.50" arrivalLane="E103_0" arrivalPos="264.89" arrivalSpeed="0.00" duration="507.50" routeLength="1398.80" waitingTime="300.50" waitingCount="1" stopTime="0.00" timeLoss="396.14" rerouteNo="1" devices="tripinfo_ev1 battery_ev1" vType="evehicle" speedFactor="0.95" vaporized="teleport">
-        <battery depleted="0" actualBatteryCapacity="17360.23" totalEnergyConsumed="491.79" totalEnergyRegenerated="352.02"/>
+    <tripinfo id="randUni37:1" depart="105.00" departLane="E212_0" departPos="16.15" departSpeed="0.00" departDelay="0.00" arrival="152.00" arrivalLane="-E172_0" arrivalPos="7.22" arrivalSpeed="1.09" duration="47.00" routeLength="497.61" waitingTime="0.00" waitingCount="0" stopTime="0.00" timeLoss="5.61" rerouteNo="1" devices="tripinfo_randUni37:1 routing_randUni37:1" vType="random" speedFactor="0.88" vaporized=""/>
+    <tripinfo id="randUni1487:1" depart="64.00" departLane="E138_0" departPos="28.39" departSpeed="0.00" departDelay="0.00" arrival="153.00" arrivalLane="-E115_0" arrivalPos="39.55" arrivalSpeed="1.08" duration="89.00" routeLength="810.61" waitingTime="0.00" waitingCount="0" stopTime="0.00" timeLoss="25.54" rerouteNo="1" devices="tripinfo_randUni1487:1 routing_randUni1487:1 battery_randUni1487:1" vType="ElectricBus" speedFactor="1.00" vaporized="">
+        <battery depleted="0" actualBatteryCapacity="39059.34" totalEnergyConsumed="2115.26" totalEnergyRegenerated="1174.60"/>
     </tripinfo>
 </tripinfos>

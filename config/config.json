@@ -10,6 +10,7 @@
     "tripinfo-output": "storing/triping.xml",
     "stat": "config/configActivitybasedDemandGeneration/stat.xml",
     "seed" : "42",
+    "time-to-teleport": "-1",
 
     "random-trip" : "Tools/randomTrips.py",
     "convert-fleet" : "Tools/convert_fleet.py",

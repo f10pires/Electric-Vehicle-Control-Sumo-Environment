@@ -114,6 +114,7 @@ class Sumo:
                 '--tripinfo-output', self.config["tripinfo-output"],
                 '--gui-settings-file', self.config["gui-settings-file"],
                 '--seed', self.config["seed"],
+                '--time-to-teleport', self.config["time-to-teleport"],   
                 '--start',      
                 '--quit-on-end' 
             ]
