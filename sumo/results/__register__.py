@@ -8,15 +8,16 @@ class Register :
         return
     
     def registration_init(self) :   
-        base_dir = Path(__file__).resolve().parent.parent 
-        self.pasta_results = base_dir / "sumo" / "results"
+        self.pasta_results = Path("sumo/results")
         self.pasta_results.mkdir(parents=True, exist_ok=True) 
         
         self.arquivo_csv = self.pasta_results / f"{self.id}.csv"
 
+        self.buffer = []
+
         self.setup_results_and_headers()
         
-        self.buffer = []
+
         return
     
 
@@ -39,15 +40,15 @@ class Register :
         ]
 
         # Create file and write header
-        with open(self.arquivo_csv, mode="w", newline="", encoding="utf-8") as file:
+        with open(self.arquivo_csv, mode="a", newline="", encoding="utf-8") as file:
             writer = csv.writer(file)
-            writer.writerow(cabecalho)
-        
+            writer.writerow(cabecalho)      
+            writer.writerows(self.buffer)   
+
         return
     
 
     def accumulate_information(self, informations: dict,TIME):
-
         self.buffer.append([
             self.id,
             informations.get("speedKm"),
@@ -66,7 +67,6 @@ class Register :
         return
     
     def register(self):
-
         with open(self.arquivo_csv, mode="a", newline="", encoding="utf-8") as file:
             writer = csv.writer(file)
             writer.writerows(self.buffer)

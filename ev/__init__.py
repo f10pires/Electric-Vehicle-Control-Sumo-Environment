@@ -145,6 +145,11 @@ class EV:
         self.acceleration= round(traci.vehicle.getAcceleration(self.id),2)
 
     def update_distances(self):
+        if self.edge == "" or self.edge.startswith(":"):
+            self.dist_to_dest = np.inf
+            self.dist_to_final = np.inf
+            return
+        
         self.dist_to_dest = round(
             traci.vehicle.getDrivingDistance(
                 self.id,
@@ -244,17 +249,19 @@ class EV:
         self.update_energy()
         self.update_motion()
         self.update_route()
+        # self.distances_to_parkings()
+        # self.distances_to_stations()
         self.update_distances()
-        
         return
     
     def all_up(self): 
         self.update_energy()
         self.update_motion()
         self.update_route()
+        # self.distances_to_parkings()
+        # self.distances_to_stations()
         self.update_finalroute()
         self.update_distances()
-        
         return
     
     """Add vehicle"""

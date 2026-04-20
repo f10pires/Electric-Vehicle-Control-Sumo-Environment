@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 2026-04-16 20:46:17 by Eclipse SUMO GUI Version 1.24.0
+<!-- generated on 2026-04-20 18:50:36 by Eclipse SUMO GUI Version 1.24.0
 <sumoConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
 
     <input>
@@ -27,7 +27,7 @@
     </report>
 
     <traci_server>
-        <remote-port value="58379"/>
+        <remote-port value="56534"/>
     </traci_server>
 
     <random_number>
@@ -45,8 +45,4 @@
 -->
 
 <tripinfos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/tripinfo_file.xsd">
-    <tripinfo id="randUni37:1" depart="105.00" departLane="E212_0" departPos="16.15" departSpeed="0.00" departDelay="0.00" arrival="152.00" arrivalLane="-E172_0" arrivalPos="7.22" arrivalSpeed="1.09" duration="47.00" routeLength="497.61" waitingTime="0.00" waitingCount="0" stopTime="0.00" timeLoss="5.61" rerouteNo="1" devices="tripinfo_randUni37:1 routing_randUni37:1" vType="random" speedFactor="0.88" vaporized=""/>
-    <tripinfo id="randUni1487:1" depart="64.00" departLane="E138_0" departPos="28.39" departSpeed="0.00" departDelay="0.00" arrival="153.00" arrivalLane="-E115_0" arrivalPos="39.55" arrivalSpeed="1.08" duration="89.00" routeLength="810.61" waitingTime="0.00" waitingCount="0" stopTime="0.00" timeLoss="25.54" rerouteNo="1" devices="tripinfo_randUni1487:1 routing_randUni1487:1 battery_randUni1487:1" vType="ElectricBus" speedFactor="1.00" vaporized="">
-        <battery depleted="0" actualBatteryCapacity="39059.34" totalEnergyConsumed="2115.26" totalEnergyRegenerated="1174.60"/>
-    </tripinfo>
 </tripinfos>

@@ -19,6 +19,7 @@
     "delay": "80",
     "step": "0.5",
     "Max_time" : 100000,
+    "Waiting_time" : 60,
     "destin flag" : "False",
     "mod dist" : 1600
     
