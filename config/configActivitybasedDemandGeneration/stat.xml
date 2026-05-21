@@ -2,14 +2,14 @@
 <city>
     
     <general
-        inhabitants="1000"
+        inhabitants="500"
         households="300"
         childrenAgeLimit="18"
         retirementAgeLimit="65"
         carRate="0.87"
         unemploymentRate="0.05"
         footDistanceLimit="2000"
-        incomingTraffic="2000"
+        incomingTraffic="800"
         outgoingTraffic="300"
     />
 

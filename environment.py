@@ -7,6 +7,7 @@ from ev import EV
 import random
 import traci
 import gymnasium as gym
+import numpy as np
 
 # Fix random seed for reproducibility
 random.seed(42)
@@ -66,7 +67,7 @@ class SingleEV(gym.Env):
         # -----------------------------
         self.done = False                                  # Episode termination flag
         self.waiting_time = config["Waiting_time"]         # Auxiliary time control
-        self.refTime = [None, True]                        # Auxiliary time control
+        self.refTime = [-1, True]                          # Auxiliary time control
         
     def step(self, action:list,params : dict):
         
@@ -80,11 +81,14 @@ class SingleEV(gym.Env):
         self.ev.step(action,params)
         self.general.step()
         
-        if self.ev.edge == self.ev.penultimate_dest :
+        if 10 <self.ev.dist_to_final < 150 :
             self.ev.action.slow_down({"current_speed": self.ev.speed,
-                                      "final_speed": 0,
-                                      "distance_to_destination":self.ev.dist_to_final - 10})
+                                      "max decel":self.ev.max_decel,
+                                      "distance_to_destination":self.ev.dist_to_final})
 
+        if self.ev.edge == self.ev.final_dest and self.ev.dist_to_final  <= 10 and self.refTime[1]:
+            traci.vehicle.setSpeed(self.id, 0)
+            
         if self.ev.edge == self.ev.final_dest and self.ev.speed == 0: 
             streets = sorted(self.general.tools["streets"])
             dest = random.choice([x for x in streets if x != self.ev.final_dest])
@@ -97,13 +101,14 @@ class SingleEV(gym.Env):
                 refTime = traci.simulation.getTime() + self.waiting_time
                 self.refTime = [refTime,False]
 
-        if traci.simulation.getTime() == self.refTime[0] and not(self.refTime[1]):
+        if traci.simulation.getTime() - self.refTime[0] >= 0 and not(self.refTime[1]):
             self.ev.action.back_normal_speed({})
-            self.refTime = [None,True]
+            self.refTime = [-1,True]
 
         if traci.simulation.getTime() == self.simulation.max_time:
             self.done = True
             self.registration.close()
+        
         
         self.updateinfo()
 

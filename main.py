@@ -32,5 +32,16 @@ def main():
     while traci.simulation.getTime() < simulation.max_time:
         env.step([1,0,0,0,0,0,0,0],{})
 
+        if env.ev.soc <= 50 :
+            env.ev.action.recharge_substation({
+                "station_edge" :"joulesC",
+                "station_id" :"Charge_ParkB"
+            })
+
+        if env.ev.soc == 100 and  "charging station" in env.ev.int_and_set.stop(): 
+            env.ev.action.set_target({"destination_id":env.ev.final_dest})
+            env.ev.action.skip_stop({})
+
+
 if __name__ == "__main__":
     main()

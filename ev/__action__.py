@@ -1,4 +1,9 @@
 import traci
+import json
+
+"""Load config at config/config.json"""
+with open(r'config/config.json', 'r') as config_file:
+    config = json.load(config_file)
 
 class Action: 
     def __init__(self, id: str, vehicle_type: str):
@@ -46,28 +51,22 @@ class Action:
     # Vehicle dynamic control
     # -----------------------------  
     def slow_down(self, params: dict): 
-        v0 = params["current_speed"]  
-        vf = params["final_speed"]  
-        d  = params["distance_to_destination"]  
-
+        v0 = params["current_speed"]    
+        d  = params["distance_to_destination"]
+        max_decel = params["max decel"]  
+        
         if d <= 0:
             return
 
         # acceleration
-        a = (vf**2 - v0**2) / (2 * d)
+        a = (-v0**2) / (2 * d)
+        
+        a = max(-max_decel,a)
 
         if abs(a) < 1e-6:
             return
 
-        # required time
-        t = (vf - v0) / a
-
-        t = abs(t)  # ensure positive time
-
-        if t < 1e-6:
-            return
-        
-        traci.vehicle.slowDown(self.id, vf, t)
+        traci.vehicle.setAcceleration( self.id, a, config["step"])
         return
 
     def stop_car(self, params: dict):

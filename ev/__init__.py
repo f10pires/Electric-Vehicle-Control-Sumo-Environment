@@ -56,7 +56,8 @@ class EV:
         self.speedKm = 0.0                                                          # Current speed (km/h)
         self.acceleration = 0.0                                                     # current aceleration (m/s²)
         self.max_speed = traci.vehicle.getMaxSpeed(self.id)                         # Max speed (m/s)
-        self.max_accel = traci.vehicle.getAccel(self.id)                            # Mac aceleration (m/s²)
+        self.max_accel = traci.vehicle.getAccel(self.id)                            # Max aceleration (m/s²)
+        self.max_decel = traci.vehicle.getDecel(self.id)                            # Max deceleration (m/s²)
 
         # -----------------------------
         # Distances
@@ -146,8 +147,6 @@ class EV:
 
     def update_distances(self):
         if self.edge == "" or self.edge.startswith(":"):
-            self.dist_to_dest = np.inf
-            self.dist_to_final = np.inf
             return
         
         self.dist_to_dest = round(
