@@ -51,8 +51,8 @@ class Sumo:
             "--net-file", self.config["net-file"],
             "--stat-file",  self.config["stat"], 
             "--output-file", self.config["route-files"],
-            "--random", 
-            "--seed", "42"
+            #"--random", 
+            "--seed", self.config["seed"]
         ]
         
         try:

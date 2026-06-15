@@ -35,6 +35,7 @@ class Action:
     def new_route(self, params: dict): 
         dest_id = params["destination_id"]
 
+        print(dest_id)
         current_edge = traci.vehicle.getRoadID(self.id)
 
         route = traci.simulation.findRoute(current_edge, dest_id, vType=self.vType)

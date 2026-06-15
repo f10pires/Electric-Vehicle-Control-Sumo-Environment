@@ -109,7 +109,9 @@ class SingleEV(gym.Env):
             self.done = True
             self.registration.close()
         
-        
+        if traci.simulation.getLoadedIDList():
+            self.vehicles_id = traci.simulation.getLoadedIDList()
+            print("olha só :", self.vehicles_id)
         self.updateinfo()
 
         return # state, reward, terminated, truncated, info

@@ -18,8 +18,7 @@ with open('config/vehicles.json', "r", encoding="utf-8") as f:
 def main():
     start = datetime.strptime("2026-01-01 00:00:00", "%Y-%m-%d %H:%M:%S")
     simulation = Sumo(config)
-    simulation.run()                              # Start simulation 
-    
+    simulation.run()                              # Start simulation     
     tools = {}
     tools["streets"] = simulation.streets    
     env = SingleEV(config, vehicles, start,tools)
@@ -41,7 +40,6 @@ def main():
         if env.ev.soc == 100 and  "charging station" in env.ev.int_and_set.stop(): 
             env.ev.action.set_target({"destination_id":env.ev.final_dest})
             env.ev.action.skip_stop({})
-
 
 if __name__ == "__main__":
     main()
