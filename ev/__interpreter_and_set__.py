@@ -1,12 +1,12 @@
 import traci 
 
-class Interpreter_and_set :
-    def __init__(self, id: str):
-        self.id = id
+class InterpreterandSet :
+    def __init__(self, vehicle_id: str):
+        self.vehicle_id = vehicle_id
         pass
     
     def stop(self):
-        state = int(traci.vehicle.getStopState(self.id))
+        state = int(traci.vehicle.getStopState(self.vehicle_id))
 
         states = []
 
@@ -29,7 +29,7 @@ class Interpreter_and_set :
 
         return states if states else ["moving"]
 
-    def color(self,soc):
+    def color(self,soc: float):
 
         if soc <= 10:
             color = (139, 0, 0, 255)        # dark red (extreme)
@@ -50,9 +50,7 @@ class Interpreter_and_set :
         elif soc <= 90:
             color = (127, 255, 0, 255)      # light green
         else:
-            color = (0, 255, 0, 255)        # green (full batery)
+            color = (0, 255, 0, 255)        # green (full battery)
         
-        traci.vehicle.setColor(self.id, color)
+        traci.vehicle.setColor(self.vehicle_id, color)
         return
-    
-    pass

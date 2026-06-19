@@ -54,7 +54,8 @@ class SingleEV(gym.Env):
             self.id,
             self.type,
             self.init_route,
-            config["mod dist"]
+            config["mod dist"],
+            config["step"]
         )
 
         # -----------------------------
@@ -80,11 +81,14 @@ class SingleEV(gym.Env):
         self.ev.int_and_set.color(self.ev.soc)
         self.ev.step(action,params)
         self.general.step()
+        self.updateinfo()
         
         if 10 <self.ev.dist_to_final < 150 :
-            self.ev.action.slow_down({"current_speed": self.ev.speed,
-                                      "max decel":self.ev.max_decel,
-                                      "distance_to_destination":self.ev.dist_to_final})
+            self.ev.action.slow_down(
+                self.ev.speed,
+                self.ev.dist_to_final,
+                self.ev.max_decel
+            )
 
         if self.ev.edge == self.ev.final_dest and self.ev.dist_to_final  <= 10 and self.refTime[1]:
             traci.vehicle.setSpeed(self.id, 0)
@@ -92,28 +96,30 @@ class SingleEV(gym.Env):
         if self.ev.edge == self.ev.final_dest and self.ev.speed == 0: 
             streets = sorted(self.general.tools["streets"])
             dest = random.choice([x for x in streets if x != self.ev.final_dest])
-            self.ev.action.new_route({"destination_id": dest})
+            self.ev.action.new_route(dest, self.ev.edge)
 
             self.ev.all_up()
-            self.ev.action.stop_car({})
+            self.ev.action.stop_car()
 
             if self.refTime[1]:
                 refTime = traci.simulation.getTime() + self.waiting_time
                 self.refTime = [refTime,False]
 
         if traci.simulation.getTime() - self.refTime[0] >= 0 and not(self.refTime[1]):
-            self.ev.action.back_normal_speed({})
+            self.ev.action.back_normal_speed()
             self.refTime = [-1,True]
 
         if traci.simulation.getTime() == self.simulation.max_time:
             self.done = True
             self.registration.close()
         
-        if traci.simulation.getLoadedIDList():
-            self.vehicles_id = traci.simulation.getLoadedIDList()
+        """
+        if traci.simulation.getLoadedIDList() and traci.simulation.getLoadedIDList()[-1]:
+
+            self.vehicles_id = traci.simulation.getLoadedIDList()[-1]
             print("olha só :", self.vehicles_id)
         self.updateinfo()
-
+        """
         return # state, reward, terminated, truncated, info
 
     def get_obs(self):

@@ -30,7 +30,7 @@
             <param key="device.battery.capacity" value="35000"/>
             <param key="device.battery.chargeLevel" value="17500"/>
             <param key="device.battery.maximumPowerRate" value="150000"/>
-            <param key="constantPowerIntake" value="100"/>
+            <param key="constantPowerIntake" value="2500"/>
 
         </vType>
 
@@ -253,24 +253,24 @@
 
     <chargingStation
         id="Charge_ParkA"
-        lane="-joulesC_0"
-        startPos="225"
-        endPos="275"
+        lane="E69_0"
+        startPos="10"
+        endPos="30"
         chargeDelay="2"
         chargeInTransit="0"
-        power="200000"
-        efficiency="0.95"
+        power="30000"
+        efficiency="0.9"
     />
 
     <chargingStation
         id="Charge_ParkB"
-        lane="joulesC_0"
-        startPos="225"
-        endPos="275"
+        lane="-E70_0"
+        startPos="10"
+        endPos="30"
         chargeDelay="2"
         chargeInTransit="0"
-        power="200000"
-        efficiency="0.95"
+        power="30000"
+        efficiency="0.9"
     />
 
     <chargingStation
@@ -280,8 +280,8 @@
         endPos="25"
         chargeDelay="2"
         chargeInTransit="0"
-        power="200000"
-        efficiency="0.95"
+        power="30000"
+        efficiency="0.9"
     />
 
     <chargingStation
@@ -291,8 +291,8 @@
         endPos="25"
         chargeDelay="2"
         chargeInTransit="0"
-        power="200000"
-        efficiency="0.95"
+        power="30000"
+        efficiency="0.9"
     />
 
     <chargingStation
@@ -302,8 +302,8 @@
         endPos="12"
         chargeDelay="2"
         chargeInTransit="0"
-        power="200000"
-        efficiency="0.95"
+        power="30000"
+        efficiency="0.9"
     />
 
     <chargingStation
@@ -313,8 +313,8 @@
         endPos="12"
         chargeDelay="2"
         chargeInTransit="0"
-        power="200000"
-        efficiency="0.95"
+        power="30000"
+        efficiency="0.9"
     />
     
 </additional>

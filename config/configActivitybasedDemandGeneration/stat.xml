@@ -9,8 +9,8 @@
         carRate="0.87"
         unemploymentRate="0.05"
         footDistanceLimit="2000"
-        incomingTraffic="800"
-        outgoingTraffic="300"
+        incomingTraffic="200"
+        outgoingTraffic="100"
     />
 
     <population>

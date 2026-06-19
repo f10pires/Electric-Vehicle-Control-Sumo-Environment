@@ -1,21 +1,21 @@
 import traci
 import numpy as np
-from .__action__ import Action  
-from .__interpreter_and_set__ import Interpreter_and_set
+from .__action__ import Action
+from .__interpreter_and_set__ import InterpreterandSet
 
 class EV:
-    def __init__(self,id:str,vehicle_type:str,params:dict,reflength):
+    def __init__(self,vehicle_id: str,vehicle_type: str,initial_route: dict[str, str],reflength: float,step_length: float):
         # -----------------------------
         # Vehicle identification
         # -----------------------------
-        self.id = id                                                                # Vehicle ID
-        self.vType = vehicle_type                                                   # Vehicle type
+        self.vehicle_id = vehicle_id                                                       # Vehicle ID
+        self.vehicle_type = vehicle_type                                                   # Vehicle type
 
         # -----------------------------
         # Instance of classes
         # -----------------------------  
-        self.action = Action(id,vehicle_type)
-        self.int_and_set = Interpreter_and_set(id)
+        self.action = Action(vehicle_id,vehicle_type,step_length)
+        self.int_and_set = InterpreterandSet(vehicle_id)
 
         # -----------------------------
         # Actions
@@ -29,7 +29,10 @@ class EV:
         # -----------------------------
         # Add the vehicle
         # -----------------------------
-        self._addveh(params)
+        self._addveh(
+            initial_route["destination_id"],
+            initial_route["initial_edge"],
+            initial_route["route_id"])
 
         # -----------------------------
         # Energy state
@@ -55,9 +58,9 @@ class EV:
         self.consumption = 0.0                                                      # Instantaneous electric consumption (kWh/s)
         self.speedKm = 0.0                                                          # Current speed (km/h)
         self.acceleration = 0.0                                                     # current aceleration (m/s²)
-        self.max_speed = traci.vehicle.getMaxSpeed(self.id)                         # Max speed (m/s)
-        self.max_accel = traci.vehicle.getAccel(self.id)                            # Max aceleration (m/s²)
-        self.max_decel = traci.vehicle.getDecel(self.id)                            # Max deceleration (m/s²)
+        self.max_speed = traci.vehicle.getMaxSpeed(self.vehicle_id)                         # Max speed (m/s)
+        self.max_accel = traci.vehicle.getAccel(self.vehicle_id)                            # Max aceleration (m/s²)
+        self.max_decel = traci.vehicle.getDecel(self.vehicle_id)                            # Max deceleration (m/s²)
 
         # -----------------------------
         # Distances
@@ -116,14 +119,14 @@ class EV:
     # Information update
     # -----------------------------
     def update_energy(self):
-        self.energy = round(float(traci.vehicle.getParameter(self.id, "device.battery.chargeLevel")) / 1000, 2)
-        self.energy_loaded = round(float(traci.vehicle.getParameter(self.id, "device.battery.energyCharged")) / 1000, 2)
-        self.capacity = round(float(traci.vehicle.getParameter(self.id, "device.battery.capacity")) / 1000, 2)
+        self.energy = round(float(traci.vehicle.getParameter(self.vehicle_id, "device.battery.chargeLevel")) / 1000, 2)
+        self.energy_loaded = round(float(traci.vehicle.getParameter(self.vehicle_id, "device.battery.energyCharged")) / 1000, 2)
+        self.capacity = round(float(traci.vehicle.getParameter(self.vehicle_id, "device.battery.capacity")) / 1000, 2)
         self.soc = round(100 * self.energy / self.capacity, 2) 
 
     def update_route(self):
         edges =  self._get_route_edges()
-        self.edge = traci.vehicle.getRoadID(self.id)
+        self.edge = traci.vehicle.getRoadID(self.vehicle_id)
         self.dest = edges[-1]
 
     def update_finalroute(self):
@@ -136,14 +139,14 @@ class EV:
             self.penultimate_dest = self.final_dest           
     
     def _get_route_edges(self):
-        route_id = traci.vehicle.getRouteID(self.id)
+        route_id = traci.vehicle.getRouteID(self.vehicle_id)
         return traci.route.getEdges(route_id)
     
     def update_motion(self):
-        self.speed = round(traci.vehicle.getSpeed(self.id), 2)
-        self.consumption = round(traci.vehicle.getElectricityConsumption(self.id) / 1000, 2)
+        self.speed = round(traci.vehicle.getSpeed(self.vehicle_id), 2)
+        self.consumption = round(traci.vehicle.getElectricityConsumption(self.vehicle_id) / 1000, 2)
         self.speedKm = round(self.speed * 3.6, 2)
-        self.acceleration= round(traci.vehicle.getAcceleration(self.id),2)
+        self.acceleration= round(traci.vehicle.getAcceleration(self.vehicle_id),2)
 
     def update_distances(self):
         if self.edge == "" or self.edge.startswith(":"):
@@ -151,7 +154,7 @@ class EV:
         
         self.dist_to_dest = round(
             traci.vehicle.getDrivingDistance(
-                self.id,
+                self.vehicle_id,
                 self.dest,
                 traci.lane.getLength(f"{self.dest}_0")
             ),
@@ -160,18 +163,18 @@ class EV:
 
         self.dist_to_final = round(
             traci.vehicle.getDrivingDistance(
-                self.id,
+                self.vehicle_id,
                 self.final_dest,
                 traci.lane.getLength(f"{self.final_dest}_0")
             ),
             2
         )
 
-        self.total_dist = round(traci.vehicle.getDistance(self.id), 2)
+        self.total_dist = round(traci.vehicle.getDistance(self.vehicle_id), 2)
 
-        self.current_pos = traci.vehicle.getLanePosition(self.id)
+        self.current_pos = traci.vehicle.getLanePosition(self.vehicle_id)
 
-        self.leader =  traci.vehicle.getLeader(self.id) #(near veh_id, dist to near veh_id)
+        self.leader =  traci.vehicle.getLeader(self.vehicle_id) #(near veh_id, dist to near veh_id)
 
         if self.leader is not None:
             self.gap = self.leader[1] #dist to near veh
@@ -264,23 +267,23 @@ class EV:
         return
     
     """Add vehicle"""
-    def _addveh(self,params: dict):
+    def _addveh(self,destination_id: str, initial_edge: str, route_id: str ):
         
-        self.action.create_route(params)
+        self.action.create_route(destination_id, initial_edge, route_id)
 
         traci.vehicle.add(
-                    vehID=self.id,
-                    routeID=params["route_id"],
-                    typeID=self.vType,
+                    vehID=self.vehicle_id,
+                    routeID=route_id,
+                    typeID=self.vehicle_type,
                     depart=traci.simulation.getTime()
         )
 
-        self.action.set_route(params)
+        self.action.set_route(route_id)
         return
         
     """Entry and Exit"""
     def step(self, vector: list, params :dict):
-        if self.id not in traci.vehicle.getIDList():
+        if self.vehicle_id not in traci.vehicle.getIDList():
             return
         
         self.actions_dic[int(np.argmax(vector))](params)
