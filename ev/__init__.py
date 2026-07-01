@@ -1,7 +1,7 @@
 import traci
 import numpy as np
 from .__action__ import Action
-from .__interpreter_and_set__ import InterpreterandSet
+from .__interpreter_and_set__ import InterpreterAndSet
 
 class EV:
     def __init__(self,vehicle_id: str,vehicle_type: str,initial_route: dict[str, str],reflength: float,step_length: float):
@@ -10,12 +10,13 @@ class EV:
         # -----------------------------
         self.vehicle_id = vehicle_id                                                       # Vehicle ID
         self.vehicle_type = vehicle_type                                                   # Vehicle type
-
+        self.step_length = step_length                                                     # step of simulation
+        
         # -----------------------------
         # Instance of classes
         # -----------------------------  
-        self.action = Action(vehicle_id,vehicle_type,step_length)
-        self.int_and_set = InterpreterandSet(vehicle_id)
+        self.action = Action(self)
+        self.int_and_set = InterpreterAndSet(self)
 
         # -----------------------------
         # Actions
@@ -29,7 +30,7 @@ class EV:
         # -----------------------------
         # Add the vehicle
         # -----------------------------
-        self._addveh(
+        self._add_vehicle(
             initial_route["destination_id"],
             initial_route["initial_edge"],
             initial_route["route_id"])
@@ -266,10 +267,21 @@ class EV:
         self.update_distances()
         return
     
-    """Add vehicle"""
-    def _addveh(self,destination_id: str, initial_edge: str, route_id: str ):
+    """Create a route and add the vehicle to the simulation."""
+    def _add_vehicle(self,destination_id: str, initial_edge: str, route_id: str ):
         
-        self.action.create_route(destination_id, initial_edge, route_id)
+        route = traci.simulation.findRoute(
+            initial_edge,
+            destination_id,
+            vType=self.vehicle_type
+        )
+
+        if not route.edges:
+            raise RuntimeError(
+                f"No route found from '{initial_edge}' to '{destination_id}'."
+            )
+
+        traci.route.add(route_id, route.edges)
 
         traci.vehicle.add(
                     vehID=self.vehicle_id,
@@ -277,18 +289,20 @@ class EV:
                     typeID=self.vehicle_type,
                     depart=traci.simulation.getTime()
         )
-
-        self.action.set_route(route_id)
-        return
         
-    """Entry and Exit"""
-    def step(self, vector: list, params :dict):
+    def step(self, vector: list, params: tuple = ()):
+        """Execute the selected action."""
+
         if self.vehicle_id not in traci.vehicle.getIDList():
             return
-        
-        self.actions_dic[int(np.argmax(vector))](params)
 
-        return
+        action = int(np.argmax(vector))
+
+        if action in (0, 1):
+            self.actions_dic[action]()
+
+        elif action in (2, 3):
+            self.actions_dic[action](*params)
 
     def get_obs(self):
         obs = [

@@ -70,25 +70,29 @@ class SingleEV(gym.Env):
         self.waiting_time = config["Waiting_time"]         # Auxiliary time control
         self.refTime = [-1, True]                          # Auxiliary time control
         
-    def step(self, action:list,params : dict):
+    def step(self, action:list,params: tuple = ()):
         
         reward = 0
+
+        if self.done:
+            return
         
         # step do ev
         traci.simulationStep()
 
+        if self.id not in traci.vehicle.getIDList():
+            self.done = True
+            self.registration.close()
+            return
+
         self.ev.general_up()
-        self.ev.int_and_set.color(self.ev.soc)
+        self.ev.int_and_set.color()
         self.ev.step(action,params)
         self.general.step()
         self.updateinfo()
         
         if 10 <self.ev.dist_to_final < 150 :
-            self.ev.action.slow_down(
-                self.ev.speed,
-                self.ev.dist_to_final,
-                self.ev.max_decel
-            )
+            self.ev.action.slow_down()
 
         if self.ev.edge == self.ev.final_dest and self.ev.dist_to_final  <= 10 and self.refTime[1]:
             traci.vehicle.setSpeed(self.id, 0)
@@ -96,7 +100,7 @@ class SingleEV(gym.Env):
         if self.ev.edge == self.ev.final_dest and self.ev.speed == 0: 
             streets = sorted(self.general.tools["streets"])
             dest = random.choice([x for x in streets if x != self.ev.final_dest])
-            self.ev.action.new_route(dest, self.ev.edge)
+            self.ev.action.new_route(dest)
 
             self.ev.all_up()
             self.ev.action.stop_car()
@@ -106,20 +110,13 @@ class SingleEV(gym.Env):
                 self.refTime = [refTime,False]
 
         if traci.simulation.getTime() - self.refTime[0] >= 0 and not(self.refTime[1]):
-            self.ev.action.back_normal_speed()
+            self.ev.action.resume_speed_control()
             self.refTime = [-1,True]
 
         if traci.simulation.getTime() == self.simulation.max_time:
             self.done = True
             self.registration.close()
         
-        """
-        if traci.simulation.getLoadedIDList() and traci.simulation.getLoadedIDList()[-1]:
-
-            self.vehicles_id = traci.simulation.getLoadedIDList()[-1]
-            print("olha só :", self.vehicles_id)
-        self.updateinfo()
-        """
         return # state, reward, terminated, truncated, info
 
     def get_obs(self):
@@ -146,7 +143,7 @@ class SingleEV(gym.Env):
             "total_dist": self.ev.total_dist,
             "dest": self.ev.dest,
             "dist_to_dest": self.ev.dist_to_dest,
-            "vType": self.ev.vType,
+            "vType": self.ev.vehicle_type,
             "soc": self.ev.soc
         }
         self.registration.accumulate_information(info, self.general.time)

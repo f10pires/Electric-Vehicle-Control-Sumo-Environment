@@ -107,45 +107,26 @@
         <param key="emptyColor" value="1,1,1,0"/>
     </busStop>
 
-
-    <busStop id="checkpoint5"
-             lane="-joulesC_2"
-             startPos="450"
-             endPos="475"
-             color="255,145,4">
-        <param key="emptyColor" value="1,1,1,0"/>
-    </busStop>
-    
-    <busStop id="checkpoint6"
-             lane="joulesC_2"
-             startPos="450"
-             endPos="475"
-             color="255,145,4">
-        <param key="emptyColor" value="1,1,1,0"/>
-    </busStop>
-    
-
-
     <!-- ================== PARKING ================== -->
 
-<parkingArea
+    <parkingArea
         id="ParkAreaA"
-        lane="-joulesC_0"
-        startPos="225"
-        endPos="275"
-        roadsideCapacity="10"
+        lane="-E202_0"
+        startPos="2.9"
+        endPos="7.4"
+        roadsideCapacity="1"
         angle="0"
-        length="5.0"
+        length="4.5"
     />
 
     <parkingArea
         id="ParkAreaB"
-        lane="joulesC_0"
-        startPos="225"
-        endPos="275"
-        roadsideCapacity="10"
+        lane="E202_0"
+        startPos="2.9"
+        endPos="7.4"
+        roadsideCapacity="1"
         angle="0"
-        length="5.0"
+        length="4.5"
     />
 
     <parkingArea 
@@ -248,6 +229,127 @@
         length="4.5"
     />
 
+    <parkingArea
+    id="ParkAreaM"
+    lane="-E206_0"
+    startPos="2.9"
+    endPos="7.4"
+    roadsideCapacity="1"
+    angle="0"
+    length="4.5"
+    />
+
+    <parkingArea
+    id="ParkAreaN"
+    lane="E206_0"
+    startPos="2.9"
+    endPos="7.4"
+    roadsideCapacity="1"
+    angle="0"
+    length="4.5"
+    /> 
+
+    
+    <parkingArea
+    id="ParkAreaO"
+    lane="-E226_0"
+    startPos="2.9"
+    endPos="7.4"
+    roadsideCapacity="1"
+    angle="0"
+    length="4.5"
+    />
+
+    <parkingArea
+    id="ParkAreaP"
+    lane="E226_0"
+    startPos="2.9"
+    endPos="7.4"
+    roadsideCapacity="1"
+    angle="0"
+    length="4.5"
+    />
+
+    <parkingArea
+    id="ParkAreaQ"
+    lane="-E204_0"
+    startPos="2.9"
+    endPos="7.4"
+    roadsideCapacity="1"
+    angle="0"
+    length="4.5"
+    />
+
+    <parkingArea
+    id="ParkAreaR"
+    lane="E204_0"
+    startPos="2.9"
+    endPos="7.4"
+    roadsideCapacity="1"
+    angle="0"
+    length="4.5"
+    />
+
+    <parkingArea
+    id="ParkAreaS"
+    lane="E224_0"
+    startPos="2.9"
+    endPos="7.4"
+    roadsideCapacity="1"
+    angle="0"
+    length="4.5"
+    />
+
+    <parkingArea
+    id="ParkAreaT"
+    lane="-E224_0"
+    startPos="2.9"
+    endPos="7.4"
+    roadsideCapacity="1"
+    angle="0"
+    length="4.5"
+    />
+
+    <parkingArea
+    id="ParkAreaU"
+    lane="-E222_0"
+    startPos="2.9"
+    endPos="7.4"
+    roadsideCapacity="1"
+    angle="0"
+    length="4.5"
+    />
+
+    <parkingArea
+    id="ParkAreaV"
+    lane="E222_0"
+    startPos="2.9"
+    endPos="7.4"
+    roadsideCapacity="1"
+    angle="0"
+    length="4.5"
+    />
+
+    <parkingArea
+        id="ParkAreaW"
+        lane="E228_0"
+        startPos="29.7"
+        endPos="74.7"
+        roadsideCapacity="10"
+        angle="0"
+    />
+
+    <parkingArea
+        id="ParkAreaX"
+        lane="-E228_0"
+        startPos="29.7"
+        endPos="74.7"
+        roadsideCapacity="10"
+        angle="0"
+    />
+
+
+    
 
     <!-- ================== Charging Station ================== -->
 
@@ -316,5 +418,26 @@
         power="30000"
         efficiency="0.9"
     />
-    
+
+    <chargingStation
+        id="Charge_ParkW"
+        lane="E228_0"
+        startPos="29.7"
+        endPos="74.7"
+        chargeDelay="2"
+        chargeInTransit="0"
+        power="30000"
+        efficiency="0.9"
+    />
+
+    <chargingStation
+        id="Charge_ParkX"
+        lane="-E228_0"
+        startPos="29.7"
+        endPos="74.7"
+        chargeDelay="2"
+        chargeInTransit="0"
+        power="30000"
+        efficiency="0.9"
+    />
 </additional>
