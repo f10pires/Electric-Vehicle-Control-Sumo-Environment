@@ -21,6 +21,8 @@
     "Max_time" : 100000,
     "Waiting_time" : 60,
     "destin flag" : "False",
-    "mod dist" : 1600
+    "mod dist" : 1600,
+    "vTypes" : ["passenger", "evehicle", "bus"],
+    "Max_vehicles": 300
     
 }

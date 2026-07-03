@@ -5,7 +5,7 @@ from sumo import Sumo
 import traci
 import json
 from datetime import datetime, timedelta
-from environment import SingleEV
+from environment.singleev import SingleEV
 
 
 """Load config at config/config.json"""
