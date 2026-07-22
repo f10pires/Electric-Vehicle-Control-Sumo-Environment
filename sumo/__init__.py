@@ -34,7 +34,7 @@ class Sumo:
         self.up_streets()
         self.streetslist = list(self.streets)
         self.reference_length()
-        #self.randomveh = RandomVeh(self.config)
+        self.randomveh = RandomVeh(self.config)
 
         return
     

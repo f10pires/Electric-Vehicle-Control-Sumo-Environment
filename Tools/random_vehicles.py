@@ -97,12 +97,12 @@ class RandomVeh:
             )
 
             # Configure the final stop
-            self.stop(vehicle_id, destination_id, destination_edge)
+            self.stop(vehicle_id, destination_id)
 
     # -------------------------------------------------
     # Assign the final stop according to the destination type
     # -------------------------------------------------
-    def stop(self, vehicle_id, destination_id, destination_edge):
+    def stop(self, vehicle_id, destination_id):
 
         if destination_id in self.parking_edges:
 
