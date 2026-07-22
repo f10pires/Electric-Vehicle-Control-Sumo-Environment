@@ -2,15 +2,15 @@
 <city>
     
     <general
-        inhabitants="500"
+        inhabitants="800"
         households="300"
         childrenAgeLimit="18"
         retirementAgeLimit="65"
         carRate="0.87"
         unemploymentRate="0.05"
         footDistanceLimit="2000"
-        incomingTraffic="200"
-        outgoingTraffic="100"
+        incomingTraffic="600"
+        outgoingTraffic="300"
     />
 
     <population>

@@ -4,6 +4,7 @@ from sumolib import checkBinary
 import subprocess
 import sys
 import os
+from Tools.random_vehicles import RandomVeh
 
 class Sumo:
 
@@ -33,6 +34,7 @@ class Sumo:
         self.up_streets()
         self.streetslist = list(self.streets)
         self.reference_length()
+        #self.randomveh = RandomVeh(self.config)
 
         return
     

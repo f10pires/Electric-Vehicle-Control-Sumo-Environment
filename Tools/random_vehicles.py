@@ -1,314 +1,123 @@
-from __future__ import annotations
-
-import argparse
-import json
 import random
-from pathlib import Path
-from typing import Any
-
-from sumolib.net import readNet
+import traci
 
 
-PROJECT_ROOT = Path(__file__).resolve().parents[1]
-DEFAULT_CONFIG_PATH = PROJECT_ROOT / "config" / "config.json"
-DEFAULT_OUTPUT_PATH = PROJECT_ROOT / "config" / "vehicles.json"
-DEFAULT_COUNT = 1
-DEFAULT_ENERGY_MAX = 40.0
-DEFAULT_MAX_ATTEMPTS = 10_000
+class RandomVeh:
+
+    def __init__(self, config):
+
+        self.config = config
+        self.refdist = 0.0
+
+        self.edges = set([edge for edge in traci.edge.getIDList()if not edge.startswith(":")])
+
+        self.vehicle_type = config["vTypes"]
+        self.max_vehicles = config["Max_vehicles"]
+
+        # Fix random seed for reproducibility
+        random.seed(int(config["seed"]))
 
 
-def build_parser() -> argparse.ArgumentParser:
-    parser = argparse.ArgumentParser(
-        description="Generate random EV definitions for config/vehicles.json."
-    )
-    parser.add_argument(
-        "--config",
-        default=str(DEFAULT_CONFIG_PATH),
-        help="Path to the project config file.",
-    )
-    parser.add_argument(
-        "--output",
-        default=str(DEFAULT_OUTPUT_PATH),
-        help="Path where vehicles.json will be written.",
-    )
-    parser.add_argument(
-        "--count",
-        type=positive_int,
-        default=DEFAULT_COUNT,
-        help="Number of vehicles to generate.",
-    )
-    parser.add_argument(
-        "--vehicle-prefix",
-        default="ev",
-        help="Prefix used for generated vehicle ids.",
-    )
-    parser.add_argument(
-        "--route-prefix",
-        default="Route",
-        help="Prefix used for generated route ids.",
-    )
-    parser.add_argument(
-        "--vehicle-type",
-        default="evehicle",
-        help="SUMO vehicle type assigned to each generated vehicle.",
-    )
-    parser.add_argument(
-        "--vehicle-class",
-        default=None,
-        help="SUMO permission class used to filter edges. Defaults to passenger, or bus for bus vehicle types.",
-    )
-    parser.add_argument(
-        "--energy-max",
-        type=positive_float,
-        default=DEFAULT_ENERGY_MAX,
-        help="Emax value written for each vehicle.",
-    )
-    parser.add_argument(
-        "--min-route-length",
-        type=non_negative_float,
-        default=0.0,
-        help="Minimum shortest-path length, in meters, between origin and destination.",
-    )
-    parser.add_argument(
-        "--max-attempts",
-        type=positive_int,
-        default=DEFAULT_MAX_ATTEMPTS,
-        help="Maximum random origin/destination attempts before failing.",
-    )
-    parser.add_argument(
-        "--seed",
-        type=int,
-        default=None,
-        help="Random seed. Defaults to config['seed'] when available.",
-    )
-    parser.add_argument(
-        "--dry-run",
-        action="store_true",
-        help="Print the generated JSON instead of writing the output file.",
-    )
-    return parser
+        self.mu = 13.8      # hours
+        self.sigma = 2.5    # hours
 
+        
+        # -------------------------------------------------
+        # Get all parking areas and charging stations
+        # -------------------------------------------------
+        self.parkings = set(traci.parkingarea.getIDList())
+        self.stations = set(traci.chargingstation.getIDList())
 
-def positive_int(value: str) -> int:
-    parsed = int(value)
-    if parsed <= 0:
-        raise argparse.ArgumentTypeError("value must be greater than zero")
-    return parsed
-
-
-def positive_float(value: str) -> float:
-    parsed = float(value)
-    if parsed <= 0:
-        raise argparse.ArgumentTypeError("value must be greater than zero")
-    return parsed
-
-
-def non_negative_float(value: str) -> float:
-    parsed = float(value)
-    if parsed < 0:
-        raise argparse.ArgumentTypeError("value must be zero or greater")
-    return parsed
-
-
-def resolve_path(path: str | Path) -> Path:
-    candidate = Path(path).expanduser()
-    if candidate.is_absolute():
-        return candidate
-    return (PROJECT_ROOT / candidate).resolve()
-
-
-def load_config(config_path: Path) -> dict[str, Any]:
-    if not config_path.exists():
-        raise FileNotFoundError(f"Config file not found: {config_path}")
-
-    with config_path.open("r", encoding="utf-8") as config_file:
-        return json.load(config_file)
-
-
-def seed_from_config(config: dict[str, Any], explicit_seed: int | None) -> int:
-    if explicit_seed is not None:
-        return explicit_seed
-
-    raw_seed = config.get("seed", 42)
-    try:
-        return int(raw_seed)
-    except (TypeError, ValueError) as exc:
-        raise ValueError(f"Invalid seed in config: {raw_seed!r}") from exc
-
-
-def infer_vehicle_class(vehicle_type: str, explicit_class: str | None) -> str:
-    if explicit_class:
-        return explicit_class
-
-    if "bus" in vehicle_type.lower():
-        return "bus"
-
-    return "passenger"
-
-
-def get_net_path(config: dict[str, Any]) -> Path:
-    try:
-        return resolve_path(config["net-file"])
-    except KeyError as exc:
-        raise KeyError("Missing required config key: 'net-file'") from exc
-
-
-def get_candidate_edges(net: Any, vehicle_class: str) -> list[Any]:
-    return [
-        edge
-        for edge in net.getEdges()
-        if not edge.getID().startswith(":")
-        and edge.getFunction() in ("", "normal")
-        and edge.allows(vehicle_class)
-    ]
-
-
-def route_exists(
-    net: Any,
-    origin: Any,
-    destination: Any,
-    vehicle_class: str,
-    min_route_length: float,
-) -> bool:
-    if origin.getID() == destination.getID():
-        return False
-
-    path, route_length = net.getShortestPath(
-        origin,
-        destination,
-        vClass=vehicle_class,
-    )
-
-    return bool(path) and route_length >= min_route_length
-
-
-def choose_route(
-    net: Any,
-    edges: list[Any],
-    rng: random.Random,
-    vehicle_class: str,
-    min_route_length: float,
-    max_attempts: int,
-) -> tuple[str, str]:
-    for _ in range(max_attempts):
-        origin, destination = rng.sample(edges, 2)
-
-        if route_exists(net, origin, destination, vehicle_class, min_route_length):
-            return origin.getID(), destination.getID()
-
-    raise RuntimeError(
-        "Could not find a valid random route. "
-        "Try reducing --min-route-length or increasing --max-attempts."
-    )
-
-
-def build_route_id(route_prefix: str, index: int, count: int) -> str:
-    if count == 1:
-        return route_prefix
-    return f"{route_prefix}{index}"
-
-
-def clean_number(value: float) -> int | float:
-    if value.is_integer():
-        return int(value)
-    return value
-
-
-def generate_vehicles(
-    net_path: Path,
-    count: int,
-    vehicle_prefix: str,
-    route_prefix: str,
-    vehicle_type: str,
-    vehicle_class: str,
-    energy_max: float,
-    seed: int,
-    min_route_length: float,
-    max_attempts: int,
-) -> dict[str, dict[str, Any]]:
-    net = readNet(str(net_path))
-    edges = get_candidate_edges(net, vehicle_class)
-
-    if len(edges) < 2:
-        raise RuntimeError(
-            f"Need at least two usable edges for vehicle class '{vehicle_class}'. "
-            f"Found {len(edges)}."
-        )
-
-    rng = random.Random(seed)
-    vehicles: dict[str, dict[str, Any]] = {}
-
-    for index in range(1, count + 1):
-        vehicle_id = f"{vehicle_prefix}{index}"
-        initial_edge, destination_id = choose_route(
-            net,
-            edges,
-            rng,
-            vehicle_class,
-            min_route_length,
-            max_attempts,
-        )
-
-        vehicles[vehicle_id] = {
-            "type": vehicle_type,
-            "Emax": clean_number(energy_max),
-            "initial_route": {
-                "destination_id": destination_id,
-                "route_id": build_route_id(route_prefix, index, count),
-                "initial_edge": initial_edge,
-            },
+        # -------------------------------------------------
+        # Map each charging station to its corresponding edge
+        # -------------------------------------------------
+        self.station_edges = {
+            station: traci.chargingstation.getLaneID(station).rsplit("_", 1)[0]
+            for station in self.stations
         }
 
-    return vehicles
+        # -------------------------------------------------
+        # Map parking areas to their edges
+        # (excluding edges that already contain charging stations)
+        # -------------------------------------------------
+        station_edge_set = set(self.station_edges.values())
+        self.parking_edges = {
+                parking: traci.parkingarea.getLaneID(parking).rsplit("_", 1)[0] 
+                for parking in self.parkings
+                if traci.parkingarea.getLaneID(parking).rsplit("_", 1)[0] not in station_edge_set}
 
+        # Create all vehicles
+        self.route()
 
-def write_json(path: Path, data: dict[str, Any]) -> None:
-    path.parent.mkdir(parents=True, exist_ok=True)
+    # -------------------------------------------------
+    # Create routes and insert vehicles into the simulation
+    # -------------------------------------------------
+    def route(self):
 
-    with path.open("w", encoding="utf-8") as output_file:
-        json.dump(data, output_file, indent=4)
-        output_file.write("\n")
+        for i in range(self.max_vehicles):
 
+            # Select a random origin edge
+            initial_edge = random.choice(list(self.edges))
 
-def main() -> int:
-    args = build_parser().parse_args()
+            # Build the list of possible destinations
+            destinations = {}
+            destinations.update(self.station_edges)
+            destinations.update(self.parking_edges)
 
-    config_path = resolve_path(args.config)
-    output_path = resolve_path(args.output)
-    config = load_config(config_path)
-    seed = seed_from_config(config, args.seed)
-    vehicle_class = infer_vehicle_class(args.vehicle_type, args.vehicle_class)
+            # Randomly choose one destination
+            destination_id = random.choice(list(destinations.keys()))
+            destination_edge = destinations[destination_id]
 
-    vehicles = generate_vehicles(
-        net_path=get_net_path(config),
-        count=args.count,
-        vehicle_prefix=args.vehicle_prefix,
-        route_prefix=args.route_prefix,
-        vehicle_type=args.vehicle_type,
-        vehicle_class=vehicle_class,
-        energy_max=args.energy_max,
-        seed=seed,
-        min_route_length=args.min_route_length,
-        max_attempts=args.max_attempts,
-    )
+            # Compute the route
+            route = traci.simulation.findRoute(
+                initial_edge,
+                destination_edge,
+                vType=self.vehicle_type,
+            )
 
-    if args.dry_run:
-        print(json.dumps(vehicles, indent=4))
-        return 0
+            if not route.edges:
+                raise RuntimeError(
+                    f"No route found from '{initial_edge}' to '{destination_edge}'."
+                )
 
-    write_json(output_path, vehicles)
+            route_id = f"vehicle_route_{i}"
+            vehicle_id = f"vehicle_{i}"
 
-    print("-" * 50)
-    print("RANDOM VEHICLES GENERATED")
-    print(f"Vehicles        : {len(vehicles)}")
-    print(f"Vehicle type    : {args.vehicle_type}")
-    print(f"Vehicle class   : {vehicle_class}")
-    print(f"Seed            : {seed}")
-    print(f"Output file     : {output_path}")
-    print("-" * 50)
+            traci.route.add(route_id, route.edges)
 
-    return 0
+            # Random departure time
+            departure_hour = random.gauss(self.mu, self.sigma)
+            depart_veh = int(departure_hour * 3600)
 
+            traci.vehicle.add(
+                vehID=vehicle_id,
+                routeID=route_id,
+                typeID=self.vehicle_type,
+                depart=depart_veh,
+            )
 
-if __name__ == "__main__":
-    raise SystemExit(main())
+            # Configure the final stop
+            self.stop(vehicle_id, destination_id, destination_edge)
+
+    # -------------------------------------------------
+    # Assign the final stop according to the destination type
+    # -------------------------------------------------
+    def stop(self, vehicle_id, destination_id, destination_edge):
+
+        if destination_id in self.parking_edges:
+
+            traci.vehicle.setParkingAreaStop(
+                vehicle_id,
+                destination_id,
+                duration=360,
+            )
+
+        else:
+
+            traci.vehicle.setChargingStationStop(
+                vehicle_id,
+                destination_id,
+                duration=360,
+                flags=1,
+            )
+        
