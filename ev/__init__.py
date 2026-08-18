@@ -76,8 +76,9 @@ class EV:
         # -----------------------------
         # ID list
         # -----------------------------
-        self.parkings = traci.parkingarea.getIDList()
-        self.stations = traci.chargingstation.getIDList()
+        self.parkings = sorted(traci.parkingarea.getIDList())
+        self.stations = sorted(traci.chargingstation.getIDList())
+        self.bins     = []
 
         # -----------------------------
         # Charging stations (EVSE)
@@ -92,23 +93,30 @@ class EV:
             for s in self.stations
         }
 
-        station_edges_set = set(self.station_edges.values())
-
         # -----------------------------
-        # Parkings
+        # Parkings and Bins
         # -----------------------------
         self.parking_edges = {}
         self.parking_pos = {}
 
+        self.bin_edges = {}
+        self.bin_pos = {}
+
         for p in self.parkings:
             lane_id = traci.parkingarea.getLaneID(p)
             edge_id = lane_id.split("_")[0]
-
-            if edge_id in station_edges_set:
+            pos = traci.parkingarea.getStartPos(p)
+            
+            if edge_id in self.stations:
                 continue
 
-            self.parking_edges[p] = edge_id
-            self.parking_pos[p] = traci.parkingarea.getStartPos(p)
+            if p.startswith("BIN-"):
+                self.bins.append(p)
+                self.bin_edges[p] = edge_id
+                self.bin_pos[p] = pos
+            else:
+                self.parking_edges[p] = edge_id
+                self.parking_pos[p] = pos
 
         # -----------------------------
         # Initial initialization

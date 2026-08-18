@@ -38,7 +38,6 @@ def main():
         if env.ev.soc == 100 and  "charging station" in env.ev.int_and_set.stop(): 
             env.ev.action.set_target(env.ev.final_dest)
             env.ev.action.skip_stop()
-        
 
 if __name__ == "__main__":
     main()

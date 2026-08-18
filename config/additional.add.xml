@@ -348,6 +348,46 @@
         angle="0"
     />
 
+    <!-- ================== BINS ================== -->
+
+    <parkingArea 
+        id="BIN-A" 
+        lane="-E16_0" 
+        startPos="6.0" 
+        endPos="18.0" 
+        roadsideCapacity="1" 
+        angle="0" 
+    />
+
+    <parkingArea
+        id="BIN-B"
+        lane="-E23_0"
+        startPos="6.0" 
+        endPos="18.0" 
+        roadsideCapacity="1" 
+        angle="0"
+    />
+
+    <parkingArea
+        id="BIN-C"
+        lane="E170_0"
+        startPos="6.0" 
+        endPos="18.0" 
+        roadsideCapacity="1" 
+        angle="0"
+    />    
+    
+    <parkingArea
+        id="BIN-D"
+        lane="-E186_0"
+        startPos="6.0" 
+        endPos="18.0" 
+        roadsideCapacity="1" 
+        angle="0"
+    />
+
+    
+
 
     
 
