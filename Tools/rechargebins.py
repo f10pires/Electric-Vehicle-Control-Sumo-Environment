@@ -1,7 +1,7 @@
 import numpy as np
 
 class BIN :
-    def __init__(self,id: str, pos: float, edge: str, area: float, occupation : float, capacity: float, time: float, population: int):
+    def __init__(self, id: str, pos: float, edge: str, area: float, occupation : float, capacity: float, time: float, population: int, zone: str, config: dict):
 
         # -----------------------------
         # Identification and location
@@ -26,10 +26,14 @@ class BIN :
     
     def update(self, time, sigma) :
 
-        self.occupation = self.occupation + (self.generation*sigma)
+        
+
 
         return
     
+    def _prob(self, hour: int, weekday: str, type: str):
+
+
     def generation_rate(self, time):
         frequency = (2 * np.pi) / 86400
 
