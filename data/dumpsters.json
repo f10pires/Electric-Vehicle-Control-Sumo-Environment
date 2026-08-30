@@ -1,14 +1,4267 @@
 {
-    "d1": { "bin_id" : "DHK-CO-00141",
-            "area_type" : "Commercial",
-            "city" : "Dhaka",
-            "neighborhood": "Dhamondi",
-            "bin_capacity" : 450,
-            "fill_days": {}
+    "d1": {
+        "bin_id": "DHK-CO-00141",
+        "area_type": "Commercial",
+        "city": "Dhaka",
+        "neighborhood": "Dhamondi",
+        "bin_capacity": 450,
+        "fill_days": {
+            "2025-01-01": {
+                "0": {
+                    "fill_waste(Kg)": 13.805,
+                    "overflow_kg": 0
+                },
+                "1": {
+                    "fill_waste(Kg)": 7.425,
+                    "overflow_kg": 0
+                },
+                "2": {
+                    "fill_waste(Kg)": 22.447499999999998,
+                    "overflow_kg": 0
+                },
+                "3": {
+                    "fill_waste(Kg)": 8.955,
+                    "overflow_kg": 0
+                },
+                "4": {
+                    "fill_waste(Kg)": 36.1,
+                    "overflow_kg": 0
+                },
+                "5": {
+                    "fill_waste(Kg)": 12.35,
+                    "overflow_kg": 0
+                },
+                "6": {
+                    "fill_waste(Kg)": 18.810000000000002,
+                    "overflow_kg": 0
+                },
+                "7": {
+                    "fill_waste(Kg)": 41.055,
+                    "overflow_kg": 0
+                },
+                "8": {
+                    "fill_waste(Kg)": 27.725,
+                    "overflow_kg": 0
+                },
+                "9": {
+                    "fill_waste(Kg)": 43.0175,
+                    "overflow_kg": 0
+                },
+                "10": {
+                    "fill_waste(Kg)": 49.4,
+                    "overflow_kg": 0
+                },
+                "11": {
+                    "fill_waste(Kg)": 38.29,
+                    "overflow_kg": 0
+                },
+                "13": {
+                    "fill_waste(Kg)": 67.13,
+                    "overflow_kg": 0
+                },
+                "14": {
+                    "fill_waste(Kg)": 67.545,
+                    "overflow_kg": 0
+                },
+                "15": {
+                    "fill_waste(Kg)": 137.71999999999997,
+                    "overflow_kg": 0
+                },
+                "16": {
+                    "fill_waste(Kg)": 24.325,
+                    "overflow_kg": 0
+                },
+                "17": {
+                    "fill_waste(Kg)": 20.985,
+                    "overflow_kg": 0
+                },
+                "18": {
+                    "fill_waste(Kg)": 25.77,
+                    "overflow_kg": 0
+                },
+                "19": {
+                    "fill_waste(Kg)": 30.145,
+                    "overflow_kg": 0
+                },
+                "20": {
+                    "fill_waste(Kg)": 61.3,
+                    "overflow_kg": 0
+                },
+                "21": {
+                    "fill_waste(Kg)": 89.1,
+                    "overflow_kg": 0
+                },
+                "22": {
+                    "fill_waste(Kg)": 163.3125,
+                    "overflow_kg": 0
+                },
+                "23": {
+                    "fill_waste(Kg)": 56.7,
+                    "overflow_kg": 0
+                }
+            },
+            "2025-01-02": {
+                "0": {
+                    "fill_waste(Kg)": 37.875,
+                    "overflow_kg": 0
+                },
+                "1": {
+                    "fill_waste(Kg)": 36.96,
+                    "overflow_kg": 0
+                },
+                "3": {
+                    "fill_waste(Kg)": 67.51,
+                    "overflow_kg": 0
+                },
+                "4": {
+                    "fill_waste(Kg)": 124.785,
+                    "overflow_kg": 0
+                },
+                "5": {
+                    "fill_waste(Kg)": 73.2125,
+                    "overflow_kg": 0
+                },
+                "6": {
+                    "fill_waste(Kg)": 209.51,
+                    "overflow_kg": 0
+                },
+                "8": {
+                    "fill_waste(Kg)": 45.27,
+                    "overflow_kg": 0
+                },
+                "9": {
+                    "fill_waste(Kg)": 88.45500000000001,
+                    "overflow_kg": 0
+                },
+                "10": {
+                    "fill_waste(Kg)": 44.22,
+                    "overflow_kg": 0
+                },
+                "11": {
+                    "fill_waste(Kg)": 49.29,
+                    "overflow_kg": 0
+                },
+                "12": {
+                    "fill_waste(Kg)": 99.99,
+                    "overflow_kg": 0
+                },
+                "13": {
+                    "fill_waste(Kg)": 77.5,
+                    "overflow_kg": 0
+                },
+                "14": {
+                    "fill_waste(Kg)": 172.75000000000003,
+                    "overflow_kg": 0
+                },
+                "15": {
+                    "fill_waste(Kg)": 57.66,
+                    "overflow_kg": 0
+                },
+                "16": {
+                    "fill_waste(Kg)": 75.3475,
+                    "overflow_kg": 0
+                },
+                "17": {
+                    "fill_waste(Kg)": 116.35499999999999,
+                    "overflow_kg": 0
+                },
+                "18": {
+                    "fill_waste(Kg)": 200.265,
+                    "overflow_kg": 0
+                },
+                "20": {
+                    "fill_waste(Kg)": 118.58500000000001,
+                    "overflow_kg": 0
+                },
+                "21": {
+                    "fill_waste(Kg)": 69.98,
+                    "overflow_kg": 0
+                },
+                "22": {
+                    "fill_waste(Kg)": 54.2,
+                    "overflow_kg": 0
+                },
+                "23": {
+                    "fill_waste(Kg)": 85.19,
+                    "overflow_kg": 0
+                }
+            },
+            "2025-01-06": {
+                "0": {
+                    "fill_waste(Kg)": 28.9575,
+                    "overflow_kg": 0
+                },
+                "3": {
+                    "fill_waste(Kg)": 92.7925,
+                    "overflow_kg": 0
+                },
+                "4": {
+                    "fill_waste(Kg)": 68.64999999999999,
+                    "overflow_kg": 0
+                },
+                "5": {
+                    "fill_waste(Kg)": 72.8,
+                    "overflow_kg": 0
+                },
+                "6": {
+                    "fill_waste(Kg)": 100.395,
+                    "overflow_kg": 0
+                },
+                "7": {
+                    "fill_waste(Kg)": 46.6875,
+                    "overflow_kg": 0
+                },
+                "9": {
+                    "fill_waste(Kg)": 189.58999999999997,
+                    "overflow_kg": 0
+                },
+                "11": {
+                    "fill_waste(Kg)": 95.30499999999999,
+                    "overflow_kg": 0
+                },
+                "12": {
+                    "fill_waste(Kg)": 41.85,
+                    "overflow_kg": 0
+                },
+                "13": {
+                    "fill_waste(Kg)": 224.82,
+                    "overflow_kg": 0
+                },
+                "14": {
+                    "fill_waste(Kg)": 110.74000000000001,
+                    "overflow_kg": 0
+                },
+                "16": {
+                    "fill_waste(Kg)": 91.3725,
+                    "overflow_kg": 0
+                },
+                "17": {
+                    "fill_waste(Kg)": 59.65500000000001,
+                    "overflow_kg": 0
+                },
+                "18": {
+                    "fill_waste(Kg)": 267.99,
+                    "overflow_kg": 0
+                },
+                "19": {
+                    "fill_waste(Kg)": 196.07999999999998,
+                    "overflow_kg": 0
+                },
+                "21": {
+                    "fill_waste(Kg)": 83.36,
+                    "overflow_kg": 0
+                },
+                "22": {
+                    "fill_waste(Kg)": 54.8925,
+                    "overflow_kg": 0
+                },
+                "23": {
+                    "fill_waste(Kg)": 140.72,
+                    "overflow_kg": 0
+                }
+            },
+            "2025-01-07": {
+                "0": {
+                    "fill_waste(Kg)": 56.4775,
+                    "overflow_kg": 0
+                },
+                "3": {
+                    "fill_waste(Kg)": 32.44,
+                    "overflow_kg": 0
+                },
+                "4": {
+                    "fill_waste(Kg)": 71.115,
+                    "overflow_kg": 0
+                },
+                "5": {
+                    "fill_waste(Kg)": 36.46,
+                    "overflow_kg": 0
+                },
+                "6": {
+                    "fill_waste(Kg)": 43.32,
+                    "overflow_kg": 0
+                },
+                "7": {
+                    "fill_waste(Kg)": 103.635,
+                    "overflow_kg": 0
+                },
+                "8": {
+                    "fill_waste(Kg)": 106.08250000000001,
+                    "overflow_kg": 0
+                },
+                "9": {
+                    "fill_waste(Kg)": 161.76500000000001,
+                    "overflow_kg": 0
+                },
+                "10": {
+                    "fill_waste(Kg)": 87.94749999999999,
+                    "overflow_kg": 0
+                },
+                "11": {
+                    "fill_waste(Kg)": 68.3075,
+                    "overflow_kg": 0
+                },
+                "13": {
+                    "fill_waste(Kg)": 13.32,
+                    "overflow_kg": 0
+                },
+                "14": {
+                    "fill_waste(Kg)": 108.57,
+                    "overflow_kg": 0
+                },
+                "15": {
+                    "fill_waste(Kg)": 18.48,
+                    "overflow_kg": 0
+                },
+                "16": {
+                    "fill_waste(Kg)": 49.665,
+                    "overflow_kg": 0
+                },
+                "17": {
+                    "fill_waste(Kg)": 65.4375,
+                    "overflow_kg": 0
+                },
+                "18": {
+                    "fill_waste(Kg)": 12.68,
+                    "overflow_kg": 0
+                },
+                "19": {
+                    "fill_waste(Kg)": 23.8425,
+                    "overflow_kg": 0
+                },
+                "21": {
+                    "fill_waste(Kg)": 109.85999999999999,
+                    "overflow_kg": 0
+                },
+                "22": {
+                    "fill_waste(Kg)": 112.605,
+                    "overflow_kg": 0
+                },
+                "23": {
+                    "fill_waste(Kg)": 53.21999999999999,
+                    "overflow_kg": 0
+                }
+            },
+            "2025-01-08": {
+                "0": {
+                    "fill_waste(Kg)": 87.1175,
+                    "overflow_kg": 0
+                },
+                "1": {
+                    "fill_waste(Kg)": 151.67,
+                    "overflow_kg": 0
+                },
+                "2": {
+                    "fill_waste(Kg)": 97.14,
+                    "overflow_kg": 0
+                },
+                "3": {
+                    "fill_waste(Kg)": 65.0725,
+                    "overflow_kg": 0
+                },
+                "4": {
+                    "fill_waste(Kg)": 89.46,
+                    "overflow_kg": 0
+                },
+                "5": {
+                    "fill_waste(Kg)": 268.52,
+                    "overflow_kg": 0
+                },
+                "6": {
+                    "fill_waste(Kg)": 73.72999999999999,
+                    "overflow_kg": 0
+                },
+                "7": {
+                    "fill_waste(Kg)": 7.29,
+                    "overflow_kg": 0
+                },
+                "8": {
+                    "fill_waste(Kg)": 47.989999999999995,
+                    "overflow_kg": 0
+                },
+                "9": {
+                    "fill_waste(Kg)": 16.485,
+                    "overflow_kg": 0
+                },
+                "10": {
+                    "fill_waste(Kg)": 79.02000000000001,
+                    "overflow_kg": 0
+                },
+                "13": {
+                    "fill_waste(Kg)": 105.795,
+                    "overflow_kg": 0
+                },
+                "14": {
+                    "fill_waste(Kg)": 311.8625,
+                    "overflow_kg": 0
+                },
+                "15": {
+                    "fill_waste(Kg)": 84.845,
+                    "overflow_kg": 0
+                },
+                "16": {
+                    "fill_waste(Kg)": 209.88,
+                    "overflow_kg": 0
+                },
+                "17": {
+                    "fill_waste(Kg)": 50.96,
+                    "overflow_kg": 0
+                },
+                "18": {
+                    "fill_waste(Kg)": 21.3075,
+                    "overflow_kg": 0
+                },
+                "19": {
+                    "fill_waste(Kg)": 21.415,
+                    "overflow_kg": 0
+                },
+                "20": {
+                    "fill_waste(Kg)": 326.485,
+                    "overflow_kg": 0
+                },
+                "21": {
+                    "fill_waste(Kg)": 106.86,
+                    "overflow_kg": 0
+                },
+                "22": {
+                    "fill_waste(Kg)": 169.76,
+                    "overflow_kg": 0
+                },
+                "23": {
+                    "fill_waste(Kg)": 57.64,
+                    "overflow_kg": 0
+                }
+            },
+            "2025-01-09": {
+                "0": {
+                    "fill_waste(Kg)": 31.140000000000004,
+                    "overflow_kg": 0
+                },
+                "1": {
+                    "fill_waste(Kg)": 175.51999999999998,
+                    "overflow_kg": 0
+                },
+                "2": {
+                    "fill_waste(Kg)": 362.66999999999996,
+                    "overflow_kg": 0
+                },
+                "3": {
+                    "fill_waste(Kg)": 64.3,
+                    "overflow_kg": 0
+                },
+                "4": {
+                    "fill_waste(Kg)": 131.275,
+                    "overflow_kg": 0
+                },
+                "5": {
+                    "fill_waste(Kg)": 39.330000000000005,
+                    "overflow_kg": 0
+                },
+                "6": {
+                    "fill_waste(Kg)": 111.58999999999999,
+                    "overflow_kg": 0
+                },
+                "7": {
+                    "fill_waste(Kg)": 79.465,
+                    "overflow_kg": 0
+                },
+                "8": {
+                    "fill_waste(Kg)": 67.8175,
+                    "overflow_kg": 0
+                },
+                "9": {
+                    "fill_waste(Kg)": 139.9525,
+                    "overflow_kg": 0
+                },
+                "10": {
+                    "fill_waste(Kg)": 77.15,
+                    "overflow_kg": 0
+                },
+                "11": {
+                    "fill_waste(Kg)": 79.125,
+                    "overflow_kg": 0
+                },
+                "12": {
+                    "fill_waste(Kg)": 99.95250000000001,
+                    "overflow_kg": 0
+                },
+                "13": {
+                    "fill_waste(Kg)": 14.545,
+                    "overflow_kg": 0
+                },
+                "14": {
+                    "fill_waste(Kg)": 42.5975,
+                    "overflow_kg": 0
+                },
+                "15": {
+                    "fill_waste(Kg)": 47.955,
+                    "overflow_kg": 0
+                },
+                "16": {
+                    "fill_waste(Kg)": 132.23999999999998,
+                    "overflow_kg": 0
+                },
+                "17": {
+                    "fill_waste(Kg)": 105.725,
+                    "overflow_kg": 0
+                },
+                "18": {
+                    "fill_waste(Kg)": 165.0025,
+                    "overflow_kg": 0
+                },
+                "19": {
+                    "fill_waste(Kg)": 161.44500000000002,
+                    "overflow_kg": 0
+                },
+                "20": {
+                    "fill_waste(Kg)": 180.2775,
+                    "overflow_kg": 0
+                },
+                "21": {
+                    "fill_waste(Kg)": 57.12,
+                    "overflow_kg": 0
+                },
+                "22": {
+                    "fill_waste(Kg)": 113.94500000000001,
+                    "overflow_kg": 0
+                }
+            },
+            "2025-01-13": {
+                "0": {
+                    "fill_waste(Kg)": 91.74499999999999,
+                    "overflow_kg": 0
+                },
+                "1": {
+                    "fill_waste(Kg)": 83.52000000000001,
+                    "overflow_kg": 0
+                },
+                "3": {
+                    "fill_waste(Kg)": 69.22,
+                    "overflow_kg": 0
+                },
+                "4": {
+                    "fill_waste(Kg)": 73.37500000000001,
+                    "overflow_kg": 0
+                },
+                "5": {
+                    "fill_waste(Kg)": 22.5775,
+                    "overflow_kg": 0
+                },
+                "6": {
+                    "fill_waste(Kg)": 36.2725,
+                    "overflow_kg": 0
+                },
+                "7": {
+                    "fill_waste(Kg)": 17.1375,
+                    "overflow_kg": 0
+                },
+                "8": {
+                    "fill_waste(Kg)": 38.3925,
+                    "overflow_kg": 0
+                },
+                "9": {
+                    "fill_waste(Kg)": 58.81999999999999,
+                    "overflow_kg": 0
+                },
+                "10": {
+                    "fill_waste(Kg)": 84.785,
+                    "overflow_kg": 0
+                },
+                "11": {
+                    "fill_waste(Kg)": 45.76,
+                    "overflow_kg": 0
+                },
+                "12": {
+                    "fill_waste(Kg)": 43.935,
+                    "overflow_kg": 0
+                },
+                "13": {
+                    "fill_waste(Kg)": 59.855000000000004,
+                    "overflow_kg": 0
+                },
+                "14": {
+                    "fill_waste(Kg)": 67.935,
+                    "overflow_kg": 0
+                },
+                "15": {
+                    "fill_waste(Kg)": 64.8125,
+                    "overflow_kg": 0
+                },
+                "16": {
+                    "fill_waste(Kg)": 33.15,
+                    "overflow_kg": 0
+                },
+                "17": {
+                    "fill_waste(Kg)": 44.225,
+                    "overflow_kg": 0
+                },
+                "18": {
+                    "fill_waste(Kg)": 228.42,
+                    "overflow_kg": 0
+                },
+                "19": {
+                    "fill_waste(Kg)": 65.5125,
+                    "overflow_kg": 0
+                },
+                "20": {
+                    "fill_waste(Kg)": 40.43,
+                    "overflow_kg": 0
+                },
+                "21": {
+                    "fill_waste(Kg)": 236.12,
+                    "overflow_kg": 0
+                },
+                "22": {
+                    "fill_waste(Kg)": 252.24,
+                    "overflow_kg": 0
+                },
+                "23": {
+                    "fill_waste(Kg)": 54.415,
+                    "overflow_kg": 0
+                }
+            },
+            "2025-01-14": {
+                "0": {
+                    "fill_waste(Kg)": 144.97,
+                    "overflow_kg": 0
+                },
+                "1": {
+                    "fill_waste(Kg)": 172.63,
+                    "overflow_kg": 0
+                },
+                "2": {
+                    "fill_waste(Kg)": 84.6725,
+                    "overflow_kg": 0
+                },
+                "3": {
+                    "fill_waste(Kg)": 59.775,
+                    "overflow_kg": 0
+                },
+                "4": {
+                    "fill_waste(Kg)": 65.375,
+                    "overflow_kg": 0
+                },
+                "5": {
+                    "fill_waste(Kg)": 75.425,
+                    "overflow_kg": 0
+                },
+                "6": {
+                    "fill_waste(Kg)": 45.895,
+                    "overflow_kg": 0
+                },
+                "7": {
+                    "fill_waste(Kg)": 102.57000000000001,
+                    "overflow_kg": 0
+                },
+                "8": {
+                    "fill_waste(Kg)": 125.4775,
+                    "overflow_kg": 0
+                },
+                "9": {
+                    "fill_waste(Kg)": 77.4075,
+                    "overflow_kg": 0
+                },
+                "10": {
+                    "fill_waste(Kg)": 151.8925,
+                    "overflow_kg": 0
+                },
+                "11": {
+                    "fill_waste(Kg)": 134.7875,
+                    "overflow_kg": 0
+                },
+                "12": {
+                    "fill_waste(Kg)": 43.16,
+                    "overflow_kg": 0
+                },
+                "13": {
+                    "fill_waste(Kg)": 47.865,
+                    "overflow_kg": 0
+                },
+                "14": {
+                    "fill_waste(Kg)": 30.32,
+                    "overflow_kg": 0
+                },
+                "15": {
+                    "fill_waste(Kg)": 47.64,
+                    "overflow_kg": 0
+                },
+                "16": {
+                    "fill_waste(Kg)": 21.04,
+                    "overflow_kg": 0
+                },
+                "17": {
+                    "fill_waste(Kg)": 16.325,
+                    "overflow_kg": 0
+                },
+                "18": {
+                    "fill_waste(Kg)": 259.615,
+                    "overflow_kg": 0
+                },
+                "19": {
+                    "fill_waste(Kg)": 154.57500000000002,
+                    "overflow_kg": 0
+                },
+                "20": {
+                    "fill_waste(Kg)": 268.96000000000004,
+                    "overflow_kg": 0
+                },
+                "21": {
+                    "fill_waste(Kg)": 52.92,
+                    "overflow_kg": 0
+                },
+                "22": {
+                    "fill_waste(Kg)": 55.68,
+                    "overflow_kg": 0
+                },
+                "23": {
+                    "fill_waste(Kg)": 144.325,
+                    "overflow_kg": 0
+                }
+            },
+            "2025-01-15": {
+                "0": {
+                    "fill_waste(Kg)": 434.4925,
+                    "overflow_kg": 0
+                },
+                "1": {
+                    "fill_waste(Kg)": 186.965,
+                    "overflow_kg": 0
+                },
+                "2": {
+                    "fill_waste(Kg)": 61.83,
+                    "overflow_kg": 0
+                },
+                "4": {
+                    "fill_waste(Kg)": 145.395,
+                    "overflow_kg": 0
+                },
+                "5": {
+                    "fill_waste(Kg)": 112.185,
+                    "overflow_kg": 0
+                },
+                "6": {
+                    "fill_waste(Kg)": 123.69,
+                    "overflow_kg": 0
+                },
+                "7": {
+                    "fill_waste(Kg)": 118.77999999999999,
+                    "overflow_kg": 0
+                },
+                "8": {
+                    "fill_waste(Kg)": 49.622499999999995,
+                    "overflow_kg": 0
+                },
+                "9": {
+                    "fill_waste(Kg)": 104.2875,
+                    "overflow_kg": 0
+                },
+                "12": {
+                    "fill_waste(Kg)": 149.15,
+                    "overflow_kg": 0
+                },
+                "13": {
+                    "fill_waste(Kg)": 139.11249999999998,
+                    "overflow_kg": 0
+                },
+                "15": {
+                    "fill_waste(Kg)": 171.8075,
+                    "overflow_kg": 0
+                },
+                "16": {
+                    "fill_waste(Kg)": 96.5,
+                    "overflow_kg": 0
+                },
+                "17": {
+                    "fill_waste(Kg)": 131.4375,
+                    "overflow_kg": 0
+                },
+                "18": {
+                    "fill_waste(Kg)": 70.605,
+                    "overflow_kg": 0
+                },
+                "19": {
+                    "fill_waste(Kg)": 53.4825,
+                    "overflow_kg": 0
+                },
+                "21": {
+                    "fill_waste(Kg)": 24.57,
+                    "overflow_kg": 0
+                },
+                "22": {
+                    "fill_waste(Kg)": 147.3275,
+                    "overflow_kg": 0
+                },
+                "23": {
+                    "fill_waste(Kg)": 88.25,
+                    "overflow_kg": 0
+                }
+            },
+            "2025-01-16": {
+                "1": {
+                    "fill_waste(Kg)": 93.06,
+                    "overflow_kg": 0
+                },
+                "2": {
+                    "fill_waste(Kg)": 239.20499999999998,
+                    "overflow_kg": 0
+                },
+                "3": {
+                    "fill_waste(Kg)": 1.91,
+                    "overflow_kg": 0
+                },
+                "4": {
+                    "fill_waste(Kg)": 127.32,
+                    "overflow_kg": 0
+                },
+                "5": {
+                    "fill_waste(Kg)": 8.84,
+                    "overflow_kg": 0
+                },
+                "7": {
+                    "fill_waste(Kg)": 177.04500000000002,
+                    "overflow_kg": 0
+                },
+                "8": {
+                    "fill_waste(Kg)": 85.1925,
+                    "overflow_kg": 0
+                },
+                "9": {
+                    "fill_waste(Kg)": 119.72,
+                    "overflow_kg": 0
+                },
+                "10": {
+                    "fill_waste(Kg)": 109.43,
+                    "overflow_kg": 0
+                },
+                "11": {
+                    "fill_waste(Kg)": 21.5975,
+                    "overflow_kg": 0
+                },
+                "12": {
+                    "fill_waste(Kg)": 58.1475,
+                    "overflow_kg": 0
+                },
+                "13": {
+                    "fill_waste(Kg)": 204.5,
+                    "overflow_kg": 0
+                },
+                "15": {
+                    "fill_waste(Kg)": 293.6825,
+                    "overflow_kg": 0
+                },
+                "16": {
+                    "fill_waste(Kg)": 234.93,
+                    "overflow_kg": 0
+                },
+                "17": {
+                    "fill_waste(Kg)": 101.93999999999998,
+                    "overflow_kg": 0
+                },
+                "18": {
+                    "fill_waste(Kg)": 180.72249999999997,
+                    "overflow_kg": 0
+                },
+                "19": {
+                    "fill_waste(Kg)": 23.57,
+                    "overflow_kg": 0
+                },
+                "20": {
+                    "fill_waste(Kg)": 102.55499999999999,
+                    "overflow_kg": 0
+                },
+                "21": {
+                    "fill_waste(Kg)": 182.785,
+                    "overflow_kg": 0
+                },
+                "22": {
+                    "fill_waste(Kg)": 199.055,
+                    "overflow_kg": 0
+                },
+                "23": {
+                    "fill_waste(Kg)": 227.18,
+                    "overflow_kg": 0
+                }
+            },
+            "2025-01-20": {
+                "0": {
+                    "fill_waste(Kg)": 175.73499999999999,
+                    "overflow_kg": 0
+                },
+                "1": {
+                    "fill_waste(Kg)": 30.99,
+                    "overflow_kg": 0
+                },
+                "2": {
+                    "fill_waste(Kg)": 170.19,
+                    "overflow_kg": 0
+                },
+                "3": {
+                    "fill_waste(Kg)": 164.435,
+                    "overflow_kg": 0
+                },
+                "4": {
+                    "fill_waste(Kg)": 1.26,
+                    "overflow_kg": 0
+                },
+                "5": {
+                    "fill_waste(Kg)": 110.77,
+                    "overflow_kg": 0
+                },
+                "6": {
+                    "fill_waste(Kg)": 222.195,
+                    "overflow_kg": 0
+                },
+                "7": {
+                    "fill_waste(Kg)": 14.629999999999999,
+                    "overflow_kg": 0
+                },
+                "8": {
+                    "fill_waste(Kg)": 77.46000000000001,
+                    "overflow_kg": 0
+                },
+                "9": {
+                    "fill_waste(Kg)": 99.735,
+                    "overflow_kg": 0
+                },
+                "10": {
+                    "fill_waste(Kg)": 9.525,
+                    "overflow_kg": 0
+                },
+                "11": {
+                    "fill_waste(Kg)": 69.4125,
+                    "overflow_kg": 0
+                },
+                "12": {
+                    "fill_waste(Kg)": 87.07749999999999,
+                    "overflow_kg": 0
+                },
+                "13": {
+                    "fill_waste(Kg)": 50.84,
+                    "overflow_kg": 0
+                },
+                "14": {
+                    "fill_waste(Kg)": 178.4125,
+                    "overflow_kg": 0
+                },
+                "15": {
+                    "fill_waste(Kg)": 152.4,
+                    "overflow_kg": 0
+                },
+                "18": {
+                    "fill_waste(Kg)": 187.32,
+                    "overflow_kg": 0
+                },
+                "19": {
+                    "fill_waste(Kg)": 72.1625,
+                    "overflow_kg": 0
+                },
+                "20": {
+                    "fill_waste(Kg)": 55.36,
+                    "overflow_kg": 0
+                },
+                "21": {
+                    "fill_waste(Kg)": 74.2475,
+                    "overflow_kg": 0
+                },
+                "22": {
+                    "fill_waste(Kg)": 25.1775,
+                    "overflow_kg": 0
+                }
+            },
+            "2025-01-21": {
+                "0": {
+                    "fill_waste(Kg)": 86.465,
+                    "overflow_kg": 0
+                },
+                "1": {
+                    "fill_waste(Kg)": 123.24,
+                    "overflow_kg": 0
+                },
+                "3": {
+                    "fill_waste(Kg)": 60.275,
+                    "overflow_kg": 0
+                },
+                "4": {
+                    "fill_waste(Kg)": 42.4125,
+                    "overflow_kg": 0
+                },
+                "5": {
+                    "fill_waste(Kg)": 35.515,
+                    "overflow_kg": 0
+                },
+                "6": {
+                    "fill_waste(Kg)": 25.695,
+                    "overflow_kg": 0
+                },
+                "7": {
+                    "fill_waste(Kg)": 5.99,
+                    "overflow_kg": 0
+                },
+                "8": {
+                    "fill_waste(Kg)": 81.67,
+                    "overflow_kg": 0
+                },
+                "9": {
+                    "fill_waste(Kg)": 95.69,
+                    "overflow_kg": 0
+                },
+                "10": {
+                    "fill_waste(Kg)": 115.605,
+                    "overflow_kg": 0
+                },
+                "12": {
+                    "fill_waste(Kg)": 204.01999999999998,
+                    "overflow_kg": 0
+                },
+                "13": {
+                    "fill_waste(Kg)": 47.9475,
+                    "overflow_kg": 0
+                },
+                "14": {
+                    "fill_waste(Kg)": 74.93,
+                    "overflow_kg": 0
+                },
+                "15": {
+                    "fill_waste(Kg)": 154.94,
+                    "overflow_kg": 0
+                },
+                "16": {
+                    "fill_waste(Kg)": 76.1275,
+                    "overflow_kg": 0
+                },
+                "17": {
+                    "fill_waste(Kg)": 291.40999999999997,
+                    "overflow_kg": 0
+                },
+                "18": {
+                    "fill_waste(Kg)": 198.95,
+                    "overflow_kg": 0
+                },
+                "19": {
+                    "fill_waste(Kg)": 123.39,
+                    "overflow_kg": 0
+                },
+                "20": {
+                    "fill_waste(Kg)": 98.0075,
+                    "overflow_kg": 0
+                },
+                "21": {
+                    "fill_waste(Kg)": 182.92000000000002,
+                    "overflow_kg": 0
+                },
+                "22": {
+                    "fill_waste(Kg)": 97.46,
+                    "overflow_kg": 0
+                },
+                "23": {
+                    "fill_waste(Kg)": 117.32999999999998,
+                    "overflow_kg": 0
+                }
+            },
+            "2025-01-22": {
+                "0": {
+                    "fill_waste(Kg)": 210.42000000000002,
+                    "overflow_kg": 0
+                },
+                "1": {
+                    "fill_waste(Kg)": 206.905,
+                    "overflow_kg": 0
+                },
+                "2": {
+                    "fill_waste(Kg)": 198.60999999999999,
+                    "overflow_kg": 0
+                },
+                "3": {
+                    "fill_waste(Kg)": 31.767500000000002,
+                    "overflow_kg": 0
+                },
+                "4": {
+                    "fill_waste(Kg)": 69.44,
+                    "overflow_kg": 0
+                },
+                "5": {
+                    "fill_waste(Kg)": 44.957499999999996,
+                    "overflow_kg": 0
+                },
+                "6": {
+                    "fill_waste(Kg)": 36.405,
+                    "overflow_kg": 0
+                },
+                "7": {
+                    "fill_waste(Kg)": 114.4725,
+                    "overflow_kg": 0
+                },
+                "8": {
+                    "fill_waste(Kg)": 92.75999999999999,
+                    "overflow_kg": 0
+                },
+                "9": {
+                    "fill_waste(Kg)": 123.83999999999999,
+                    "overflow_kg": 0
+                },
+                "10": {
+                    "fill_waste(Kg)": 90.2625,
+                    "overflow_kg": 0
+                },
+                "11": {
+                    "fill_waste(Kg)": 104.97,
+                    "overflow_kg": 0
+                },
+                "12": {
+                    "fill_waste(Kg)": 61.2,
+                    "overflow_kg": 0
+                },
+                "13": {
+                    "fill_waste(Kg)": 60.115,
+                    "overflow_kg": 0
+                },
+                "14": {
+                    "fill_waste(Kg)": 205.1375,
+                    "overflow_kg": 0
+                },
+                "15": {
+                    "fill_waste(Kg)": 83.47,
+                    "overflow_kg": 0
+                },
+                "16": {
+                    "fill_waste(Kg)": 113.675,
+                    "overflow_kg": 0
+                },
+                "17": {
+                    "fill_waste(Kg)": 95.965,
+                    "overflow_kg": 0
+                },
+                "18": {
+                    "fill_waste(Kg)": 99.60499999999999,
+                    "overflow_kg": 0
+                },
+                "19": {
+                    "fill_waste(Kg)": 76.715,
+                    "overflow_kg": 0
+                },
+                "20": {
+                    "fill_waste(Kg)": 180.06750000000002,
+                    "overflow_kg": 0
+                },
+                "21": {
+                    "fill_waste(Kg)": 86.84,
+                    "overflow_kg": 0
+                },
+                "22": {
+                    "fill_waste(Kg)": 261.77,
+                    "overflow_kg": 0
+                },
+                "23": {
+                    "fill_waste(Kg)": 135.3,
+                    "overflow_kg": 0
+                }
+            },
+            "2025-01-23": {
+                "0": {
+                    "fill_waste(Kg)": 153.7225,
+                    "overflow_kg": 0
+                },
+                "1": {
+                    "fill_waste(Kg)": 57.07,
+                    "overflow_kg": 0
+                },
+                "3": {
+                    "fill_waste(Kg)": 136.175,
+                    "overflow_kg": 0
+                },
+                "4": {
+                    "fill_waste(Kg)": 170.08500000000004,
+                    "overflow_kg": 0
+                },
+                "5": {
+                    "fill_waste(Kg)": 199.00000000000003,
+                    "overflow_kg": 0
+                },
+                "6": {
+                    "fill_waste(Kg)": 90.92999999999999,
+                    "overflow_kg": 0
+                },
+                "7": {
+                    "fill_waste(Kg)": 51.3375,
+                    "overflow_kg": 0
+                },
+                "8": {
+                    "fill_waste(Kg)": 35.605,
+                    "overflow_kg": 0
+                },
+                "9": {
+                    "fill_waste(Kg)": 78.33,
+                    "overflow_kg": 0
+                },
+                "10": {
+                    "fill_waste(Kg)": 42.54,
+                    "overflow_kg": 0
+                },
+                "11": {
+                    "fill_waste(Kg)": 102.6425,
+                    "overflow_kg": 0
+                },
+                "12": {
+                    "fill_waste(Kg)": 11.82,
+                    "overflow_kg": 0
+                },
+                "13": {
+                    "fill_waste(Kg)": 61.652499999999996,
+                    "overflow_kg": 0
+                },
+                "14": {
+                    "fill_waste(Kg)": 131.475,
+                    "overflow_kg": 0
+                },
+                "15": {
+                    "fill_waste(Kg)": 151.81,
+                    "overflow_kg": 0
+                },
+                "16": {
+                    "fill_waste(Kg)": 136.105,
+                    "overflow_kg": 0
+                },
+                "17": {
+                    "fill_waste(Kg)": 127.98,
+                    "overflow_kg": 0
+                },
+                "19": {
+                    "fill_waste(Kg)": 48.84,
+                    "overflow_kg": 0
+                },
+                "20": {
+                    "fill_waste(Kg)": 131.9125,
+                    "overflow_kg": 0
+                },
+                "22": {
+                    "fill_waste(Kg)": 140.445,
+                    "overflow_kg": 0
+                },
+                "23": {
+                    "fill_waste(Kg)": 196.875,
+                    "overflow_kg": 0
+                }
+            },
+            "2025-01-27": {
+                "0": {
+                    "fill_waste(Kg)": 430.36750000000006,
+                    "overflow_kg": 0
+                },
+                "1": {
+                    "fill_waste(Kg)": 30.49,
+                    "overflow_kg": 0
+                },
+                "2": {
+                    "fill_waste(Kg)": 145.175,
+                    "overflow_kg": 0
+                },
+                "4": {
+                    "fill_waste(Kg)": 65.4675,
+                    "overflow_kg": 0
+                },
+                "5": {
+                    "fill_waste(Kg)": 106.055,
+                    "overflow_kg": 0
+                },
+                "6": {
+                    "fill_waste(Kg)": 107.73,
+                    "overflow_kg": 0
+                },
+                "7": {
+                    "fill_waste(Kg)": 131.28,
+                    "overflow_kg": 0
+                },
+                "8": {
+                    "fill_waste(Kg)": 115.095,
+                    "overflow_kg": 0
+                },
+                "9": {
+                    "fill_waste(Kg)": 273.7575,
+                    "overflow_kg": 0
+                },
+                "10": {
+                    "fill_waste(Kg)": 148.76500000000001,
+                    "overflow_kg": 0
+                },
+                "11": {
+                    "fill_waste(Kg)": 71.03,
+                    "overflow_kg": 0
+                },
+                "12": {
+                    "fill_waste(Kg)": 13.747499999999997,
+                    "overflow_kg": 0
+                },
+                "13": {
+                    "fill_waste(Kg)": 250.95749999999998,
+                    "overflow_kg": 0
+                },
+                "14": {
+                    "fill_waste(Kg)": 155.03,
+                    "overflow_kg": 0
+                },
+                "15": {
+                    "fill_waste(Kg)": 167.01,
+                    "overflow_kg": 0
+                },
+                "16": {
+                    "fill_waste(Kg)": 80.7,
+                    "overflow_kg": 0
+                },
+                "17": {
+                    "fill_waste(Kg)": 105.32,
+                    "overflow_kg": 0
+                },
+                "18": {
+                    "fill_waste(Kg)": 101.25,
+                    "overflow_kg": 0
+                },
+                "19": {
+                    "fill_waste(Kg)": 201.89749999999998,
+                    "overflow_kg": 0
+                },
+                "20": {
+                    "fill_waste(Kg)": 21.165,
+                    "overflow_kg": 0
+                },
+                "21": {
+                    "fill_waste(Kg)": 374.185,
+                    "overflow_kg": 0
+                },
+                "22": {
+                    "fill_waste(Kg)": 254.24749999999997,
+                    "overflow_kg": 0
+                },
+                "23": {
+                    "fill_waste(Kg)": 163.9525,
+                    "overflow_kg": 0
+                }
+            },
+            "2025-01-28": {
+                "0": {
+                    "fill_waste(Kg)": 175.425,
+                    "overflow_kg": 0
+                },
+                "1": {
+                    "fill_waste(Kg)": 218.095,
+                    "overflow_kg": 0
+                },
+                "2": {
+                    "fill_waste(Kg)": 50.0,
+                    "overflow_kg": 0
+                },
+                "3": {
+                    "fill_waste(Kg)": 57.83,
+                    "overflow_kg": 0
+                },
+                "4": {
+                    "fill_waste(Kg)": 135.80499999999998,
+                    "overflow_kg": 0
+                },
+                "5": {
+                    "fill_waste(Kg)": 35.325,
+                    "overflow_kg": 0
+                },
+                "6": {
+                    "fill_waste(Kg)": 67.795,
+                    "overflow_kg": 0
+                },
+                "7": {
+                    "fill_waste(Kg)": 14.175,
+                    "overflow_kg": 0
+                },
+                "8": {
+                    "fill_waste(Kg)": 142.31499999999997,
+                    "overflow_kg": 0
+                },
+                "9": {
+                    "fill_waste(Kg)": 120.875,
+                    "overflow_kg": 0
+                },
+                "10": {
+                    "fill_waste(Kg)": 101.385,
+                    "overflow_kg": 0
+                },
+                "11": {
+                    "fill_waste(Kg)": 133.675,
+                    "overflow_kg": 0
+                },
+                "12": {
+                    "fill_waste(Kg)": 303.515,
+                    "overflow_kg": 0
+                },
+                "13": {
+                    "fill_waste(Kg)": 13.07,
+                    "overflow_kg": 0
+                },
+                "14": {
+                    "fill_waste(Kg)": 46.9575,
+                    "overflow_kg": 0
+                },
+                "15": {
+                    "fill_waste(Kg)": 47.895,
+                    "overflow_kg": 0
+                },
+                "16": {
+                    "fill_waste(Kg)": 241.61999999999998,
+                    "overflow_kg": 0
+                },
+                "17": {
+                    "fill_waste(Kg)": 101.53999999999999,
+                    "overflow_kg": 0
+                },
+                "18": {
+                    "fill_waste(Kg)": 129.455,
+                    "overflow_kg": 0
+                },
+                "19": {
+                    "fill_waste(Kg)": 76.68,
+                    "overflow_kg": 0
+                },
+                "20": {
+                    "fill_waste(Kg)": 25.2075,
+                    "overflow_kg": 0
+                },
+                "22": {
+                    "fill_waste(Kg)": 193.115,
+                    "overflow_kg": 0
+                },
+                "23": {
+                    "fill_waste(Kg)": 52.76,
+                    "overflow_kg": 0
+                }
+            },
+            "2025-01-29": {
+                "0": {
+                    "fill_waste(Kg)": 154.52,
+                    "overflow_kg": 0
+                },
+                "1": {
+                    "fill_waste(Kg)": 173.375,
+                    "overflow_kg": 0
+                },
+                "2": {
+                    "fill_waste(Kg)": 294.58,
+                    "overflow_kg": 0
+                },
+                "3": {
+                    "fill_waste(Kg)": 32.402499999999996,
+                    "overflow_kg": 0
+                },
+                "4": {
+                    "fill_waste(Kg)": 69.005,
+                    "overflow_kg": 0
+                },
+                "5": {
+                    "fill_waste(Kg)": 9.805,
+                    "overflow_kg": 0
+                },
+                "6": {
+                    "fill_waste(Kg)": 37.37,
+                    "overflow_kg": 0
+                },
+                "7": {
+                    "fill_waste(Kg)": 24.0675,
+                    "overflow_kg": 0
+                },
+                "8": {
+                    "fill_waste(Kg)": 177.28750000000002,
+                    "overflow_kg": 0
+                },
+                "9": {
+                    "fill_waste(Kg)": 10.5375,
+                    "overflow_kg": 0
+                },
+                "10": {
+                    "fill_waste(Kg)": 51.345,
+                    "overflow_kg": 0
+                },
+                "11": {
+                    "fill_waste(Kg)": 126.63,
+                    "overflow_kg": 0
+                },
+                "12": {
+                    "fill_waste(Kg)": 12.795,
+                    "overflow_kg": 0
+                },
+                "13": {
+                    "fill_waste(Kg)": 15.355,
+                    "overflow_kg": 0
+                },
+                "14": {
+                    "fill_waste(Kg)": 34.30500000000001,
+                    "overflow_kg": 0
+                },
+                "15": {
+                    "fill_waste(Kg)": 19.455,
+                    "overflow_kg": 0
+                },
+                "16": {
+                    "fill_waste(Kg)": 85.955,
+                    "overflow_kg": 0
+                },
+                "18": {
+                    "fill_waste(Kg)": 54.9,
+                    "overflow_kg": 0
+                },
+                "19": {
+                    "fill_waste(Kg)": 96.7425,
+                    "overflow_kg": 0
+                },
+                "21": {
+                    "fill_waste(Kg)": 78.59,
+                    "overflow_kg": 0
+                },
+                "22": {
+                    "fill_waste(Kg)": 56.81,
+                    "overflow_kg": 0
+                },
+                "23": {
+                    "fill_waste(Kg)": 78.715,
+                    "overflow_kg": 0
+                }
+            },
+            "2025-01-30": {
+                "0": {
+                    "fill_waste(Kg)": 86.88,
+                    "overflow_kg": 0
+                },
+                "1": {
+                    "fill_waste(Kg)": 171.795,
+                    "overflow_kg": 0
+                },
+                "2": {
+                    "fill_waste(Kg)": 92.1,
+                    "overflow_kg": 0
+                },
+                "3": {
+                    "fill_waste(Kg)": 69.86000000000001,
+                    "overflow_kg": 0
+                },
+                "4": {
+                    "fill_waste(Kg)": 161.64499999999998,
+                    "overflow_kg": 0
+                },
+                "5": {
+                    "fill_waste(Kg)": 97.92,
+                    "overflow_kg": 0
+                },
+                "6": {
+                    "fill_waste(Kg)": 46.575,
+                    "overflow_kg": 0
+                },
+                "7": {
+                    "fill_waste(Kg)": 73.63499999999999,
+                    "overflow_kg": 0
+                },
+                "8": {
+                    "fill_waste(Kg)": 208.25,
+                    "overflow_kg": 0
+                },
+                "9": {
+                    "fill_waste(Kg)": 117.77,
+                    "overflow_kg": 0
+                },
+                "10": {
+                    "fill_waste(Kg)": 108.47999999999999,
+                    "overflow_kg": 0
+                },
+                "11": {
+                    "fill_waste(Kg)": 88.4025,
+                    "overflow_kg": 0
+                },
+                "12": {
+                    "fill_waste(Kg)": 52.915000000000006,
+                    "overflow_kg": 0
+                },
+                "13": {
+                    "fill_waste(Kg)": 76.8,
+                    "overflow_kg": 0
+                },
+                "14": {
+                    "fill_waste(Kg)": 119.9925,
+                    "overflow_kg": 0
+                },
+                "15": {
+                    "fill_waste(Kg)": 119.18,
+                    "overflow_kg": 0
+                },
+                "16": {
+                    "fill_waste(Kg)": 199.73999999999998,
+                    "overflow_kg": 0
+                },
+                "17": {
+                    "fill_waste(Kg)": 194.925,
+                    "overflow_kg": 0
+                },
+                "18": {
+                    "fill_waste(Kg)": 302.8375,
+                    "overflow_kg": 0
+                },
+                "19": {
+                    "fill_waste(Kg)": 63.620000000000005,
+                    "overflow_kg": 0
+                },
+                "20": {
+                    "fill_waste(Kg)": 96.6,
+                    "overflow_kg": 0
+                },
+                "21": {
+                    "fill_waste(Kg)": 19.085,
+                    "overflow_kg": 0
+                },
+                "22": {
+                    "fill_waste(Kg)": 88.6,
+                    "overflow_kg": 0
+                }
+            },
+            "2025-02-03": {
+                "0": {
+                    "fill_waste(Kg)": 29.43,
+                    "overflow_kg": 0
+                },
+                "2": {
+                    "fill_waste(Kg)": 130.19,
+                    "overflow_kg": 0
+                },
+                "3": {
+                    "fill_waste(Kg)": 97.85999999999999,
+                    "overflow_kg": 0
+                },
+                "4": {
+                    "fill_waste(Kg)": 110.215,
+                    "overflow_kg": 0
+                },
+                "5": {
+                    "fill_waste(Kg)": 4.41,
+                    "overflow_kg": 0
+                },
+                "6": {
+                    "fill_waste(Kg)": 40.845,
+                    "overflow_kg": 0
+                },
+                "7": {
+                    "fill_waste(Kg)": 138.70999999999998,
+                    "overflow_kg": 0
+                },
+                "8": {
+                    "fill_waste(Kg)": 124.91250000000002,
+                    "overflow_kg": 0
+                },
+                "9": {
+                    "fill_waste(Kg)": 145.0475,
+                    "overflow_kg": 0
+                },
+                "10": {
+                    "fill_waste(Kg)": 83.53,
+                    "overflow_kg": 0
+                },
+                "11": {
+                    "fill_waste(Kg)": 8.77,
+                    "overflow_kg": 0
+                },
+                "15": {
+                    "fill_waste(Kg)": 146.215,
+                    "overflow_kg": 0
+                },
+                "16": {
+                    "fill_waste(Kg)": 51.81,
+                    "overflow_kg": 0
+                },
+                "17": {
+                    "fill_waste(Kg)": 174.0025,
+                    "overflow_kg": 0
+                },
+                "18": {
+                    "fill_waste(Kg)": 16.95,
+                    "overflow_kg": 0
+                },
+                "19": {
+                    "fill_waste(Kg)": 103.28750000000001,
+                    "overflow_kg": 0
+                },
+                "20": {
+                    "fill_waste(Kg)": 74.855,
+                    "overflow_kg": 0
+                },
+                "21": {
+                    "fill_waste(Kg)": 107.02,
+                    "overflow_kg": 0
+                },
+                "22": {
+                    "fill_waste(Kg)": 145.8775,
+                    "overflow_kg": 0
+                },
+                "23": {
+                    "fill_waste(Kg)": 84.91749999999999,
+                    "overflow_kg": 0
+                }
+            },
+            "2025-02-04": {
+                "0": {
+                    "fill_waste(Kg)": 176.91,
+                    "overflow_kg": 0
+                },
+                "1": {
+                    "fill_waste(Kg)": 150.08499999999998,
+                    "overflow_kg": 0
+                },
+                "2": {
+                    "fill_waste(Kg)": 30.85,
+                    "overflow_kg": 0
+                },
+                "3": {
+                    "fill_waste(Kg)": 180.3775,
+                    "overflow_kg": 0
+                },
+                "4": {
+                    "fill_waste(Kg)": 134.06,
+                    "overflow_kg": 0
+                },
+                "6": {
+                    "fill_waste(Kg)": 117.785,
+                    "overflow_kg": 0
+                },
+                "7": {
+                    "fill_waste(Kg)": 214.43,
+                    "overflow_kg": 0
+                },
+                "8": {
+                    "fill_waste(Kg)": 40.855,
+                    "overflow_kg": 0
+                },
+                "9": {
+                    "fill_waste(Kg)": 190.035,
+                    "overflow_kg": 0
+                },
+                "11": {
+                    "fill_waste(Kg)": 69.45,
+                    "overflow_kg": 0
+                },
+                "12": {
+                    "fill_waste(Kg)": 38.29,
+                    "overflow_kg": 0
+                },
+                "13": {
+                    "fill_waste(Kg)": 196.875,
+                    "overflow_kg": 0
+                },
+                "14": {
+                    "fill_waste(Kg)": 15.1125,
+                    "overflow_kg": 0
+                },
+                "15": {
+                    "fill_waste(Kg)": 112.84,
+                    "overflow_kg": 0
+                },
+                "16": {
+                    "fill_waste(Kg)": 178.10500000000002,
+                    "overflow_kg": 0
+                },
+                "17": {
+                    "fill_waste(Kg)": 67.7875,
+                    "overflow_kg": 0
+                },
+                "19": {
+                    "fill_waste(Kg)": 98.405,
+                    "overflow_kg": 0
+                },
+                "20": {
+                    "fill_waste(Kg)": 109.39,
+                    "overflow_kg": 0
+                },
+                "21": {
+                    "fill_waste(Kg)": 26.045,
+                    "overflow_kg": 0
+                },
+                "22": {
+                    "fill_waste(Kg)": 112.5,
+                    "overflow_kg": 0
+                },
+                "23": {
+                    "fill_waste(Kg)": 172.1475,
+                    "overflow_kg": 0
+                }
+            },
+            "2025-02-05": {
+                "0": {
+                    "fill_waste(Kg)": 147.575,
+                    "overflow_kg": 0
+                },
+                "1": {
+                    "fill_waste(Kg)": 122.64,
+                    "overflow_kg": 0
+                },
+                "2": {
+                    "fill_waste(Kg)": 422.07000000000005,
+                    "overflow_kg": 0
+                },
+                "3": {
+                    "fill_waste(Kg)": 61.629999999999995,
+                    "overflow_kg": 0
+                },
+                "4": {
+                    "fill_waste(Kg)": 2.51,
+                    "overflow_kg": 0
+                },
+                "5": {
+                    "fill_waste(Kg)": 111.1675,
+                    "overflow_kg": 0
+                },
+                "6": {
+                    "fill_waste(Kg)": 110.175,
+                    "overflow_kg": 0
+                },
+                "7": {
+                    "fill_waste(Kg)": 76.3925,
+                    "overflow_kg": 0
+                },
+                "8": {
+                    "fill_waste(Kg)": 181.84499999999997,
+                    "overflow_kg": 0
+                },
+                "9": {
+                    "fill_waste(Kg)": 120.7325,
+                    "overflow_kg": 0
+                },
+                "10": {
+                    "fill_waste(Kg)": 176.9,
+                    "overflow_kg": 0
+                },
+                "11": {
+                    "fill_waste(Kg)": 111.62,
+                    "overflow_kg": 0
+                },
+                "14": {
+                    "fill_waste(Kg)": 26.835,
+                    "overflow_kg": 0
+                },
+                "15": {
+                    "fill_waste(Kg)": 99.97999999999999,
+                    "overflow_kg": 0
+                },
+                "16": {
+                    "fill_waste(Kg)": 146.26500000000001,
+                    "overflow_kg": 0
+                },
+                "17": {
+                    "fill_waste(Kg)": 344.375,
+                    "overflow_kg": 0
+                },
+                "18": {
+                    "fill_waste(Kg)": 16.88,
+                    "overflow_kg": 0
+                },
+                "19": {
+                    "fill_waste(Kg)": 119.925,
+                    "overflow_kg": 0
+                },
+                "20": {
+                    "fill_waste(Kg)": 76.3375,
+                    "overflow_kg": 0
+                },
+                "22": {
+                    "fill_waste(Kg)": 121.53,
+                    "overflow_kg": 0
+                },
+                "23": {
+                    "fill_waste(Kg)": 123.94,
+                    "overflow_kg": 0
+                }
+            },
+            "2025-02-06": {
+                "0": {
+                    "fill_waste(Kg)": 54.03,
+                    "overflow_kg": 0
+                },
+                "1": {
+                    "fill_waste(Kg)": 271.835,
+                    "overflow_kg": 0
+                },
+                "2": {
+                    "fill_waste(Kg)": 97.88250000000001,
+                    "overflow_kg": 0
+                },
+                "3": {
+                    "fill_waste(Kg)": 72.66,
+                    "overflow_kg": 0
+                },
+                "4": {
+                    "fill_waste(Kg)": 70.08500000000001,
+                    "overflow_kg": 0
+                },
+                "5": {
+                    "fill_waste(Kg)": 35.07,
+                    "overflow_kg": 0
+                },
+                "6": {
+                    "fill_waste(Kg)": 48.7,
+                    "overflow_kg": 0
+                },
+                "7": {
+                    "fill_waste(Kg)": 50.527499999999996,
+                    "overflow_kg": 0
+                },
+                "8": {
+                    "fill_waste(Kg)": 14.695,
+                    "overflow_kg": 0
+                },
+                "10": {
+                    "fill_waste(Kg)": 12.775,
+                    "overflow_kg": 0
+                },
+                "11": {
+                    "fill_waste(Kg)": 60.025,
+                    "overflow_kg": 0
+                },
+                "12": {
+                    "fill_waste(Kg)": 51.85,
+                    "overflow_kg": 0
+                },
+                "13": {
+                    "fill_waste(Kg)": 73.035,
+                    "overflow_kg": 0
+                },
+                "14": {
+                    "fill_waste(Kg)": 177.8325,
+                    "overflow_kg": 0
+                },
+                "15": {
+                    "fill_waste(Kg)": 80.765,
+                    "overflow_kg": 0
+                },
+                "16": {
+                    "fill_waste(Kg)": 74.655,
+                    "overflow_kg": 0
+                },
+                "17": {
+                    "fill_waste(Kg)": 47.325,
+                    "overflow_kg": 0
+                },
+                "18": {
+                    "fill_waste(Kg)": 50.5,
+                    "overflow_kg": 0
+                },
+                "19": {
+                    "fill_waste(Kg)": 245.8625,
+                    "overflow_kg": 0
+                },
+                "20": {
+                    "fill_waste(Kg)": 128.01,
+                    "overflow_kg": 0
+                },
+                "21": {
+                    "fill_waste(Kg)": 67.49,
+                    "overflow_kg": 0
+                },
+                "22": {
+                    "fill_waste(Kg)": 151.82999999999998,
+                    "overflow_kg": 0
+                }
+            },
+            "2025-02-10": {
+                "1": {
+                    "fill_waste(Kg)": 279.995,
+                    "overflow_kg": 0
+                },
+                "2": {
+                    "fill_waste(Kg)": 49.695,
+                    "overflow_kg": 0
+                },
+                "3": {
+                    "fill_waste(Kg)": 32.7025,
+                    "overflow_kg": 0
+                },
+                "4": {
+                    "fill_waste(Kg)": 138.96,
+                    "overflow_kg": 0
+                },
+                "5": {
+                    "fill_waste(Kg)": 30.1875,
+                    "overflow_kg": 0
+                },
+                "6": {
+                    "fill_waste(Kg)": 89.8,
+                    "overflow_kg": 0
+                },
+                "8": {
+                    "fill_waste(Kg)": 21.8275,
+                    "overflow_kg": 0
+                },
+                "9": {
+                    "fill_waste(Kg)": 175.235,
+                    "overflow_kg": 0
+                },
+                "10": {
+                    "fill_waste(Kg)": 134.5775,
+                    "overflow_kg": 0
+                },
+                "11": {
+                    "fill_waste(Kg)": 20.685000000000002,
+                    "overflow_kg": 0
+                },
+                "12": {
+                    "fill_waste(Kg)": 64.965,
+                    "overflow_kg": 0
+                },
+                "14": {
+                    "fill_waste(Kg)": 76.08749999999999,
+                    "overflow_kg": 0
+                },
+                "15": {
+                    "fill_waste(Kg)": 112.77499999999999,
+                    "overflow_kg": 0
+                },
+                "16": {
+                    "fill_waste(Kg)": 64.1975,
+                    "overflow_kg": 0
+                },
+                "18": {
+                    "fill_waste(Kg)": 107.2575,
+                    "overflow_kg": 0
+                },
+                "19": {
+                    "fill_waste(Kg)": 164.29500000000002,
+                    "overflow_kg": 0
+                },
+                "20": {
+                    "fill_waste(Kg)": 24.630000000000006,
+                    "overflow_kg": 0
+                },
+                "21": {
+                    "fill_waste(Kg)": 264.155,
+                    "overflow_kg": 0
+                },
+                "22": {
+                    "fill_waste(Kg)": 21.2925,
+                    "overflow_kg": 0
+                },
+                "23": {
+                    "fill_waste(Kg)": 174.195,
+                    "overflow_kg": 0
+                }
+            },
+            "2025-02-11": {
+                "0": {
+                    "fill_waste(Kg)": 202.2575,
+                    "overflow_kg": 0
+                },
+                "1": {
+                    "fill_waste(Kg)": 294.755,
+                    "overflow_kg": 0
+                },
+                "2": {
+                    "fill_waste(Kg)": 26.635,
+                    "overflow_kg": 0
+                },
+                "3": {
+                    "fill_waste(Kg)": 5.2,
+                    "overflow_kg": 0
+                },
+                "4": {
+                    "fill_waste(Kg)": 132.23,
+                    "overflow_kg": 0
+                },
+                "5": {
+                    "fill_waste(Kg)": 57.96,
+                    "overflow_kg": 0
+                },
+                "6": {
+                    "fill_waste(Kg)": 138.895,
+                    "overflow_kg": 0
+                },
+                "7": {
+                    "fill_waste(Kg)": 224.1225,
+                    "overflow_kg": 0
+                },
+                "8": {
+                    "fill_waste(Kg)": 147.595,
+                    "overflow_kg": 0
+                },
+                "9": {
+                    "fill_waste(Kg)": 111.9125,
+                    "overflow_kg": 0
+                },
+                "11": {
+                    "fill_waste(Kg)": 151.51,
+                    "overflow_kg": 0
+                },
+                "12": {
+                    "fill_waste(Kg)": 15.08,
+                    "overflow_kg": 0
+                },
+                "13": {
+                    "fill_waste(Kg)": 112.96,
+                    "overflow_kg": 0
+                },
+                "14": {
+                    "fill_waste(Kg)": 116.705,
+                    "overflow_kg": 0
+                },
+                "15": {
+                    "fill_waste(Kg)": 37.435,
+                    "overflow_kg": 0
+                },
+                "16": {
+                    "fill_waste(Kg)": 47.205,
+                    "overflow_kg": 0
+                },
+                "17": {
+                    "fill_waste(Kg)": 155.76,
+                    "overflow_kg": 0
+                },
+                "20": {
+                    "fill_waste(Kg)": 73.785,
+                    "overflow_kg": 0
+                },
+                "22": {
+                    "fill_waste(Kg)": 303.9225,
+                    "overflow_kg": 0
+                }
+            },
+            "2025-02-12": {
+                "0": {
+                    "fill_waste(Kg)": 450,
+                    "overflow_kg": 67.99000000000001
+                },
+                "1": {
+                    "fill_waste(Kg)": 116.91,
+                    "overflow_kg": 0
+                },
+                "2": {
+                    "fill_waste(Kg)": 33.0675,
+                    "overflow_kg": 0
+                },
+                "3": {
+                    "fill_waste(Kg)": 125.99,
+                    "overflow_kg": 0
+                },
+                "4": {
+                    "fill_waste(Kg)": 66.66499999999999,
+                    "overflow_kg": 0
+                },
+                "5": {
+                    "fill_waste(Kg)": 76.145,
+                    "overflow_kg": 0
+                },
+                "6": {
+                    "fill_waste(Kg)": 99.57249999999999,
+                    "overflow_kg": 0
+                },
+                "8": {
+                    "fill_waste(Kg)": 9.75,
+                    "overflow_kg": 0
+                },
+                "9": {
+                    "fill_waste(Kg)": 115.81,
+                    "overflow_kg": 0
+                },
+                "10": {
+                    "fill_waste(Kg)": 45.3375,
+                    "overflow_kg": 0
+                },
+                "11": {
+                    "fill_waste(Kg)": 185.595,
+                    "overflow_kg": 0
+                },
+                "12": {
+                    "fill_waste(Kg)": 47.09,
+                    "overflow_kg": 0
+                },
+                "13": {
+                    "fill_waste(Kg)": 114.08749999999999,
+                    "overflow_kg": 0
+                },
+                "14": {
+                    "fill_waste(Kg)": 17.41,
+                    "overflow_kg": 0
+                },
+                "15": {
+                    "fill_waste(Kg)": 50.3775,
+                    "overflow_kg": 0
+                },
+                "16": {
+                    "fill_waste(Kg)": 151.6525,
+                    "overflow_kg": 0
+                },
+                "17": {
+                    "fill_waste(Kg)": 19.4775,
+                    "overflow_kg": 0
+                },
+                "18": {
+                    "fill_waste(Kg)": 121.00999999999999,
+                    "overflow_kg": 0
+                },
+                "19": {
+                    "fill_waste(Kg)": 23.805,
+                    "overflow_kg": 0
+                },
+                "20": {
+                    "fill_waste(Kg)": 45.81,
+                    "overflow_kg": 0
+                },
+                "21": {
+                    "fill_waste(Kg)": 205.66750000000002,
+                    "overflow_kg": 0
+                },
+                "22": {
+                    "fill_waste(Kg)": 102.94999999999999,
+                    "overflow_kg": 0
+                },
+                "23": {
+                    "fill_waste(Kg)": 418.26,
+                    "overflow_kg": 0
+                }
+            },
+            "2025-02-13": {
+                "0": {
+                    "fill_waste(Kg)": 58.365,
+                    "overflow_kg": 0
+                },
+                "1": {
+                    "fill_waste(Kg)": 86.295,
+                    "overflow_kg": 0
+                },
+                "2": {
+                    "fill_waste(Kg)": 123.2025,
+                    "overflow_kg": 0
+                },
+                "3": {
+                    "fill_waste(Kg)": 36.23,
+                    "overflow_kg": 0
+                },
+                "4": {
+                    "fill_waste(Kg)": 238.1225,
+                    "overflow_kg": 0
+                },
+                "5": {
+                    "fill_waste(Kg)": 104.55,
+                    "overflow_kg": 0
+                },
+                "6": {
+                    "fill_waste(Kg)": 35.82,
+                    "overflow_kg": 0
+                },
+                "7": {
+                    "fill_waste(Kg)": 41.87,
+                    "overflow_kg": 0
+                },
+                "8": {
+                    "fill_waste(Kg)": 135.9,
+                    "overflow_kg": 0
+                },
+                "9": {
+                    "fill_waste(Kg)": 68.54,
+                    "overflow_kg": 0
+                },
+                "10": {
+                    "fill_waste(Kg)": 134.23000000000002,
+                    "overflow_kg": 0
+                },
+                "12": {
+                    "fill_waste(Kg)": 147.8575,
+                    "overflow_kg": 0
+                },
+                "13": {
+                    "fill_waste(Kg)": 99.905,
+                    "overflow_kg": 0
+                },
+                "14": {
+                    "fill_waste(Kg)": 62.29,
+                    "overflow_kg": 0
+                },
+                "15": {
+                    "fill_waste(Kg)": 16.255,
+                    "overflow_kg": 0
+                },
+                "16": {
+                    "fill_waste(Kg)": 201.11499999999998,
+                    "overflow_kg": 0
+                },
+                "17": {
+                    "fill_waste(Kg)": 150.17,
+                    "overflow_kg": 0
+                },
+                "18": {
+                    "fill_waste(Kg)": 130.59,
+                    "overflow_kg": 0
+                },
+                "19": {
+                    "fill_waste(Kg)": 104.565,
+                    "overflow_kg": 0
+                },
+                "20": {
+                    "fill_waste(Kg)": 164.33249999999998,
+                    "overflow_kg": 0
+                },
+                "21": {
+                    "fill_waste(Kg)": 23.73,
+                    "overflow_kg": 0
+                },
+                "22": {
+                    "fill_waste(Kg)": 205.455,
+                    "overflow_kg": 0
+                },
+                "23": {
+                    "fill_waste(Kg)": 176.9825,
+                    "overflow_kg": 0
+                }
+            },
+            "2025-02-17": {
+                "0": {
+                    "fill_waste(Kg)": 326.27500000000003,
+                    "overflow_kg": 0
+                },
+                "1": {
+                    "fill_waste(Kg)": 89.505,
+                    "overflow_kg": 0
+                },
+                "2": {
+                    "fill_waste(Kg)": 290.51,
+                    "overflow_kg": 0
+                },
+                "3": {
+                    "fill_waste(Kg)": 65.775,
+                    "overflow_kg": 0
+                },
+                "4": {
+                    "fill_waste(Kg)": 145.235,
+                    "overflow_kg": 0
+                },
+                "5": {
+                    "fill_waste(Kg)": 198.89499999999998,
+                    "overflow_kg": 0
+                },
+                "6": {
+                    "fill_waste(Kg)": 110.14,
+                    "overflow_kg": 0
+                },
+                "7": {
+                    "fill_waste(Kg)": 43.160000000000004,
+                    "overflow_kg": 0
+                },
+                "8": {
+                    "fill_waste(Kg)": 10.715,
+                    "overflow_kg": 0
+                },
+                "9": {
+                    "fill_waste(Kg)": 177.95999999999998,
+                    "overflow_kg": 0
+                },
+                "10": {
+                    "fill_waste(Kg)": 126.02250000000001,
+                    "overflow_kg": 0
+                },
+                "11": {
+                    "fill_waste(Kg)": 88.355,
+                    "overflow_kg": 0
+                },
+                "12": {
+                    "fill_waste(Kg)": 422.28000000000003,
+                    "overflow_kg": 0
+                },
+                "13": {
+                    "fill_waste(Kg)": 58.589999999999996,
+                    "overflow_kg": 0
+                },
+                "14": {
+                    "fill_waste(Kg)": 64.155,
+                    "overflow_kg": 0
+                },
+                "15": {
+                    "fill_waste(Kg)": 27.33,
+                    "overflow_kg": 0
+                },
+                "16": {
+                    "fill_waste(Kg)": 175.135,
+                    "overflow_kg": 0
+                },
+                "17": {
+                    "fill_waste(Kg)": 71.98,
+                    "overflow_kg": 0
+                },
+                "18": {
+                    "fill_waste(Kg)": 19.58,
+                    "overflow_kg": 0
+                },
+                "19": {
+                    "fill_waste(Kg)": 72.9525,
+                    "overflow_kg": 0
+                },
+                "21": {
+                    "fill_waste(Kg)": 138.3225,
+                    "overflow_kg": 0
+                },
+                "22": {
+                    "fill_waste(Kg)": 143.43,
+                    "overflow_kg": 0
+                }
+            },
+            "2025-02-18": {
+                "0": {
+                    "fill_waste(Kg)": 61.1025,
+                    "overflow_kg": 0
+                },
+                "1": {
+                    "fill_waste(Kg)": 85.08000000000001,
+                    "overflow_kg": 0
+                },
+                "2": {
+                    "fill_waste(Kg)": 124.1675,
+                    "overflow_kg": 0
+                },
+                "3": {
+                    "fill_waste(Kg)": 102.16749999999999,
+                    "overflow_kg": 0
+                },
+                "4": {
+                    "fill_waste(Kg)": 38.56,
+                    "overflow_kg": 0
+                },
+                "5": {
+                    "fill_waste(Kg)": 9.99,
+                    "overflow_kg": 0
+                },
+                "7": {
+                    "fill_waste(Kg)": 38.885,
+                    "overflow_kg": 0
+                },
+                "8": {
+                    "fill_waste(Kg)": 5.655,
+                    "overflow_kg": 0
+                },
+                "9": {
+                    "fill_waste(Kg)": 19.53,
+                    "overflow_kg": 0
+                },
+                "10": {
+                    "fill_waste(Kg)": 28.365000000000002,
+                    "overflow_kg": 0
+                },
+                "11": {
+                    "fill_waste(Kg)": 83.76750000000001,
+                    "overflow_kg": 0
+                },
+                "12": {
+                    "fill_waste(Kg)": 23.555,
+                    "overflow_kg": 0
+                },
+                "13": {
+                    "fill_waste(Kg)": 55.705000000000005,
+                    "overflow_kg": 0
+                },
+                "14": {
+                    "fill_waste(Kg)": 51.09,
+                    "overflow_kg": 0
+                },
+                "15": {
+                    "fill_waste(Kg)": 193.12,
+                    "overflow_kg": 0
+                },
+                "17": {
+                    "fill_waste(Kg)": 77.86,
+                    "overflow_kg": 0
+                },
+                "18": {
+                    "fill_waste(Kg)": 16.71,
+                    "overflow_kg": 0
+                },
+                "19": {
+                    "fill_waste(Kg)": 120.46000000000002,
+                    "overflow_kg": 0
+                },
+                "20": {
+                    "fill_waste(Kg)": 151.5,
+                    "overflow_kg": 0
+                },
+                "21": {
+                    "fill_waste(Kg)": 52.34,
+                    "overflow_kg": 0
+                },
+                "22": {
+                    "fill_waste(Kg)": 52.795,
+                    "overflow_kg": 0
+                },
+                "23": {
+                    "fill_waste(Kg)": 54.82,
+                    "overflow_kg": 0
+                }
+            },
+            "2025-02-19": {
+                "0": {
+                    "fill_waste(Kg)": 155.46,
+                    "overflow_kg": 0
+                },
+                "1": {
+                    "fill_waste(Kg)": 159.64249999999998,
+                    "overflow_kg": 0
+                },
+                "2": {
+                    "fill_waste(Kg)": 220.315,
+                    "overflow_kg": 0
+                },
+                "3": {
+                    "fill_waste(Kg)": 36.465,
+                    "overflow_kg": 0
+                },
+                "4": {
+                    "fill_waste(Kg)": 30.7,
+                    "overflow_kg": 0
+                },
+                "5": {
+                    "fill_waste(Kg)": 124.80499999999999,
+                    "overflow_kg": 0
+                },
+                "6": {
+                    "fill_waste(Kg)": 80.15,
+                    "overflow_kg": 0
+                },
+                "7": {
+                    "fill_waste(Kg)": 68.85,
+                    "overflow_kg": 0
+                },
+                "8": {
+                    "fill_waste(Kg)": 78.39750000000001,
+                    "overflow_kg": 0
+                },
+                "9": {
+                    "fill_waste(Kg)": 76.02,
+                    "overflow_kg": 0
+                },
+                "10": {
+                    "fill_waste(Kg)": 103.2075,
+                    "overflow_kg": 0
+                },
+                "11": {
+                    "fill_waste(Kg)": 192.245,
+                    "overflow_kg": 0
+                },
+                "12": {
+                    "fill_waste(Kg)": 65.075,
+                    "overflow_kg": 0
+                },
+                "14": {
+                    "fill_waste(Kg)": 83.01249999999999,
+                    "overflow_kg": 0
+                },
+                "15": {
+                    "fill_waste(Kg)": 191.63,
+                    "overflow_kg": 0
+                },
+                "16": {
+                    "fill_waste(Kg)": 17.89,
+                    "overflow_kg": 0
+                },
+                "17": {
+                    "fill_waste(Kg)": 83.08,
+                    "overflow_kg": 0
+                },
+                "18": {
+                    "fill_waste(Kg)": 126.3725,
+                    "overflow_kg": 0
+                },
+                "19": {
+                    "fill_waste(Kg)": 25.275,
+                    "overflow_kg": 0
+                },
+                "20": {
+                    "fill_waste(Kg)": 307.13249999999994,
+                    "overflow_kg": 0
+                },
+                "21": {
+                    "fill_waste(Kg)": 71.45,
+                    "overflow_kg": 0
+                },
+                "22": {
+                    "fill_waste(Kg)": 193.95499999999998,
+                    "overflow_kg": 0
+                },
+                "23": {
+                    "fill_waste(Kg)": 145.14,
+                    "overflow_kg": 0
+                }
+            },
+            "2025-02-20": {
+                "0": {
+                    "fill_waste(Kg)": 156.25500000000002,
+                    "overflow_kg": 0
+                },
+                "1": {
+                    "fill_waste(Kg)": 123.595,
+                    "overflow_kg": 0
+                },
+                "2": {
+                    "fill_waste(Kg)": 245.99,
+                    "overflow_kg": 0
+                },
+                "3": {
+                    "fill_waste(Kg)": 28.585,
+                    "overflow_kg": 0
+                },
+                "4": {
+                    "fill_waste(Kg)": 245.1875,
+                    "overflow_kg": 0
+                },
+                "5": {
+                    "fill_waste(Kg)": 225.625,
+                    "overflow_kg": 0
+                },
+                "6": {
+                    "fill_waste(Kg)": 162.16000000000003,
+                    "overflow_kg": 0
+                },
+                "7": {
+                    "fill_waste(Kg)": 5.6475,
+                    "overflow_kg": 0
+                },
+                "8": {
+                    "fill_waste(Kg)": 82.23249999999999,
+                    "overflow_kg": 0
+                },
+                "9": {
+                    "fill_waste(Kg)": 239.49249999999998,
+                    "overflow_kg": 0
+                },
+                "10": {
+                    "fill_waste(Kg)": 159.035,
+                    "overflow_kg": 0
+                },
+                "11": {
+                    "fill_waste(Kg)": 140.3675,
+                    "overflow_kg": 0
+                },
+                "12": {
+                    "fill_waste(Kg)": 45.36,
+                    "overflow_kg": 0
+                },
+                "13": {
+                    "fill_waste(Kg)": 68.265,
+                    "overflow_kg": 0
+                },
+                "14": {
+                    "fill_waste(Kg)": 15.695,
+                    "overflow_kg": 0
+                },
+                "15": {
+                    "fill_waste(Kg)": 38.182500000000005,
+                    "overflow_kg": 0
+                },
+                "16": {
+                    "fill_waste(Kg)": 165.0475,
+                    "overflow_kg": 0
+                },
+                "17": {
+                    "fill_waste(Kg)": 186.09250000000003,
+                    "overflow_kg": 0
+                },
+                "18": {
+                    "fill_waste(Kg)": 76.08,
+                    "overflow_kg": 0
+                },
+                "19": {
+                    "fill_waste(Kg)": 88.33,
+                    "overflow_kg": 0
+                },
+                "20": {
+                    "fill_waste(Kg)": 338.85249999999996,
+                    "overflow_kg": 0
+                },
+                "21": {
+                    "fill_waste(Kg)": 24.72,
+                    "overflow_kg": 0
+                },
+                "22": {
+                    "fill_waste(Kg)": 92.12,
+                    "overflow_kg": 0
+                },
+                "23": {
+                    "fill_waste(Kg)": 117.425,
+                    "overflow_kg": 0
+                }
+            },
+            "2025-02-24": {
+                "0": {
+                    "fill_waste(Kg)": 264.855,
+                    "overflow_kg": 0
+                },
+                "2": {
+                    "fill_waste(Kg)": 114.5325,
+                    "overflow_kg": 0
+                },
+                "3": {
+                    "fill_waste(Kg)": 134.9,
+                    "overflow_kg": 0
+                },
+                "4": {
+                    "fill_waste(Kg)": 36.47,
+                    "overflow_kg": 0
+                },
+                "5": {
+                    "fill_waste(Kg)": 103.685,
+                    "overflow_kg": 0
+                },
+                "6": {
+                    "fill_waste(Kg)": 68.65500000000002,
+                    "overflow_kg": 0
+                },
+                "8": {
+                    "fill_waste(Kg)": 90.30250000000001,
+                    "overflow_kg": 0
+                },
+                "9": {
+                    "fill_waste(Kg)": 11.4525,
+                    "overflow_kg": 0
+                },
+                "10": {
+                    "fill_waste(Kg)": 24.875,
+                    "overflow_kg": 0
+                },
+                "11": {
+                    "fill_waste(Kg)": 69.11,
+                    "overflow_kg": 0
+                },
+                "12": {
+                    "fill_waste(Kg)": 97.2825,
+                    "overflow_kg": 0
+                },
+                "13": {
+                    "fill_waste(Kg)": 14.22,
+                    "overflow_kg": 0
+                },
+                "14": {
+                    "fill_waste(Kg)": 59.59,
+                    "overflow_kg": 0
+                },
+                "15": {
+                    "fill_waste(Kg)": 33.77,
+                    "overflow_kg": 0
+                },
+                "16": {
+                    "fill_waste(Kg)": 69.175,
+                    "overflow_kg": 0
+                },
+                "17": {
+                    "fill_waste(Kg)": 99.905,
+                    "overflow_kg": 0
+                },
+                "18": {
+                    "fill_waste(Kg)": 260.8,
+                    "overflow_kg": 0
+                },
+                "19": {
+                    "fill_waste(Kg)": 19.66,
+                    "overflow_kg": 0
+                },
+                "20": {
+                    "fill_waste(Kg)": 233.1825,
+                    "overflow_kg": 0
+                },
+                "21": {
+                    "fill_waste(Kg)": 27.42,
+                    "overflow_kg": 0
+                },
+                "22": {
+                    "fill_waste(Kg)": 55.5225,
+                    "overflow_kg": 0
+                },
+                "23": {
+                    "fill_waste(Kg)": 30.51,
+                    "overflow_kg": 0
+                }
+            },
+            "2025-02-25": {
+                "0": {
+                    "fill_waste(Kg)": 24.345,
+                    "overflow_kg": 0
+                },
+                "1": {
+                    "fill_waste(Kg)": 57.725,
+                    "overflow_kg": 0
+                },
+                "3": {
+                    "fill_waste(Kg)": 86.79,
+                    "overflow_kg": 0
+                },
+                "4": {
+                    "fill_waste(Kg)": 38.910000000000004,
+                    "overflow_kg": 0
+                },
+                "5": {
+                    "fill_waste(Kg)": 213.4025,
+                    "overflow_kg": 0
+                },
+                "6": {
+                    "fill_waste(Kg)": 7.1925,
+                    "overflow_kg": 0
+                },
+                "7": {
+                    "fill_waste(Kg)": 146.93,
+                    "overflow_kg": 0
+                },
+                "8": {
+                    "fill_waste(Kg)": 33.23,
+                    "overflow_kg": 0
+                },
+                "9": {
+                    "fill_waste(Kg)": 36.8025,
+                    "overflow_kg": 0
+                },
+                "10": {
+                    "fill_waste(Kg)": 156.22,
+                    "overflow_kg": 0
+                },
+                "11": {
+                    "fill_waste(Kg)": 306.015,
+                    "overflow_kg": 0
+                },
+                "12": {
+                    "fill_waste(Kg)": 254.16750000000002,
+                    "overflow_kg": 0
+                },
+                "13": {
+                    "fill_waste(Kg)": 181.9425,
+                    "overflow_kg": 0
+                },
+                "14": {
+                    "fill_waste(Kg)": 255.02,
+                    "overflow_kg": 0
+                },
+                "15": {
+                    "fill_waste(Kg)": 111.815,
+                    "overflow_kg": 0
+                },
+                "16": {
+                    "fill_waste(Kg)": 153.55,
+                    "overflow_kg": 0
+                },
+                "17": {
+                    "fill_waste(Kg)": 19.92,
+                    "overflow_kg": 0
+                },
+                "18": {
+                    "fill_waste(Kg)": 108.015,
+                    "overflow_kg": 0
+                },
+                "19": {
+                    "fill_waste(Kg)": 352.09000000000003,
+                    "overflow_kg": 0
+                },
+                "20": {
+                    "fill_waste(Kg)": 278.35249999999996,
+                    "overflow_kg": 0
+                },
+                "22": {
+                    "fill_waste(Kg)": 343.645,
+                    "overflow_kg": 0
+                },
+                "23": {
+                    "fill_waste(Kg)": 111.39500000000001,
+                    "overflow_kg": 0
+                }
+            },
+            "2025-02-26": {
+                "0": {
+                    "fill_waste(Kg)": 90.47,
+                    "overflow_kg": 0
+                },
+                "2": {
+                    "fill_waste(Kg)": 31.26,
+                    "overflow_kg": 0
+                },
+                "3": {
+                    "fill_waste(Kg)": 29.805,
+                    "overflow_kg": 0
+                },
+                "4": {
+                    "fill_waste(Kg)": 37.152499999999996,
+                    "overflow_kg": 0
+                },
+                "5": {
+                    "fill_waste(Kg)": 13.335,
+                    "overflow_kg": 0
+                },
+                "6": {
+                    "fill_waste(Kg)": 69.00500000000001,
+                    "overflow_kg": 0
+                },
+                "7": {
+                    "fill_waste(Kg)": 136.68,
+                    "overflow_kg": 0
+                },
+                "8": {
+                    "fill_waste(Kg)": 78.58500000000001,
+                    "overflow_kg": 0
+                },
+                "9": {
+                    "fill_waste(Kg)": 157.82999999999998,
+                    "overflow_kg": 0
+                },
+                "10": {
+                    "fill_waste(Kg)": 76.28999999999999,
+                    "overflow_kg": 0
+                },
+                "11": {
+                    "fill_waste(Kg)": 120.69,
+                    "overflow_kg": 0
+                },
+                "12": {
+                    "fill_waste(Kg)": 65.8875,
+                    "overflow_kg": 0
+                },
+                "13": {
+                    "fill_waste(Kg)": 32.3625,
+                    "overflow_kg": 0
+                },
+                "14": {
+                    "fill_waste(Kg)": 119.74000000000001,
+                    "overflow_kg": 0
+                },
+                "15": {
+                    "fill_waste(Kg)": 117.60999999999999,
+                    "overflow_kg": 0
+                },
+                "16": {
+                    "fill_waste(Kg)": 201.22,
+                    "overflow_kg": 0
+                },
+                "17": {
+                    "fill_waste(Kg)": 98.28500000000001,
+                    "overflow_kg": 0
+                },
+                "18": {
+                    "fill_waste(Kg)": 45.5475,
+                    "overflow_kg": 0
+                },
+                "19": {
+                    "fill_waste(Kg)": 131.515,
+                    "overflow_kg": 0
+                },
+                "20": {
+                    "fill_waste(Kg)": 46.265,
+                    "overflow_kg": 0
+                },
+                "21": {
+                    "fill_waste(Kg)": 52.8,
+                    "overflow_kg": 0
+                },
+                "22": {
+                    "fill_waste(Kg)": 53.535,
+                    "overflow_kg": 0
+                },
+                "23": {
+                    "fill_waste(Kg)": 139.115,
+                    "overflow_kg": 0
+                }
+            },
+            "2025-02-27": {
+                "1": {
+                    "fill_waste(Kg)": 126.77,
+                    "overflow_kg": 0
+                },
+                "2": {
+                    "fill_waste(Kg)": 168.36,
+                    "overflow_kg": 0
+                },
+                "3": {
+                    "fill_waste(Kg)": 33.720000000000006,
+                    "overflow_kg": 0
+                },
+                "4": {
+                    "fill_waste(Kg)": 47.5225,
+                    "overflow_kg": 0
+                },
+                "5": {
+                    "fill_waste(Kg)": 40.215,
+                    "overflow_kg": 0
+                },
+                "6": {
+                    "fill_waste(Kg)": 177.13500000000002,
+                    "overflow_kg": 0
+                },
+                "8": {
+                    "fill_waste(Kg)": 71.545,
+                    "overflow_kg": 0
+                },
+                "9": {
+                    "fill_waste(Kg)": 159.77,
+                    "overflow_kg": 0
+                },
+                "10": {
+                    "fill_waste(Kg)": 19.55,
+                    "overflow_kg": 0
+                },
+                "12": {
+                    "fill_waste(Kg)": 53.69,
+                    "overflow_kg": 0
+                },
+                "13": {
+                    "fill_waste(Kg)": 15.53,
+                    "overflow_kg": 0
+                },
+                "14": {
+                    "fill_waste(Kg)": 151.31,
+                    "overflow_kg": 0
+                },
+                "15": {
+                    "fill_waste(Kg)": 265.305,
+                    "overflow_kg": 0
+                },
+                "16": {
+                    "fill_waste(Kg)": 98.32499999999999,
+                    "overflow_kg": 0
+                },
+                "17": {
+                    "fill_waste(Kg)": 49.2675,
+                    "overflow_kg": 0
+                },
+                "18": {
+                    "fill_waste(Kg)": 46.635,
+                    "overflow_kg": 0
+                },
+                "19": {
+                    "fill_waste(Kg)": 174.3125,
+                    "overflow_kg": 0
+                },
+                "20": {
+                    "fill_waste(Kg)": 70.28999999999999,
+                    "overflow_kg": 0
+                },
+                "22": {
+                    "fill_waste(Kg)": 55.74,
+                    "overflow_kg": 0
+                }
+            },
+            "2025-03-03": {
+                "0": {
+                    "fill_waste(Kg)": 25.58,
+                    "overflow_kg": 0
+                },
+                "1": {
+                    "fill_waste(Kg)": 145.405,
+                    "overflow_kg": 0
+                },
+                "2": {
+                    "fill_waste(Kg)": 176.065,
+                    "overflow_kg": 0
+                },
+                "4": {
+                    "fill_waste(Kg)": 276.0725,
+                    "overflow_kg": 0
+                },
+                "5": {
+                    "fill_waste(Kg)": 132.14499999999998,
+                    "overflow_kg": 0
+                },
+                "6": {
+                    "fill_waste(Kg)": 68.6425,
+                    "overflow_kg": 0
+                },
+                "7": {
+                    "fill_waste(Kg)": 185.405,
+                    "overflow_kg": 0
+                },
+                "8": {
+                    "fill_waste(Kg)": 123.0,
+                    "overflow_kg": 0
+                },
+                "9": {
+                    "fill_waste(Kg)": 121.245,
+                    "overflow_kg": 0
+                },
+                "10": {
+                    "fill_waste(Kg)": 60.667500000000004,
+                    "overflow_kg": 0
+                },
+                "11": {
+                    "fill_waste(Kg)": 90.71000000000001,
+                    "overflow_kg": 0
+                },
+                "12": {
+                    "fill_waste(Kg)": 54.66,
+                    "overflow_kg": 0
+                },
+                "13": {
+                    "fill_waste(Kg)": 157.54749999999999,
+                    "overflow_kg": 0
+                },
+                "15": {
+                    "fill_waste(Kg)": 50.224999999999994,
+                    "overflow_kg": 0
+                },
+                "16": {
+                    "fill_waste(Kg)": 120.26,
+                    "overflow_kg": 0
+                },
+                "17": {
+                    "fill_waste(Kg)": 51.66,
+                    "overflow_kg": 0
+                },
+                "18": {
+                    "fill_waste(Kg)": 152.87,
+                    "overflow_kg": 0
+                },
+                "19": {
+                    "fill_waste(Kg)": 159.52499999999998,
+                    "overflow_kg": 0
+                },
+                "20": {
+                    "fill_waste(Kg)": 74.42,
+                    "overflow_kg": 0
+                },
+                "21": {
+                    "fill_waste(Kg)": 28.675,
+                    "overflow_kg": 0
+                },
+                "22": {
+                    "fill_waste(Kg)": 306.425,
+                    "overflow_kg": 0
+                },
+                "23": {
+                    "fill_waste(Kg)": 117.2925,
+                    "overflow_kg": 0
+                }
+            },
+            "2025-03-04": {
+                "0": {
+                    "fill_waste(Kg)": 350.045,
+                    "overflow_kg": 0
+                },
+                "1": {
+                    "fill_waste(Kg)": 65.08,
+                    "overflow_kg": 0
+                },
+                "2": {
+                    "fill_waste(Kg)": 348.63,
+                    "overflow_kg": 0
+                },
+                "3": {
+                    "fill_waste(Kg)": 2.205,
+                    "overflow_kg": 0
+                },
+                "4": {
+                    "fill_waste(Kg)": 4.944999999999999,
+                    "overflow_kg": 0
+                },
+                "5": {
+                    "fill_waste(Kg)": 4.79,
+                    "overflow_kg": 0
+                },
+                "6": {
+                    "fill_waste(Kg)": 210.755,
+                    "overflow_kg": 0
+                },
+                "7": {
+                    "fill_waste(Kg)": 18.9075,
+                    "overflow_kg": 0
+                },
+                "9": {
+                    "fill_waste(Kg)": 65.31,
+                    "overflow_kg": 0
+                },
+                "10": {
+                    "fill_waste(Kg)": 81.66,
+                    "overflow_kg": 0
+                },
+                "11": {
+                    "fill_waste(Kg)": 161.94,
+                    "overflow_kg": 0
+                },
+                "12": {
+                    "fill_waste(Kg)": 58.45,
+                    "overflow_kg": 0
+                },
+                "14": {
+                    "fill_waste(Kg)": 142.87,
+                    "overflow_kg": 0
+                },
+                "15": {
+                    "fill_waste(Kg)": 225.57,
+                    "overflow_kg": 0
+                },
+                "16": {
+                    "fill_waste(Kg)": 100.49249999999999,
+                    "overflow_kg": 0
+                },
+                "17": {
+                    "fill_waste(Kg)": 52.6,
+                    "overflow_kg": 0
+                },
+                "18": {
+                    "fill_waste(Kg)": 189.40499999999997,
+                    "overflow_kg": 0
+                },
+                "19": {
+                    "fill_waste(Kg)": 136.53249999999997,
+                    "overflow_kg": 0
+                },
+                "20": {
+                    "fill_waste(Kg)": 274.31,
+                    "overflow_kg": 0
+                },
+                "21": {
+                    "fill_waste(Kg)": 200.79,
+                    "overflow_kg": 0
+                },
+                "22": {
+                    "fill_waste(Kg)": 217.01999999999998,
+                    "overflow_kg": 0
+                },
+                "23": {
+                    "fill_waste(Kg)": 239.47750000000002,
+                    "overflow_kg": 0
+                }
+            },
+            "2025-03-05": {
+                "0": {
+                    "fill_waste(Kg)": 98.22,
+                    "overflow_kg": 0
+                },
+                "1": {
+                    "fill_waste(Kg)": 93.685,
+                    "overflow_kg": 0
+                },
+                "2": {
+                    "fill_waste(Kg)": 268.61,
+                    "overflow_kg": 0
+                },
+                "3": {
+                    "fill_waste(Kg)": 57.332499999999996,
+                    "overflow_kg": 0
+                },
+                "4": {
+                    "fill_waste(Kg)": 33.5,
+                    "overflow_kg": 0
+                },
+                "5": {
+                    "fill_waste(Kg)": 81.47500000000001,
+                    "overflow_kg": 0
+                },
+                "6": {
+                    "fill_waste(Kg)": 7.37,
+                    "overflow_kg": 0
+                },
+                "8": {
+                    "fill_waste(Kg)": 90.58500000000001,
+                    "overflow_kg": 0
+                },
+                "10": {
+                    "fill_waste(Kg)": 159.585,
+                    "overflow_kg": 0
+                },
+                "11": {
+                    "fill_waste(Kg)": 54.295,
+                    "overflow_kg": 0
+                },
+                "12": {
+                    "fill_waste(Kg)": 185.74,
+                    "overflow_kg": 0
+                },
+                "13": {
+                    "fill_waste(Kg)": 16.74,
+                    "overflow_kg": 0
+                },
+                "14": {
+                    "fill_waste(Kg)": 110.46999999999998,
+                    "overflow_kg": 0
+                },
+                "15": {
+                    "fill_waste(Kg)": 166.34,
+                    "overflow_kg": 0
+                },
+                "16": {
+                    "fill_waste(Kg)": 87.7675,
+                    "overflow_kg": 0
+                },
+                "17": {
+                    "fill_waste(Kg)": 56.715,
+                    "overflow_kg": 0
+                },
+                "18": {
+                    "fill_waste(Kg)": 246.575,
+                    "overflow_kg": 0
+                },
+                "19": {
+                    "fill_waste(Kg)": 127.1,
+                    "overflow_kg": 0
+                },
+                "20": {
+                    "fill_waste(Kg)": 99.13,
+                    "overflow_kg": 0
+                },
+                "21": {
+                    "fill_waste(Kg)": 121.02000000000002,
+                    "overflow_kg": 0
+                },
+                "22": {
+                    "fill_waste(Kg)": 240.92749999999998,
+                    "overflow_kg": 0
+                },
+                "23": {
+                    "fill_waste(Kg)": 174.12,
+                    "overflow_kg": 0
+                }
+            },
+            "2025-03-06": {
+                "0": {
+                    "fill_waste(Kg)": 199.2125,
+                    "overflow_kg": 0
+                },
+                "1": {
+                    "fill_waste(Kg)": 179.875,
+                    "overflow_kg": 0
+                },
+                "2": {
+                    "fill_waste(Kg)": 79.095,
+                    "overflow_kg": 0
+                },
+                "3": {
+                    "fill_waste(Kg)": 31.509999999999998,
+                    "overflow_kg": 0
+                },
+                "4": {
+                    "fill_waste(Kg)": 62.75749999999999,
+                    "overflow_kg": 0
+                },
+                "5": {
+                    "fill_waste(Kg)": 36.095,
+                    "overflow_kg": 0
+                },
+                "6": {
+                    "fill_waste(Kg)": 35.8,
+                    "overflow_kg": 0
+                },
+                "7": {
+                    "fill_waste(Kg)": 8.395,
+                    "overflow_kg": 0
+                },
+                "8": {
+                    "fill_waste(Kg)": 125.87,
+                    "overflow_kg": 0
+                },
+                "10": {
+                    "fill_waste(Kg)": 59.205,
+                    "overflow_kg": 0
+                },
+                "12": {
+                    "fill_waste(Kg)": 78.45750000000001,
+                    "overflow_kg": 0
+                },
+                "13": {
+                    "fill_waste(Kg)": 62.105,
+                    "overflow_kg": 0
+                },
+                "14": {
+                    "fill_waste(Kg)": 153.29500000000002,
+                    "overflow_kg": 0
+                },
+                "15": {
+                    "fill_waste(Kg)": 19.65,
+                    "overflow_kg": 0
+                },
+                "16": {
+                    "fill_waste(Kg)": 49.2,
+                    "overflow_kg": 0
+                },
+                "18": {
+                    "fill_waste(Kg)": 58.754999999999995,
+                    "overflow_kg": 0
+                },
+                "19": {
+                    "fill_waste(Kg)": 104.07750000000001,
+                    "overflow_kg": 0
+                },
+                "20": {
+                    "fill_waste(Kg)": 183.175,
+                    "overflow_kg": 0
+                },
+                "22": {
+                    "fill_waste(Kg)": 402.23499999999996,
+                    "overflow_kg": 0
+                },
+                "23": {
+                    "fill_waste(Kg)": 205.41000000000003,
+                    "overflow_kg": 0
+                }
+            },
+            "2025-03-10": {
+                "0": {
+                    "fill_waste(Kg)": 203.75,
+                    "overflow_kg": 0
+                },
+                "1": {
+                    "fill_waste(Kg)": 115.4025,
+                    "overflow_kg": 0
+                },
+                "3": {
+                    "fill_waste(Kg)": 69.09750000000001,
+                    "overflow_kg": 0
+                },
+                "4": {
+                    "fill_waste(Kg)": 104.52,
+                    "overflow_kg": 0
+                },
+                "5": {
+                    "fill_waste(Kg)": 37.265,
+                    "overflow_kg": 0
+                },
+                "6": {
+                    "fill_waste(Kg)": 79.44999999999999,
+                    "overflow_kg": 0
+                },
+                "7": {
+                    "fill_waste(Kg)": 182.65,
+                    "overflow_kg": 0
+                },
+                "8": {
+                    "fill_waste(Kg)": 114.16,
+                    "overflow_kg": 0
+                },
+                "9": {
+                    "fill_waste(Kg)": 51.065,
+                    "overflow_kg": 0
+                },
+                "10": {
+                    "fill_waste(Kg)": 27.0,
+                    "overflow_kg": 0
+                },
+                "11": {
+                    "fill_waste(Kg)": 13.882500000000002,
+                    "overflow_kg": 0
+                },
+                "12": {
+                    "fill_waste(Kg)": 12.735,
+                    "overflow_kg": 0
+                },
+                "13": {
+                    "fill_waste(Kg)": 12.9,
+                    "overflow_kg": 0
+                },
+                "14": {
+                    "fill_waste(Kg)": 13.53,
+                    "overflow_kg": 0
+                },
+                "15": {
+                    "fill_waste(Kg)": 31.335,
+                    "overflow_kg": 0
+                },
+                "17": {
+                    "fill_waste(Kg)": 177.40249999999997,
+                    "overflow_kg": 0
+                },
+                "19": {
+                    "fill_waste(Kg)": 38.44,
+                    "overflow_kg": 0
+                },
+                "20": {
+                    "fill_waste(Kg)": 168.0,
+                    "overflow_kg": 0
+                },
+                "21": {
+                    "fill_waste(Kg)": 261.225,
+                    "overflow_kg": 0
+                },
+                "22": {
+                    "fill_waste(Kg)": 165.79000000000002,
+                    "overflow_kg": 0
+                },
+                "23": {
+                    "fill_waste(Kg)": 183.865,
+                    "overflow_kg": 0
+                }
+            },
+            "2025-03-11": {
+                "0": {
+                    "fill_waste(Kg)": 49.807500000000005,
+                    "overflow_kg": 0
+                },
+                "1": {
+                    "fill_waste(Kg)": 151.015,
+                    "overflow_kg": 0
+                },
+                "2": {
+                    "fill_waste(Kg)": 126.28,
+                    "overflow_kg": 0
+                },
+                "3": {
+                    "fill_waste(Kg)": 30.6075,
+                    "overflow_kg": 0
+                },
+                "4": {
+                    "fill_waste(Kg)": 75.52,
+                    "overflow_kg": 0
+                },
+                "5": {
+                    "fill_waste(Kg)": 35.45,
+                    "overflow_kg": 0
+                },
+                "6": {
+                    "fill_waste(Kg)": 148.35750000000002,
+                    "overflow_kg": 0
+                },
+                "7": {
+                    "fill_waste(Kg)": 83.08500000000001,
+                    "overflow_kg": 0
+                },
+                "8": {
+                    "fill_waste(Kg)": 156.83499999999998,
+                    "overflow_kg": 0
+                },
+                "9": {
+                    "fill_waste(Kg)": 10.23,
+                    "overflow_kg": 0
+                },
+                "10": {
+                    "fill_waste(Kg)": 141.74,
+                    "overflow_kg": 0
+                },
+                "11": {
+                    "fill_waste(Kg)": 29.82,
+                    "overflow_kg": 0
+                },
+                "12": {
+                    "fill_waste(Kg)": 132.09,
+                    "overflow_kg": 0
+                },
+                "13": {
+                    "fill_waste(Kg)": 202.97500000000002,
+                    "overflow_kg": 0
+                },
+                "14": {
+                    "fill_waste(Kg)": 157.8375,
+                    "overflow_kg": 0
+                },
+                "15": {
+                    "fill_waste(Kg)": 65.3375,
+                    "overflow_kg": 0
+                },
+                "16": {
+                    "fill_waste(Kg)": 149.5125,
+                    "overflow_kg": 0
+                },
+                "17": {
+                    "fill_waste(Kg)": 178.18999999999997,
+                    "overflow_kg": 0
+                },
+                "18": {
+                    "fill_waste(Kg)": 182.93999999999997,
+                    "overflow_kg": 0
+                },
+                "19": {
+                    "fill_waste(Kg)": 180.57,
+                    "overflow_kg": 0
+                },
+                "20": {
+                    "fill_waste(Kg)": 174.38500000000002,
+                    "overflow_kg": 0
+                },
+                "22": {
+                    "fill_waste(Kg)": 88.0625,
+                    "overflow_kg": 0
+                },
+                "23": {
+                    "fill_waste(Kg)": 203.28750000000002,
+                    "overflow_kg": 0
+                }
+            },
+            "2025-03-12": {
+                "0": {
+                    "fill_waste(Kg)": 181.39499999999998,
+                    "overflow_kg": 0
+                },
+                "1": {
+                    "fill_waste(Kg)": 201.1525,
+                    "overflow_kg": 0
+                },
+                "2": {
+                    "fill_waste(Kg)": 55.5675,
+                    "overflow_kg": 0
+                },
+                "3": {
+                    "fill_waste(Kg)": 93.96000000000001,
+                    "overflow_kg": 0
+                },
+                "4": {
+                    "fill_waste(Kg)": 68.535,
+                    "overflow_kg": 0
+                },
+                "5": {
+                    "fill_waste(Kg)": 69.57,
+                    "overflow_kg": 0
+                },
+                "6": {
+                    "fill_waste(Kg)": 75.36,
+                    "overflow_kg": 0
+                },
+                "7": {
+                    "fill_waste(Kg)": 107.045,
+                    "overflow_kg": 0
+                },
+                "8": {
+                    "fill_waste(Kg)": 143.63,
+                    "overflow_kg": 0
+                },
+                "9": {
+                    "fill_waste(Kg)": 86.995,
+                    "overflow_kg": 0
+                },
+                "10": {
+                    "fill_waste(Kg)": 59.8975,
+                    "overflow_kg": 0
+                },
+                "12": {
+                    "fill_waste(Kg)": 128.6175,
+                    "overflow_kg": 0
+                },
+                "14": {
+                    "fill_waste(Kg)": 20.115,
+                    "overflow_kg": 0
+                },
+                "16": {
+                    "fill_waste(Kg)": 212.04749999999999,
+                    "overflow_kg": 0
+                },
+                "17": {
+                    "fill_waste(Kg)": 39.974999999999994,
+                    "overflow_kg": 0
+                },
+                "18": {
+                    "fill_waste(Kg)": 71.0075,
+                    "overflow_kg": 0
+                },
+                "19": {
+                    "fill_waste(Kg)": 164.63,
+                    "overflow_kg": 0
+                },
+                "20": {
+                    "fill_waste(Kg)": 47.3225,
+                    "overflow_kg": 0
+                },
+                "21": {
+                    "fill_waste(Kg)": 100.625,
+                    "overflow_kg": 0
+                },
+                "22": {
+                    "fill_waste(Kg)": 173.23250000000002,
+                    "overflow_kg": 0
+                },
+                "23": {
+                    "fill_waste(Kg)": 206.67000000000002,
+                    "overflow_kg": 0
+                }
+            },
+            "2025-03-13": {
+                "0": {
+                    "fill_waste(Kg)": 206.5975,
+                    "overflow_kg": 0
+                },
+                "1": {
+                    "fill_waste(Kg)": 116.66,
+                    "overflow_kg": 0
+                },
+                "2": {
+                    "fill_waste(Kg)": 58.86,
+                    "overflow_kg": 0
+                },
+                "3": {
+                    "fill_waste(Kg)": 72.315,
+                    "overflow_kg": 0
+                },
+                "4": {
+                    "fill_waste(Kg)": 2.13,
+                    "overflow_kg": 0
+                },
+                "5": {
+                    "fill_waste(Kg)": 201.495,
+                    "overflow_kg": 0
+                },
+                "6": {
+                    "fill_waste(Kg)": 172.08,
+                    "overflow_kg": 0
+                },
+                "7": {
+                    "fill_waste(Kg)": 72.15,
+                    "overflow_kg": 0
+                },
+                "8": {
+                    "fill_waste(Kg)": 76.105,
+                    "overflow_kg": 0
+                },
+                "9": {
+                    "fill_waste(Kg)": 73.46,
+                    "overflow_kg": 0
+                },
+                "11": {
+                    "fill_waste(Kg)": 205.10000000000002,
+                    "overflow_kg": 0
+                },
+                "12": {
+                    "fill_waste(Kg)": 60.0,
+                    "overflow_kg": 0
+                },
+                "13": {
+                    "fill_waste(Kg)": 218.97750000000002,
+                    "overflow_kg": 0
+                },
+                "14": {
+                    "fill_waste(Kg)": 128.325,
+                    "overflow_kg": 0
+                },
+                "15": {
+                    "fill_waste(Kg)": 238.01999999999998,
+                    "overflow_kg": 0
+                },
+                "16": {
+                    "fill_waste(Kg)": 125.53999999999999,
+                    "overflow_kg": 0
+                },
+                "17": {
+                    "fill_waste(Kg)": 167.425,
+                    "overflow_kg": 0
+                },
+                "18": {
+                    "fill_waste(Kg)": 125.52,
+                    "overflow_kg": 0
+                },
+                "19": {
+                    "fill_waste(Kg)": 184.08999999999997,
+                    "overflow_kg": 0
+                },
+                "20": {
+                    "fill_waste(Kg)": 204.675,
+                    "overflow_kg": 0
+                },
+                "21": {
+                    "fill_waste(Kg)": 57.705,
+                    "overflow_kg": 0
+                },
+                "22": {
+                    "fill_waste(Kg)": 166.315,
+                    "overflow_kg": 0
+                },
+                "23": {
+                    "fill_waste(Kg)": 59.4825,
+                    "overflow_kg": 0
+                }
+            },
+            "2025-03-17": {
+                "0": {
+                    "fill_waste(Kg)": 178.72,
+                    "overflow_kg": 0
+                },
+                "1": {
+                    "fill_waste(Kg)": 26.47,
+                    "overflow_kg": 0
+                },
+                "2": {
+                    "fill_waste(Kg)": 233.24,
+                    "overflow_kg": 0
+                },
+                "4": {
+                    "fill_waste(Kg)": 35.1,
+                    "overflow_kg": 0
+                },
+                "5": {
+                    "fill_waste(Kg)": 108.35499999999999,
+                    "overflow_kg": 0
+                },
+                "6": {
+                    "fill_waste(Kg)": 4.97,
+                    "overflow_kg": 0
+                },
+                "7": {
+                    "fill_waste(Kg)": 162.95,
+                    "overflow_kg": 0
+                },
+                "9": {
+                    "fill_waste(Kg)": 22.49,
+                    "overflow_kg": 0
+                },
+                "10": {
+                    "fill_waste(Kg)": 9.925,
+                    "overflow_kg": 0
+                },
+                "11": {
+                    "fill_waste(Kg)": 137.7225,
+                    "overflow_kg": 0
+                },
+                "13": {
+                    "fill_waste(Kg)": 88.63,
+                    "overflow_kg": 0
+                },
+                "14": {
+                    "fill_waste(Kg)": 169.295,
+                    "overflow_kg": 0
+                },
+                "15": {
+                    "fill_waste(Kg)": 48.9,
+                    "overflow_kg": 0
+                },
+                "16": {
+                    "fill_waste(Kg)": 187.56,
+                    "overflow_kg": 0
+                },
+                "17": {
+                    "fill_waste(Kg)": 96.6025,
+                    "overflow_kg": 0
+                },
+                "18": {
+                    "fill_waste(Kg)": 138.6,
+                    "overflow_kg": 0
+                },
+                "19": {
+                    "fill_waste(Kg)": 103.46000000000001,
+                    "overflow_kg": 0
+                },
+                "20": {
+                    "fill_waste(Kg)": 150.455,
+                    "overflow_kg": 0
+                },
+                "21": {
+                    "fill_waste(Kg)": 109.04249999999999,
+                    "overflow_kg": 0
+                },
+                "22": {
+                    "fill_waste(Kg)": 66.51,
+                    "overflow_kg": 0
+                },
+                "23": {
+                    "fill_waste(Kg)": 220.6925,
+                    "overflow_kg": 0
+                }
+            },
+            "2025-03-18": {
+                "0": {
+                    "fill_waste(Kg)": 145.505,
+                    "overflow_kg": 0
+                },
+                "2": {
+                    "fill_waste(Kg)": 84.36,
+                    "overflow_kg": 0
+                },
+                "4": {
+                    "fill_waste(Kg)": 72.13,
+                    "overflow_kg": 0
+                },
+                "5": {
+                    "fill_waste(Kg)": 32.74,
+                    "overflow_kg": 0
+                },
+                "6": {
+                    "fill_waste(Kg)": 43.84,
+                    "overflow_kg": 0
+                },
+                "7": {
+                    "fill_waste(Kg)": 3.345,
+                    "overflow_kg": 0
+                },
+                "8": {
+                    "fill_waste(Kg)": 6.67,
+                    "overflow_kg": 0
+                },
+                "9": {
+                    "fill_waste(Kg)": 241.32,
+                    "overflow_kg": 0
+                },
+                "10": {
+                    "fill_waste(Kg)": 20.4375,
+                    "overflow_kg": 0
+                },
+                "11": {
+                    "fill_waste(Kg)": 50.375,
+                    "overflow_kg": 0
+                },
+                "12": {
+                    "fill_waste(Kg)": 187.5975,
+                    "overflow_kg": 0
+                },
+                "13": {
+                    "fill_waste(Kg)": 161.29,
+                    "overflow_kg": 0
+                },
+                "14": {
+                    "fill_waste(Kg)": 112.075,
+                    "overflow_kg": 0
+                },
+                "15": {
+                    "fill_waste(Kg)": 161.125,
+                    "overflow_kg": 0
+                },
+                "16": {
+                    "fill_waste(Kg)": 152.2825,
+                    "overflow_kg": 0
+                },
+                "17": {
+                    "fill_waste(Kg)": 175.5775,
+                    "overflow_kg": 0
+                },
+                "18": {
+                    "fill_waste(Kg)": 218.7025,
+                    "overflow_kg": 0
+                },
+                "19": {
+                    "fill_waste(Kg)": 50.23,
+                    "overflow_kg": 0
+                },
+                "20": {
+                    "fill_waste(Kg)": 80.445,
+                    "overflow_kg": 0
+                },
+                "21": {
+                    "fill_waste(Kg)": 133.8725,
+                    "overflow_kg": 0
+                },
+                "23": {
+                    "fill_waste(Kg)": 26.33,
+                    "overflow_kg": 0
+                }
+            },
+            "2025-03-19": {
+                "2": {
+                    "fill_waste(Kg)": 233.46749999999997,
+                    "overflow_kg": 0
+                },
+                "3": {
+                    "fill_waste(Kg)": 57.599999999999994,
+                    "overflow_kg": 0
+                },
+                "4": {
+                    "fill_waste(Kg)": 69.22,
+                    "overflow_kg": 0
+                },
+                "5": {
+                    "fill_waste(Kg)": 116.64750000000001,
+                    "overflow_kg": 0
+                },
+                "6": {
+                    "fill_waste(Kg)": 106.115,
+                    "overflow_kg": 0
+                },
+                "8": {
+                    "fill_waste(Kg)": 8.11,
+                    "overflow_kg": 0
+                },
+                "9": {
+                    "fill_waste(Kg)": 6.85,
+                    "overflow_kg": 0
+                },
+                "10": {
+                    "fill_waste(Kg)": 123.7675,
+                    "overflow_kg": 0
+                },
+                "11": {
+                    "fill_waste(Kg)": 104.155,
+                    "overflow_kg": 0
+                },
+                "12": {
+                    "fill_waste(Kg)": 66.76,
+                    "overflow_kg": 0
+                },
+                "13": {
+                    "fill_waste(Kg)": 125.225,
+                    "overflow_kg": 0
+                },
+                "14": {
+                    "fill_waste(Kg)": 275.5425,
+                    "overflow_kg": 0
+                },
+                "16": {
+                    "fill_waste(Kg)": 66.57,
+                    "overflow_kg": 0
+                },
+                "17": {
+                    "fill_waste(Kg)": 86.995,
+                    "overflow_kg": 0
+                },
+                "18": {
+                    "fill_waste(Kg)": 191.18249999999998,
+                    "overflow_kg": 0
+                },
+                "19": {
+                    "fill_waste(Kg)": 193.84249999999997,
+                    "overflow_kg": 0
+                },
+                "20": {
+                    "fill_waste(Kg)": 46.095,
+                    "overflow_kg": 0
+                },
+                "21": {
+                    "fill_waste(Kg)": 264.325,
+                    "overflow_kg": 0
+                },
+                "22": {
+                    "fill_waste(Kg)": 113.02000000000001,
+                    "overflow_kg": 0
+                },
+                "23": {
+                    "fill_waste(Kg)": 27.51,
+                    "overflow_kg": 0
+                }
+            },
+            "2025-03-20": {
+                "0": {
+                    "fill_waste(Kg)": 28.715,
+                    "overflow_kg": 0
+                },
+                "1": {
+                    "fill_waste(Kg)": 216.5275,
+                    "overflow_kg": 0
+                },
+                "3": {
+                    "fill_waste(Kg)": 34.1875,
+                    "overflow_kg": 0
+                },
+                "5": {
+                    "fill_waste(Kg)": 35.1775,
+                    "overflow_kg": 0
+                },
+                "6": {
+                    "fill_waste(Kg)": 11.32,
+                    "overflow_kg": 0
+                },
+                "7": {
+                    "fill_waste(Kg)": 7.27,
+                    "overflow_kg": 0
+                },
+                "8": {
+                    "fill_waste(Kg)": 106.77000000000001,
+                    "overflow_kg": 0
+                },
+                "9": {
+                    "fill_waste(Kg)": 85.6325,
+                    "overflow_kg": 0
+                },
+                "10": {
+                    "fill_waste(Kg)": 120.16250000000002,
+                    "overflow_kg": 0
+                },
+                "11": {
+                    "fill_waste(Kg)": 52.9575,
+                    "overflow_kg": 0
+                },
+                "12": {
+                    "fill_waste(Kg)": 14.06,
+                    "overflow_kg": 0
+                },
+                "13": {
+                    "fill_waste(Kg)": 107.88999999999999,
+                    "overflow_kg": 0
+                },
+                "14": {
+                    "fill_waste(Kg)": 168.7875,
+                    "overflow_kg": 0
+                },
+                "15": {
+                    "fill_waste(Kg)": 134.39499999999998,
+                    "overflow_kg": 0
+                },
+                "16": {
+                    "fill_waste(Kg)": 47.755,
+                    "overflow_kg": 0
+                },
+                "17": {
+                    "fill_waste(Kg)": 86.025,
+                    "overflow_kg": 0
+                },
+                "18": {
+                    "fill_waste(Kg)": 78.825,
+                    "overflow_kg": 0
+                },
+                "19": {
+                    "fill_waste(Kg)": 99.69,
+                    "overflow_kg": 0
+                },
+                "20": {
+                    "fill_waste(Kg)": 80.495,
+                    "overflow_kg": 0
+                },
+                "21": {
+                    "fill_waste(Kg)": 59.405,
+                    "overflow_kg": 0
+                },
+                "22": {
+                    "fill_waste(Kg)": 195.0,
+                    "overflow_kg": 0
+                },
+                "23": {
+                    "fill_waste(Kg)": 48.1275,
+                    "overflow_kg": 0
+                }
+            },
+            "2025-03-24": {
+                "0": {
+                    "fill_waste(Kg)": 87.6,
+                    "overflow_kg": 0
+                },
+                "1": {
+                    "fill_waste(Kg)": 58.04,
+                    "overflow_kg": 0
+                },
+                "2": {
+                    "fill_waste(Kg)": 246.63750000000002,
+                    "overflow_kg": 0
+                },
+                "3": {
+                    "fill_waste(Kg)": 34.01,
+                    "overflow_kg": 0
+                },
+                "4": {
+                    "fill_waste(Kg)": 104.1125,
+                    "overflow_kg": 0
+                },
+                "5": {
+                    "fill_waste(Kg)": 31.05,
+                    "overflow_kg": 0
+                },
+                "8": {
+                    "fill_waste(Kg)": 69.21,
+                    "overflow_kg": 0
+                },
+                "9": {
+                    "fill_waste(Kg)": 43.95,
+                    "overflow_kg": 0
+                },
+                "10": {
+                    "fill_waste(Kg)": 20.55,
+                    "overflow_kg": 0
+                },
+                "11": {
+                    "fill_waste(Kg)": 200.43499999999997,
+                    "overflow_kg": 0
+                },
+                "12": {
+                    "fill_waste(Kg)": 53.375,
+                    "overflow_kg": 0
+                },
+                "13": {
+                    "fill_waste(Kg)": 213.38000000000002,
+                    "overflow_kg": 0
+                },
+                "14": {
+                    "fill_waste(Kg)": 187.745,
+                    "overflow_kg": 0
+                },
+                "15": {
+                    "fill_waste(Kg)": 17.825,
+                    "overflow_kg": 0
+                },
+                "16": {
+                    "fill_waste(Kg)": 85.665,
+                    "overflow_kg": 0
+                },
+                "17": {
+                    "fill_waste(Kg)": 18.375,
+                    "overflow_kg": 0
+                },
+                "18": {
+                    "fill_waste(Kg)": 93.25,
+                    "overflow_kg": 0
+                },
+                "19": {
+                    "fill_waste(Kg)": 114.6225,
+                    "overflow_kg": 0
+                },
+                "20": {
+                    "fill_waste(Kg)": 26.815,
+                    "overflow_kg": 0
+                },
+                "21": {
+                    "fill_waste(Kg)": 20.8,
+                    "overflow_kg": 0
+                },
+                "22": {
+                    "fill_waste(Kg)": 152.725,
+                    "overflow_kg": 0
+                }
+            },
+            "2025-03-25": {
+                "0": {
+                    "fill_waste(Kg)": 160.29749999999999,
+                    "overflow_kg": 0
+                },
+                "1": {
+                    "fill_waste(Kg)": 154.6925,
+                    "overflow_kg": 0
+                },
+                "2": {
+                    "fill_waste(Kg)": 33.31,
+                    "overflow_kg": 0
+                },
+                "3": {
+                    "fill_waste(Kg)": 62.245000000000005,
+                    "overflow_kg": 0
+                },
+                "4": {
+                    "fill_waste(Kg)": 6.470000000000001,
+                    "overflow_kg": 0
+                },
+                "5": {
+                    "fill_waste(Kg)": 102.49,
+                    "overflow_kg": 0
+                },
+                "7": {
+                    "fill_waste(Kg)": 151.565,
+                    "overflow_kg": 0
+                },
+                "8": {
+                    "fill_waste(Kg)": 78.1275,
+                    "overflow_kg": 0
+                },
+                "9": {
+                    "fill_waste(Kg)": 79.125,
+                    "overflow_kg": 0
+                },
+                "10": {
+                    "fill_waste(Kg)": 72.44500000000001,
+                    "overflow_kg": 0
+                },
+                "11": {
+                    "fill_waste(Kg)": 241.645,
+                    "overflow_kg": 0
+                },
+                "12": {
+                    "fill_waste(Kg)": 47.9475,
+                    "overflow_kg": 0
+                },
+                "13": {
+                    "fill_waste(Kg)": 159.6975,
+                    "overflow_kg": 0
+                },
+                "15": {
+                    "fill_waste(Kg)": 32.730000000000004,
+                    "overflow_kg": 0
+                },
+                "16": {
+                    "fill_waste(Kg)": 213.8775,
+                    "overflow_kg": 0
+                },
+                "17": {
+                    "fill_waste(Kg)": 66.55250000000001,
+                    "overflow_kg": 0
+                },
+                "18": {
+                    "fill_waste(Kg)": 134.7675,
+                    "overflow_kg": 0
+                },
+                "19": {
+                    "fill_waste(Kg)": 55.14,
+                    "overflow_kg": 0
+                },
+                "20": {
+                    "fill_waste(Kg)": 57.40500000000001,
+                    "overflow_kg": 0
+                },
+                "21": {
+                    "fill_waste(Kg)": 54.855,
+                    "overflow_kg": 0
+                },
+                "22": {
+                    "fill_waste(Kg)": 115.94,
+                    "overflow_kg": 0
+                },
+                "23": {
+                    "fill_waste(Kg)": 203.0075,
+                    "overflow_kg": 0
+                }
+            }
+        }
     }
 }
-
-           
-            
-
-        

@@ -124,11 +124,20 @@ for date in data:
             D1["fill_days"][date][time_factor]["overflow_kg"] =  D1["fill_days"][date][time_factor]["fill_waste(Kg)"] -  D1["bin_capacity"]
             D1["fill_days"][date][time_factor]["fill_waste(Kg)"] = D1["bin_capacity"]
 
+# ============================================================
+# Update dumpsters and save JSON
+# ============================================================
 
-import matplotlib.pyplot as plt
+dumpsters["d1"] = D1
 
+with open("data/dumpsters.json", "w", encoding="utf-8") as f:
+    json.dump(
+        dumpsters,
+        f,
+        ensure_ascii=False,
+        indent=4
+    )
 
-import matplotlib.pyplot as plt
 
 
 # =========================
