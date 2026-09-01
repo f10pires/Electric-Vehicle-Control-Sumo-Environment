@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 2026-08-18 12:14:19 by Eclipse SUMO GUI Version 1.24.0
+<!-- generated on 2026-09-01 12:38:20 by Eclipse SUMO GUI Version 1.24.0
 <sumoConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
 
     <input>
@@ -27,7 +27,7 @@
     </report>
 
     <traci_server>
-        <remote-port value="52560"/>
+        <remote-port value="54123"/>
     </traci_server>
 
     <random_number>
@@ -45,13 +45,13 @@
 -->
 
 <statistics xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/statistic_file.xsd">
-    <performance clockBegin="-1446830.40" clockEnd="-1446828.78" clockDuration="1.62" traciDuration="0.82" realTimeFactor="8.01" vehicleUpdatesPerSecond="25.89" personUpdatesPerSecond="0.00" begin="0.00" end="13.00" duration="13.00"/>
-    <vehicles loaded="806" inserted="2" running="2" waiting="0"/>
+    <performance clockBegin="677882.69" clockEnd="678027.14" clockDuration="144.45" traciDuration="6.69" realTimeFactor="10.36" vehicleUpdatesPerSecond="30.78" personUpdatesPerSecond="0.00" begin="0.00" end="1496.50" duration="1496.50"/>
+    <vehicles loaded="811" inserted="10" running="1" waiting="0"/>
     <teleports total="0" jam="0" yield="0" wrongLane="0"/>
     <safety collisions="0" emergencyStops="0" emergencyBraking="0"/>
     <persons loaded="0" running="0" jammed="0"/>
     <personTeleports total="0" abortWait="0" wrongDest="0"/>
-    <vehicleTripStatistics count="0" routeLength="0.00" speed="0.00" duration="0.00" waitingTime="0.00" timeLoss="0.00" departDelay="0.00" departDelayWaiting="-1.00" totalTravelTime="0.00" totalDepartDelay="0.00"/>
+    <vehicleTripStatistics count="9" routeLength="675.73" speed="8.26" duration="80.72" waitingTime="15.50" timeLoss="34.90" departDelay="0.00" departDelayWaiting="-1.00" totalTravelTime="726.50" totalDepartDelay="0.00"/>
     <pedestrianStatistics number="0" routeLength="0.00" duration="0.00" timeLoss="0.00"/>
     <rideStatistics number="0"/>
     <transportStatistics number="0"/>

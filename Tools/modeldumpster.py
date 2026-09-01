@@ -69,6 +69,9 @@ for (day, time_factor, time_slot), group in df.groupby(
 ):
 
     day = str(day)
+    # JSON object keys are always strings. Keep the in-memory structure
+    # consistent with the data loaded from dumpsters.json.
+    time_factor = str(time_factor)
 
     # Create date if it does not exist
     if day not in data:
@@ -166,13 +169,14 @@ axes = axes.flatten()
 
 for ax, (date, time_data) in zip(axes, first_four_days):
 
-    # Sort time factors
-    time_factors = sorted(time_data.keys())
+    # Sort the JSON keys numerically ("10" must come after "9", not "1").
+    time_factor_keys = sorted(time_data.keys(), key=int)
+    time_factors = [int(time_factor) for time_factor in time_factor_keys]
 
     # Get waste values
     waste = [
         time_data[time_factor]["fill_waste(Kg)"]
-        for time_factor in time_factors
+        for time_factor in time_factor_keys
     ]
 
     # Create bars
