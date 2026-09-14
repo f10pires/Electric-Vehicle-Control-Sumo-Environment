@@ -1,0 +1,11 @@
+{
+    "ev1":{
+        "type": "ElectricTruck",
+        "Emax": 40,
+        "initial_route": {"destination_id":"E103",
+                            "route_id":"Route",
+                            "initial_edge":"E165"},
+        "Demand": ["E170","-E186", "-E16", "-E23"]
+
+    }
+}

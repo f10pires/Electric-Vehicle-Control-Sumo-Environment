@@ -1,0 +1,523 @@
+<additional>
+
+    <!-- ================== TYPES OF VEHICLES ================== -->
+
+    <!-- Car -->
+
+    <routes>
+
+        <vType id="evehicle"
+            vClass="passenger"
+            energyModel="electric"
+            
+            length="5.0"
+            width="1.8"
+            height="1.5"
+            mass="1850"
+            minGap="2.5"
+
+            accel="2.6"
+            decel="4.5"
+            emergencyDecel="9.0"
+            maxSpeed="33.33"
+            
+            personCapacity="4"
+            guiShape="evehicle"
+            emissionClass="Energy/unknown">
+
+            <param key="device.battery.probability" value="1.0"/>
+            <param key="has.battery.device" value="true"/>
+            <param key="device.battery.capacity" value="35000"/>
+            <param key="device.battery.chargeLevel" value="17500"/>
+            <param key="device.battery.maximumPowerRate" value="150000"/>
+            <param key="constantPowerIntake" value="2500"/>
+
+        </vType>
+
+    </routes>
+
+    <!-- Bus -->
+    <routes>
+        <vType id="ElectricBus"
+            vClass="bus"
+            energyModel="electric"
+            
+            length="12.0"
+            width="2.5"
+            height="3.4"
+            mass="12000"
+            minGap="2.5"
+
+            accel="1"
+            decel="4"
+            emergencyDecel="7.0"
+            maxSpeed="24"
+            
+            personCapacity="85"
+            guiShape="bus"
+            emissionClass="Energy/unknown">
+            
+            <param key="has.battery.device" value="true"/>
+            <param key="device.battery.capacity" value="80000"/>
+            <param key="maximumPower" value="1000"/>
+            <param key="frontSurfaceArea" value="5"/>
+            <param key="airDragCoefficient" value="0.6"/>
+            <param key="rotatingMass" value="1000"/>
+            <param key="radialDragCoefficient" value="0.5"/>
+            <param key="rollDragCoefficient" value="0.01"/>
+            <param key="constantPowerIntake" value="100"/>
+            <param key="propulsionEfficiency" value="0.9"/>
+            <param key="recuperationEfficiency" value="0.9"/>
+            <param key="stoppingThreshold" value="0.1"/>
+            <param key="device.battery.maximumChargeRate" value="150000"/>
+        </vType>
+    </routes>
+
+    <!-- Truck -->
+    <routes>
+        <vType id="ElectricTruck"
+            vClass="truck"
+            energyModel="electric"
+            
+            length="7.1"
+            width="2.4"
+            height="2.4"
+            mass="4500"
+            minGap="2.5"
+
+
+
+            accel="1.3"
+            decel="4"
+            emergencyDecel="7.0"
+            maxSpeed="30"
+            
+            personCapacity="3"
+            guiShape="truck"
+            emissionClass="Energy/unknown">
+            
+            <!-- precisa ser modelado -->
+            <param key="has.battery.device" value="true"/>
+            <param key="device.battery.capacity" value="80000"/>
+            <param key="maximumPower" value="1000"/>
+            <param key="frontSurfaceArea" value="5"/>
+            <param key="airDragCoefficient" value="0.6"/>
+            <param key="rotatingMass" value="1000"/>
+            <param key="radialDragCoefficient" value="0.5"/>
+            <param key="rollDragCoefficient" value="0.01"/>
+            <param key="constantPowerIntake" value="100"/>
+            <param key="propulsionEfficiency" value="0.9"/>
+            <param key="recuperationEfficiency" value="0.9"/>
+            <param key="stoppingThreshold" value="0.1"/>
+            <param key="device.battery.maximumChargeRate" value="150000"/>
+        </vType>
+    </routes>
+
+    <!-- ================== BUS STOP ================== -->
+
+    <busStop id="checkpoint1"
+             lane="-arquimedes_0"
+             startPos="20"
+             endPos="30"
+             color="255,145,4">
+        <param key="emptyColor" value="1,1,1,0"/>
+    </busStop>
+
+    <busStop id="checkpoint2"
+             lane="arquimedes_0"
+             startPos="20"
+             endPos="30"
+             color="255,145,4">
+        <param key="emptyColor" value="1,1,1,0"/>
+    </busStop>
+
+    <busStop id="checkpoint3"
+             lane="ohm_0"
+             startPos="20"
+             endPos="30"
+             color="255,145,4">
+        <param key="emptyColor" value="1,1,1,0"/>
+    </busStop>
+    
+    <busStop id="checkpoint4"
+             lane="-ohm_0"
+             startPos="20"
+             endPos="30"
+             color="255,145,4">
+        <param key="emptyColor" value="1,1,1,0"/>
+    </busStop>
+
+    <!-- ================== PARKING ================== -->
+
+    <parkingArea
+        id="ParkAreaA"
+        lane="-E202_0"
+        startPos="2.9"
+        endPos="7.4"
+        roadsideCapacity="1"
+        angle="0"
+        length="4.5"
+    />
+
+    <parkingArea
+        id="ParkAreaB"
+        lane="E202_0"
+        startPos="2.9"
+        endPos="7.4"
+        roadsideCapacity="1"
+        angle="0"
+        length="4.5"
+    />
+
+    <parkingArea 
+            id="ParkAreaC" 
+            lane="-E133_0" 
+            startPos="5" 
+            endPos="25" 
+            roadsideCapacity="4" 
+            angle="0" 
+            length="4.5"
+    />
+
+    <parkingArea
+            id="ParkAreaD"
+            lane="-E131_0"
+            startPos="5"
+            endPos="25"
+            roadsideCapacity="4"
+            angle="0"
+            length="4.5"
+    />
+    
+    <parkingArea
+        id="ParkAreaE"
+        lane="E160_0"
+        startPos="2"
+        endPos="12"
+        roadsideCapacity="2"
+        angle="0"
+        length="4.5"
+    />
+
+    <parkingArea
+        id="ParkAreaF"
+        lane="-E159_0"
+        startPos="2"
+        endPos="12"
+        roadsideCapacity="2"
+        angle="0"
+        length="4.5"
+    />
+
+    <parkingArea
+        id="ParkAreaG"
+        lane="E95_0"
+        startPos="10"
+        endPos="25"
+        roadsideCapacity="3"
+        angle="0"
+        length="4.5"
+    />
+
+    <parkingArea
+        id="ParkAreaH"
+        lane="E96_0"
+        startPos="10"
+        endPos="25"
+        roadsideCapacity="3"
+        angle="0"
+        length="4.5"
+    />
+
+    <parkingArea
+        id="ParkAreaI"
+        lane="-E94_0"
+        startPos="2"
+        endPos="18"
+        roadsideCapacity="3"
+        angle="0"
+        length="4.5"
+    />
+
+    <parkingArea
+        id="ParkAreaJ"
+        lane="E93_0"
+        startPos="2"
+        endPos="18"
+        roadsideCapacity="3"
+        angle="0"
+        length="4.5"
+    />
+
+    <parkingArea
+        id="ParkAreaK"
+        lane="E69_0"
+        startPos="10"
+        endPos="30"
+        roadsideCapacity="4"
+        angle="0"
+        length="4.5"
+    />
+    
+    <parkingArea
+        id="ParkAreaL"
+        lane="-E70_0"
+        startPos="10"
+        endPos="30"
+        roadsideCapacity="4"
+        angle="0"
+        length="4.5"
+    />
+
+    <parkingArea
+    id="ParkAreaM"
+    lane="-E206_0"
+    startPos="2.9"
+    endPos="7.4"
+    roadsideCapacity="1"
+    angle="0"
+    length="4.5"
+    />
+
+    <parkingArea
+    id="ParkAreaN"
+    lane="E206_0"
+    startPos="2.9"
+    endPos="7.4"
+    roadsideCapacity="1"
+    angle="0"
+    length="4.5"
+    /> 
+
+    
+    <parkingArea
+    id="ParkAreaO"
+    lane="-E226_0"
+    startPos="2.9"
+    endPos="7.4"
+    roadsideCapacity="1"
+    angle="0"
+    length="4.5"
+    />
+
+    <parkingArea
+    id="ParkAreaP"
+    lane="E226_0"
+    startPos="2.9"
+    endPos="7.4"
+    roadsideCapacity="1"
+    angle="0"
+    length="4.5"
+    />
+
+    <parkingArea
+    id="ParkAreaQ"
+    lane="-E204_0"
+    startPos="2.9"
+    endPos="7.4"
+    roadsideCapacity="1"
+    angle="0"
+    length="4.5"
+    />
+
+    <parkingArea
+    id="ParkAreaR"
+    lane="E204_0"
+    startPos="2.9"
+    endPos="7.4"
+    roadsideCapacity="1"
+    angle="0"
+    length="4.5"
+    />
+
+    <parkingArea
+    id="ParkAreaS"
+    lane="E224_0"
+    startPos="2.9"
+    endPos="7.4"
+    roadsideCapacity="1"
+    angle="0"
+    length="4.5"
+    />
+
+    <parkingArea
+    id="ParkAreaT"
+    lane="-E224_0"
+    startPos="2.9"
+    endPos="7.4"
+    roadsideCapacity="1"
+    angle="0"
+    length="4.5"
+    />
+
+    <parkingArea
+    id="ParkAreaU"
+    lane="-E222_0"
+    startPos="2.9"
+    endPos="7.4"
+    roadsideCapacity="1"
+    angle="0"
+    length="4.5"
+    />
+
+    <parkingArea
+    id="ParkAreaV"
+    lane="E222_0"
+    startPos="2.9"
+    endPos="7.4"
+    roadsideCapacity="1"
+    angle="0"
+    length="4.5"
+    />
+
+    <parkingArea
+        id="ParkAreaW"
+        lane="E228_0"
+        startPos="29.7"
+        endPos="74.7"
+        roadsideCapacity="10"
+        angle="0"
+    />
+
+    <parkingArea
+        id="ParkAreaX"
+        lane="-E228_0"
+        startPos="29.7"
+        endPos="74.7"
+        roadsideCapacity="10"
+        angle="0"
+    />
+
+    <!-- ================== BINS ================== -->
+
+    <parkingArea 
+        id="BIN-A" 
+        lane="-E16_0" 
+        startPos="6.0" 
+        endPos="18.0" 
+        roadsideCapacity="1" 
+        angle="0" 
+    />
+
+    <parkingArea
+        id="BIN-B"
+        lane="-E23_0"
+        startPos="6.0" 
+        endPos="18.0" 
+        roadsideCapacity="1" 
+        angle="0"
+    />
+
+    <parkingArea
+        id="BIN-C"
+        lane="E170_0"
+        startPos="6.0" 
+        endPos="18.0" 
+        roadsideCapacity="1" 
+        angle="0"
+    />    
+    
+    <parkingArea
+        id="BIN-D"
+        lane="-E186_0"
+        startPos="6.0" 
+        endPos="18.0" 
+        roadsideCapacity="1" 
+        angle="0"
+    />
+
+    
+
+
+    
+
+    <!-- ================== Charging Station ================== -->
+
+    <chargingStation
+        id="Charge_ParkA"
+        lane="E69_0"
+        startPos="10"
+        endPos="30"
+        chargeDelay="2"
+        chargeInTransit="0"
+        power="30000"
+        efficiency="0.9"
+    />
+
+    <chargingStation
+        id="Charge_ParkB"
+        lane="-E70_0"
+        startPos="10"
+        endPos="30"
+        chargeDelay="2"
+        chargeInTransit="0"
+        power="30000"
+        efficiency="0.9"
+    />
+
+    <chargingStation
+        id="Charge_ParkC"
+        lane="-E133_0"
+        startPos="5"
+        endPos="25"
+        chargeDelay="2"
+        chargeInTransit="0"
+        power="30000"
+        efficiency="0.9"
+    />
+
+    <chargingStation
+        id="Charge_ParkD"
+        lane="-E131_0"
+        startPos="5"
+        endPos="25"
+        chargeDelay="2"
+        chargeInTransit="0"
+        power="30000"
+        efficiency="0.9"
+    />
+
+    <chargingStation
+        id="Charge_ParkE"
+        lane="E160_0"
+        startPos="2"
+        endPos="12"
+        chargeDelay="2"
+        chargeInTransit="0"
+        power="30000"
+        efficiency="0.9"
+    />
+
+    <chargingStation
+        id="Charge_ParkF"
+        lane="-E159_0"
+        startPos="2"
+        endPos="12"
+        chargeDelay="2"
+        chargeInTransit="0"
+        power="30000"
+        efficiency="0.9"
+    />
+
+    <chargingStation
+        id="Charge_ParkW"
+        lane="E228_0"
+        startPos="29.7"
+        endPos="74.7"
+        chargeDelay="2"
+        chargeInTransit="0"
+        power="30000"
+        efficiency="0.9"
+    />
+
+    <chargingStation
+        id="Charge_ParkX"
+        lane="-E228_0"
+        startPos="29.7"
+        endPos="74.7"
+        chargeDelay="2"
+        chargeInTransit="0"
+        power="30000"
+        efficiency="0.9"
+    />
+</additional>

@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<city>
+    
+    <general
+        inhabitants="65000"
+        households="29000"
+        childrenAgeLimit="18"
+        retirementAgeLimit="65"
+        carRate="0.87"
+        unemploymentRate="0.05"
+        footDistanceLimit="2000"
+        incomingTraffic="50000"
+        outgoingTraffic="15000"
+    />
+
+    <population>
+        <bracket beginAge="0" endAge="9" peopleNbr="5222" />
+        <bracket beginAge="10" endAge="19" peopleNbr="6238" />
+        <bracket beginAge="20" endAge="65" peopleNbr="40700" />
+        <bracket beginAge="66" endAge="100" peopleNbr="12840" />
+    </population>
+
+    <parameters
+        carPreference="0.50"
+        meanTimePerKmInCity="360"
+        freeTimeActivityRate="0.15"
+        uniformRandomTraffic="0.20"
+        departureVariation="0"
+    />
+
+    <workHours>
+        <opening hour="25200" proportion="0.40" />
+        <opening hour="28800" proportion="0.60" />
+        <closing hour="57600" proportion="0.30" />
+        <closing hour="64800" proportion="0.70" />
+    </workHours>
+
+    <streets>
+        <street edge="maxwell" population="0.0" workPosition="0.0" /> <street edge="-maxwell" population="0.0" workPosition="0.0" />
+        <street edge="euler" population="0.0" workPosition="0.0" /> <street edge="-euler" population="0.0" workPosition="0.0" />
+        <street edge="E105" population="0.0" workPosition="0.0" /> <street edge="-E105" population="0.0" workPosition="0.0" />
+        <street edge="E88" population="0.0" workPosition="0.0" /> <street edge="-E88" population="0.0" workPosition="0.0" />
+        <street edge="E139" population="0.0" workPosition="0.0" /> <street edge="-E139" population="0.0" workPosition="0.0" />
+        <street edge="E124" population="0.0" workPosition="0.0" /> <street edge="-E124" population="0.0" workPosition="0.0" />
+        <street edge="E135" population="0.0" workPosition="0.0" /> <street edge="-E135" population="0.0" workPosition="0.0" />
+        <street edge="E125" population="0.0" workPosition="0.0" /> <street edge="-E125" population="0.0" workPosition="0.0" />
+
+        <street edge="E173" population="10.0" workPosition="0.0" /> <street edge="-E173" population="10.0" workPosition="0.0" />
+        <street edge="E174" population="10.0" workPosition="0.0" /> <street edge="-E174" population="10.0" workPosition="0.0" />
+        <street edge="E169" population="10.0" workPosition="0.0" /> <street edge="-E169" population="10.0" workPosition="0.0" />
+        <street edge="E170" population="10.0" workPosition="0.0" /> <street edge="-E170" population="10.0" workPosition="0.0" />
+        <street edge="E171" population="10.0" workPosition="0.0" /> <street edge="-E171" population="10.0" workPosition="0.0" />
+        <street edge="E172" population="10.0" workPosition="0.0" /> <street edge="-E172" population="10.0" workPosition="0.0" />
+        <street edge="E178" population="10.0" workPosition="0.0" /> <street edge="-E178" population="10.0" workPosition="0.0" />
+        <street edge="E180" population="10.0" workPosition="0.0" /> <street edge="-E180" population="10.0" workPosition="0.0" />
+        <street edge="E179" population="10.0" workPosition="0.0" /> <street edge="-E179" population="10.0" workPosition="0.0" />
+        <street edge="E181" population="10.0" workPosition="0.0" /> <street edge="-E181" population="10.0" workPosition="0.0" />
+        <street edge="E213" population="10.0" workPosition="0.0" /> <street edge="-E213" population="10.0" workPosition="0.0" />
+        <street edge="E212" population="10.0" workPosition="0.0" /> <street edge="-E212" population="10.0" workPosition="0.0" />
+        <street edge="E211" population="10.0" workPosition="0.0" /> <street edge="-E211" population="10.0" workPosition="0.0" />
+        <street edge="E194" population="10.0" workPosition="0.0" /> <street edge="-E194" population="10.0" workPosition="0.0" />
+        <street edge="E208" population="10.0" workPosition="0.0" /> <street edge="-E208" population="10.0" workPosition="0.0" />
+        <street edge="E215" population="10.0" workPosition="0.0" /> <street edge="-E215" population="10.0" workPosition="0.0" />
+        <street edge="E216" population="10.0" workPosition="0.0" /> <street edge="-E216" population="10.0" workPosition="0.0" />
+        <street edge="E217" population="10.0" workPosition="0.0" /> <street edge="-E217" population="10.0" workPosition="0.0" />
+        <street edge="E218" population="10.0" workPosition="0.0" /> <street edge="-E218" population="10.0" workPosition="0.0" />
+        <street edge="E210" population="10.0" workPosition="0.0" /> <street edge="-E210" population="10.0" workPosition="0.0" />
+        <street edge="E198" population="10.0" workPosition="0.0" /> <street edge="-E198" population="10.0" workPosition="0.0" />
+        <street edge="E214" population="10.0" workPosition="0.0" /> <street edge="-E214" population="10.0" workPosition="0.0" />
+        <street edge="E193" population="10.0" workPosition="0.0" /> <street edge="-E193" population="10.0" workPosition="0.0" />
+        <street edge="E197" population="10.0" workPosition="0.0" /> <street edge="-E197" population="10.0" workPosition="0.0" />
+        <street edge="E195" population="10.0" workPosition="0.0" /> <street edge="-E195" population="10.0" workPosition="0.0" />
+        <street edge="E199" population="10.0" workPosition="0.0" /> <street edge="-E199" population="10.0" workPosition="0.0" />
+        <street edge="E201" population="10.0" workPosition="0.0" /> <street edge="-E201" population="10.0" workPosition="0.0" />
+        <street edge="E207" population="10.0" workPosition="0.0" /> <street edge="-E207" population="10.0" workPosition="0.0" />
+        <street edge="E192" population="10.0" workPosition="0.0" /> <street edge="-E192" population="10.0" workPosition="0.0" />
+        <street edge="E196" population="10.0" workPosition="0.0" /> <street edge="-E196" population="10.0" workPosition="0.0" />
+        <street edge="E209" population="10.0" workPosition="0.0" /> <street edge="-E209" population="10.0" workPosition="0.0" />
+        <street edge="E200" population="10.0" workPosition="0.0" /> <street edge="-E200" population="10.0" workPosition="0.0" />
+        <street edge="E186" population="10.0" workPosition="0.0" /> <street edge="-E186" population="10.0" workPosition="0.0" />
+        <street edge="E185" population="10.0" workPosition="0.0" /> <street edge="-E185" population="10.0" workPosition="0.0" />
+        <street edge="E184" population="10.0" workPosition="0.0" /> <street edge="-E184" population="10.0" workPosition="0.0" />
+        <street edge="E183" population="10.0" workPosition="0.0" /> <street edge="-E183" population="10.0" workPosition="0.0" />
+        <street edge="E182" population="10.0" workPosition="0.0" /> <street edge="-E182" population="10.0" workPosition="0.0" />
+        <street edge="E187" population="10.0" workPosition="0.0" /> <street edge="-E187" population="10.0" workPosition="0.0" />
+        <street edge="E189" population="10.0" workPosition="0.0" /> <street edge="-E189" population="10.0" workPosition="0.0" />
+        <street edge="E190" population="10.0" workPosition="0.0" /> <street edge="-E190" population="10.0" workPosition="0.0" />
+        <street edge="E188" population="10.0" workPosition="0.0" /> <street edge="-E188" population="10.0" workPosition="0.0" />
+        <street edge="E191" population="10.0" workPosition="0.0" /> <street edge="-E191" population="10.0" workPosition="0.0" />
+        <street edge="E56" population="10.0" workPosition="0.0" /> <street edge="-E56" population="10.0" workPosition="0.0" />
+        <street edge="E57" population="10.0" workPosition="0.0" /> <street edge="-E57" population="10.0" workPosition="0.0" />
+        <street edge="E8" population="10.0" workPosition="0.0" /> <street edge="-E8" population="10.0" workPosition="0.0" />
+        <street edge="E17" population="10.0" workPosition="0.0" /> <street edge="-E17" population="10.0" workPosition="0.0" />
+        <street edge="E20" population="10.0" workPosition="0.0" /> <street edge="-E20" population="10.0" workPosition="0.0" />
+        <street edge="E3" population="10.0" workPosition="0.0" /> <street edge="-E3" population="10.0" workPosition="0.0" />
+        <street edge="E16" population="10.0" workPosition="0.0" /> <street edge="-E16" population="10.0" workPosition="0.0" />
+        <street edge="E19" population="10.0" workPosition="0.0" /> <street edge="-E19" population="10.0" workPosition="0.0" />
+        <street edge="E58" population="10.0" workPosition="0.0" /> <street edge="-E58" population="10.0" workPosition="0.0" />
+        <street edge="E118" population="10.0" workPosition="0.0" /> <street edge="-E118" population="10.0" workPosition="0.0" />
+        <street edge="E4" population="10.0" workPosition="0.0" /> <street edge="-E4" population="10.0" workPosition="0.0" />
+        <street edge="E27" population="10.0" workPosition="0.0" /> <street edge="-E27" population="10.0" workPosition="0.0" />
+        <street edge="E28" population="10.0" workPosition="0.0" /> <street edge="-E28" population="10.0" workPosition="0.0" />
+        <street edge="E30" population="10.0" workPosition="0.0" /> <street edge="-E30" population="10.0" workPosition="0.0" />
+        <street edge="E31" population="10.0" workPosition="0.0" /> <street edge="-E31" population="10.0" workPosition="0.0" />
+        <street edge="E29" population="10.0" workPosition="0.0" /> <street edge="-E29" population="10.0" workPosition="0.0" />
+        <street edge="E32" population="10.0" workPosition="0.0" /> <street edge="-E32" population="10.0" workPosition="0.0" />
+        <street edge="E132" population="10.0" workPosition="0.0" /> <street edge="-E132" population="10.0" workPosition="0.0" />
+        <street edge="E138" population="10.0" workPosition="0.0" /> <street edge="-E138" population="10.0" workPosition="0.0" />
+        <street edge="E134" population="10.0" workPosition="0.0" /> <street edge="-E134" population="10.0" workPosition="0.0" />
+        <street edge="E120" population="10.0" workPosition="0.0" /> <street edge="-E120" population="10.0" workPosition="0.0" />
+        <street edge="E119" population="10.0" workPosition="0.0" /> <street edge="-E119" population="10.0" workPosition="0.0" />
+        <street edge="E33" population="10.0" workPosition="0.0" /> <street edge="-E33" population="10.0" workPosition="0.0" />
+        <street edge="E36" population="10.0" workPosition="0.0" /> <street edge="-E36" population="10.0" workPosition="0.0" />
+        <street edge="E35" population="10.0" workPosition="0.0" /> <street edge="-E35" population="10.0" workPosition="0.0" />
+        <street edge="E39" population="10.0" workPosition="0.0" /> <street edge="-E39" population="10.0" workPosition="0.0" />
+        <street edge="E38" population="10.0" workPosition="0.0" /> <street edge="-E38" population="10.0" workPosition="0.0" />
+        <street edge="E40" population="10.0" workPosition="0.0" /> <street edge="-E40" population="10.0" workPosition="0.0" />
+        <street edge="E69" population="10.0" workPosition="0.0" /> <street edge="-E69" population="10.0" workPosition="0.0" />
+        <street edge="E70" population="10.0" workPosition="0.0" /> <street edge="-E70" population="10.0" workPosition="0.0" />
+        <street edge="E41" population="10.0" workPosition="0.0" /> <street edge="-E41" population="10.0" workPosition="0.0" />
+        <street edge="E42" population="10.0" workPosition="0.0" /> <street edge="-E42" population="10.0" workPosition="0.0" />
+        <street edge="E45" population="10.0" workPosition="0.0" /> <street edge="-E45" population="10.0" workPosition="0.0" />
+        <street edge="E49" population="10.0" workPosition="0.0" /> <street edge="-E49" population="10.0" workPosition="0.0" />
+        <street edge="E137" population="10.0" workPosition="0.0" /> <street edge="-E137" population="10.0" workPosition="0.0" />
+        <street edge="E83" population="10.0" workPosition="0.0" /> <street edge="-E83" population="10.0" workPosition="0.0" />
+        <street edge="E78" population="10.0" workPosition="0.0" /> <street edge="-E78" population="10.0" workPosition="0.0" />
+        <street edge="E80" population="10.0" workPosition="0.0" /> <street edge="-E80" population="10.0" workPosition="0.0" />
+        <street edge="E81" population="10.0" workPosition="0.0" /> <street edge="-E81" population="10.0" workPosition="0.0" />
+        <street edge="E46" population="10.0" workPosition="0.0" /> <street edge="-E46" population="10.0" workPosition="0.0" />
+        <street edge="E47" population="10.0" workPosition="0.0" /> <street edge="-E47" population="10.0" workPosition="0.0" />
+        <street edge="E50" population="10.0" workPosition="0.0" /> <street edge="-E50" population="10.0" workPosition="0.0" />
+        <street edge="E51" population="10.0" workPosition="0.0" /> <street edge="-E51" population="10.0" workPosition="0.0" />
+        <street edge="E37" population="10.0" workPosition="0.0" /> <street edge="-E37" population="10.0" workPosition="0.0" />
+        <street edge="E34" population="10.0" workPosition="0.0" /> <street edge="-E34" population="10.0" workPosition="0.0" />
+        <street edge="E44" population="10.0" workPosition="0.0" /> <street edge="-E44" population="10.0" workPosition="0.0" />
+        <street edge="E52" population="10.0" workPosition="0.0" /> <street edge="-E52" population="10.0" workPosition="0.0" />
+        <street edge="E48" population="10.0" workPosition="0.0" /> <street edge="-E48" population="10.0" workPosition="0.0" />
+        <street edge="E75" population="10.0" workPosition="0.0" /> <street edge="-E75" population="10.0" workPosition="0.0" />
+        <street edge="E164" population="10.0" workPosition="0.0" />
+        <street edge="E53" population="10.0" workPosition="0.0" /> <street edge="-E53" population="10.0" workPosition="0.0" />
+        <street edge="E54" population="10.0" workPosition="0.0" /> <street edge="-E54" population="10.0" workPosition="0.0" />
+        <street edge="E55" population="10.0" workPosition="0.0" /> <street edge="-E55" population="10.0" workPosition="0.0" />
+        <street edge="E73" population="10.0" workPosition="0.0" /> <street edge="-E73" population="10.0" workPosition="0.0" />
+        <street edge="E74" population="10.0" workPosition="0.0" /> <street edge="-E74" population="10.0" workPosition="0.0" />
+        <street edge="E7" population="10.0" workPosition="0.0" /> <street edge="-E7" population="10.0" workPosition="0.0" />
+        <street edge="E23" population="10.0" workPosition="0.0" /> <street edge="-E23" population="10.0" workPosition="0.0" />
+        <street edge="E26" population="10.0" workPosition="0.0" /> <street edge="-E26" population="10.0" workPosition="0.0" />
+        <street edge="E0" population="10.0" workPosition="0.0" /> <street edge="-E0" population="10.0" workPosition="0.0" />
+        <street edge="E22" population="10.0" workPosition="0.0" /> <street edge="-E22" population="10.0" workPosition="0.0" />
+        <street edge="E25" population="10.0" workPosition="0.0" /> <street edge="-E25" population="10.0" workPosition="0.0" />
+        <street edge="E71" population="10.0" workPosition="0.0" /> <street edge="-E71" population="10.0" workPosition="0.0" />
+        <street edge="E72" population="10.0" workPosition="0.0" /> <street edge="-E72" population="10.0" workPosition="0.0" />
+        <street edge="E140" population="10.0" workPosition="0.0" /> <street edge="-E140" population="10.0" workPosition="0.0" />
+        <street edge="E143" population="10.0" workPosition="0.0" /> <street edge="-E143" population="10.0" workPosition="0.0" />
+        <street edge="E144" population="10.0" workPosition="0.0" /> <street edge="-E144" population="10.0" workPosition="0.0" />
+        <street edge="E148" population="10.0" workPosition="0.0" /> <street edge="-E148" population="10.0" workPosition="0.0" />
+        <street edge="E149" population="10.0" workPosition="0.0" /> <street edge="-E149" population="10.0" workPosition="0.0" />
+        <street edge="E146" population="10.0" workPosition="0.0" /> <street edge="-E146" population="10.0" workPosition="0.0" />
+        <street edge="E145" population="10.0" workPosition="0.0" /> <street edge="-E145" population="10.0" workPosition="0.0" />
+        <street edge="E141" population="10.0" workPosition="0.0" /> <street edge="-E141" population="10.0" workPosition="0.0" />
+        <street edge="E142" population="10.0" workPosition="0.0" /> <street edge="-E142" population="10.0" workPosition="0.0" />
+        <street edge="E147" population="10.0" workPosition="0.0" /> <street edge="-E147" population="10.0" workPosition="0.0" />
+        <street edge="E155" population="10.0" workPosition="0.0" /> <street edge="-E155" population="10.0" workPosition="0.0" />
+        <street edge="E151" population="10.0" workPosition="0.0" /> <street edge="-E151" population="10.0" workPosition="0.0" />
+        <street edge="E152" population="10.0" workPosition="0.0" /> <street edge="-E152" population="10.0" workPosition="0.0" />
+        <street edge="E153" population="10.0" workPosition="0.0" /> <street edge="-E153" population="10.0" workPosition="0.0" />
+        <street edge="E154" population="10.0" workPosition="0.0" /> <street edge="-E154" population="10.0" workPosition="0.0" />
+        <street edge="E158" population="10.0" workPosition="0.0" /> <street edge="-E158" population="10.0" workPosition="0.0" />
+        <street edge="E157" population="10.0" workPosition="0.0" /> <street edge="-E157" population="10.0" workPosition="0.0" />
+        <street edge="E156" population="10.0" workPosition="0.0" /> <street edge="-E156" population="10.0" workPosition="0.0" />
+        <street edge="E150" population="10.0" workPosition="0.0" /> <street edge="-E150" population="10.0" workPosition="0.0" />
+        <street edge="E136" population="10.0" workPosition="0.0" /> <street edge="-E136" population="10.0" workPosition="0.0" />
+        <street edge="E160" population="10.0" workPosition="0.0" /> <street edge="-E160" population="10.0" workPosition="0.0" />
+        <street edge="E159" population="10.0" workPosition="0.0" /> <street edge="-E159" population="10.0" workPosition="0.0" />
+                            
+        <street edge="E93" population="0.0" workPosition="100.0" /> <street edge="-E93" population="0.0" workPosition="100.0" />
+        <street edge="E5" population="0.0" workPosition="100.0" /> <street edge="-E5" population="0.0" workPosition="100.0" />
+        <street edge="E9" population="0.0" workPosition="100.0" /> <street edge="-E9" population="0.0" workPosition="100.0" />
+        <street edge="E2" population="0.0" workPosition="100.0" /> <street edge="-E2" population="0.0" workPosition="100.0" />
+        <street edge="E94" population="0.0" workPosition="100.0" /> <street edge="-E94" population="0.0" workPosition="100.0" />
+        <street edge="E101" population="0.0" workPosition="100.0" /> <street edge="-E101" population="0.0" workPosition="100.0" />
+        <street edge="E100" population="0.0" workPosition="100.0" /> <street edge="-E100" population="0.0" workPosition="100.0" />
+        <street edge="E11" population="0.0" workPosition="100.0" /> <street edge="-E11" population="0.0" workPosition="100.0" />
+        <street edge="E10" population="0.0" workPosition="100.0" /> <street edge="-E10" population="0.0" workPosition="100.0" />
+        <street edge="E99" population="0.0" workPosition="100.0" /> <street edge="-E99" population="0.0" workPosition="100.0" />
+        <street edge="E103" population="0.0" workPosition="100.0" /> <street edge="-E103" population="0.0" workPosition="100.0" />
+        <street edge="E106" population="0.0" workPosition="100.0" /> <street edge="-E106" population="0.0" workPosition="100.0" />
+        <street edge="E107" population="0.0" workPosition="100.0" /> <street edge="-E107" population="0.0" workPosition="100.0" />
+        <street edge="E14" population="0.0" workPosition="100.0" /> <street edge="-E14" population="0.0" workPosition="100.0" />
+        <street edge="E13" population="0.0" workPosition="100.0" /> <street edge="-E13" population="0.0" workPosition="100.0" />
+        <street edge="E95" population="0.0" workPosition="100.0" /> <street edge="-E95" population="0.0" workPosition="100.0" />
+        <street edge="E6" population="0.0" workPosition="100.0" /> <street edge="-E6" population="0.0" workPosition="100.0" />
+        <street edge="E12" population="0.0" workPosition="100.0" /> <street edge="-E12" population="0.0" workPosition="100.0" />
+        <street edge="E96" population="0.0" workPosition="100.0" /> <street edge="-E96" population="0.0" workPosition="100.0" />
+        <street edge="E1" population="0.0" workPosition="100.0" /> <street edge="-E1" population="0.0" workPosition="100.0" />
+        <street edge="E115" population="0.0" workPosition="100.0" /> <street edge="-E115" population="0.0" workPosition="100.0" />
+        <street edge="E114" population="0.0" workPosition="100.0" /> <street edge="-E114" population="0.0" workPosition="100.0" />
+        <street edge="E116" population="0.0" workPosition="100.0" /> <street edge="-E116" population="0.0" workPosition="100.0" />
+        <street edge="E117" population="0.0" workPosition="100.0" /> <street edge="-E117" population="0.0" workPosition="100.0" />
+        <street edge="E90" population="0.0" workPosition="100.0" /> <street edge="-E90" population="0.0" workPosition="100.0" />
+        <street edge="E92" population="0.0" workPosition="100.0" /> <street edge="-E92" population="0.0" workPosition="100.0" />
+        <street edge="E110" population="0.0" workPosition="100.0" /> <street edge="-E110" population="0.0" workPosition="100.0" />
+        <street edge="E113" population="0.0" workPosition="100.0" /> <street edge="-E113" population="0.0" workPosition="100.0" />
+        <street edge="E126" population="0.0" workPosition="100.0" /> <street edge="-E126" population="0.0" workPosition="100.0" />
+        <street edge="E128" population="0.0" workPosition="100.0" /> <street edge="-E128" population="0.0" workPosition="100.0" />
+        <street edge="E129" population="0.0" workPosition="100.0" /> <street edge="-E129" population="0.0" workPosition="100.0" />
+        <street edge="E127" population="0.0" workPosition="100.0" /> <street edge="-E127" population="0.0" workPosition="100.0" />
+        <street edge="E122" population="0.0" workPosition="100.0" /> <street edge="-E122" population="0.0" workPosition="100.0" />
+        <street edge="E121" population="0.0" workPosition="100.0" /> <street edge="-E121" population="0.0" workPosition="100.0" />
+        <street edge="E89" population="0.0" workPosition="100.0" /> <street edge="-E89" population="0.0" workPosition="100.0" />
+        <street edge="E123" population="0.0" workPosition="100.0" /> <street edge="-E123" population="0.0" workPosition="100.0" />
+    </streets>
+
+    <cityGates>
+        <entrance edge="maxwell" pos="0.00" incoming="1.0" outgoing="1.0"/>
+        <entrance edge="-maxwell" pos="0.00" incoming="1.0" outgoing="1.0"/>
+        <entrance edge="euler" pos="0.00" incoming="1.0" outgoing="1.0"/>
+        <entrance edge="-euler" pos="0.00" incoming="1.0" outgoing="1.0"/>
+        <entrance edge="E105" pos="0.00" incoming="1.0" outgoing="1.0"/>
+        <entrance edge="-E105" pos="0.00" incoming="1.0" outgoing="1.0"/>
+        <entrance edge="E88" pos="0.00" incoming="1.0" outgoing="1.0"/>
+        <entrance edge="-E88" pos="0.00" incoming="1.0" outgoing="1.0"/>
+        <entrance edge="E139" pos="0.00" incoming="1.0" outgoing="1.0"/>
+        <entrance edge="-E139" pos="0.00" incoming="1.0" outgoing="1.0"/>
+        <entrance edge="E124" pos="0.00" incoming="1.0" outgoing="1.0"/>
+        <entrance edge="-E124" pos="0.00" incoming="1.0" outgoing="1.0"/>
+        <entrance edge="E135" pos="0.00" incoming="1.0" outgoing="1.0"/>
+        <entrance edge="-E135" pos="0.00" incoming="1.0" outgoing="1.0"/>
+        <entrance edge="E125" pos="0.00" incoming="1.0" outgoing="1.0"/>
+        <entrance edge="-E125" pos="0.00" incoming="1.0" outgoing="1.0"/>
+    </cityGates>
+
+    <schools>
+        <school edge="E12" pos="20.0" beginAge="6" endAge="14" capacity="800" opening="25200" closing="45000" />
+        <school edge="E9" pos="30.0" beginAge="15" endAge="18" capacity="1200" opening="27000" closing="63000" />
+    </schools>
+
+    <workplaces>
+        <workplace edge="E93" capacity="10000" opening="28800" closing="64800" />
+        <workplace edge="E1" capacity="25000" opening="28800" closing="64800" />
+        <workplace edge="E92" capacity="15000" opening="28800" closing="64800" />
+        <workplace edge="E101" capacity="15000" opening="28800" closing="64800" />
+    </workplaces>
+
+    <busStations>
+        <busStation id="1" edge="E1" pos="25" /> 
+        <busStation id="2" edge="-E1" pos="25" />
+    </busStations>
+
+    <busLines>
+        <busLine id="601" maxTripDuration="3600">
+            <stations>
+                <station refId="1" />
+            </stations>
+            <revStations>
+                <station refId="2" />
+            </revStations>
+            <frequencies>
+                <frequency begin="21600" end="32400" rate="900" />
+                <frequency begin="32400" end="57600" rate="1800" />
+                <frequency begin="57600" end="68400" rate="900" />
+            </frequencies>
+        </busLine>
+    </busLines>
+
+</city>

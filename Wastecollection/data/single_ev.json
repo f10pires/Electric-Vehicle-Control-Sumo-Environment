@@ -1,0 +1,8 @@
+{
+    "ev1": {
+        "type": "evehicle",
+        "initial_edge": "E103",
+        "routeid": "ROTA DA POLICIA",
+        "final_edge": "E165"
+    }
+}
