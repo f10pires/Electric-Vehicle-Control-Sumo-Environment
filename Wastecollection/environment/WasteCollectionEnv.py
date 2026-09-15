@@ -65,7 +65,7 @@ class EVGarbageTruck(gym.Env):
         self.waiting_time = config["Waiting_time"]         # Auxiliary time control
         self.refTime = [-1, True]                          # Auxiliary time control
         
-    def step(self, action:list,params: tuple = ()):
+    def step(self, action:list,params: tuple = (), return_to_landfill: bool = False):
         
         reward = 0
 
@@ -91,18 +91,18 @@ class EVGarbageTruck(gym.Env):
 
         if self.ev.edge == self.ev.final_dest and self.ev.dist_to_final  <= 10 and self.refTime[1]:
             traci.vehicle.setSpeed(self.id, 0)
-            
-        if self.ev.edge == self.ev.final_dest and self.ev.speed == 0: 
 
-            #lógica a implementar para definir o próximo destino do veículo, evitando que ele vá para o mesmo destino final novamente.
-            
+        # "return_to_landfill"    
+        if (self.ev.edge == self.ev.final_dest and self.ev.dist_to_final <= 10) and (self.ev.speed <0.1) and (return_to_landfill): 
 
-            dest = random.choice([x for x in self.demand if self.demand[x] != self.ev.final_dest])
-            self.ev.action.new_route(self.demand[dest])
+            landfill = "-E70"
+            landfillid = "ParkAreaL"
+            self.ev.action.new_route(landfill)
 
             self.ev.all_up()
             self.ev.action.stop_car()
-            self.ev.action.stop_parking(self.ev.final_dest, dest)
+
+            self.ev.action.go_to_landfill(landfill, landfillid)
 
             if self.refTime[1]:
                 refTime = traci.simulation.getTime() + self.waiting_time

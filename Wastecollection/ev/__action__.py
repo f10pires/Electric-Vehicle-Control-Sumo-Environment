@@ -112,6 +112,39 @@ class Action:
             parking_id,
             duration=self.stop_duration
         )
+    
+    def waste_collection(self, bin_edge: str, bin_id: str):
+        
+        print("\n======= Collection Request =======")
+        print(f"Vehicle ID      : {self.ev.vehicle_id}")
+        print(f"Bin ID      : {bin_id}")
+        print(f"Bin Edge    : {bin_edge}")
+        print(f"Simulation Time : {traci.simulation.getTime():.1f} s")
+        print("===============================")
+        
+        traci.vehicle.changeTarget(self.ev.vehicle_id, bin_edge)
+        traci.vehicle.setParkingAreaStop(
+            self.ev.vehicle_id,
+            bin_id,
+            duration=90
+        )
+
+    def go_to_landfill(self, landfill_edge: str, landfill_id: str):
+
+        """Route the vehicle to the landfill."""
+        print("\n======= Landfill Request =======")
+        print(f"Vehicle ID      : {self.ev.vehicle_id}")
+        print(f"Landfill ID      : {landfill_id}")
+        print(f"Landfill Edge    : {landfill_edge}")
+        print(f"Simulation Time : {traci.simulation.getTime():.1f} s")
+        print("===============================")
+
+        traci.vehicle.changeTarget(self.ev.vehicle_id, landfill_edge)
+        traci.vehicle.setParkingAreaStop(
+            self.ev.vehicle_id,
+            landfill_id,
+            duration=self.stop_duration
+        )
 
     def skip_stop(self):
         """Resume the vehicle after a scheduled stop."""

@@ -18,17 +18,19 @@ def main():
     tools = {}
     tools["streets"] = simulation.streets    
     env = EVGarbageTruck(config, vehicles, start,tools)
-    
-    while traci.simulation.getTime() < simulation.max_time:
-        env.step([1,0,0,0,0,0,0,0],())
 
-        
+    flag = False
+    while traci.simulation.getTime() < simulation.max_time:
+        env.step([1,0,0,0,0,0,0,0],(),flag)
+
         if env.ev.soc <= 50 :
             env.ev.action.recharge_substation("-E70", "Charge_ParkB")
 
         if env.ev.soc == 100 and  "charging station" in env.ev.int_and_set.stop(): 
             env.ev.action.set_target(env.ev.final_dest)
             env.ev.action.skip_stop()
+            flag = True
+
 
 if __name__ == "__main__":
     main()

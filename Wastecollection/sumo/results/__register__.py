@@ -8,7 +8,7 @@ class Register :
         return
     
     def registration_init(self) :   
-        self.pasta_results = Path("ElectricVehicle/sumo/results")
+        self.pasta_results = Path("Wastecollection/sumo/results")
         self.pasta_results.mkdir(parents=True, exist_ok=True) 
         
         self.arquivo_csv = self.pasta_results / f"{self.id}.csv"
