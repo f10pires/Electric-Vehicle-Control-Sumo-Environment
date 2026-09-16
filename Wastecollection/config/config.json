@@ -23,6 +23,10 @@
     "destin flag" : "False",
     "mod dist" : 1600,
     "vTypes" : "evehicle",
-    "Max_vehicles": 800
+    "Max_vehicles": 800,
+
+    "min_dist_dest" : 10,
+
+    "max_dist_dest" : 100
     
 }

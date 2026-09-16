@@ -50,7 +50,8 @@ class EVGarbageTruck(gym.Env):
             config["mod dist"],
             config["step"]
         )
-
+        
+        self.config = config
         self.demand = self.ev.bin_edges                    # Demand list
 
         # -----------------------------
@@ -86,14 +87,14 @@ class EVGarbageTruck(gym.Env):
         self.general.step()
         self.updateinfo()
         
-        if 10 <self.ev.dist_to_final < 150 :
+        if self.config["min_dist_dest"] <self.ev.dist_to_final < self.config["max_dist_dest"]:
             self.ev.action.slow_down()
 
-        if self.ev.edge == self.ev.final_dest and self.ev.dist_to_final  <= 10 and self.refTime[1]:
+        if self.ev.edge == self.ev.final_dest and self.ev.dist_to_final  <= self.config["min_dist_dest"] and self.refTime[1]:
             traci.vehicle.setSpeed(self.id, 0)
 
         # "return_to_landfill"    
-        if (self.ev.edge == self.ev.final_dest and self.ev.dist_to_final <= 10) and (self.ev.speed <0.1) and (return_to_landfill): 
+        if (self.ev.edge == self.ev.final_dest and self.ev.dist_to_final <= self.config["min_dist_dest"]) and (self.ev.speed == 0) and (return_to_landfill): 
 
             landfill = "-E70"
             landfillid = "ParkAreaL"

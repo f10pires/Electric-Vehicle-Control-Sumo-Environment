@@ -129,6 +129,10 @@ class Action:
             duration=90
         )
 
+        collection_flag = True
+        
+        return collection_flag
+
     def go_to_landfill(self, landfill_edge: str, landfill_id: str):
 
         """Route the vehicle to the landfill."""
