@@ -11,6 +11,7 @@ class EV:
         self.vehicle_id = vehicle_id                                                       # Vehicle ID
         self.vehicle_type = vehicle_type                                                   # Vehicle type
         self.step_length = step_length                                                     # step of simulation
+        self.remaining_bins = 0
         
         # -----------------------------
         # Instance of classes
