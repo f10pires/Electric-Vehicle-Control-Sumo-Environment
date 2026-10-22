@@ -4,7 +4,7 @@ from sumolib import checkBinary
 import subprocess
 import sys
 import os
-from Tools.random_vehicles import RandomVeh
+from EVGarbageCollector.Wastecollection.Tools.random_vehicles import RandomVeh
 
 class Sumo:
 

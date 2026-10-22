@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 2026-09-19T18:01:01.173511-03:00 by Eclipse SUMO activitygen 1.27.1
+<!-- generated on 2026-10-17T12:44:52.344240-03:00 by Eclipse SUMO activitygen 1.27.1
 <activitygenConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/activitygenConfiguration.xsd">
 
     <input>
@@ -24,125 +24,125 @@
     <vType id="random" vClass="passenger" color="blue"/>
     <vType id="bus" vClass="bus" color="green"/>
 
-    <trip id="randUni599:1" type="random" depart="5.00" departPos="4.43" arrivalPos="67.41" arrivalSpeed="0.00" from="-E27" to="-E187"/>
-    <trip id="randUni262:1" type="random" depart="15.00" departPos="149.06" arrivalPos="20.02" arrivalSpeed="0.00" from="joulesC" to="euler"/>
-    <trip id="randUni653:1" type="random" depart="26.00" departPos="39.80" arrivalPos="52.32" arrivalSpeed="0.00" from="-E172" to="-E97"/>
-    <trip id="randUni124:1" type="random" depart="56.00" departPos="7.55" arrivalPos="34.55" arrivalSpeed="0.00" from="-E185" to="-E211"/>
-    <trip id="randUni154:1" type="random" depart="246.00" departPos="12.28" arrivalPos="25.54" arrivalSpeed="0.00" from="E126" to="E4"/>
-    <trip id="randUni302:1" type="random" depart="824.00" departPos="34.85" arrivalPos="6.14" arrivalSpeed="0.00" from="E55" to="-E40"/>
-    <trip id="randUni132:1" type="random" depart="1049.00" departPos="38.55" arrivalPos="11.07" arrivalSpeed="0.00" from="-E171" to="-E133"/>
-    <trip id="randUni505:1" type="random" depart="1128.00" departPos="26.29" arrivalPos="25.73" arrivalSpeed="0.00" from="-E102" to="E219"/>
-    <trip id="randUni358:1" type="random" depart="1408.00" departPos="9.66" arrivalPos="16.37" arrivalSpeed="0.00" from="E72" to="E80"/>
-    <trip id="randUni59:1" type="random" depart="1919.00" departPos="0.24" arrivalPos="6.16" arrivalSpeed="0.00" from="joulesD" to="E171"/>
-    <trip id="randUni176:1" type="random" depart="1924.00" departPos="6.90" arrivalPos="18.73" arrivalSpeed="0.00" from="-E220" to="E132"/>
-    <trip id="randUni465:1" type="random" depart="2466.00" departPos="117.94" arrivalPos="14.59" arrivalSpeed="0.00" from="E231" to="E57"/>
-    <trip id="randUni204:1" type="random" depart="2526.00" departPos="9.97" arrivalPos="1.87" arrivalSpeed="0.00" from="-E135" to="-E112"/>
-    <trip id="randUni457:1" type="random" depart="2673.00" departPos="24.29" arrivalPos="1.40" arrivalSpeed="0.00" from="E24" to="E202"/>
-    <trip id="randUni470:1" type="random" depart="2682.00" departPos="1.69" arrivalPos="24.34" arrivalSpeed="0.00" from="-E225" to="-E135"/>
-    <trip id="randUni630:1" type="random" depart="3052.00" departPos="20.35" arrivalPos="0.74" arrivalSpeed="0.00" from="E115" to="-E56"/>
-    <trip id="randUni95:1" type="random" depart="3093.00" departPos="13.69" arrivalPos="10.30" arrivalSpeed="0.00" from="E146" to="E143"/>
-    <trip id="randUni233:1" type="random" depart="3188.00" departPos="5.58" arrivalPos="18.47" arrivalSpeed="0.00" from="-E143" to="-E25"/>
-    <trip id="randUni334:1" type="random" depart="3192.00" departPos="3.24" arrivalPos="12.62" arrivalSpeed="0.00" from="-E189" to="E19"/>
-    <trip id="randUni399:1" type="random" depart="3273.00" departPos="27.36" arrivalPos="15.28" arrivalSpeed="0.00" from="E76" to="-E48"/>
-    <trip id="randUni214:1" type="random" depart="3420.00" departPos="32.29" arrivalPos="49.26" arrivalSpeed="0.00" from="E3" to="E126"/>
-    <trip id="randUni614:1" type="random" depart="3811.00" departPos="9.35" arrivalPos="63.32" arrivalSpeed="0.00" from="E52" to="E113"/>
-    <trip id="randUni618:1" type="random" depart="4595.00" departPos="5.25" arrivalPos="22.19" arrivalSpeed="0.00" from="-E133" to="E154"/>
-    <trip id="randUni347:1" type="random" depart="4841.00" departPos="29.87" arrivalPos="12.10" arrivalSpeed="0.00" from="E58" to="E22"/>
-    <trip id="randUni352:1" type="random" depart="4889.00" departPos="60.95" arrivalPos="28.91" arrivalSpeed="0.00" from="-E89" to="E185"/>
-    <trip id="randUni121:1" type="random" depart="4960.00" departPos="59.38" arrivalPos="23.61" arrivalSpeed="0.00" from="E102" to="E37"/>
-    <trip id="randUni367:1" type="random" depart="5004.00" departPos="12.48" arrivalPos="4.76" arrivalSpeed="0.00" from="E144" to="-E57"/>
-    <trip id="randUni659:1" type="random" depart="5285.00" departPos="11.34" arrivalPos="3.01" arrivalSpeed="0.00" from="-E33" to="-E230"/>
-    <trip id="randUni112:1" type="random" depart="5695.00" departPos="15.23" arrivalPos="60.12" arrivalSpeed="0.00" from="-E5" to="-E64"/>
-    <trip id="randUni486:1" type="random" depart="6611.00" departPos="35.11" arrivalPos="28.83" arrivalSpeed="0.00" from="-E96" to="E4"/>
-    <trip id="randUni498:1" type="random" depart="7248.00" departPos="17.78" arrivalPos="0.55" arrivalSpeed="0.00" from="-E120" to="E73"/>
-    <trip id="randUni283:1" type="random" depart="7274.00" departPos="6.04" arrivalPos="5.31" arrivalSpeed="0.00" from="pitagoras" to="E227"/>
-    <trip id="randUni416:1" type="random" depart="7758.00" departPos="18.84" arrivalPos="29.85" arrivalSpeed="0.00" from="-E147" to="E207"/>
-    <trip id="randUni294:1" type="random" depart="8078.00" departPos="12.25" arrivalPos="7.59" arrivalSpeed="0.00" from="-E74" to="-E221"/>
-    <trip id="randUni397:1" type="random" depart="8254.00" departPos="57.11" arrivalPos="9.69" arrivalSpeed="0.00" from="E117" to="-E151"/>
-    <trip id="randUni385:1" type="random" depart="8584.00" departPos="22.35" arrivalPos="5.82" arrivalSpeed="0.00" from="E220" to="E214"/>
-    <trip id="randUni205:1" type="random" depart="8733.00" departPos="9.85" arrivalPos="34.07" arrivalSpeed="0.00" from="E3" to="E108"/>
-    <trip id="randUni21:1" type="random" depart="9032.00" departPos="13.47" arrivalPos="141.31" arrivalSpeed="0.00" from="E158" to="E231"/>
-    <trip id="randUni595:1" type="random" depart="9117.00" departPos="20.53" arrivalPos="22.53" arrivalSpeed="0.00" from="E162" to="-E150"/>
-    <trip id="randUni664:1" type="random" depart="9675.00" departPos="13.64" arrivalPos="21.04" arrivalSpeed="0.00" from="E90" to="-E22"/>
-    <trip id="randUni306:1" type="random" depart="9695.00" departPos="2.46" arrivalPos="6.91" arrivalSpeed="0.00" from="E199" to="E85"/>
-    <trip id="randUni264:1" type="random" depart="9759.00" departPos="8.15" arrivalPos="14.81" arrivalSpeed="0.00" from="E32" to="E62"/>
-    <trip id="randUni229:1" type="random" depart="9797.00" departPos="2.41" arrivalPos="57.35" arrivalSpeed="0.00" from="-E22" to="E186"/>
-    <trip id="randUni526:1" type="random" depart="10110.00" departPos="20.54" arrivalPos="1.29" arrivalSpeed="0.00" from="-E215" to="-E43"/>
-    <trip id="randUni651:1" type="random" depart="10248.00" departPos="16.01" arrivalPos="22.08" arrivalSpeed="0.00" from="-E72" to="E201"/>
-    <trip id="randUni18:1" type="random" depart="10360.00" departPos="29.63" arrivalPos="64.52" arrivalSpeed="0.00" from="E55" to="-E124"/>
-    <trip id="randUni492:1" type="random" depart="10386.00" departPos="34.97" arrivalPos="27.17" arrivalSpeed="0.00" from="-E174" to="-E6"/>
-    <trip id="randUni277:1" type="random" depart="10528.00" departPos="39.53" arrivalPos="21.49" arrivalSpeed="0.00" from="E180" to="-E22"/>
-    <trip id="randUni538:1" type="random" depart="10866.00" departPos="49.71" arrivalPos="7.93" arrivalSpeed="0.00" from="E184" to="-E9"/>
-    <trip id="randUni85:1" type="random" depart="10985.00" departPos="0.29" arrivalPos="28.69" arrivalSpeed="0.00" from="-E204" to="E93"/>
-    <trip id="randUni357:1" type="random" depart="11217.00" departPos="31.18" arrivalPos="59.74" arrivalSpeed="0.00" from="E135" to="einstein"/>
-    <trip id="randUni303:1" type="random" depart="11517.00" departPos="25.97" arrivalPos="74.29" arrivalSpeed="0.00" from="E198" to="E97"/>
-    <trip id="randUni196:1" type="random" depart="11519.00" departPos="10.10" arrivalPos="13.33" arrivalSpeed="0.00" from="E36" to="E159"/>
-    <trip id="randUni69:1" type="random" depart="11596.00" departPos="49.12" arrivalPos="18.34" arrivalSpeed="0.00" from="-E104" to="E133"/>
-    <trip id="randUni284:1" type="random" depart="11826.00" departPos="20.91" arrivalPos="12.84" arrivalSpeed="0.00" from="E74" to="E74"/>
-    <trip id="randUni311:1" type="random" depart="11881.00" departPos="52.50" arrivalPos="24.85" arrivalSpeed="0.00" from="E105" to="-E168"/>
-    <trip id="randUni144:1" type="random" depart="12204.00" departPos="4.43" arrivalPos="57.48" arrivalSpeed="0.00" from="-E232" to="-E104"/>
-    <trip id="randUni192:1" type="random" depart="12823.00" departPos="149.47" arrivalPos="10.31" arrivalSpeed="0.00" from="E99" to="-E3"/>
-    <trip id="randUni587:1" type="random" depart="12875.00" departPos="4.76" arrivalPos="9.45" arrivalSpeed="0.00" from="E3" to="-E222"/>
-    <trip id="randUni602:1" type="random" depart="13057.00" departPos="19.57" arrivalPos="25.17" arrivalSpeed="0.00" from="-E67" to="E19"/>
-    <trip id="randUni524:1" type="random" depart="13107.00" departPos="40.90" arrivalPos="29.69" arrivalSpeed="0.00" from="E181" to="-E53"/>
-    <trip id="randUni510:1" type="random" depart="13338.00" departPos="42.35" arrivalPos="3.16" arrivalSpeed="0.00" from="E112" to="E165"/>
-    <trip id="randUni410:1" type="random" depart="13580.00" departPos="4.24" arrivalPos="0.68" arrivalSpeed="0.00" from="E94" to="-E191"/>
-    <trip id="randUni230:1" type="random" depart="13733.00" departPos="6.74" arrivalPos="12.04" arrivalSpeed="0.00" from="E19" to="E96"/>
-    <trip id="randUni29:1" type="random" depart="13769.00" departPos="89.33" arrivalPos="64.74" arrivalSpeed="0.00" from="E122" to="joulesA"/>
-    <trip id="randUni339:1" type="random" depart="13890.00" departPos="56.18" arrivalPos="16.17" arrivalSpeed="0.00" from="-E129" to="E183"/>
-    <trip id="randUni519:1" type="random" depart="14239.00" departPos="18.25" arrivalPos="25.89" arrivalSpeed="0.00" from="-E87" to="E2"/>
-    <trip id="randUni51:1" type="random" depart="14551.00" departPos="58.26" arrivalPos="4.53" arrivalSpeed="0.00" from="-E170" to="-E201"/>
-    <trip id="randUni35:1" type="random" depart="15021.00" departPos="55.40" arrivalPos="8.02" arrivalSpeed="0.00" from="-E124" to="-E105"/>
-    <trip id="randUni7:1" type="random" depart="15701.00" departPos="0.39" arrivalPos="18.47" arrivalSpeed="0.00" from="-E31" to="-E40"/>
-    <trip id="randUni34:1" type="random" depart="15701.00" departPos="27.42" arrivalPos="22.03" arrivalSpeed="0.00" from="-E23" to="E214"/>
-    <trip id="randUni525:1" type="random" depart="15954.00" departPos="143.18" arrivalPos="11.40" arrivalSpeed="0.00" from="joulesC" to="E84"/>
-    <trip id="randUni612:1" type="random" depart="16040.00" departPos="3.13" arrivalPos="4.25" arrivalSpeed="0.00" from="-E184" to="E84"/>
-    <trip id="randUni482:1" type="random" depart="16108.00" departPos="10.38" arrivalPos="18.23" arrivalSpeed="0.00" from="E201" to="E23"/>
-    <trip id="randUni81:1" type="random" depart="16259.00" departPos="21.94" arrivalPos="27.79" arrivalSpeed="0.00" from="-E65" to="-E28"/>
-    <trip id="randUni115:1" type="random" depart="16292.00" departPos="16.43" arrivalPos="1.68" arrivalSpeed="0.00" from="-E87" to="-E198"/>
-    <trip id="randUni317:1" type="random" depart="16350.00" departPos="16.13" arrivalPos="6.11" arrivalSpeed="0.00" from="E124" to="E157"/>
-    <trip id="randUni632:1" type="random" depart="16375.00" departPos="56.06" arrivalPos="5.76" arrivalSpeed="0.00" from="E128" to="-E49"/>
-    <trip id="randUni403:1" type="random" depart="16473.00" departPos="21.22" arrivalPos="19.70" arrivalSpeed="0.00" from="E207" to="E38"/>
-    <trip id="randUni561:1" type="random" depart="16488.00" departPos="0.85" arrivalPos="13.94" arrivalSpeed="0.00" from="-E36" to="E146"/>
-    <trip id="randUni295:1" type="random" depart="16997.00" departPos="1.61" arrivalPos="0.56" arrivalSpeed="0.00" from="E88" to="E206"/>
-    <trip id="randUni608:1" type="random" depart="17175.00" departPos="19.75" arrivalPos="18.01" arrivalSpeed="0.00" from="E140" to="-E96"/>
-    <trip id="randUni652:1" type="random" depart="17177.00" departPos="25.49" arrivalPos="17.26" arrivalSpeed="0.00" from="E146" to="E104"/>
-    <trip id="randUni279:1" type="random" depart="17241.00" departPos="33.38" arrivalPos="20.84" arrivalSpeed="0.00" from="-E181" to="-E29"/>
-    <trip id="randUni544:1" type="random" depart="17878.00" departPos="31.94" arrivalPos="60.90" arrivalSpeed="0.00" from="-E207" to="E110"/>
-    <trip id="randUni579:1" type="random" depart="17959.00" departPos="2.12" arrivalPos="23.55" arrivalSpeed="0.00" from="-E215" to="-E1"/>
-    <trip id="randUni110:1" type="random" depart="17997.00" departPos="0.27" arrivalPos="72.09" arrivalSpeed="0.00" from="-E10" to="-E124"/>
-    <trip id="randUni65:1" type="random" depart="18013.00" departPos="3.61" arrivalPos="6.41" arrivalSpeed="0.00" from="E230" to="E202"/>
-    <trip id="randUni463:1" type="random" depart="18095.00" departPos="30.88" arrivalPos="12.26" arrivalSpeed="0.00" from="E163" to="E36"/>
-    <trip id="randUni447:1" type="random" depart="18268.00" departPos="24.10" arrivalPos="13.43" arrivalSpeed="0.00" from="E208" to="-E121"/>
-    <trip id="randUni74:1" type="random" depart="18361.00" departPos="3.16" arrivalPos="36.87" arrivalSpeed="0.00" from="E229" to="-E125"/>
-    <trip id="randUni38:1" type="random" depart="18740.00" departPos="15.66" arrivalPos="17.67" arrivalSpeed="0.00" from="-E6" to="-E94"/>
-    <trip id="randUni244:1" type="random" depart="18996.00" departPos="7.60" arrivalPos="28.68" arrivalSpeed="0.00" from="E206" to="-E195"/>
-    <trip id="randUni388:1" type="random" depart="19056.00" departPos="5.85" arrivalPos="27.27" arrivalSpeed="0.00" from="E163" to="-E207"/>
-    <trip id="randUni215:1" type="random" depart="19465.00" departPos="28.09" arrivalPos="24.15" arrivalSpeed="0.00" from="-E213" to="E141"/>
-    <trip id="randUni91:1" type="random" depart="20323.00" departPos="6.68" arrivalPos="47.84" arrivalSpeed="0.00" from="E117" to="-E86"/>
-    <trip id="randUni293:1" type="random" depart="20491.00" departPos="55.78" arrivalPos="29.02" arrivalSpeed="0.00" from="-E186" to="E141"/>
-    <trip id="randUni126:1" type="random" depart="20505.00" departPos="1.23" arrivalPos="12.03" arrivalSpeed="0.00" from="-E153" to="-E81"/>
-    <trip id="randUni338:1" type="random" depart="20545.00" departPos="24.75" arrivalPos="7.23" arrivalSpeed="0.00" from="-E197" to="E110"/>
-    <trip id="randUni462:1" type="random" depart="21173.00" departPos="24.64" arrivalPos="10.11" arrivalSpeed="0.00" from="E101" to="E163"/>
-    <trip id="randUni383:1" type="random" depart="21309.00" departPos="2.78" arrivalPos="7.98" arrivalSpeed="0.00" from="-E202" to="E85"/>
-    <trip id="randUni387:1" type="random" depart="21395.00" departPos="40.26" arrivalPos="136.35" arrivalSpeed="0.00" from="-E88" to="ohm"/>
+    <trip id="randUni599:1" type="ElectricBus" color="255,255,0" depart="5.00" departPos="4.43" arrivalPos="67.41" arrivalSpeed="0.00" from="-E27" to="-E187"/>
+    <trip id="randUni262:1" type="ElectricBus" color="255,255,0" depart="15.00" departPos="149.06" arrivalPos="20.02" arrivalSpeed="0.00" from="joulesC" to="euler"/>
+    <trip id="randUni653:1" type="random" color="255,255,255" depart="26.00" departPos="39.80" arrivalPos="52.32" arrivalSpeed="0.00" from="-E172" to="-E97"/>
+    <trip id="randUni124:1" type="random" color="255,255,255" depart="56.00" departPos="7.55" arrivalPos="34.55" arrivalSpeed="0.00" from="-E185" to="-E211"/>
+    <trip id="randUni154:1" type="random" color="255,255,255" depart="246.00" departPos="12.28" arrivalPos="25.54" arrivalSpeed="0.00" from="E126" to="E4"/>
+    <trip id="randUni302:1" type="random" color="255,255,255" depart="824.00" departPos="34.85" arrivalPos="6.14" arrivalSpeed="0.00" from="E55" to="-E40"/>
+    <trip id="randUni132:1" type="random" color="255,255,255" depart="1049.00" departPos="38.55" arrivalPos="11.07" arrivalSpeed="0.00" from="-E171" to="-E133"/>
+    <trip id="randUni505:1" type="random" color="255,255,255" depart="1128.00" departPos="26.29" arrivalPos="25.73" arrivalSpeed="0.00" from="-E102" to="E219"/>
+    <trip id="randUni358:1" type="random" color="255,255,255" depart="1408.00" departPos="9.66" arrivalPos="16.37" arrivalSpeed="0.00" from="E72" to="E80"/>
+    <trip id="randUni59:1" type="random" color="255,255,255" depart="1919.00" departPos="0.24" arrivalPos="6.16" arrivalSpeed="0.00" from="joulesD" to="E171"/>
+    <trip id="randUni176:1" type="random" color="255,255,255" depart="1924.00" departPos="6.90" arrivalPos="18.73" arrivalSpeed="0.00" from="-E220" to="E132"/>
+    <trip id="randUni465:1" type="random" color="255,255,255" depart="2466.00" departPos="117.94" arrivalPos="14.59" arrivalSpeed="0.00" from="E231" to="E57"/>
+    <trip id="randUni204:1" type="random" color="255,255,255" depart="2526.00" departPos="9.97" arrivalPos="1.87" arrivalSpeed="0.00" from="-E135" to="-E112"/>
+    <trip id="randUni457:1" type="random" color="255,255,255" depart="2673.00" departPos="24.29" arrivalPos="1.40" arrivalSpeed="0.00" from="E24" to="E202"/>
+    <trip id="randUni470:1" type="random" color="255,255,255" depart="2682.00" departPos="1.69" arrivalPos="24.34" arrivalSpeed="0.00" from="-E225" to="-E135"/>
+    <trip id="randUni630:1" type="ElectricBus" color="255,255,0" depart="3052.00" departPos="20.35" arrivalPos="0.74" arrivalSpeed="0.00" from="E115" to="-E56"/>
+    <trip id="randUni95:1" type="evehicle" color="255,255,0" depart="3093.00" departPos="13.69" arrivalPos="10.30" arrivalSpeed="0.00" from="E146" to="E143"/>
+    <trip id="randUni233:1" type="evehicle" color="255,255,0" depart="3188.00" departPos="5.58" arrivalPos="18.47" arrivalSpeed="0.00" from="-E143" to="-E25"/>
+    <trip id="randUni334:1" type="ElectricBus" color="255,255,0" depart="3192.00" departPos="3.24" arrivalPos="12.62" arrivalSpeed="0.00" from="-E189" to="E19"/>
+    <trip id="randUni399:1" type="evehicle" color="255,255,0" depart="3273.00" departPos="27.36" arrivalPos="15.28" arrivalSpeed="0.00" from="E76" to="-E48"/>
+    <trip id="randUni214:1" type="evehicle" color="255,255,0" depart="3420.00" departPos="32.29" arrivalPos="49.26" arrivalSpeed="0.00" from="E3" to="E126"/>
+    <trip id="randUni614:1" type="evehicle" color="255,255,0" depart="3811.00" departPos="9.35" arrivalPos="63.32" arrivalSpeed="0.00" from="E52" to="E113"/>
+    <trip id="randUni618:1" type="random" color="255,255,255" depart="4595.00" departPos="5.25" arrivalPos="22.19" arrivalSpeed="0.00" from="-E133" to="E154"/>
+    <trip id="randUni347:1" type="random" color="255,255,255" depart="4841.00" departPos="29.87" arrivalPos="12.10" arrivalSpeed="0.00" from="E58" to="E22"/>
+    <trip id="randUni352:1" type="random" color="255,255,255" depart="4889.00" departPos="60.95" arrivalPos="28.91" arrivalSpeed="0.00" from="-E89" to="E185"/>
+    <trip id="randUni121:1" type="evehicle" color="255,255,0" depart="4960.00" departPos="59.38" arrivalPos="23.61" arrivalSpeed="0.00" from="E102" to="E37"/>
+    <trip id="randUni367:1" type="evehicle" color="255,255,0" depart="5004.00" departPos="12.48" arrivalPos="4.76" arrivalSpeed="0.00" from="E144" to="-E57"/>
+    <trip id="randUni659:1" type="random" color="255,255,255" depart="5285.00" departPos="11.34" arrivalPos="3.01" arrivalSpeed="0.00" from="-E33" to="-E230"/>
+    <trip id="randUni112:1" type="random" color="255,255,255" depart="5695.00" departPos="15.23" arrivalPos="60.12" arrivalSpeed="0.00" from="-E5" to="-E64"/>
+    <trip id="randUni486:1" type="random" color="255,255,255" depart="6611.00" departPos="35.11" arrivalPos="28.83" arrivalSpeed="0.00" from="-E96" to="E4"/>
+    <trip id="randUni498:1" type="evehicle" color="255,255,0" depart="7248.00" departPos="17.78" arrivalPos="0.55" arrivalSpeed="0.00" from="-E120" to="E73"/>
+    <trip id="randUni283:1" type="random" color="255,255,255" depart="7274.00" departPos="6.04" arrivalPos="5.31" arrivalSpeed="0.00" from="pitagoras" to="E227"/>
+    <trip id="randUni416:1" type="evehicle" color="255,255,0" depart="7758.00" departPos="18.84" arrivalPos="29.85" arrivalSpeed="0.00" from="-E147" to="E207"/>
+    <trip id="randUni294:1" type="random" color="255,255,255" depart="8078.00" departPos="12.25" arrivalPos="7.59" arrivalSpeed="0.00" from="-E74" to="-E221"/>
+    <trip id="randUni397:1" type="random" color="255,255,255" depart="8254.00" departPos="57.11" arrivalPos="9.69" arrivalSpeed="0.00" from="E117" to="-E151"/>
+    <trip id="randUni385:1" type="random" color="255,255,255" depart="8584.00" departPos="22.35" arrivalPos="5.82" arrivalSpeed="0.00" from="E220" to="E214"/>
+    <trip id="randUni205:1" type="random" color="255,255,255" depart="8733.00" departPos="9.85" arrivalPos="34.07" arrivalSpeed="0.00" from="E3" to="E108"/>
+    <trip id="randUni21:1" type="random" color="255,255,255" depart="9032.00" departPos="13.47" arrivalPos="141.31" arrivalSpeed="0.00" from="E158" to="E231"/>
+    <trip id="randUni595:1" type="random" color="255,255,255" depart="9117.00" departPos="20.53" arrivalPos="22.53" arrivalSpeed="0.00" from="E162" to="-E150"/>
+    <trip id="randUni664:1" type="random" color="255,255,255" depart="9675.00" departPos="13.64" arrivalPos="21.04" arrivalSpeed="0.00" from="E90" to="-E22"/>
+    <trip id="randUni306:1" type="evehicle" color="255,255,0" depart="9695.00" departPos="2.46" arrivalPos="6.91" arrivalSpeed="0.00" from="E199" to="E85"/>
+    <trip id="randUni264:1" type="ElectricBus" color="255,255,0" depart="9759.00" departPos="8.15" arrivalPos="14.81" arrivalSpeed="0.00" from="E32" to="E62"/>
+    <trip id="randUni229:1" type="random" color="255,255,255" depart="9797.00" departPos="2.41" arrivalPos="57.35" arrivalSpeed="0.00" from="-E22" to="E186"/>
+    <trip id="randUni526:1" type="evehicle" color="255,255,0" depart="10110.00" departPos="20.54" arrivalPos="1.29" arrivalSpeed="0.00" from="-E215" to="-E43"/>
+    <trip id="randUni651:1" type="evehicle" color="255,255,0" depart="10248.00" departPos="16.01" arrivalPos="22.08" arrivalSpeed="0.00" from="-E72" to="E201"/>
+    <trip id="randUni18:1" type="random" color="255,255,255" depart="10360.00" departPos="29.63" arrivalPos="64.52" arrivalSpeed="0.00" from="E55" to="-E124"/>
+    <trip id="randUni492:1" type="random" color="255,255,255" depart="10386.00" departPos="34.97" arrivalPos="27.17" arrivalSpeed="0.00" from="-E174" to="-E6"/>
+    <trip id="randUni277:1" type="random" color="255,255,255" depart="10528.00" departPos="39.53" arrivalPos="21.49" arrivalSpeed="0.00" from="E180" to="-E22"/>
+    <trip id="randUni538:1" type="random" color="255,255,255" depart="10866.00" departPos="49.71" arrivalPos="7.93" arrivalSpeed="0.00" from="E184" to="-E9"/>
+    <trip id="randUni85:1" type="random" color="255,255,255" depart="10985.00" departPos="0.29" arrivalPos="28.69" arrivalSpeed="0.00" from="-E204" to="E93"/>
+    <trip id="randUni357:1" type="random" color="255,255,255" depart="11217.00" departPos="31.18" arrivalPos="59.74" arrivalSpeed="0.00" from="E135" to="einstein"/>
+    <trip id="randUni303:1" type="random" color="255,255,255" depart="11517.00" departPos="25.97" arrivalPos="74.29" arrivalSpeed="0.00" from="E198" to="E97"/>
+    <trip id="randUni196:1" type="evehicle" color="255,255,0" depart="11519.00" departPos="10.10" arrivalPos="13.33" arrivalSpeed="0.00" from="E36" to="E159"/>
+    <trip id="randUni69:1" type="evehicle" color="255,255,0" depart="11596.00" departPos="49.12" arrivalPos="18.34" arrivalSpeed="0.00" from="-E104" to="E133"/>
+    <trip id="randUni284:1" type="random" color="255,255,255" depart="11826.00" departPos="20.91" arrivalPos="12.84" arrivalSpeed="0.00" from="E74" to="E74"/>
+    <trip id="randUni311:1" type="evehicle" color="255,255,0" depart="11881.00" departPos="52.50" arrivalPos="24.85" arrivalSpeed="0.00" from="E105" to="-E168"/>
+    <trip id="randUni144:1" type="random" color="255,255,255" depart="12204.00" departPos="4.43" arrivalPos="57.48" arrivalSpeed="0.00" from="-E232" to="-E104"/>
+    <trip id="randUni192:1" type="random" color="255,255,255" depart="12823.00" departPos="149.47" arrivalPos="10.31" arrivalSpeed="0.00" from="E99" to="-E3"/>
+    <trip id="randUni587:1" type="random" color="255,255,255" depart="12875.00" departPos="4.76" arrivalPos="9.45" arrivalSpeed="0.00" from="E3" to="-E222"/>
+    <trip id="randUni602:1" type="evehicle" color="255,255,0" depart="13057.00" departPos="19.57" arrivalPos="25.17" arrivalSpeed="0.00" from="-E67" to="E19"/>
+    <trip id="randUni524:1" type="random" color="255,255,255" depart="13107.00" departPos="40.90" arrivalPos="29.69" arrivalSpeed="0.00" from="E181" to="-E53"/>
+    <trip id="randUni510:1" type="random" color="255,255,255" depart="13338.00" departPos="42.35" arrivalPos="3.16" arrivalSpeed="0.00" from="E112" to="E165"/>
+    <trip id="randUni410:1" type="ElectricBus" color="255,255,0" depart="13580.00" departPos="4.24" arrivalPos="0.68" arrivalSpeed="0.00" from="E94" to="-E191"/>
+    <trip id="randUni230:1" type="ElectricBus" color="255,255,0" depart="13733.00" departPos="6.74" arrivalPos="12.04" arrivalSpeed="0.00" from="E19" to="E96"/>
+    <trip id="randUni29:1" type="evehicle" color="255,255,0" depart="13769.00" departPos="89.33" arrivalPos="64.74" arrivalSpeed="0.00" from="E122" to="joulesA"/>
+    <trip id="randUni339:1" type="random" color="255,255,255" depart="13890.00" departPos="56.18" arrivalPos="16.17" arrivalSpeed="0.00" from="-E129" to="E183"/>
+    <trip id="randUni519:1" type="random" color="255,255,255" depart="14239.00" departPos="18.25" arrivalPos="25.89" arrivalSpeed="0.00" from="-E87" to="E2"/>
+    <trip id="randUni51:1" type="random" color="255,255,255" depart="14551.00" departPos="58.26" arrivalPos="4.53" arrivalSpeed="0.00" from="-E170" to="-E201"/>
+    <trip id="randUni35:1" type="ElectricBus" color="255,255,0" depart="15021.00" departPos="55.40" arrivalPos="8.02" arrivalSpeed="0.00" from="-E124" to="-E105"/>
+    <trip id="randUni7:1" type="random" color="255,255,255" depart="15701.00" departPos="0.39" arrivalPos="18.47" arrivalSpeed="0.00" from="-E31" to="-E40"/>
+    <trip id="randUni34:1" type="random" color="255,255,255" depart="15701.00" departPos="27.42" arrivalPos="22.03" arrivalSpeed="0.00" from="-E23" to="E214"/>
+    <trip id="randUni525:1" type="random" color="255,255,255" depart="15954.00" departPos="143.18" arrivalPos="11.40" arrivalSpeed="0.00" from="joulesC" to="E84"/>
+    <trip id="randUni612:1" type="random" color="255,255,255" depart="16040.00" departPos="3.13" arrivalPos="4.25" arrivalSpeed="0.00" from="-E184" to="E84"/>
+    <trip id="randUni482:1" type="random" color="255,255,255" depart="16108.00" departPos="10.38" arrivalPos="18.23" arrivalSpeed="0.00" from="E201" to="E23"/>
+    <trip id="randUni81:1" type="ElectricBus" color="255,255,0" depart="16259.00" departPos="21.94" arrivalPos="27.79" arrivalSpeed="0.00" from="-E65" to="-E28"/>
+    <trip id="randUni115:1" type="random" color="255,255,255" depart="16292.00" departPos="16.43" arrivalPos="1.68" arrivalSpeed="0.00" from="-E87" to="-E198"/>
+    <trip id="randUni317:1" type="random" color="255,255,255" depart="16350.00" departPos="16.13" arrivalPos="6.11" arrivalSpeed="0.00" from="E124" to="E157"/>
+    <trip id="randUni632:1" type="random" color="255,255,255" depart="16375.00" departPos="56.06" arrivalPos="5.76" arrivalSpeed="0.00" from="E128" to="-E49"/>
+    <trip id="randUni403:1" type="evehicle" color="255,255,0" depart="16473.00" departPos="21.22" arrivalPos="19.70" arrivalSpeed="0.00" from="E207" to="E38"/>
+    <trip id="randUni561:1" type="random" color="255,255,255" depart="16488.00" departPos="0.85" arrivalPos="13.94" arrivalSpeed="0.00" from="-E36" to="E146"/>
+    <trip id="randUni295:1" type="evehicle" color="255,255,0" depart="16997.00" departPos="1.61" arrivalPos="0.56" arrivalSpeed="0.00" from="E88" to="E206"/>
+    <trip id="randUni608:1" type="random" color="255,255,255" depart="17175.00" departPos="19.75" arrivalPos="18.01" arrivalSpeed="0.00" from="E140" to="-E96"/>
+    <trip id="randUni652:1" type="random" color="255,255,255" depart="17177.00" departPos="25.49" arrivalPos="17.26" arrivalSpeed="0.00" from="E146" to="E104"/>
+    <trip id="randUni279:1" type="random" color="255,255,255" depart="17241.00" departPos="33.38" arrivalPos="20.84" arrivalSpeed="0.00" from="-E181" to="-E29"/>
+    <trip id="randUni544:1" type="random" color="255,255,255" depart="17878.00" departPos="31.94" arrivalPos="60.90" arrivalSpeed="0.00" from="-E207" to="E110"/>
+    <trip id="randUni579:1" type="evehicle" color="255,255,0" depart="17959.00" departPos="2.12" arrivalPos="23.55" arrivalSpeed="0.00" from="-E215" to="-E1"/>
+    <trip id="randUni110:1" type="random" color="255,255,255" depart="17997.00" departPos="0.27" arrivalPos="72.09" arrivalSpeed="0.00" from="-E10" to="-E124"/>
+    <trip id="randUni65:1" type="evehicle" color="255,255,0" depart="18013.00" departPos="3.61" arrivalPos="6.41" arrivalSpeed="0.00" from="E230" to="E202"/>
+    <trip id="randUni463:1" type="random" color="255,255,255" depart="18095.00" departPos="30.88" arrivalPos="12.26" arrivalSpeed="0.00" from="E163" to="E36"/>
+    <trip id="randUni447:1" type="random" color="255,255,255" depart="18268.00" departPos="24.10" arrivalPos="13.43" arrivalSpeed="0.00" from="E208" to="-E121"/>
+    <trip id="randUni74:1" type="evehicle" color="255,255,0" depart="18361.00" departPos="3.16" arrivalPos="36.87" arrivalSpeed="0.00" from="E229" to="-E125"/>
+    <trip id="randUni38:1" type="random" color="255,255,255" depart="18740.00" departPos="15.66" arrivalPos="17.67" arrivalSpeed="0.00" from="-E6" to="-E94"/>
+    <trip id="randUni244:1" type="random" color="255,255,255" depart="18996.00" departPos="7.60" arrivalPos="28.68" arrivalSpeed="0.00" from="E206" to="-E195"/>
+    <trip id="randUni388:1" type="evehicle" color="255,255,0" depart="19056.00" departPos="5.85" arrivalPos="27.27" arrivalSpeed="0.00" from="E163" to="-E207"/>
+    <trip id="randUni215:1" type="random" color="255,255,255" depart="19465.00" departPos="28.09" arrivalPos="24.15" arrivalSpeed="0.00" from="-E213" to="E141"/>
+    <trip id="randUni91:1" type="random" color="255,255,255" depart="20323.00" departPos="6.68" arrivalPos="47.84" arrivalSpeed="0.00" from="E117" to="-E86"/>
+    <trip id="randUni293:1" type="random" color="255,255,255" depart="20491.00" departPos="55.78" arrivalPos="29.02" arrivalSpeed="0.00" from="-E186" to="E141"/>
+    <trip id="randUni126:1" type="random" color="255,255,255" depart="20505.00" departPos="1.23" arrivalPos="12.03" arrivalSpeed="0.00" from="-E153" to="-E81"/>
+    <trip id="randUni338:1" type="ElectricBus" color="255,255,0" depart="20545.00" departPos="24.75" arrivalPos="7.23" arrivalSpeed="0.00" from="-E197" to="E110"/>
+    <trip id="randUni462:1" type="random" color="255,255,255" depart="21173.00" departPos="24.64" arrivalPos="10.11" arrivalSpeed="0.00" from="E101" to="E163"/>
+    <trip id="randUni383:1" type="ElectricBus" color="255,255,0" depart="21309.00" departPos="2.78" arrivalPos="7.98" arrivalSpeed="0.00" from="-E202" to="E85"/>
+    <trip id="randUni387:1" type="random" color="255,255,255" depart="21395.00" departPos="40.26" arrivalPos="136.35" arrivalSpeed="0.00" from="-E88" to="ohm"/>
     <trip id="bl601b1:1" type="bus" depart="21600.00" departPos="25.00" arrivalPos="25.00" arrivalSpeed="0.00" from="E1" to="E1"/>
     <trip id="bl601b2:9" type="bus" depart="21600.00" departPos="25.00" arrivalPos="25.00" arrivalSpeed="0.00" from="-E1" to="-E1"/>
-    <trip id="randUni554:1" type="random" depart="21662.00" departPos="13.89" arrivalPos="10.31" arrivalSpeed="0.00" from="newton" to="E17"/>
-    <trip id="randUni62:1" type="random" depart="21686.00" departPos="17.89" arrivalPos="38.28" arrivalSpeed="0.00" from="E213" to="-E102"/>
-    <trip id="randUni508:1" type="random" depart="21825.00" departPos="50.93" arrivalPos="3.36" arrivalSpeed="0.00" from="E125" to="E4"/>
+    <trip id="randUni554:1" type="random" color="255,255,255" depart="21662.00" departPos="13.89" arrivalPos="10.31" arrivalSpeed="0.00" from="newton" to="E17"/>
+    <trip id="randUni62:1" type="ElectricBus" color="255,255,0" depart="21686.00" departPos="17.89" arrivalPos="38.28" arrivalSpeed="0.00" from="E213" to="-E102"/>
+    <trip id="randUni508:1" type="random" color="255,255,255" depart="21825.00" departPos="50.93" arrivalPos="3.36" arrivalSpeed="0.00" from="E125" to="E4"/>
     <trip id="bl601b3:1" type="bus" depart="22500.00" departPos="25.00" arrivalPos="25.00" arrivalSpeed="0.00" from="E1" to="E1"/>
     <trip id="bl601b4:9" type="bus" depart="22500.00" departPos="25.00" arrivalPos="25.00" arrivalSpeed="0.00" from="-E1" to="-E1"/>
-    <trip id="randUni583:1" type="random" depart="22873.00" departPos="2.06" arrivalPos="1.40" arrivalSpeed="0.00" from="-E202" to="E227"/>
-    <trip id="randUni660:1" type="random" depart="22995.00" departPos="17.07" arrivalPos="4.37" arrivalSpeed="0.00" from="-E134" to="E147"/>
+    <trip id="randUni583:1" type="random" color="255,255,255" depart="22873.00" departPos="2.06" arrivalPos="1.40" arrivalSpeed="0.00" from="-E202" to="E227"/>
+    <trip id="randUni660:1" type="ElectricBus" color="255,255,0" depart="22995.00" departPos="17.07" arrivalPos="4.37" arrivalSpeed="0.00" from="-E134" to="E147"/>
     <trip id="bl601b5:1" type="bus" depart="23400.00" departPos="25.00" arrivalPos="25.00" arrivalSpeed="0.00" from="E1" to="E1"/>
     <trip id="bl601b6:9" type="bus" depart="23400.00" departPos="25.00" arrivalPos="25.00" arrivalSpeed="0.00" from="-E1" to="-E1"/>
-    <trip id="randUni658:1" type="random" depart="23696.00" departPos="25.78" arrivalPos="1.94" arrivalSpeed="0.00" from="-E3" to="E227"/>
-    <trip id="randUni578:1" type="random" depart="24276.00" departPos="33.82" arrivalPos="29.57" arrivalSpeed="0.00" from="-E86" to="E139"/>
+    <trip id="randUni658:1" type="evehicle" color="255,255,0" depart="23696.00" departPos="25.78" arrivalPos="1.94" arrivalSpeed="0.00" from="-E3" to="E227"/>
+    <trip id="randUni578:1" type="random" color="255,255,255" depart="24276.00" departPos="33.82" arrivalPos="29.57" arrivalSpeed="0.00" from="-E86" to="E139"/>
     <trip id="bl601b7:1" type="bus" depart="24300.00" departPos="25.00" arrivalPos="25.00" arrivalSpeed="0.00" from="E1" to="E1"/>
     <trip id="bl601b8:7" type="bus" depart="24300.00" departPos="25.00" arrivalPos="25.00" arrivalSpeed="0.00" from="-E1" to="-E1"/>
-    <trip id="randUni571:1" type="random" depart="24331.00" departPos="33.80" arrivalPos="31.82" arrivalSpeed="0.00" from="-E32" to="-E127"/>
-    <trip id="randUni582:1" type="random" depart="24496.00" departPos="10.05" arrivalPos="15.04" arrivalSpeed="0.00" from="E216" to="-E209"/>
+    <trip id="randUni571:1" type="random" color="255,255,255" depart="24331.00" departPos="33.80" arrivalPos="31.82" arrivalSpeed="0.00" from="-E32" to="-E127"/>
+    <trip id="randUni582:1" type="random" color="255,255,255" depart="24496.00" departPos="10.05" arrivalPos="15.04" arrivalSpeed="0.00" from="E216" to="-E209"/>
     <trip id="carIn231:1" type="default" depart="24731.00" departPos="0.00" arrivalPos="0.00" arrivalSpeed="0.00" from="E125" to="E88"/>
     <trip id="carIn74:1" type="default" depart="24732.00" departPos="0.00" arrivalPos="0.00" arrivalSpeed="0.00" from="-E88" to="E125"/>
     <trip id="carIn95:1" type="default" depart="24732.00" departPos="0.00" arrivalPos="0.00" arrivalSpeed="0.00" from="-E88" to="E125"/>
@@ -169,7 +169,7 @@
     <trip id="carIn121:1" type="default" depart="24804.00" departPos="0.00" arrivalPos="0.00" arrivalSpeed="0.00" from="-E88" to="-E135"/>
     <trip id="carIn160:1" type="default" depart="24804.00" departPos="0.00" arrivalPos="0.00" arrivalSpeed="0.00" from="-E88" to="-E135"/>
     <trip id="carIn163:1" type="default" depart="24804.00" departPos="0.00" arrivalPos="0.00" arrivalSpeed="0.00" from="E125" to="-E139"/>
-    <trip id="randUni446:1" type="random" depart="24815.00" departPos="121.34" arrivalPos="31.13" arrivalSpeed="0.00" from="arquimedes" to="-E200"/>
+    <trip id="randUni446:1" type="random" color="255,255,255" depart="24815.00" departPos="121.34" arrivalPos="31.13" arrivalSpeed="0.00" from="arquimedes" to="-E200"/>
     <trip id="carIn550:1" type="default" depart="24823.00" departPos="0.00" arrivalPos="29.71" arrivalSpeed="0.00" from="-E124" to="-E90"/>
     <trip id="carIn22:1" type="default" depart="24831.00" departPos="0.00" arrivalPos="88.38" arrivalSpeed="0.00" from="E105" to="-E122"/>
     <trip id="carIn473:1" type="default" depart="24832.00" departPos="0.00" arrivalPos="0.00" arrivalSpeed="0.00" from="-E105" to="-E124"/>
@@ -375,23 +375,23 @@
     <trip id="carIn513:1" type="default" depart="25200.00" departPos="0.00" arrivalPos="105.85" arrivalSpeed="0.00" from="-E88" to="-E90"/>
     <trip id="carIn523:1" type="default" depart="25200.00" departPos="0.00" arrivalPos="0.00" arrivalSpeed="0.00" from="E135" to="E124"/>
     <trip id="carIn557:1" type="default" depart="25200.00" departPos="0.00" arrivalPos="0.00" arrivalSpeed="0.00" from="-E125" to="-E125"/>
-    <trip id="randUni585:1" type="random" depart="25465.00" departPos="11.10" arrivalPos="17.91" arrivalSpeed="0.00" from="E35" to="joulesD"/>
-    <trip id="randUni75:1" type="random" depart="25816.00" departPos="104.79" arrivalPos="62.55" arrivalSpeed="0.00" from="-E231" to="-E76"/>
-    <trip id="randUni329:1" type="random" depart="25968.00" departPos="8.30" arrivalPos="5.43" arrivalSpeed="0.00" from="E217" to="-E4"/>
+    <trip id="randUni585:1" type="random" color="255,255,255" depart="25465.00" departPos="11.10" arrivalPos="17.91" arrivalSpeed="0.00" from="E35" to="joulesD"/>
+    <trip id="randUni75:1" type="random" color="255,255,255" depart="25816.00" departPos="104.79" arrivalPos="62.55" arrivalSpeed="0.00" from="-E231" to="-E76"/>
+    <trip id="randUni329:1" type="random" color="255,255,255" depart="25968.00" departPos="8.30" arrivalPos="5.43" arrivalSpeed="0.00" from="E217" to="-E4"/>
     <trip id="bl601b2:1" type="bus" depart="26100.00" departPos="25.00" arrivalPos="25.00" arrivalSpeed="0.00" from="E1" to="E1"/>
     <trip id="bl601b1:9" type="bus" depart="26100.00" departPos="25.00" arrivalPos="25.00" arrivalSpeed="0.00" from="-E1" to="-E1"/>
-    <trip id="randUni76:1" type="random" depart="26819.00" departPos="30.78" arrivalPos="10.15" arrivalSpeed="0.00" from="-E97" to="E114"/>
-    <trip id="randUni395:1" type="random" depart="26924.00" departPos="0.28" arrivalPos="2.62" arrivalSpeed="0.00" from="E99" to="-E5"/>
+    <trip id="randUni76:1" type="random" color="255,255,255" depart="26819.00" departPos="30.78" arrivalPos="10.15" arrivalSpeed="0.00" from="-E97" to="E114"/>
+    <trip id="randUni395:1" type="random" color="255,255,255" depart="26924.00" departPos="0.28" arrivalPos="2.62" arrivalSpeed="0.00" from="E99" to="-E5"/>
     <trip id="bl601b4:1" type="bus" depart="27000.00" departPos="25.00" arrivalPos="25.00" arrivalSpeed="0.00" from="E1" to="E1"/>
     <trip id="bl601b3:9" type="bus" depart="27000.00" departPos="25.00" arrivalPos="25.00" arrivalSpeed="0.00" from="-E1" to="-E1"/>
-    <trip id="randUni496:1" type="random" depart="27032.00" departPos="5.48" arrivalPos="17.42" arrivalSpeed="0.00" from="E203" to="E157"/>
-    <trip id="randUni20:1" type="random" depart="27209.00" departPos="16.25" arrivalPos="4.96" arrivalSpeed="0.00" from="-E37" to="E135"/>
-    <trip id="randUni53:1" type="random" depart="27452.00" departPos="43.91" arrivalPos="82.44" arrivalSpeed="0.00" from="E121" to="E99"/>
-    <trip id="randUni593:1" type="random" depart="27460.00" departPos="16.74" arrivalPos="5.39" arrivalSpeed="0.00" from="-E49" to="E171"/>
-    <trip id="randUni149:1" type="random" depart="27898.00" departPos="25.47" arrivalPos="9.36" arrivalSpeed="0.00" from="E87" to="-E19"/>
+    <trip id="randUni496:1" type="evehicle" color="255,255,0" depart="27032.00" departPos="5.48" arrivalPos="17.42" arrivalSpeed="0.00" from="E203" to="E157"/>
+    <trip id="randUni20:1" type="random" color="255,255,255" depart="27209.00" departPos="16.25" arrivalPos="4.96" arrivalSpeed="0.00" from="-E37" to="E135"/>
+    <trip id="randUni53:1" type="random" color="255,255,255" depart="27452.00" departPos="43.91" arrivalPos="82.44" arrivalSpeed="0.00" from="E121" to="E99"/>
+    <trip id="randUni593:1" type="random" color="255,255,255" depart="27460.00" departPos="16.74" arrivalPos="5.39" arrivalSpeed="0.00" from="-E49" to="E171"/>
+    <trip id="randUni149:1" type="random" color="255,255,255" depart="27898.00" departPos="25.47" arrivalPos="9.36" arrivalSpeed="0.00" from="E87" to="-E19"/>
     <trip id="bl601b6:1" type="bus" depart="27900.00" departPos="25.00" arrivalPos="25.00" arrivalSpeed="0.00" from="E1" to="E1"/>
     <trip id="bl601b5:9" type="bus" depart="27900.00" departPos="25.00" arrivalPos="25.00" arrivalSpeed="0.00" from="-E1" to="-E1"/>
-    <trip id="randUni546:1" type="random" depart="28004.00" departPos="4.14" arrivalPos="24.17" arrivalSpeed="0.00" from="E178" to="E200"/>
+    <trip id="randUni546:1" type="random" color="255,255,255" depart="28004.00" departPos="4.14" arrivalPos="24.17" arrivalSpeed="0.00" from="E178" to="E200"/>
     <trip id="carIn363:1" type="default" depart="28326.00" departPos="0.00" arrivalPos="0.00" arrivalSpeed="0.00" from="-E125" to="E88"/>
     <trip id="carIn108:1" type="default" depart="28330.00" departPos="0.00" arrivalPos="0.00" arrivalSpeed="0.00" from="-E125" to="-E88"/>
     <trip id="carIn67:1" type="default" depart="28331.00" departPos="0.00" arrivalPos="0.00" arrivalSpeed="0.00" from="E88" to="E125"/>
@@ -494,7 +494,7 @@
     <trip id="carIn423:1" type="default" depart="28458.00" departPos="0.00" arrivalPos="0.00" arrivalSpeed="0.00" from="E135" to="-E139"/>
     <trip id="carIn512:1" type="default" depart="28458.00" departPos="0.00" arrivalPos="0.00" arrivalSpeed="0.00" from="E124" to="-E139"/>
     <trip id="carIn599:1" type="default" depart="28458.00" departPos="0.00" arrivalPos="0.00" arrivalSpeed="0.00" from="E139" to="-E135"/>
-    <trip id="randUni46:1" type="random" depart="28460.00" departPos="9.41" arrivalPos="5.58" arrivalSpeed="0.00" from="E168" to="-E179"/>
+    <trip id="randUni46:1" type="random" color="255,255,255" depart="28460.00" departPos="9.41" arrivalPos="5.58" arrivalSpeed="0.00" from="E168" to="-E179"/>
     <trip id="carIn323:1" type="default" depart="28467.00" departPos="0.00" arrivalPos="0.00" arrivalSpeed="0.00" from="euler" to="-E125"/>
     <trip id="carIn435:1" type="default" depart="28467.00" departPos="0.00" arrivalPos="0.00" arrivalSpeed="0.00" from="euler" to="-E125"/>
     <trip id="carIn460:1" type="default" depart="28467.00" departPos="0.00" arrivalPos="0.00" arrivalSpeed="0.00" from="euler" to="-E125"/>
@@ -768,139 +768,139 @@
     <trip id="carIn585:1" type="default" depart="28800.00" departPos="0.00" arrivalPos="0.00" arrivalSpeed="0.00" from="maxwell" to="maxwell"/>
     <trip id="bl601b10:1" type="bus" depart="29700.00" departPos="25.00" arrivalPos="25.00" arrivalSpeed="0.00" from="E1" to="E1"/>
     <trip id="bl601b9:9" type="bus" depart="29700.00" departPos="25.00" arrivalPos="25.00" arrivalSpeed="0.00" from="-E1" to="-E1"/>
-    <trip id="randUni276:1" type="random" depart="30104.00" departPos="0.42" arrivalPos="26.66" arrivalSpeed="0.00" from="E227" to="-E214"/>
-    <trip id="randUni670:1" type="random" depart="30484.00" departPos="7.84" arrivalPos="9.61" arrivalSpeed="0.00" from="E107" to="-E132"/>
+    <trip id="randUni276:1" type="random" color="255,255,255" depart="30104.00" departPos="0.42" arrivalPos="26.66" arrivalSpeed="0.00" from="E227" to="-E214"/>
+    <trip id="randUni670:1" type="evehicle" color="255,255,0" depart="30484.00" departPos="7.84" arrivalPos="9.61" arrivalSpeed="0.00" from="E107" to="-E132"/>
     <trip id="bl601b1:3" type="bus" depart="30600.00" departPos="25.00" arrivalPos="25.00" arrivalSpeed="0.00" from="E1" to="E1"/>
     <trip id="bl601b2:11" type="bus" depart="30600.00" departPos="25.00" arrivalPos="25.00" arrivalSpeed="0.00" from="-E1" to="-E1"/>
-    <trip id="randUni534:1" type="random" depart="30755.00" departPos="19.59" arrivalPos="212.78" arrivalSpeed="0.00" from="E212" to="-E103"/>
-    <trip id="randUni539:1" type="random" depart="31335.00" departPos="18.58" arrivalPos="4.14" arrivalSpeed="0.00" from="E96" to="-E13"/>
-    <trip id="randUni280:1" type="random" depart="31346.00" departPos="11.07" arrivalPos="23.18" arrivalSpeed="0.00" from="-E29" to="E139"/>
-    <trip id="randUni268:1" type="random" depart="31440.00" departPos="16.93" arrivalPos="11.12" arrivalSpeed="0.00" from="E176" to="E51"/>
+    <trip id="randUni534:1" type="random" color="255,255,255" depart="30755.00" departPos="19.59" arrivalPos="212.78" arrivalSpeed="0.00" from="E212" to="-E103"/>
+    <trip id="randUni539:1" type="ElectricBus" color="255,255,0" depart="31335.00" departPos="18.58" arrivalPos="4.14" arrivalSpeed="0.00" from="E96" to="-E13"/>
+    <trip id="randUni280:1" type="random" color="255,255,255" depart="31346.00" departPos="11.07" arrivalPos="23.18" arrivalSpeed="0.00" from="-E29" to="E139"/>
+    <trip id="randUni268:1" type="random" color="255,255,255" depart="31440.00" departPos="16.93" arrivalPos="11.12" arrivalSpeed="0.00" from="E176" to="E51"/>
     <trip id="bl601b3:3" type="bus" depart="31500.00" departPos="25.00" arrivalPos="25.00" arrivalSpeed="0.00" from="E1" to="E1"/>
     <trip id="bl601b4:11" type="bus" depart="31500.00" departPos="25.00" arrivalPos="25.00" arrivalSpeed="0.00" from="-E1" to="-E1"/>
-    <trip id="randUni142:1" type="random" depart="32175.00" departPos="99.03" arrivalPos="17.27" arrivalSpeed="0.00" from="E92" to="E62"/>
+    <trip id="randUni142:1" type="random" color="255,255,255" depart="32175.00" departPos="99.03" arrivalPos="17.27" arrivalSpeed="0.00" from="E92" to="E62"/>
     <trip id="bl601b5:3" type="bus" depart="32400.00" departPos="25.00" arrivalPos="25.00" arrivalSpeed="0.00" from="E1" to="E1"/>
     <trip id="bl601b6:11" type="bus" depart="32400.00" departPos="25.00" arrivalPos="25.00" arrivalSpeed="0.00" from="-E1" to="-E1"/>
-    <trip id="randUni118:1" type="random" depart="32470.00" departPos="11.22" arrivalPos="7.30" arrivalSpeed="0.00" from="-E174" to="-E116"/>
-    <trip id="randUni242:1" type="random" depart="32596.00" departPos="1.81" arrivalPos="8.75" arrivalSpeed="0.00" from="E205" to="E102"/>
-    <trip id="randUni487:1" type="random" depart="33043.00" departPos="18.21" arrivalPos="22.52" arrivalSpeed="0.00" from="E46" to="-E115"/>
-    <trip id="randUni500:1" type="random" depart="33055.00" departPos="7.17" arrivalPos="6.39" arrivalSpeed="0.00" from="E74" to="E212"/>
-    <trip id="randUni145:1" type="random" depart="33593.00" departPos="7.18" arrivalPos="14.29" arrivalSpeed="0.00" from="-E225" to="E52"/>
+    <trip id="randUni118:1" type="random" color="255,255,255" depart="32470.00" departPos="11.22" arrivalPos="7.30" arrivalSpeed="0.00" from="-E174" to="-E116"/>
+    <trip id="randUni242:1" type="evehicle" color="255,255,0" depart="32596.00" departPos="1.81" arrivalPos="8.75" arrivalSpeed="0.00" from="E205" to="E102"/>
+    <trip id="randUni487:1" type="random" color="255,255,255" depart="33043.00" departPos="18.21" arrivalPos="22.52" arrivalSpeed="0.00" from="E46" to="-E115"/>
+    <trip id="randUni500:1" type="random" color="255,255,255" depart="33055.00" departPos="7.17" arrivalPos="6.39" arrivalSpeed="0.00" from="E74" to="E212"/>
+    <trip id="randUni145:1" type="evehicle" color="255,255,0" depart="33593.00" departPos="7.18" arrivalPos="14.29" arrivalSpeed="0.00" from="-E225" to="E52"/>
     <trip id="h204c1:1" type="default" depart="33658.00" departPos="19.19" arrivalPos="63.27" arrivalSpeed="0.00" from="E83" to="-E122"/>
-    <trip id="randUni3:1" type="random" depart="33717.00" departPos="28.97" arrivalPos="30.42" arrivalSpeed="0.00" from="-E85" to="-E97"/>
-    <trip id="randUni180:1" type="random" depart="33719.00" departPos="7.39" arrivalPos="5.87" arrivalSpeed="0.00" from="E111" to="-E58"/>
-    <trip id="randUni601:1" type="random" depart="33948.00" departPos="11.87" arrivalPos="8.09" arrivalSpeed="0.00" from="-E13" to="E191"/>
-    <trip id="randUni628:1" type="random" depart="34136.00" departPos="16.67" arrivalPos="25.71" arrivalSpeed="0.00" from="E183" to="E20"/>
+    <trip id="randUni3:1" type="random" color="255,255,255" depart="33717.00" departPos="28.97" arrivalPos="30.42" arrivalSpeed="0.00" from="-E85" to="-E97"/>
+    <trip id="randUni180:1" type="random" color="255,255,255" depart="33719.00" departPos="7.39" arrivalPos="5.87" arrivalSpeed="0.00" from="E111" to="-E58"/>
+    <trip id="randUni601:1" type="random" color="255,255,255" depart="33948.00" departPos="11.87" arrivalPos="8.09" arrivalSpeed="0.00" from="-E13" to="E191"/>
+    <trip id="randUni628:1" type="random" color="255,255,255" depart="34136.00" departPos="16.67" arrivalPos="25.71" arrivalSpeed="0.00" from="E183" to="E20"/>
     <trip id="bl601b7:3" type="bus" depart="34200.00" departPos="25.00" arrivalPos="25.00" arrivalSpeed="0.00" from="E1" to="E1"/>
     <trip id="bl601b8:9" type="bus" depart="34200.00" departPos="25.00" arrivalPos="25.00" arrivalSpeed="0.00" from="-E1" to="-E1"/>
-    <trip id="randUni86:1" type="random" depart="34364.00" departPos="2.98" arrivalPos="12.75" arrivalSpeed="0.00" from="-E30" to="E154"/>
-    <trip id="randUni297:1" type="random" depart="34512.00" departPos="3.00" arrivalPos="40.97" arrivalSpeed="0.00" from="-E215" to="-E186"/>
-    <trip id="randUni156:1" type="random" depart="34607.00" departPos="1.60" arrivalPos="73.89" arrivalSpeed="0.00" from="E43" to="-E92"/>
-    <trip id="randUni471:1" type="random" depart="34640.00" departPos="64.50" arrivalPos="57.78" arrivalSpeed="0.00" from="E185" to="-E128"/>
-    <trip id="randUni13:1" type="random" depart="34875.00" departPos="191.31" arrivalPos="13.41" arrivalSpeed="0.00" from="E165" to="E140"/>
+    <trip id="randUni86:1" type="random" color="255,255,255" depart="34364.00" departPos="2.98" arrivalPos="12.75" arrivalSpeed="0.00" from="-E30" to="E154"/>
+    <trip id="randUni297:1" type="random" color="255,255,255" depart="34512.00" departPos="3.00" arrivalPos="40.97" arrivalSpeed="0.00" from="-E215" to="-E186"/>
+    <trip id="randUni156:1" type="random" color="255,255,255" depart="34607.00" departPos="1.60" arrivalPos="73.89" arrivalSpeed="0.00" from="E43" to="-E92"/>
+    <trip id="randUni471:1" type="random" color="255,255,255" depart="34640.00" departPos="64.50" arrivalPos="57.78" arrivalSpeed="0.00" from="E185" to="-E128"/>
+    <trip id="randUni13:1" type="random" color="255,255,255" depart="34875.00" departPos="191.31" arrivalPos="13.41" arrivalSpeed="0.00" from="E165" to="E140"/>
     <trip id="h228c1:1" type="default" depart="35102.00" departPos="36.42" arrivalPos="17.72" arrivalSpeed="0.00" from="-E44" to="-E210"/>
-    <trip id="randUni223:1" type="random" depart="35109.00" departPos="8.71" arrivalPos="12.37" arrivalSpeed="0.00" from="E17" to="-E30"/>
-    <trip id="randUni211:1" type="random" depart="35198.00" departPos="189.15" arrivalPos="27.00" arrivalSpeed="0.00" from="-watt" to="E201"/>
-    <trip id="randUni641:1" type="random" depart="35481.00" departPos="34.81" arrivalPos="21.13" arrivalSpeed="0.00" from="-E137" to="-E211"/>
-    <trip id="randUni166:1" type="random" depart="35577.00" departPos="121.29" arrivalPos="21.14" arrivalSpeed="0.00" from="-einstein" to="-E214"/>
-    <trip id="randUni460:1" type="random" depart="35797.00" departPos="23.06" arrivalPos="35.53" arrivalSpeed="0.00" from="-E175" to="-E41"/>
+    <trip id="randUni223:1" type="evehicle" color="255,255,0" depart="35109.00" departPos="8.71" arrivalPos="12.37" arrivalSpeed="0.00" from="E17" to="-E30"/>
+    <trip id="randUni211:1" type="random" color="255,255,255" depart="35198.00" departPos="189.15" arrivalPos="27.00" arrivalSpeed="0.00" from="-watt" to="E201"/>
+    <trip id="randUni641:1" type="random" color="255,255,255" depart="35481.00" departPos="34.81" arrivalPos="21.13" arrivalSpeed="0.00" from="-E137" to="-E211"/>
+    <trip id="randUni166:1" type="random" color="255,255,255" depart="35577.00" departPos="121.29" arrivalPos="21.14" arrivalSpeed="0.00" from="-einstein" to="-E214"/>
+    <trip id="randUni460:1" type="evehicle" color="255,255,0" depart="35797.00" departPos="23.06" arrivalPos="35.53" arrivalSpeed="0.00" from="-E175" to="-E41"/>
     <trip id="bl601b9:3" type="bus" depart="36000.00" departPos="25.00" arrivalPos="25.00" arrivalSpeed="0.00" from="E1" to="E1"/>
     <trip id="bl601b10:9" type="bus" depart="36000.00" departPos="25.00" arrivalPos="25.00" arrivalSpeed="0.00" from="-E1" to="-E1"/>
-    <trip id="randUni133:1" type="random" depart="36534.00" departPos="42.08" arrivalPos="13.15" arrivalSpeed="0.00" from="-E179" to="-E138"/>
-    <trip id="randUni368:1" type="random" depart="37170.00" departPos="21.32" arrivalPos="13.66" arrivalSpeed="0.00" from="-E81" to="-E105"/>
-    <trip id="randUni198:1" type="random" depart="37570.00" departPos="19.69" arrivalPos="7.96" arrivalSpeed="0.00" from="euler" to="-E40"/>
+    <trip id="randUni133:1" type="random" color="255,255,255" depart="36534.00" departPos="42.08" arrivalPos="13.15" arrivalSpeed="0.00" from="-E179" to="-E138"/>
+    <trip id="randUni368:1" type="random" color="255,255,255" depart="37170.00" departPos="21.32" arrivalPos="13.66" arrivalSpeed="0.00" from="-E81" to="-E105"/>
+    <trip id="randUni198:1" type="random" color="255,255,255" depart="37570.00" departPos="19.69" arrivalPos="7.96" arrivalSpeed="0.00" from="euler" to="-E40"/>
     <trip id="bl601b2:3" type="bus" depart="37800.00" departPos="25.00" arrivalPos="25.00" arrivalSpeed="0.00" from="E1" to="E1"/>
     <trip id="bl601b1:11" type="bus" depart="37800.00" departPos="25.00" arrivalPos="25.00" arrivalSpeed="0.00" from="-E1" to="-E1"/>
-    <trip id="randUni354:1" type="random" depart="37958.00" departPos="21.93" arrivalPos="25.95" arrivalSpeed="0.00" from="E80" to="E109"/>
-    <trip id="randUni518:1" type="random" depart="38059.00" departPos="14.98" arrivalPos="33.21" arrivalSpeed="0.00" from="E221" to="E50"/>
-    <trip id="randUni639:1" type="random" depart="38493.00" departPos="13.44" arrivalPos="3.52" arrivalSpeed="0.00" from="E69" to="E83"/>
-    <trip id="randUni9:1" type="random" depart="38665.00" departPos="12.17" arrivalPos="9.75" arrivalSpeed="0.00" from="-E140" to="-E130"/>
-    <trip id="randUni239:1" type="random" depart="38745.00" departPos="7.40" arrivalPos="19.77" arrivalSpeed="0.00" from="E22" to="-E62"/>
-    <trip id="randUni456:1" type="random" depart="38886.00" departPos="42.13" arrivalPos="23.18" arrivalSpeed="0.00" from="-E172" to="E58"/>
-    <trip id="randUni425:1" type="random" depart="39015.00" departPos="24.52" arrivalPos="13.70" arrivalSpeed="0.00" from="-E108" to="-E69"/>
-    <trip id="randUni606:1" type="random" depart="39142.00" departPos="38.17" arrivalPos="26.24" arrivalSpeed="0.00" from="-E83" to="-E155"/>
-    <trip id="randUni532:1" type="random" depart="39369.00" departPos="15.89" arrivalPos="13.31" arrivalSpeed="0.00" from="-E49" to="E19"/>
+    <trip id="randUni354:1" type="random" color="255,255,255" depart="37958.00" departPos="21.93" arrivalPos="25.95" arrivalSpeed="0.00" from="E80" to="E109"/>
+    <trip id="randUni518:1" type="random" color="255,255,255" depart="38059.00" departPos="14.98" arrivalPos="33.21" arrivalSpeed="0.00" from="E221" to="E50"/>
+    <trip id="randUni639:1" type="evehicle" color="255,255,0" depart="38493.00" departPos="13.44" arrivalPos="3.52" arrivalSpeed="0.00" from="E69" to="E83"/>
+    <trip id="randUni9:1" type="random" color="255,255,255" depart="38665.00" departPos="12.17" arrivalPos="9.75" arrivalSpeed="0.00" from="-E140" to="-E130"/>
+    <trip id="randUni239:1" type="ElectricBus" color="255,255,0" depart="38745.00" departPos="7.40" arrivalPos="19.77" arrivalSpeed="0.00" from="E22" to="-E62"/>
+    <trip id="randUni456:1" type="random" color="255,255,255" depart="38886.00" departPos="42.13" arrivalPos="23.18" arrivalSpeed="0.00" from="-E172" to="E58"/>
+    <trip id="randUni425:1" type="random" color="255,255,255" depart="39015.00" departPos="24.52" arrivalPos="13.70" arrivalSpeed="0.00" from="-E108" to="-E69"/>
+    <trip id="randUni606:1" type="random" color="255,255,255" depart="39142.00" departPos="38.17" arrivalPos="26.24" arrivalSpeed="0.00" from="-E83" to="-E155"/>
+    <trip id="randUni532:1" type="random" color="255,255,255" depart="39369.00" departPos="15.89" arrivalPos="13.31" arrivalSpeed="0.00" from="-E49" to="E19"/>
     <trip id="bl601b4:3" type="bus" depart="39600.00" departPos="25.00" arrivalPos="25.00" arrivalSpeed="0.00" from="E1" to="E1"/>
     <trip id="bl601b3:11" type="bus" depart="39600.00" departPos="25.00" arrivalPos="25.00" arrivalSpeed="0.00" from="-E1" to="-E1"/>
-    <trip id="randUni5:1" type="random" depart="39713.00" departPos="90.99" arrivalPos="22.07" arrivalSpeed="0.00" from="E91" to="E56"/>
-    <trip id="randUni92:1" type="random" depart="39807.00" departPos="5.55" arrivalPos="59.82" arrivalSpeed="0.00" from="E57" to="-E76"/>
-    <trip id="randUni635:1" type="random" depart="40274.00" departPos="35.92" arrivalPos="26.12" arrivalSpeed="0.00" from="E80" to="-E50"/>
-    <trip id="randUni111:1" type="random" depart="40308.00" departPos="30.54" arrivalPos="37.11" arrivalSpeed="0.00" from="E21" to="-E190"/>
-    <trip id="randUni420:1" type="random" depart="40484.00" departPos="0.16" arrivalPos="14.56" arrivalSpeed="0.00" from="E57" to="E213"/>
-    <trip id="randUni485:1" type="random" depart="40667.00" departPos="7.71" arrivalPos="0.03" arrivalSpeed="0.00" from="E6" to="-E60"/>
-    <trip id="randUni346:1" type="random" depart="40910.00" departPos="8.87" arrivalPos="9.61" arrivalSpeed="0.00" from="-E196" to="-E80"/>
+    <trip id="randUni5:1" type="random" color="255,255,255" depart="39713.00" departPos="90.99" arrivalPos="22.07" arrivalSpeed="0.00" from="E91" to="E56"/>
+    <trip id="randUni92:1" type="random" color="255,255,255" depart="39807.00" departPos="5.55" arrivalPos="59.82" arrivalSpeed="0.00" from="E57" to="-E76"/>
+    <trip id="randUni635:1" type="ElectricBus" color="255,255,0" depart="40274.00" departPos="35.92" arrivalPos="26.12" arrivalSpeed="0.00" from="E80" to="-E50"/>
+    <trip id="randUni111:1" type="random" color="255,255,255" depart="40308.00" departPos="30.54" arrivalPos="37.11" arrivalSpeed="0.00" from="E21" to="-E190"/>
+    <trip id="randUni420:1" type="random" color="255,255,255" depart="40484.00" departPos="0.16" arrivalPos="14.56" arrivalSpeed="0.00" from="E57" to="E213"/>
+    <trip id="randUni485:1" type="random" color="255,255,255" depart="40667.00" departPos="7.71" arrivalPos="0.03" arrivalSpeed="0.00" from="E6" to="-E60"/>
+    <trip id="randUni346:1" type="random" color="255,255,255" depart="40910.00" departPos="8.87" arrivalPos="9.61" arrivalSpeed="0.00" from="-E196" to="-E80"/>
     <trip id="bl601b6:3" type="bus" depart="41400.00" departPos="25.00" arrivalPos="25.00" arrivalSpeed="0.00" from="E1" to="E1"/>
     <trip id="bl601b5:11" type="bus" depart="41400.00" departPos="25.00" arrivalPos="25.00" arrivalSpeed="0.00" from="-E1" to="-E1"/>
-    <trip id="randUni101:1" type="random" depart="41723.00" departPos="14.57" arrivalPos="60.50" arrivalSpeed="0.00" from="-E81" to="-E104"/>
-    <trip id="randUni574:1" type="random" depart="41751.00" departPos="18.91" arrivalPos="26.12" arrivalSpeed="0.00" from="-E150" to="E72"/>
-    <trip id="randUni391:1" type="random" depart="42192.00" departPos="10.50" arrivalPos="4.08" arrivalSpeed="0.00" from="-E147" to="-E43"/>
+    <trip id="randUni101:1" type="random" color="255,255,255" depart="41723.00" departPos="14.57" arrivalPos="60.50" arrivalSpeed="0.00" from="-E81" to="-E104"/>
+    <trip id="randUni574:1" type="random" color="255,255,255" depart="41751.00" departPos="18.91" arrivalPos="26.12" arrivalSpeed="0.00" from="-E150" to="E72"/>
+    <trip id="randUni391:1" type="random" color="255,255,255" depart="42192.00" departPos="10.50" arrivalPos="4.08" arrivalSpeed="0.00" from="-E147" to="-E43"/>
     <trip id="h204c1:2" type="default" depart="42397.00" departPos="63.27" arrivalPos="19.19" arrivalSpeed="0.00" from="-E122" to="E83"/>
-    <trip id="randUni259:1" type="random" depart="42443.00" departPos="12.61" arrivalPos="19.81" arrivalSpeed="0.00" from="-joulesC" to="-E1"/>
-    <trip id="randUni573:1" type="random" depart="42597.00" departPos="64.35" arrivalPos="1.33" arrivalSpeed="0.00" from="-arquimedes" to="E25"/>
-    <trip id="randUni87:1" type="random" depart="42923.00" departPos="108.21" arrivalPos="21.76" arrivalSpeed="0.00" from="ohm" to="-E141"/>
-    <trip id="randUni521:1" type="random" depart="43060.00" departPos="29.50" arrivalPos="9.81" arrivalSpeed="0.00" from="-E2" to="-E107"/>
-    <trip id="randUni83:1" type="random" depart="43147.00" departPos="22.71" arrivalPos="15.12" arrivalSpeed="0.00" from="-E209" to="-E11"/>
-    <trip id="randUni545:1" type="random" depart="43168.00" departPos="20.17" arrivalPos="11.22" arrivalSpeed="0.00" from="E69" to="E28"/>
+    <trip id="randUni259:1" type="evehicle" color="255,255,0" depart="42443.00" departPos="12.61" arrivalPos="19.81" arrivalSpeed="0.00" from="-joulesC" to="-E1"/>
+    <trip id="randUni573:1" type="random" color="255,255,255" depart="42597.00" departPos="64.35" arrivalPos="1.33" arrivalSpeed="0.00" from="-arquimedes" to="E25"/>
+    <trip id="randUni87:1" type="random" color="255,255,255" depart="42923.00" departPos="108.21" arrivalPos="21.76" arrivalSpeed="0.00" from="ohm" to="-E141"/>
+    <trip id="randUni521:1" type="random" color="255,255,255" depart="43060.00" departPos="29.50" arrivalPos="9.81" arrivalSpeed="0.00" from="-E2" to="-E107"/>
+    <trip id="randUni83:1" type="random" color="255,255,255" depart="43147.00" departPos="22.71" arrivalPos="15.12" arrivalSpeed="0.00" from="-E209" to="-E11"/>
+    <trip id="randUni545:1" type="random" color="255,255,255" depart="43168.00" departPos="20.17" arrivalPos="11.22" arrivalSpeed="0.00" from="E69" to="E28"/>
     <trip id="bl601b8:3" type="bus" depart="43200.00" departPos="25.00" arrivalPos="25.00" arrivalSpeed="0.00" from="E1" to="E1"/>
     <trip id="bl601b7:11" type="bus" depart="43200.00" departPos="25.00" arrivalPos="25.00" arrivalSpeed="0.00" from="-E1" to="-E1"/>
-    <trip id="randUni667:1" type="random" depart="43436.00" departPos="36.01" arrivalPos="21.28" arrivalSpeed="0.00" from="-E51" to="E107"/>
-    <trip id="randUni392:1" type="random" depart="43923.00" departPos="12.73" arrivalPos="19.39" arrivalSpeed="0.00" from="E161" to="-E82"/>
-    <trip id="randUni56:1" type="random" depart="44134.00" departPos="83.59" arrivalPos="16.03" arrivalSpeed="0.00" from="E90" to="-E62"/>
-    <trip id="randUni127:1" type="random" depart="44348.00" departPos="101.60" arrivalPos="57.87" arrivalSpeed="0.00" from="-watt" to="E174"/>
-    <trip id="randUni58:1" type="random" depart="44387.00" departPos="1.26" arrivalPos="24.51" arrivalSpeed="0.00" from="-E147" to="E137"/>
-    <trip id="randUni308:1" type="random" depart="44406.00" departPos="1.43" arrivalPos="16.86" arrivalSpeed="0.00" from="E7" to="E44"/>
-    <trip id="randUni557:1" type="random" depart="44552.00" departPos="14.36" arrivalPos="44.43" arrivalSpeed="0.00" from="E95" to="-E175"/>
+    <trip id="randUni667:1" type="random" color="255,255,255" depart="43436.00" departPos="36.01" arrivalPos="21.28" arrivalSpeed="0.00" from="-E51" to="E107"/>
+    <trip id="randUni392:1" type="random" color="255,255,255" depart="43923.00" departPos="12.73" arrivalPos="19.39" arrivalSpeed="0.00" from="E161" to="-E82"/>
+    <trip id="randUni56:1" type="random" color="255,255,255" depart="44134.00" departPos="83.59" arrivalPos="16.03" arrivalSpeed="0.00" from="E90" to="-E62"/>
+    <trip id="randUni127:1" type="random" color="255,255,255" depart="44348.00" departPos="101.60" arrivalPos="57.87" arrivalSpeed="0.00" from="-watt" to="E174"/>
+    <trip id="randUni58:1" type="random" color="255,255,255" depart="44387.00" departPos="1.26" arrivalPos="24.51" arrivalSpeed="0.00" from="-E147" to="E137"/>
+    <trip id="randUni308:1" type="random" color="255,255,255" depart="44406.00" departPos="1.43" arrivalPos="16.86" arrivalSpeed="0.00" from="E7" to="E44"/>
+    <trip id="randUni557:1" type="ElectricBus" color="255,255,0" depart="44552.00" departPos="14.36" arrivalPos="44.43" arrivalSpeed="0.00" from="E95" to="-E175"/>
     <trip id="bl601b10:3" type="bus" depart="45000.00" departPos="25.00" arrivalPos="25.00" arrivalSpeed="0.00" from="E1" to="E1"/>
     <trip id="bl601b9:11" type="bus" depart="45000.00" departPos="25.00" arrivalPos="25.00" arrivalSpeed="0.00" from="-E1" to="-E1"/>
-    <trip id="randUni252:1" type="random" depart="46022.00" departPos="23.67" arrivalPos="14.49" arrivalSpeed="0.00" from="E199" to="-E138"/>
-    <trip id="randUni617:1" type="random" depart="46281.00" departPos="2.51" arrivalPos="15.39" arrivalSpeed="0.00" from="-E203" to="E133"/>
-    <trip id="randUni314:1" type="random" depart="46553.00" departPos="9.71" arrivalPos="23.63" arrivalSpeed="0.00" from="-E133" to="E187"/>
-    <trip id="randUni0:1" type="random" depart="46622.00" departPos="2.14" arrivalPos="11.59" arrivalSpeed="0.00" from="E199" to="E210"/>
+    <trip id="randUni252:1" type="random" color="255,255,255" depart="46022.00" departPos="23.67" arrivalPos="14.49" arrivalSpeed="0.00" from="E199" to="-E138"/>
+    <trip id="randUni617:1" type="random" color="255,255,255" depart="46281.00" departPos="2.51" arrivalPos="15.39" arrivalSpeed="0.00" from="-E203" to="E133"/>
+    <trip id="randUni314:1" type="random" color="255,255,255" depart="46553.00" departPos="9.71" arrivalPos="23.63" arrivalSpeed="0.00" from="-E133" to="E187"/>
+    <trip id="randUni0:1" type="random" color="255,255,255" depart="46622.00" departPos="2.14" arrivalPos="11.59" arrivalSpeed="0.00" from="E199" to="E210"/>
     <trip id="bl601b1:5" type="bus" depart="46800.00" departPos="25.00" arrivalPos="25.00" arrivalSpeed="0.00" from="E1" to="E1"/>
     <trip id="bl601b2:13" type="bus" depart="46800.00" departPos="25.00" arrivalPos="25.00" arrivalSpeed="0.00" from="-E1" to="-E1"/>
-    <trip id="randUni226:1" type="random" depart="47020.00" departPos="39.64" arrivalPos="41.18" arrivalSpeed="0.00" from="-E90" to="-E88"/>
-    <trip id="randUni216:1" type="random" depart="47671.00" departPos="21.68" arrivalPos="27.00" arrivalSpeed="0.00" from="-E148" to="E108"/>
-    <trip id="randUni273:1" type="random" depart="47857.00" departPos="34.55" arrivalPos="23.20" arrivalSpeed="0.00" from="-E194" to="-E70"/>
-    <trip id="randUni665:1" type="random" depart="47963.00" departPos="52.90" arrivalPos="5.02" arrivalSpeed="0.00" from="E172" to="E103"/>
-    <trip id="randUni172:1" type="random" depart="48581.00" departPos="24.01" arrivalPos="14.30" arrivalSpeed="0.00" from="-E0" to="-E27"/>
+    <trip id="randUni226:1" type="random" color="255,255,255" depart="47020.00" departPos="39.64" arrivalPos="41.18" arrivalSpeed="0.00" from="-E90" to="-E88"/>
+    <trip id="randUni216:1" type="random" color="255,255,255" depart="47671.00" departPos="21.68" arrivalPos="27.00" arrivalSpeed="0.00" from="-E148" to="E108"/>
+    <trip id="randUni273:1" type="random" color="255,255,255" depart="47857.00" departPos="34.55" arrivalPos="23.20" arrivalSpeed="0.00" from="-E194" to="-E70"/>
+    <trip id="randUni665:1" type="random" color="255,255,255" depart="47963.00" departPos="52.90" arrivalPos="5.02" arrivalSpeed="0.00" from="E172" to="E103"/>
+    <trip id="randUni172:1" type="ElectricBus" color="255,255,0" depart="48581.00" departPos="24.01" arrivalPos="14.30" arrivalSpeed="0.00" from="-E0" to="-E27"/>
     <trip id="bl601b3:5" type="bus" depart="48600.00" departPos="25.00" arrivalPos="25.00" arrivalSpeed="0.00" from="E1" to="E1"/>
     <trip id="bl601b4:13" type="bus" depart="48600.00" departPos="25.00" arrivalPos="25.00" arrivalSpeed="0.00" from="-E1" to="-E1"/>
-    <trip id="randUni441:1" type="random" depart="48795.00" departPos="8.97" arrivalPos="15.34" arrivalSpeed="0.00" from="-E51" to="-E140"/>
-    <trip id="randUni137:1" type="random" depart="49086.00" departPos="65.71" arrivalPos="59.72" arrivalSpeed="0.00" from="-E97" to="E98"/>
-    <trip id="randUni567:1" type="random" depart="49107.00" departPos="13.34" arrivalPos="35.42" arrivalSpeed="0.00" from="-E198" to="E50"/>
-    <trip id="randUni50:1" type="random" depart="49116.00" departPos="14.89" arrivalPos="9.06" arrivalSpeed="0.00" from="-E70" to="E43"/>
-    <trip id="randUni341:1" type="random" depart="49431.00" departPos="26.39" arrivalPos="33.83" arrivalSpeed="0.00" from="E85" to="-E81"/>
-    <trip id="randUni499:1" type="random" depart="49616.00" departPos="2.04" arrivalPos="1.54" arrivalSpeed="0.00" from="E9" to="-E226"/>
-    <trip id="randUni372:1" type="random" depart="50151.00" departPos="31.30" arrivalPos="24.30" arrivalSpeed="0.00" from="E75" to="E153"/>
+    <trip id="randUni441:1" type="random" color="255,255,255" depart="48795.00" departPos="8.97" arrivalPos="15.34" arrivalSpeed="0.00" from="-E51" to="-E140"/>
+    <trip id="randUni137:1" type="evehicle" color="255,255,0" depart="49086.00" departPos="65.71" arrivalPos="59.72" arrivalSpeed="0.00" from="-E97" to="E98"/>
+    <trip id="randUni567:1" type="random" color="255,255,255" depart="49107.00" departPos="13.34" arrivalPos="35.42" arrivalSpeed="0.00" from="-E198" to="E50"/>
+    <trip id="randUni50:1" type="random" color="255,255,255" depart="49116.00" departPos="14.89" arrivalPos="9.06" arrivalSpeed="0.00" from="-E70" to="E43"/>
+    <trip id="randUni341:1" type="random" color="255,255,255" depart="49431.00" departPos="26.39" arrivalPos="33.83" arrivalSpeed="0.00" from="E85" to="-E81"/>
+    <trip id="randUni499:1" type="evehicle" color="255,255,0" depart="49616.00" departPos="2.04" arrivalPos="1.54" arrivalSpeed="0.00" from="E9" to="-E226"/>
+    <trip id="randUni372:1" type="ElectricBus" color="255,255,0" depart="50151.00" departPos="31.30" arrivalPos="24.30" arrivalSpeed="0.00" from="E75" to="E153"/>
     <trip id="bl601b5:5" type="bus" depart="50400.00" departPos="25.00" arrivalPos="25.00" arrivalSpeed="0.00" from="E1" to="E1"/>
     <trip id="bl601b6:13" type="bus" depart="50400.00" departPos="25.00" arrivalPos="25.00" arrivalSpeed="0.00" from="-E1" to="-E1"/>
-    <trip id="randUni373:1" type="random" depart="50955.00" departPos="31.61" arrivalPos="3.35" arrivalSpeed="0.00" from="-E114" to="E150"/>
-    <trip id="randUni332:1" type="random" depart="50969.00" departPos="22.29" arrivalPos="33.42" arrivalSpeed="0.00" from="-E18" to="-E193"/>
+    <trip id="randUni373:1" type="evehicle" color="255,255,0" depart="50955.00" departPos="31.61" arrivalPos="3.35" arrivalSpeed="0.00" from="-E114" to="E150"/>
+    <trip id="randUni332:1" type="random" color="255,255,255" depart="50969.00" departPos="22.29" arrivalPos="33.42" arrivalSpeed="0.00" from="-E18" to="-E193"/>
     <trip id="h228c1:2" type="default" depart="51103.00" departPos="17.72" arrivalPos="36.42" arrivalSpeed="0.00" from="-E210" to="-E44"/>
-    <trip id="randUni186:1" type="random" depart="51550.00" departPos="28.99" arrivalPos="15.90" arrivalSpeed="0.00" from="-E80" to="-E78"/>
-    <trip id="randUni6:1" type="random" depart="52107.00" departPos="99.47" arrivalPos="28.13" arrivalSpeed="0.00" from="-E168" to="-E137"/>
+    <trip id="randUni186:1" type="random" color="255,255,255" depart="51550.00" departPos="28.99" arrivalPos="15.90" arrivalSpeed="0.00" from="-E80" to="-E78"/>
+    <trip id="randUni6:1" type="evehicle" color="255,255,0" depart="52107.00" departPos="99.47" arrivalPos="28.13" arrivalSpeed="0.00" from="-E168" to="-E137"/>
     <trip id="bl601b7:5" type="bus" depart="52200.00" departPos="25.00" arrivalPos="25.00" arrivalSpeed="0.00" from="E1" to="E1"/>
     <trip id="bl601b8:11" type="bus" depart="52200.00" departPos="25.00" arrivalPos="25.00" arrivalSpeed="0.00" from="-E1" to="-E1"/>
-    <trip id="randUni669:1" type="random" depart="52474.00" departPos="28.58" arrivalPos="109.23" arrivalSpeed="0.00" from="-E180" to="einstein"/>
-    <trip id="randUni153:1" type="random" depart="52800.00" departPos="24.19" arrivalPos="143.30" arrivalSpeed="0.00" from="-maxwell" to="-arquimedes"/>
-    <trip id="randUni466:1" type="random" depart="53276.00" departPos="24.27" arrivalPos="19.21" arrivalSpeed="0.00" from="-E133" to="-E211"/>
+    <trip id="randUni669:1" type="random" color="255,255,255" depart="52474.00" departPos="28.58" arrivalPos="109.23" arrivalSpeed="0.00" from="-E180" to="einstein"/>
+    <trip id="randUni153:1" type="random" color="255,255,255" depart="52800.00" departPos="24.19" arrivalPos="143.30" arrivalSpeed="0.00" from="-maxwell" to="-arquimedes"/>
+    <trip id="randUni466:1" type="random" color="255,255,255" depart="53276.00" departPos="24.27" arrivalPos="19.21" arrivalSpeed="0.00" from="-E133" to="-E211"/>
     <trip id="bl601b9:5" type="bus" depart="54000.00" departPos="25.00" arrivalPos="25.00" arrivalSpeed="0.00" from="E1" to="E1"/>
     <trip id="bl601b10:11" type="bus" depart="54000.00" departPos="25.00" arrivalPos="25.00" arrivalSpeed="0.00" from="-E1" to="-E1"/>
-    <trip id="randUni251:1" type="random" depart="54607.00" departPos="6.08" arrivalPos="57.94" arrivalSpeed="0.00" from="einstein" to="E88"/>
-    <trip id="randUni28:1" type="random" depart="55248.00" departPos="8.40" arrivalPos="36.35" arrivalSpeed="0.00" from="-E83" to="E231"/>
-    <trip id="randUni467:1" type="random" depart="55309.00" departPos="11.17" arrivalPos="28.47" arrivalSpeed="0.00" from="E61" to="-E5"/>
-    <trip id="randUni208:1" type="random" depart="55415.00" departPos="9.83" arrivalPos="16.21" arrivalSpeed="0.00" from="E226" to="E160"/>
-    <trip id="randUni71:1" type="random" depart="55598.00" departPos="3.33" arrivalPos="3.38" arrivalSpeed="0.00" from="E152" to="-E54"/>
+    <trip id="randUni251:1" type="random" color="255,255,255" depart="54607.00" departPos="6.08" arrivalPos="57.94" arrivalSpeed="0.00" from="einstein" to="E88"/>
+    <trip id="randUni28:1" type="random" color="255,255,255" depart="55248.00" departPos="8.40" arrivalPos="36.35" arrivalSpeed="0.00" from="-E83" to="E231"/>
+    <trip id="randUni467:1" type="random" color="255,255,255" depart="55309.00" departPos="11.17" arrivalPos="28.47" arrivalSpeed="0.00" from="E61" to="-E5"/>
+    <trip id="randUni208:1" type="random" color="255,255,255" depart="55415.00" departPos="9.83" arrivalPos="16.21" arrivalSpeed="0.00" from="E226" to="E160"/>
+    <trip id="randUni71:1" type="evehicle" color="255,255,0" depart="55598.00" departPos="3.33" arrivalPos="3.38" arrivalSpeed="0.00" from="E152" to="-E54"/>
     <trip id="bl601b2:5" type="bus" depart="55800.00" departPos="25.00" arrivalPos="25.00" arrivalSpeed="0.00" from="E1" to="E1"/>
     <trip id="bl601b1:13" type="bus" depart="55800.00" departPos="25.00" arrivalPos="25.00" arrivalSpeed="0.00" from="-E1" to="-E1"/>
-    <trip id="randUni613:1" type="random" depart="55916.00" departPos="24.05" arrivalPos="66.00" arrivalSpeed="0.00" from="E80" to="-E174"/>
-    <trip id="randUni155:1" type="random" depart="56238.00" departPos="7.55" arrivalPos="13.82" arrivalSpeed="0.00" from="E206" to="E159"/>
-    <trip id="randUni123:1" type="random" depart="56387.00" departPos="156.18" arrivalPos="14.16" arrivalSpeed="0.00" from="-joulesA" to="joulesB"/>
-    <trip id="randUni116:1" type="random" depart="56440.00" departPos="8.93" arrivalPos="24.55" arrivalSpeed="0.00" from="E200" to="E193"/>
-    <trip id="randUni104:1" type="random" depart="56815.00" departPos="19.18" arrivalPos="31.46" arrivalSpeed="0.00" from="E16" to="E138"/>
-    <trip id="randUni548:1" type="random" depart="57324.00" departPos="18.38" arrivalPos="8.14" arrivalSpeed="0.00" from="-maxwell" to="-E224"/>
-    <trip id="randUni68:1" type="random" depart="57500.00" departPos="34.79" arrivalPos="48.36" arrivalSpeed="0.00" from="E128" to="-E172"/>
-    <trip id="randUni405:1" type="random" depart="57589.00" departPos="19.23" arrivalPos="19.81" arrivalSpeed="0.00" from="-E131" to="E87"/>
+    <trip id="randUni613:1" type="random" color="255,255,255" depart="55916.00" departPos="24.05" arrivalPos="66.00" arrivalSpeed="0.00" from="E80" to="-E174"/>
+    <trip id="randUni155:1" type="random" color="255,255,255" depart="56238.00" departPos="7.55" arrivalPos="13.82" arrivalSpeed="0.00" from="E206" to="E159"/>
+    <trip id="randUni123:1" type="evehicle" color="255,255,0" depart="56387.00" departPos="156.18" arrivalPos="14.16" arrivalSpeed="0.00" from="-joulesA" to="joulesB"/>
+    <trip id="randUni116:1" type="random" color="255,255,255" depart="56440.00" departPos="8.93" arrivalPos="24.55" arrivalSpeed="0.00" from="E200" to="E193"/>
+    <trip id="randUni104:1" type="random" color="255,255,255" depart="56815.00" departPos="19.18" arrivalPos="31.46" arrivalSpeed="0.00" from="E16" to="E138"/>
+    <trip id="randUni548:1" type="random" color="255,255,255" depart="57324.00" departPos="18.38" arrivalPos="8.14" arrivalSpeed="0.00" from="-maxwell" to="-E224"/>
+    <trip id="randUni68:1" type="evehicle" color="255,255,0" depart="57500.00" departPos="34.79" arrivalPos="48.36" arrivalSpeed="0.00" from="E128" to="-E172"/>
+    <trip id="randUni405:1" type="random" color="255,255,255" depart="57589.00" departPos="19.23" arrivalPos="19.81" arrivalSpeed="0.00" from="-E131" to="E87"/>
     <trip id="bl601b4:5" type="bus" depart="57600.00" departPos="25.00" arrivalPos="25.00" arrivalSpeed="0.00" from="E1" to="E1"/>
     <trip id="bl601b3:13" type="bus" depart="57600.00" departPos="25.00" arrivalPos="25.00" arrivalSpeed="0.00" from="-E1" to="-E1"/>
     <trip id="carIn11:3" type="default" depart="57600.00" departPos="207.45" arrivalPos="0.00" arrivalSpeed="0.00" from="E99" to="euler"/>
@@ -1073,57 +1073,57 @@
     <trip id="carIn590:3" type="default" depart="57600.00" departPos="56.59" arrivalPos="0.00" arrivalSpeed="0.00" from="-E117" to="E105"/>
     <trip id="carIn592:3" type="default" depart="57600.00" departPos="41.50" arrivalPos="0.00" arrivalSpeed="0.00" from="-E127" to="E135"/>
     <trip id="carIn595:3" type="default" depart="57600.00" departPos="0.00" arrivalPos="0.00" arrivalSpeed="0.00" from="maxwell" to="-euler"/>
-    <trip id="randUni25:1" type="random" depart="57803.00" departPos="5.58" arrivalPos="18.39" arrivalSpeed="0.00" from="E125" to="E193"/>
-    <trip id="randUni298:1" type="random" depart="57865.00" departPos="7.09" arrivalPos="31.39" arrivalSpeed="0.00" from="-E74" to="E66"/>
-    <trip id="randUni105:1" type="random" depart="57923.00" departPos="15.15" arrivalPos="17.80" arrivalSpeed="0.00" from="-E45" to="-E21"/>
-    <trip id="randUni569:1" type="random" depart="58013.00" departPos="11.07" arrivalPos="56.07" arrivalSpeed="0.00" from="-E113" to="E170"/>
-    <trip id="randUni136:1" type="random" depart="58150.00" departPos="6.43" arrivalPos="7.16" arrivalSpeed="0.00" from="-newton" to="-E208"/>
-    <trip id="randUni362:1" type="random" depart="58215.00" departPos="4.38" arrivalPos="11.87" arrivalSpeed="0.00" from="-E42" to="-E149"/>
-    <trip id="randUni356:1" type="random" depart="58235.00" departPos="5.04" arrivalPos="241.10" arrivalSpeed="0.00" from="-E121" to="-E91"/>
-    <trip id="randUni622:1" type="random" depart="58282.00" departPos="41.51" arrivalPos="7.16" arrivalSpeed="0.00" from="-E231" to="E226"/>
-    <trip id="randUni309:1" type="random" depart="58414.00" departPos="33.60" arrivalPos="30.10" arrivalSpeed="0.00" from="-E184" to="-E8"/>
+    <trip id="randUni25:1" type="random" color="255,255,255" depart="57803.00" departPos="5.58" arrivalPos="18.39" arrivalSpeed="0.00" from="E125" to="E193"/>
+    <trip id="randUni298:1" type="random" color="255,255,255" depart="57865.00" departPos="7.09" arrivalPos="31.39" arrivalSpeed="0.00" from="-E74" to="E66"/>
+    <trip id="randUni105:1" type="random" color="255,255,255" depart="57923.00" departPos="15.15" arrivalPos="17.80" arrivalSpeed="0.00" from="-E45" to="-E21"/>
+    <trip id="randUni569:1" type="random" color="255,255,255" depart="58013.00" departPos="11.07" arrivalPos="56.07" arrivalSpeed="0.00" from="-E113" to="E170"/>
+    <trip id="randUni136:1" type="evehicle" color="255,255,0" depart="58150.00" departPos="6.43" arrivalPos="7.16" arrivalSpeed="0.00" from="-newton" to="-E208"/>
+    <trip id="randUni362:1" type="random" color="255,255,255" depart="58215.00" departPos="4.38" arrivalPos="11.87" arrivalSpeed="0.00" from="-E42" to="-E149"/>
+    <trip id="randUni356:1" type="evehicle" color="255,255,0" depart="58235.00" departPos="5.04" arrivalPos="241.10" arrivalSpeed="0.00" from="-E121" to="-E91"/>
+    <trip id="randUni622:1" type="random" color="255,255,255" depart="58282.00" departPos="41.51" arrivalPos="7.16" arrivalSpeed="0.00" from="-E231" to="E226"/>
+    <trip id="randUni309:1" type="random" color="255,255,255" depart="58414.00" departPos="33.60" arrivalPos="30.10" arrivalSpeed="0.00" from="-E184" to="-E8"/>
     <trip id="bl601b6:5" type="bus" depart="58500.00" departPos="25.00" arrivalPos="25.00" arrivalSpeed="0.00" from="E1" to="E1"/>
     <trip id="bl601b5:13" type="bus" depart="58500.00" departPos="25.00" arrivalPos="25.00" arrivalSpeed="0.00" from="-E1" to="-E1"/>
-    <trip id="randUni217:1" type="random" depart="58541.00" departPos="24.81" arrivalPos="20.99" arrivalSpeed="0.00" from="-E211" to="E143"/>
-    <trip id="randUni237:1" type="random" depart="58548.00" departPos="39.92" arrivalPos="10.52" arrivalSpeed="0.00" from="-E191" to="E31"/>
-    <trip id="randUni607:1" type="random" depart="58951.00" departPos="28.81" arrivalPos="60.79" arrivalSpeed="0.00" from="-E53" to="-einstein"/>
-    <trip id="randUni82:1" type="random" depart="59258.00" departPos="27.09" arrivalPos="7.60" arrivalSpeed="0.00" from="-E185" to="-E226"/>
-    <trip id="randUni563:1" type="random" depart="59332.00" departPos="17.86" arrivalPos="18.74" arrivalSpeed="0.00" from="E25" to="E13"/>
+    <trip id="randUni217:1" type="random" color="255,255,255" depart="58541.00" departPos="24.81" arrivalPos="20.99" arrivalSpeed="0.00" from="-E211" to="E143"/>
+    <trip id="randUni237:1" type="random" color="255,255,255" depart="58548.00" departPos="39.92" arrivalPos="10.52" arrivalSpeed="0.00" from="-E191" to="E31"/>
+    <trip id="randUni607:1" type="random" color="255,255,255" depart="58951.00" departPos="28.81" arrivalPos="60.79" arrivalSpeed="0.00" from="-E53" to="-einstein"/>
+    <trip id="randUni82:1" type="evehicle" color="255,255,0" depart="59258.00" departPos="27.09" arrivalPos="7.60" arrivalSpeed="0.00" from="-E185" to="-E226"/>
+    <trip id="randUni563:1" type="random" color="255,255,255" depart="59332.00" departPos="17.86" arrivalPos="18.74" arrivalSpeed="0.00" from="E25" to="E13"/>
     <trip id="bl601b8:5" type="bus" depart="59400.00" departPos="25.00" arrivalPos="25.00" arrivalSpeed="0.00" from="E1" to="E1"/>
     <trip id="bl601b7:13" type="bus" depart="59400.00" departPos="25.00" arrivalPos="25.00" arrivalSpeed="0.00" from="-E1" to="-E1"/>
     <trip id="bl601b10:5" type="bus" depart="60300.00" departPos="25.00" arrivalPos="25.00" arrivalSpeed="0.00" from="E1" to="E1"/>
     <trip id="bl601b9:13" type="bus" depart="60300.00" departPos="25.00" arrivalPos="25.00" arrivalSpeed="0.00" from="-E1" to="-E1"/>
-    <trip id="randUni310:1" type="random" depart="60481.00" departPos="33.69" arrivalPos="131.42" arrivalSpeed="0.00" from="E195" to="joulesA"/>
-    <trip id="randUni406:1" type="random" depart="60531.00" departPos="33.02" arrivalPos="175.61" arrivalSpeed="0.00" from="E5" to="-joulesA"/>
+    <trip id="randUni310:1" type="random" color="255,255,255" depart="60481.00" departPos="33.69" arrivalPos="131.42" arrivalSpeed="0.00" from="E195" to="joulesA"/>
+    <trip id="randUni406:1" type="random" color="255,255,255" depart="60531.00" departPos="33.02" arrivalPos="175.61" arrivalSpeed="0.00" from="E5" to="-joulesA"/>
     <trip id="bl601b1:7" type="bus" depart="61200.00" departPos="25.00" arrivalPos="25.00" arrivalSpeed="0.00" from="E1" to="E1"/>
     <trip id="bl601b2:15" type="bus" depart="61200.00" departPos="25.00" arrivalPos="25.00" arrivalSpeed="0.00" from="-E1" to="-E1"/>
-    <trip id="randUni559:1" type="random" depart="61455.00" departPos="2.49" arrivalPos="39.99" arrivalSpeed="0.00" from="-E155" to="E186"/>
-    <trip id="randUni475:1" type="random" depart="61477.00" departPos="13.70" arrivalPos="16.58" arrivalSpeed="0.00" from="-E85" to="E155"/>
-    <trip id="randUni443:1" type="random" depart="61600.00" departPos="13.76" arrivalPos="18.40" arrivalSpeed="0.00" from="E111" to="-E17"/>
-    <trip id="randUni272:1" type="random" depart="61742.00" departPos="3.91" arrivalPos="42.64" arrivalSpeed="0.00" from="E204" to="-E61"/>
-    <trip id="randUni10:1" type="random" depart="61920.00" departPos="24.07" arrivalPos="8.64" arrivalSpeed="0.00" from="-E184" to="-E56"/>
-    <trip id="randUni41:1" type="random" depart="62071.00" departPos="11.54" arrivalPos="28.03" arrivalSpeed="0.00" from="E158" to="-E174"/>
+    <trip id="randUni559:1" type="random" color="255,255,255" depart="61455.00" departPos="2.49" arrivalPos="39.99" arrivalSpeed="0.00" from="-E155" to="E186"/>
+    <trip id="randUni475:1" type="random" color="255,255,255" depart="61477.00" departPos="13.70" arrivalPos="16.58" arrivalSpeed="0.00" from="-E85" to="E155"/>
+    <trip id="randUni443:1" type="evehicle" color="255,255,0" depart="61600.00" departPos="13.76" arrivalPos="18.40" arrivalSpeed="0.00" from="E111" to="-E17"/>
+    <trip id="randUni272:1" type="random" color="255,255,255" depart="61742.00" departPos="3.91" arrivalPos="42.64" arrivalSpeed="0.00" from="E204" to="-E61"/>
+    <trip id="randUni10:1" type="random" color="255,255,255" depart="61920.00" departPos="24.07" arrivalPos="8.64" arrivalSpeed="0.00" from="-E184" to="-E56"/>
+    <trip id="randUni41:1" type="random" color="255,255,255" depart="62071.00" departPos="11.54" arrivalPos="28.03" arrivalSpeed="0.00" from="E158" to="-E174"/>
     <trip id="bl601b3:7" type="bus" depart="62100.00" departPos="25.00" arrivalPos="25.00" arrivalSpeed="0.00" from="E1" to="E1"/>
     <trip id="bl601b4:15" type="bus" depart="62100.00" departPos="25.00" arrivalPos="25.00" arrivalSpeed="0.00" from="-E1" to="-E1"/>
-    <trip id="randUni451:1" type="random" depart="62233.00" departPos="30.52" arrivalPos="7.80" arrivalSpeed="0.00" from="-E189" to="E46"/>
-    <trip id="randUni210:1" type="random" depart="62513.00" departPos="36.64" arrivalPos="37.68" arrivalSpeed="0.00" from="E32" to="E92"/>
-    <trip id="randUni275:1" type="random" depart="62583.00" departPos="4.74" arrivalPos="19.55" arrivalSpeed="0.00" from="E26" to="-E125"/>
-    <trip id="randUni160:1" type="random" depart="62601.00" departPos="5.61" arrivalPos="25.60" arrivalSpeed="0.00" from="E232" to="-E55"/>
-    <trip id="randUni580:1" type="random" depart="62708.00" departPos="13.84" arrivalPos="14.69" arrivalSpeed="0.00" from="-E21" to="E140"/>
-    <trip id="randUni552:1" type="random" depart="62744.00" departPos="9.85" arrivalPos="26.94" arrivalSpeed="0.00" from="-E153" to="-E118"/>
-    <trip id="randUni666:1" type="random" depart="62814.00" departPos="35.36" arrivalPos="5.04" arrivalSpeed="0.00" from="-E71" to="-E81"/>
-    <trip id="randUni473:1" type="random" depart="62919.00" departPos="25.04" arrivalPos="25.59" arrivalSpeed="0.00" from="E196" to="-E29"/>
-    <trip id="randUni638:1" type="random" depart="62982.00" departPos="7.44" arrivalPos="20.28" arrivalSpeed="0.00" from="-E151" to="pitagoras"/>
+    <trip id="randUni451:1" type="random" color="255,255,255" depart="62233.00" departPos="30.52" arrivalPos="7.80" arrivalSpeed="0.00" from="-E189" to="E46"/>
+    <trip id="randUni210:1" type="random" color="255,255,255" depart="62513.00" departPos="36.64" arrivalPos="37.68" arrivalSpeed="0.00" from="E32" to="E92"/>
+    <trip id="randUni275:1" type="random" color="255,255,255" depart="62583.00" departPos="4.74" arrivalPos="19.55" arrivalSpeed="0.00" from="E26" to="-E125"/>
+    <trip id="randUni160:1" type="random" color="255,255,255" depart="62601.00" departPos="5.61" arrivalPos="25.60" arrivalSpeed="0.00" from="E232" to="-E55"/>
+    <trip id="randUni580:1" type="evehicle" color="255,255,0" depart="62708.00" departPos="13.84" arrivalPos="14.69" arrivalSpeed="0.00" from="-E21" to="E140"/>
+    <trip id="randUni552:1" type="random" color="255,255,255" depart="62744.00" departPos="9.85" arrivalPos="26.94" arrivalSpeed="0.00" from="-E153" to="-E118"/>
+    <trip id="randUni666:1" type="evehicle" color="255,255,0" depart="62814.00" departPos="35.36" arrivalPos="5.04" arrivalSpeed="0.00" from="-E71" to="-E81"/>
+    <trip id="randUni473:1" type="evehicle" color="255,255,0" depart="62919.00" departPos="25.04" arrivalPos="25.59" arrivalSpeed="0.00" from="E196" to="-E29"/>
+    <trip id="randUni638:1" type="random" color="255,255,255" depart="62982.00" departPos="7.44" arrivalPos="20.28" arrivalSpeed="0.00" from="-E151" to="pitagoras"/>
     <trip id="bl601b5:7" type="bus" depart="63000.00" departPos="25.00" arrivalPos="25.00" arrivalSpeed="0.00" from="E1" to="E1"/>
     <trip id="bl601b6:15" type="bus" depart="63000.00" departPos="25.00" arrivalPos="25.00" arrivalSpeed="0.00" from="-E1" to="-E1"/>
-    <trip id="randUni292:1" type="random" depart="63226.00" departPos="6.96" arrivalPos="18.39" arrivalSpeed="0.00" from="-E58" to="-E49"/>
-    <trip id="randUni517:1" type="random" depart="63308.00" departPos="17.93" arrivalPos="2.02" arrivalSpeed="0.00" from="E70" to="E88"/>
-    <trip id="randUni515:1" type="random" depart="63528.00" departPos="23.88" arrivalPos="2.89" arrivalSpeed="0.00" from="-E50" to="-E230"/>
+    <trip id="randUni292:1" type="random" color="255,255,255" depart="63226.00" departPos="6.96" arrivalPos="18.39" arrivalSpeed="0.00" from="-E58" to="-E49"/>
+    <trip id="randUni517:1" type="random" color="255,255,255" depart="63308.00" departPos="17.93" arrivalPos="2.02" arrivalSpeed="0.00" from="E70" to="E88"/>
+    <trip id="randUni515:1" type="random" color="255,255,255" depart="63528.00" departPos="23.88" arrivalPos="2.89" arrivalSpeed="0.00" from="-E50" to="-E230"/>
     <trip id="bl601b7:7" type="bus" depart="63900.00" departPos="25.00" arrivalPos="25.00" arrivalSpeed="0.00" from="E1" to="E1"/>
     <trip id="bl601b8:13" type="bus" depart="63900.00" departPos="25.00" arrivalPos="25.00" arrivalSpeed="0.00" from="-E1" to="-E1"/>
-    <trip id="randUni94:1" type="random" depart="64033.00" departPos="26.28" arrivalPos="11.87" arrivalSpeed="0.00" from="E34" to="-E57"/>
-    <trip id="randUni36:1" type="random" depart="64361.00" departPos="22.84" arrivalPos="5.75" arrivalSpeed="0.00" from="E148" to="E177"/>
-    <trip id="randUni445:1" type="random" depart="64541.00" departPos="10.19" arrivalPos="70.51" arrivalSpeed="0.00" from="-E154" to="E77"/>
+    <trip id="randUni94:1" type="random" color="255,255,255" depart="64033.00" departPos="26.28" arrivalPos="11.87" arrivalSpeed="0.00" from="E34" to="-E57"/>
+    <trip id="randUni36:1" type="random" color="255,255,255" depart="64361.00" departPos="22.84" arrivalPos="5.75" arrivalSpeed="0.00" from="E148" to="E177"/>
+    <trip id="randUni445:1" type="ElectricBus" color="255,255,0" depart="64541.00" departPos="10.19" arrivalPos="70.51" arrivalSpeed="0.00" from="-E154" to="E77"/>
     <trip id="bl601b9:7" type="bus" depart="64800.00" departPos="25.00" arrivalPos="25.00" arrivalSpeed="0.00" from="E1" to="E1"/>
     <trip id="bl601b10:13" type="bus" depart="64800.00" departPos="25.00" arrivalPos="25.00" arrivalSpeed="0.00" from="-E1" to="-E1"/>
     <trip id="carIn1:3" type="default" depart="64800.00" departPos="0.00" arrivalPos="0.00" arrivalSpeed="0.00" from="E139" to="E139"/>
@@ -1556,127 +1556,127 @@
     <trip id="carIn598:3" type="default" depart="64800.00" departPos="10.00" arrivalPos="0.00" arrivalSpeed="0.00" from="-E115" to="-E88"/>
     <trip id="carIn599:3" type="default" depart="64800.00" departPos="0.00" arrivalPos="0.00" arrivalSpeed="0.00" from="-E135" to="E139"/>
     <trip id="carIn600:3" type="default" depart="64800.00" departPos="0.00" arrivalPos="0.00" arrivalSpeed="0.00" from="E139" to="-euler"/>
-    <trip id="randUni547:1" type="random" depart="65308.00" departPos="60.52" arrivalPos="0.47" arrivalSpeed="0.00" from="joulesC" to="E136"/>
-    <trip id="randUni522:1" type="random" depart="65563.00" departPos="20.20" arrivalPos="16.68" arrivalSpeed="0.00" from="E107" to="-E217"/>
+    <trip id="randUni547:1" type="random" color="255,255,255" depart="65308.00" departPos="60.52" arrivalPos="0.47" arrivalSpeed="0.00" from="joulesC" to="E136"/>
+    <trip id="randUni522:1" type="random" color="255,255,255" depart="65563.00" departPos="20.20" arrivalPos="16.68" arrivalSpeed="0.00" from="E107" to="-E217"/>
     <trip id="bl601b2:7" type="bus" depart="65700.00" departPos="25.00" arrivalPos="25.00" arrivalSpeed="0.00" from="E1" to="E1"/>
     <trip id="bl601b1:15" type="bus" depart="65700.00" departPos="25.00" arrivalPos="25.00" arrivalSpeed="0.00" from="-E1" to="-E1"/>
-    <trip id="randUni369:1" type="random" depart="65930.00" departPos="3.34" arrivalPos="10.30" arrivalSpeed="0.00" from="-E181" to="-E177"/>
-    <trip id="randUni312:1" type="random" depart="66126.00" departPos="30.09" arrivalPos="60.27" arrivalSpeed="0.00" from="E32" to="-E123"/>
-    <trip id="randUni381:1" type="random" depart="66177.00" departPos="19.04" arrivalPos="2.73" arrivalSpeed="0.00" from="E127" to="E142"/>
-    <trip id="randUni200:1" type="random" depart="66202.00" departPos="3.34" arrivalPos="148.87" arrivalSpeed="0.00" from="E2" to="-E165"/>
-    <trip id="randUni657:1" type="random" depart="66332.00" departPos="34.86" arrivalPos="17.01" arrivalSpeed="0.00" from="E107" to="E119"/>
-    <trip id="randUni527:1" type="random" depart="66567.00" departPos="17.88" arrivalPos="12.27" arrivalSpeed="0.00" from="E81" to="E200"/>
+    <trip id="randUni369:1" type="ElectricBus" color="255,255,0" depart="65930.00" departPos="3.34" arrivalPos="10.30" arrivalSpeed="0.00" from="-E181" to="-E177"/>
+    <trip id="randUni312:1" type="random" color="255,255,255" depart="66126.00" departPos="30.09" arrivalPos="60.27" arrivalSpeed="0.00" from="E32" to="-E123"/>
+    <trip id="randUni381:1" type="random" color="255,255,255" depart="66177.00" departPos="19.04" arrivalPos="2.73" arrivalSpeed="0.00" from="E127" to="E142"/>
+    <trip id="randUni200:1" type="random" color="255,255,255" depart="66202.00" departPos="3.34" arrivalPos="148.87" arrivalSpeed="0.00" from="E2" to="-E165"/>
+    <trip id="randUni657:1" type="random" color="255,255,255" depart="66332.00" departPos="34.86" arrivalPos="17.01" arrivalSpeed="0.00" from="E107" to="E119"/>
+    <trip id="randUni527:1" type="random" color="255,255,255" depart="66567.00" departPos="17.88" arrivalPos="12.27" arrivalSpeed="0.00" from="E81" to="E200"/>
     <trip id="bl601b4:7" type="bus" depart="66600.00" departPos="25.00" arrivalPos="25.00" arrivalSpeed="0.00" from="E1" to="E1"/>
     <trip id="bl601b3:15" type="bus" depart="66600.00" departPos="25.00" arrivalPos="25.00" arrivalSpeed="0.00" from="-E1" to="-E1"/>
-    <trip id="randUni287:1" type="random" depart="67309.00" departPos="10.21" arrivalPos="0.06" arrivalSpeed="0.00" from="E221" to="-E222"/>
+    <trip id="randUni287:1" type="random" color="255,255,255" depart="67309.00" departPos="10.21" arrivalPos="0.06" arrivalSpeed="0.00" from="E221" to="-E222"/>
     <trip id="bl601b6:7" type="bus" depart="67500.00" departPos="25.00" arrivalPos="25.00" arrivalSpeed="0.00" from="E1" to="E1"/>
     <trip id="bl601b5:15" type="bus" depart="67500.00" departPos="25.00" arrivalPos="25.00" arrivalSpeed="0.00" from="-E1" to="-E1"/>
-    <trip id="randUni52:1" type="random" depart="67913.00" departPos="22.78" arrivalPos="5.41" arrivalSpeed="0.00" from="-E57" to="-E218"/>
-    <trip id="randUni610:1" type="random" depart="68513.00" departPos="9.49" arrivalPos="6.08" arrivalSpeed="0.00" from="-E213" to="E51"/>
+    <trip id="randUni52:1" type="random" color="255,255,255" depart="67913.00" departPos="22.78" arrivalPos="5.41" arrivalSpeed="0.00" from="-E57" to="-E218"/>
+    <trip id="randUni610:1" type="random" color="255,255,255" depart="68513.00" departPos="9.49" arrivalPos="6.08" arrivalSpeed="0.00" from="-E213" to="E51"/>
     <trip id="h53c1:1" type="default" depart="68896.00" departPos="26.28" arrivalPos="1.39" arrivalSpeed="0.00" from="E215" to="E205"/>
-    <trip id="randUni597:1" type="random" depart="69001.00" departPos="0.09" arrivalPos="13.54" arrivalSpeed="0.00" from="E41" to="-E209"/>
-    <trip id="randUni600:1" type="random" depart="69506.00" departPos="7.82" arrivalPos="4.68" arrivalSpeed="0.00" from="E137" to="-E93"/>
-    <trip id="randUni178:1" type="random" depart="69767.00" departPos="19.13" arrivalPos="33.31" arrivalSpeed="0.00" from="E22" to="-E96"/>
-    <trip id="randUni181:1" type="random" depart="70258.00" departPos="20.85" arrivalPos="106.29" arrivalSpeed="0.00" from="-E179" to="E90"/>
+    <trip id="randUni597:1" type="random" color="255,255,255" depart="69001.00" departPos="0.09" arrivalPos="13.54" arrivalSpeed="0.00" from="E41" to="-E209"/>
+    <trip id="randUni600:1" type="random" color="255,255,255" depart="69506.00" departPos="7.82" arrivalPos="4.68" arrivalSpeed="0.00" from="E137" to="-E93"/>
+    <trip id="randUni178:1" type="evehicle" color="255,255,0" depart="69767.00" departPos="19.13" arrivalPos="33.31" arrivalSpeed="0.00" from="E22" to="-E96"/>
+    <trip id="randUni181:1" type="random" color="255,255,255" depart="70258.00" departPos="20.85" arrivalPos="106.29" arrivalSpeed="0.00" from="-E179" to="E90"/>
     <trip id="h53c1:2" type="default" depart="70435.00" departPos="1.39" arrivalPos="26.28" arrivalSpeed="0.00" from="E205" to="E215"/>
-    <trip id="randUni224:1" type="random" depart="70441.00" departPos="32.14" arrivalPos="9.56" arrivalSpeed="0.00" from="-E190" to="maxwell"/>
-    <trip id="randUni592:1" type="random" depart="70605.00" departPos="22.33" arrivalPos="12.15" arrivalSpeed="0.00" from="E52" to="E86"/>
+    <trip id="randUni224:1" type="random" color="255,255,255" depart="70441.00" departPos="32.14" arrivalPos="9.56" arrivalSpeed="0.00" from="-E190" to="maxwell"/>
+    <trip id="randUni592:1" type="ElectricBus" color="255,255,0" depart="70605.00" departPos="22.33" arrivalPos="12.15" arrivalSpeed="0.00" from="E52" to="E86"/>
     <trip id="h10c1:1" type="default" depart="71767.00" departPos="60.08" arrivalPos="40.17" arrivalSpeed="0.00" from="-E174" to="E132"/>
     <trip id="h126c1:1" type="default" depart="71914.00" departPos="40.63" arrivalPos="0.08" arrivalSpeed="0.00" from="-E188" to="E223"/>
-    <trip id="randUni642:1" type="random" depart="72048.00" departPos="7.99" arrivalPos="0.31" arrivalSpeed="0.00" from="E9" to="E217"/>
-    <trip id="randUni185:1" type="random" depart="72115.00" departPos="29.49" arrivalPos="14.99" arrivalSpeed="0.00" from="E40" to="-E134"/>
-    <trip id="randUni493:1" type="random" depart="72197.00" departPos="26.16" arrivalPos="20.59" arrivalSpeed="0.00" from="E18" to="-E24"/>
-    <trip id="randUni23:1" type="random" depart="72302.00" departPos="3.20" arrivalPos="19.14" arrivalSpeed="0.00" from="E194" to="E135"/>
-    <trip id="randUni495:1" type="random" depart="72322.00" departPos="6.00" arrivalPos="18.92" arrivalSpeed="0.00" from="-E144" to="-E41"/>
+    <trip id="randUni642:1" type="evehicle" color="255,255,0" depart="72048.00" departPos="7.99" arrivalPos="0.31" arrivalSpeed="0.00" from="E9" to="E217"/>
+    <trip id="randUni185:1" type="random" color="255,255,255" depart="72115.00" departPos="29.49" arrivalPos="14.99" arrivalSpeed="0.00" from="E40" to="-E134"/>
+    <trip id="randUni493:1" type="random" color="255,255,255" depart="72197.00" departPos="26.16" arrivalPos="20.59" arrivalSpeed="0.00" from="E18" to="-E24"/>
+    <trip id="randUni23:1" type="random" color="255,255,255" depart="72302.00" departPos="3.20" arrivalPos="19.14" arrivalSpeed="0.00" from="E194" to="E135"/>
+    <trip id="randUni495:1" type="random" color="255,255,255" depart="72322.00" departPos="6.00" arrivalPos="18.92" arrivalSpeed="0.00" from="-E144" to="-E41"/>
     <trip id="h128c1:1" type="default" depart="72337.00" departPos="12.10" arrivalPos="163.26" arrivalSpeed="0.00" from="-E191" to="E91"/>
     <trip id="h130c1:1" type="default" depart="72427.00" departPos="29.91" arrivalPos="12.01" arrivalSpeed="0.00" from="E56" to="E51"/>
-    <trip id="randUni507:1" type="random" depart="72534.00" departPos="32.63" arrivalPos="5.74" arrivalSpeed="0.00" from="E186" to="E36"/>
+    <trip id="randUni507:1" type="evehicle" color="255,255,0" depart="72534.00" departPos="32.63" arrivalPos="5.74" arrivalSpeed="0.00" from="E186" to="E36"/>
     <trip id="h247c1:1" type="default" depart="72587.00" departPos="16.68" arrivalPos="48.14" arrivalSpeed="0.00" from="E23" to="-E174"/>
     <trip id="h12c1:1" type="default" depart="72661.00" departPos="18.70" arrivalPos="10.65" arrivalSpeed="0.00" from="-E169" to="E147"/>
-    <trip id="randUni168:1" type="random" depart="72828.00" departPos="14.96" arrivalPos="23.06" arrivalSpeed="0.00" from="-E56" to="E190"/>
-    <trip id="randUni363:1" type="random" depart="73079.00" departPos="5.57" arrivalPos="52.89" arrivalSpeed="0.00" from="E130" to="-E228"/>
+    <trip id="randUni168:1" type="evehicle" color="255,255,0" depart="72828.00" departPos="14.96" arrivalPos="23.06" arrivalSpeed="0.00" from="-E56" to="E190"/>
+    <trip id="randUni363:1" type="random" color="255,255,255" depart="73079.00" departPos="5.57" arrivalPos="52.89" arrivalSpeed="0.00" from="E130" to="-E228"/>
     <trip id="h70c1:1" type="default" depart="73165.00" departPos="2.46" arrivalPos="159.97" arrivalSpeed="0.00" from="-E214" to="joulesC"/>
-    <trip id="randUni250:1" type="random" depart="73414.00" departPos="35.12" arrivalPos="13.38" arrivalSpeed="0.00" from="E40" to="E49"/>
-    <trip id="randUni125:1" type="random" depart="73839.00" departPos="14.95" arrivalPos="3.39" arrivalSpeed="0.00" from="E140" to="E151"/>
-    <trip id="randUni624:1" type="random" depart="74081.00" departPos="18.45" arrivalPos="15.59" arrivalSpeed="0.00" from="E144" to="-E190"/>
-    <trip id="randUni322:1" type="random" depart="74135.00" departPos="29.97" arrivalPos="12.66" arrivalSpeed="0.00" from="-E183" to="-E199"/>
+    <trip id="randUni250:1" type="random" color="255,255,255" depart="73414.00" departPos="35.12" arrivalPos="13.38" arrivalSpeed="0.00" from="E40" to="E49"/>
+    <trip id="randUni125:1" type="evehicle" color="255,255,0" depart="73839.00" departPos="14.95" arrivalPos="3.39" arrivalSpeed="0.00" from="E140" to="E151"/>
+    <trip id="randUni624:1" type="random" color="255,255,255" depart="74081.00" departPos="18.45" arrivalPos="15.59" arrivalSpeed="0.00" from="E144" to="-E190"/>
+    <trip id="randUni322:1" type="evehicle" color="255,255,0" depart="74135.00" departPos="29.97" arrivalPos="12.66" arrivalSpeed="0.00" from="-E183" to="-E199"/>
     <trip id="h80c1:1" type="default" depart="74954.00" departPos="4.44" arrivalPos="22.01" arrivalSpeed="0.00" from="E207" to="-E25"/>
-    <trip id="randUni333:1" type="random" depart="75028.00" departPos="32.80" arrivalPos="16.75" arrivalSpeed="0.00" from="E4" to="E212"/>
+    <trip id="randUni333:1" type="random" color="255,255,255" depart="75028.00" departPos="32.80" arrivalPos="16.75" arrivalSpeed="0.00" from="E4" to="E212"/>
     <trip id="h152c1:1" type="default" depart="75029.00" departPos="22.63" arrivalPos="18.54" arrivalSpeed="0.00" from="-E27" to="-E96"/>
     <trip id="h80c1:2" type="default" depart="75093.00" departPos="22.01" arrivalPos="4.44" arrivalSpeed="0.00" from="-E25" to="E207"/>
-    <trip id="randUni108:1" type="random" depart="75948.00" departPos="22.92" arrivalPos="9.28" arrivalSpeed="0.00" from="E209" to="-E79"/>
+    <trip id="randUni108:1" type="random" color="255,255,255" depart="75948.00" departPos="22.92" arrivalPos="9.28" arrivalSpeed="0.00" from="E209" to="-E79"/>
     <trip id="h128c1:2" type="default" depart="76338.00" departPos="163.26" arrivalPos="12.10" arrivalSpeed="0.00" from="E91" to="-E191"/>
     <trip id="h193c1:1" type="default" depart="76391.00" departPos="9.10" arrivalPos="20.76" arrivalSpeed="0.00" from="-E41" to="E160"/>
-    <trip id="randUni553:1" type="random" depart="76700.00" departPos="14.90" arrivalPos="4.48" arrivalSpeed="0.00" from="-E100" to="E177"/>
-    <trip id="randUni407:1" type="random" depart="76815.00" departPos="15.41" arrivalPos="5.15" arrivalSpeed="0.00" from="E21" to="E225"/>
+    <trip id="randUni553:1" type="ElectricBus" color="255,255,0" depart="76700.00" departPos="14.90" arrivalPos="4.48" arrivalSpeed="0.00" from="-E100" to="E177"/>
+    <trip id="randUni407:1" type="random" color="255,255,255" depart="76815.00" departPos="15.41" arrivalPos="5.15" arrivalSpeed="0.00" from="E21" to="E225"/>
     <trip id="h70c1:2" type="default" depart="76832.00" departPos="159.97" arrivalPos="2.46" arrivalSpeed="0.00" from="joulesC" to="-E214"/>
     <trip id="h10c1:2" type="default" depart="76915.00" departPos="40.17" arrivalPos="60.08" arrivalSpeed="0.00" from="E132" to="-E174"/>
-    <trip id="randUni386:1" type="random" depart="77066.00" departPos="18.31" arrivalPos="29.00" arrivalSpeed="0.00" from="-E134" to="E211"/>
-    <trip id="randUni377:1" type="random" depart="77123.00" departPos="27.35" arrivalPos="15.14" arrivalSpeed="0.00" from="-E28" to="-E207"/>
-    <trip id="randUni206:1" type="random" depart="77338.00" departPos="24.54" arrivalPos="11.56" arrivalSpeed="0.00" from="E19" to="E23"/>
+    <trip id="randUni386:1" type="random" color="255,255,255" depart="77066.00" departPos="18.31" arrivalPos="29.00" arrivalSpeed="0.00" from="-E134" to="E211"/>
+    <trip id="randUni377:1" type="random" color="255,255,255" depart="77123.00" departPos="27.35" arrivalPos="15.14" arrivalSpeed="0.00" from="-E28" to="-E207"/>
+    <trip id="randUni206:1" type="random" color="255,255,255" depart="77338.00" departPos="24.54" arrivalPos="11.56" arrivalSpeed="0.00" from="E19" to="E23"/>
     <trip id="h51c1:1" type="default" depart="77557.00" departPos="32.91" arrivalPos="45.29" arrivalSpeed="0.00" from="E208" to="E178"/>
-    <trip id="randUni49:1" type="random" depart="77830.00" departPos="19.46" arrivalPos="3.68" arrivalSpeed="0.00" from="E2" to="-E222"/>
+    <trip id="randUni49:1" type="random" color="255,255,255" depart="77830.00" departPos="19.46" arrivalPos="3.68" arrivalSpeed="0.00" from="E2" to="-E222"/>
     <trip id="h12c1:2" type="default" depart="77907.00" departPos="10.65" arrivalPos="18.70" arrivalSpeed="0.00" from="E147" to="-E169"/>
-    <trip id="randUni402:1" type="random" depart="78038.00" departPos="25.18" arrivalPos="34.07" arrivalSpeed="0.00" from="E72" to="-E30"/>
-    <trip id="randUni40:1" type="random" depart="78047.00" departPos="16.91" arrivalPos="6.46" arrivalSpeed="0.00" from="-E5" to="-E202"/>
-    <trip id="randUni530:1" type="random" depart="78513.00" departPos="27.88" arrivalPos="13.09" arrivalSpeed="0.00" from="-E73" to="E220"/>
-    <trip id="randUni16:1" type="random" depart="78672.00" departPos="25.79" arrivalPos="2.78" arrivalSpeed="0.00" from="joulesB" to="-E223"/>
-    <trip id="randUni331:1" type="random" depart="78672.00" departPos="31.49" arrivalPos="27.55" arrivalSpeed="0.00" from="E17" to="E52"/>
-    <trip id="randUni629:1" type="random" depart="79180.00" departPos="20.85" arrivalPos="16.35" arrivalSpeed="0.00" from="E160" to="-E192"/>
-    <trip id="randUni364:1" type="random" depart="79311.00" departPos="29.96" arrivalPos="7.38" arrivalSpeed="0.00" from="-E85" to="-E120"/>
-    <trip id="randUni236:1" type="random" depart="79322.00" departPos="2.50" arrivalPos="42.66" arrivalSpeed="0.00" from="E29" to="-E80"/>
+    <trip id="randUni402:1" type="random" color="255,255,255" depart="78038.00" departPos="25.18" arrivalPos="34.07" arrivalSpeed="0.00" from="E72" to="-E30"/>
+    <trip id="randUni40:1" type="random" color="255,255,255" depart="78047.00" departPos="16.91" arrivalPos="6.46" arrivalSpeed="0.00" from="-E5" to="-E202"/>
+    <trip id="randUni530:1" type="random" color="255,255,255" depart="78513.00" departPos="27.88" arrivalPos="13.09" arrivalSpeed="0.00" from="-E73" to="E220"/>
+    <trip id="randUni16:1" type="random" color="255,255,255" depart="78672.00" departPos="25.79" arrivalPos="2.78" arrivalSpeed="0.00" from="joulesB" to="-E223"/>
+    <trip id="randUni331:1" type="evehicle" color="255,255,0" depart="78672.00" departPos="31.49" arrivalPos="27.55" arrivalSpeed="0.00" from="E17" to="E52"/>
+    <trip id="randUni629:1" type="ElectricBus" color="255,255,0" depart="79180.00" departPos="20.85" arrivalPos="16.35" arrivalSpeed="0.00" from="E160" to="-E192"/>
+    <trip id="randUni364:1" type="ElectricBus" color="255,255,0" depart="79311.00" departPos="29.96" arrivalPos="7.38" arrivalSpeed="0.00" from="-E85" to="-E120"/>
+    <trip id="randUni236:1" type="random" color="255,255,255" depart="79322.00" departPos="2.50" arrivalPos="42.66" arrivalSpeed="0.00" from="E29" to="-E80"/>
     <trip id="h152c1:2" type="default" depart="79771.00" departPos="18.54" arrivalPos="22.63" arrivalSpeed="0.00" from="-E96" to="-E27"/>
-    <trip id="randUni588:1" type="random" depart="79781.00" departPos="21.37" arrivalPos="13.04" arrivalSpeed="0.00" from="-E185" to="-E69"/>
-    <trip id="randUni26:1" type="random" depart="79810.00" departPos="73.13" arrivalPos="25.25" arrivalSpeed="0.00" from="E92" to="E1"/>
+    <trip id="randUni588:1" type="evehicle" color="255,255,0" depart="79781.00" departPos="21.37" arrivalPos="13.04" arrivalSpeed="0.00" from="-E185" to="-E69"/>
+    <trip id="randUni26:1" type="random" color="255,255,255" depart="79810.00" departPos="73.13" arrivalPos="25.25" arrivalSpeed="0.00" from="E92" to="E1"/>
     <trip id="h51c1:2" type="default" depart="79956.00" departPos="45.29" arrivalPos="32.91" arrivalSpeed="0.00" from="E178" to="E208"/>
-    <trip id="randUni491:1" type="random" depart="80140.00" departPos="14.67" arrivalPos="10.40" arrivalSpeed="0.00" from="-E73" to="E120"/>
-    <trip id="randUni648:1" type="random" depart="80591.00" departPos="13.23" arrivalPos="22.77" arrivalSpeed="0.00" from="E87" to="E210"/>
+    <trip id="randUni491:1" type="random" color="255,255,255" depart="80140.00" departPos="14.67" arrivalPos="10.40" arrivalSpeed="0.00" from="-E73" to="E120"/>
+    <trip id="randUni648:1" type="random" color="255,255,255" depart="80591.00" departPos="13.23" arrivalPos="22.77" arrivalSpeed="0.00" from="E87" to="E210"/>
     <trip id="h247c1:2" type="default" depart="80625.00" departPos="48.14" arrivalPos="16.68" arrivalSpeed="0.00" from="-E174" to="E23"/>
-    <trip id="randUni551:1" type="random" depart="80978.00" departPos="86.79" arrivalPos="2.99" arrivalSpeed="0.00" from="-E76" to="-E95"/>
-    <trip id="randUni529:1" type="random" depart="80989.00" departPos="48.03" arrivalPos="22.69" arrivalSpeed="0.00" from="E64" to="E68"/>
-    <trip id="randUni615:1" type="random" depart="81049.00" departPos="25.13" arrivalPos="9.20" arrivalSpeed="0.00" from="-E181" to="-E65"/>
+    <trip id="randUni551:1" type="random" color="255,255,255" depart="80978.00" departPos="86.79" arrivalPos="2.99" arrivalSpeed="0.00" from="-E76" to="-E95"/>
+    <trip id="randUni529:1" type="evehicle" color="255,255,0" depart="80989.00" departPos="48.03" arrivalPos="22.69" arrivalSpeed="0.00" from="E64" to="E68"/>
+    <trip id="randUni615:1" type="random" color="255,255,255" depart="81049.00" departPos="25.13" arrivalPos="9.20" arrivalSpeed="0.00" from="-E181" to="-E65"/>
     <trip id="h145c1:1" type="default" depart="81545.00" departPos="23.41" arrivalPos="19.60" arrivalSpeed="0.00" from="E58" to="E143"/>
     <trip id="h126c1:2" type="default" depart="82066.00" departPos="0.08" arrivalPos="40.63" arrivalSpeed="0.00" from="E223" to="-E188"/>
-    <trip id="randUni232:1" type="random" depart="82104.00" departPos="18.87" arrivalPos="3.31" arrivalSpeed="0.00" from="E194" to="-E11"/>
+    <trip id="randUni232:1" type="random" color="255,255,255" depart="82104.00" departPos="18.87" arrivalPos="3.31" arrivalSpeed="0.00" from="E194" to="-E11"/>
     <trip id="h114c1:1" type="default" depart="82233.00" departPos="40.04" arrivalPos="8.36" arrivalSpeed="0.00" from="-E187" to="-E222"/>
     <trip id="h252c1:1" type="default" depart="82270.00" departPos="23.87" arrivalPos="8.55" arrivalSpeed="0.00" from="E0" to="-E30"/>
-    <trip id="randUni502:1" type="random" depart="82641.00" departPos="7.71" arrivalPos="25.21" arrivalSpeed="0.00" from="-E46" to="E44"/>
-    <trip id="randUni165:1" type="random" depart="82970.00" departPos="12.36" arrivalPos="15.59" arrivalSpeed="0.00" from="E50" to="E12"/>
-    <trip id="randUni564:1" type="random" depart="82971.00" departPos="0.85" arrivalPos="8.85" arrivalSpeed="0.00" from="E225" to="-E205"/>
-    <trip id="randUni572:1" type="random" depart="82979.00" departPos="26.60" arrivalPos="35.50" arrivalSpeed="0.00" from="E24" to="E191"/>
-    <trip id="randUni286:1" type="random" depart="83106.00" departPos="5.70" arrivalPos="0.20" arrivalSpeed="0.00" from="-E39" to="E160"/>
-    <trip id="randUni453:1" type="random" depart="83251.00" departPos="83.72" arrivalPos="25.65" arrivalSpeed="0.00" from="E228" to="E161"/>
-    <trip id="randUni231:1" type="random" depart="83360.00" departPos="22.54" arrivalPos="25.42" arrivalSpeed="0.00" from="-E73" to="-E6"/>
+    <trip id="randUni502:1" type="ElectricBus" color="255,255,0" depart="82641.00" departPos="7.71" arrivalPos="25.21" arrivalSpeed="0.00" from="-E46" to="E44"/>
+    <trip id="randUni165:1" type="evehicle" color="255,255,0" depart="82970.00" departPos="12.36" arrivalPos="15.59" arrivalSpeed="0.00" from="E50" to="E12"/>
+    <trip id="randUni564:1" type="random" color="255,255,255" depart="82971.00" departPos="0.85" arrivalPos="8.85" arrivalSpeed="0.00" from="E225" to="-E205"/>
+    <trip id="randUni572:1" type="random" color="255,255,255" depart="82979.00" departPos="26.60" arrivalPos="35.50" arrivalSpeed="0.00" from="E24" to="E191"/>
+    <trip id="randUni286:1" type="evehicle" color="255,255,0" depart="83106.00" departPos="5.70" arrivalPos="0.20" arrivalSpeed="0.00" from="-E39" to="E160"/>
+    <trip id="randUni453:1" type="random" color="255,255,255" depart="83251.00" departPos="83.72" arrivalPos="25.65" arrivalSpeed="0.00" from="E228" to="E161"/>
+    <trip id="randUni231:1" type="evehicle" color="255,255,0" depart="83360.00" departPos="22.54" arrivalPos="25.42" arrivalSpeed="0.00" from="-E73" to="-E6"/>
     <trip id="h34c1:1" type="default" depart="83446.00" departPos="22.93" arrivalPos="15.39" arrivalSpeed="0.00" from="E179" to="E48"/>
     <trip id="h34c1:2" type="default" depart="83446.00" departPos="15.39" arrivalPos="22.93" arrivalSpeed="0.00" from="E48" to="E179"/>
-    <trip id="randUni42:1" type="random" depart="83456.00" departPos="16.21" arrivalPos="15.67" arrivalSpeed="0.00" from="-E52" to="E3"/>
+    <trip id="randUni42:1" type="random" color="255,255,255" depart="83456.00" departPos="16.21" arrivalPos="15.67" arrivalSpeed="0.00" from="-E52" to="E3"/>
     <trip id="h43c1:1" type="default" depart="83617.00" departPos="9.63" arrivalPos="28.74" arrivalSpeed="0.00" from="-E213" to="-E181"/>
-    <trip id="randUni61:1" type="random" depart="83721.00" departPos="11.59" arrivalPos="2.04" arrivalSpeed="0.00" from="E154" to="-E180"/>
-    <trip id="randUni531:1" type="random" depart="83749.00" departPos="10.28" arrivalPos="22.31" arrivalSpeed="0.00" from="E62" to="E196"/>
+    <trip id="randUni61:1" type="random" color="255,255,255" depart="83721.00" departPos="11.59" arrivalPos="2.04" arrivalSpeed="0.00" from="E154" to="-E180"/>
+    <trip id="randUni531:1" type="random" color="255,255,255" depart="83749.00" departPos="10.28" arrivalPos="22.31" arrivalSpeed="0.00" from="E62" to="E196"/>
     <trip id="h130c1:2" type="default" depart="84123.00" departPos="12.01" arrivalPos="29.91" arrivalSpeed="0.00" from="E51" to="E56"/>
-    <trip id="randUni604:1" type="random" depart="84335.00" departPos="10.25" arrivalPos="1.36" arrivalSpeed="0.00" from="-E148" to="E169"/>
+    <trip id="randUni604:1" type="random" color="255,255,255" depart="84335.00" departPos="10.25" arrivalPos="1.36" arrivalSpeed="0.00" from="-E148" to="E169"/>
     <trip id="h278c1:1" type="default" depart="84444.00" departPos="27.11" arrivalPos="5.30" arrivalSpeed="0.00" from="-E141" to="E17"/>
     <trip id="h145c1:2" type="default" depart="84482.00" departPos="19.60" arrivalPos="23.41" arrivalSpeed="0.00" from="E143" to="E58"/>
-    <trip id="randUni384:1" type="random" depart="84728.00" departPos="1.85" arrivalPos="21.25" arrivalSpeed="0.00" from="-E158" to="E5"/>
+    <trip id="randUni384:1" type="random" color="255,255,255" depart="84728.00" departPos="1.85" arrivalPos="21.25" arrivalSpeed="0.00" from="-E158" to="E5"/>
     <trip id="h281c1:1" type="default" depart="84891.00" departPos="6.96" arrivalPos="28.96" arrivalSpeed="0.00" from="-E147" to="E215"/>
     <trip id="h154c1:1" type="default" depart="85048.00" departPos="10.83" arrivalPos="41.57" arrivalSpeed="0.00" from="-E28" to="E113"/>
     <trip id="h174c1:1" type="default" depart="85124.00" departPos="33.97" arrivalPos="4.57" arrivalSpeed="0.00" from="E119" to="E217"/>
     <trip id="h278c1:2" type="default" depart="85227.00" departPos="5.30" arrivalPos="27.11" arrivalSpeed="0.00" from="E17" to="-E141"/>
     <trip id="h154c1:2" type="default" depart="85242.00" departPos="41.57" arrivalPos="10.83" arrivalSpeed="0.00" from="E113" to="-E28"/>
     <trip id="h114c1:2" type="default" depart="85344.00" departPos="8.36" arrivalPos="40.04" arrivalSpeed="0.00" from="-E222" to="-E187"/>
-    <trip id="randUni636:1" type="random" depart="85365.00" departPos="16.46" arrivalPos="13.02" arrivalSpeed="0.00" from="-E96" to="-E111"/>
-    <trip id="randUni330:1" type="random" depart="85366.00" departPos="8.77" arrivalPos="23.13" arrivalSpeed="0.00" from="E208" to="-E147"/>
-    <trip id="randUni436:1" type="random" depart="85447.00" departPos="32.37" arrivalPos="2.70" arrivalSpeed="0.00" from="-E94" to="E79"/>
+    <trip id="randUni636:1" type="random" color="255,255,255" depart="85365.00" departPos="16.46" arrivalPos="13.02" arrivalSpeed="0.00" from="-E96" to="-E111"/>
+    <trip id="randUni330:1" type="random" color="255,255,255" depart="85366.00" departPos="8.77" arrivalPos="23.13" arrivalSpeed="0.00" from="E208" to="-E147"/>
+    <trip id="randUni436:1" type="random" color="255,255,255" depart="85447.00" departPos="32.37" arrivalPos="2.70" arrivalSpeed="0.00" from="-E94" to="E79"/>
     <trip id="h43c1:2" type="default" depart="85449.00" departPos="28.74" arrivalPos="9.63" arrivalSpeed="0.00" from="-E181" to="-E213"/>
     <trip id="h252c1:2" type="default" depart="85525.00" departPos="8.55" arrivalPos="23.87" arrivalSpeed="0.00" from="-E30" to="E0"/>
     <trip id="h281c1:2" type="default" depart="85677.00" departPos="28.96" arrivalPos="6.96" arrivalSpeed="0.00" from="E215" to="-E147"/>
     <trip id="h174c1:2" type="default" depart="85713.00" departPos="4.57" arrivalPos="33.97" arrivalSpeed="0.00" from="E217" to="E119"/>
-    <trip id="randUni24:1" type="random" depart="85757.00" departPos="4.68" arrivalPos="16.56" arrivalSpeed="0.00" from="joulesB" to="E170"/>
+    <trip id="randUni24:1" type="random" color="255,255,255" depart="85757.00" departPos="4.68" arrivalPos="16.56" arrivalSpeed="0.00" from="joulesB" to="E170"/>
     <trip id="h121c1:1" type="default" depart="85883.00" departPos="25.82" arrivalPos="41.36" arrivalSpeed="0.00" from="E190" to="-E180"/>
     <trip id="h121c1:2" type="default" depart="85883.00" departPos="41.36" arrivalPos="25.82" arrivalSpeed="0.00" from="-E180" to="E190"/>
     <trip id="h193c1:2" type="default" depart="85991.00" departPos="20.76" arrivalPos="9.10" arrivalSpeed="0.00" from="E160" to="-E41"/>
     <trip id="h166c1:1" type="default" depart="86029.00" departPos="30.24" arrivalPos="8.80" arrivalSpeed="0.00" from="E138" to="E174"/>
-    <trip id="randUni257:1" type="random" depart="86153.00" departPos="0.85" arrivalPos="18.32" arrivalSpeed="0.00" from="E104" to="E186"/>
+    <trip id="randUni257:1" type="random" color="255,255,255" depart="86153.00" departPos="0.85" arrivalPos="18.32" arrivalSpeed="0.00" from="E104" to="E186"/>
     <trip id="h151c1:1" type="default" depart="86221.00" departPos="12.80" arrivalPos="13.81" arrivalSpeed="0.00" from="E27" to="-E101"/>
     <trip id="h166c1:2" type="default" depart="86289.00" departPos="8.80" arrivalPos="30.24" arrivalSpeed="0.00" from="E174" to="E138"/>
     <trip id="h151c1:2" type="default" depart="86321.00" departPos="13.81" arrivalPos="12.80" arrivalSpeed="0.00" from="-E101" to="E27"/>

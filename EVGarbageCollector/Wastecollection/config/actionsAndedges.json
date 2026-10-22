@@ -1,0 +1,239 @@
+{
+"actions": ["Contuinue", "New Route", "Return to Dest", "Stop", "back normal speed",
+ "bin collection", "recharge", "park"],
+    "recharge_stations_dict": {
+        "Charge_ParkA": {
+            "edge": "E69",
+            "lane": "E69_0"
+
+        },
+        "Charge_ParkB": {
+            "edge": "-E70",
+            "lane": "-E70_0"
+
+        },
+        "Charge_ParkC": {
+            "edge": "-E133",
+            "lane": "-E133_0"
+
+        },
+        "Charge_ParkD": {
+            "edge": "-E131",
+            "lane": "-E131_0"
+
+        },
+        "Charge_ParkE": {
+            "edge": "E160",
+            "lane": "E160_0"
+
+        },
+        "Charge_ParkF": {
+            "edge": "-E159",
+            "lane": "-E159_0"
+
+        },
+        "Charge_ParkW": {
+            "edge": "E228",
+            "lane": "E228_0"
+
+        },
+        "Charge_ParkX": {
+            "edge": "-E228",
+            "lane": "-E228_0"
+
+        }
+    },
+
+    "parkings_dict" : {
+        "ParkAreaA" : {
+            "edge" : "-E202",
+            "lane" : "-E202_0"
+        },
+        "ParkAreaB" : {
+            "edge" : "E202",
+            "lane" : "E202_0"
+        },
+
+        "ParkAreaC" : {
+            "edge" : "-E133",
+            "lane" : "-E133_0"
+        },
+
+        "ParkAreaD" : {
+            "edge" : "-E131",
+            "lane" : "-E131_0"
+        },
+
+        "ParkAreaE" : {
+            "edge" : "E160",
+            "lane" : "E160_0"
+        },
+
+        "ParkAreaF" : {
+            "edge" : "-E159",
+            "lane" : "-E159_0"
+        },
+
+        "ParkAreaG" : {
+            "edge" : "E95",
+            "lane" : "E95_0"
+        },
+
+        "ParkAreaH" : {
+            "edge" : "E96",
+            "lane" : "E96_0"
+        },
+
+        "ParkAreaI" : {
+            "edge" : "-E94",
+            "lane" : "-E94_0"
+        },
+
+        "ParkAreaJ" : {
+            "edge" : "E93",
+            "lane" : "E93_0"
+        },
+
+        "ParkAreaK" : {
+            "edge" : "E69",
+            "lane" : "E69_0"
+        },
+
+        "ParkAreaL" : {
+            "edge" : "-E70",
+            "lane" : "-E70_0"
+        },
+
+        "ParkAreaM" : {
+            "edge" : "-E206",
+            "lane" : "-E206_0"
+        },
+
+        "ParkAreaN" : {
+            "edge" : "E206",
+            "lane" : "E206_0"
+        },
+
+        "ParkAreaO" : {
+            "edge" : "-E226",
+            "lane" : "-E226_0"
+        },
+
+        "ParkAreaP" : {
+            "edge" : "E226",
+            "lane" : "E226_0"
+        },
+
+        "ParkAreaQ" : {
+            "edge" : "-E204",
+            "lane" : "-E204_0"
+        },
+
+        "ParkAreaR" : {
+            "edge" : "E204",
+            "lane" : "E204_0"
+        },
+
+        "ParkAreaS" : {
+            "edge" : "E224",
+            "lane" : "E224_0"
+        },
+
+        "ParkAreaT" : {
+            "edge" : "-E224",
+            "lane" : "-E224_0"
+        },
+
+        "ParkAreaU" : {
+            "edge" : "-E222",
+            "lane" : "-E222_0"
+        },
+
+        "ParkAreaV" : {
+            "edge" : "E222",
+            "lane" : "E222_0"
+        },
+
+        "ParkAreaW" : {
+            "edge" : "E228",
+            "lane" : "E228_0"
+        },
+
+        "ParkAreaX" : {
+            "edge" : "-E228",
+            "lane" : "-E228_0"
+        }
+
+    },
+
+  "Bins_dict" : {
+    "BIN-A" : {
+        "edge" : "-E16",
+        "lane" : "-E16_0"
+    },
+
+    "BIN-B" : {
+        "edge" : "-E23",
+        "lane" : "-E23_0"
+    },
+
+    "BIN-C" : {
+        "edge" : "E170",
+        "lane" : "E170_0"
+    },
+
+    "BIN-D" : {
+        "edge" : "-E186",
+        "lane" : "-E186_0"
+    }
+    
+  },
+
+  "recharge_stations" : [
+    "Charge_ParkA",
+    "Charge_ParkB",
+    "Charge_ParkC",
+    "Charge_ParkD",
+    "Charge_ParkE",
+    "Charge_ParkF",
+    "Charge_ParkW",
+    "Charge_ParkX"
+  ],
+
+  "parkings" : [
+    "ParkAreaA",
+    "ParkAreaB",
+    "ParkAreaC",
+    "ParkAreaD",
+    "ParkAreaE",
+    "ParkAreaF",
+    "ParkAreaG",
+    "ParkAreaH",
+    "ParkAreaI",
+    "ParkAreaJ",
+    "ParkAreaK",
+    "ParkAreaL",
+    "ParkAreaM",
+    "ParkAreaN",
+    "ParkAreaO",
+    "ParkAreaP",
+    "ParkAreaQ",
+    "ParkAreaR",
+    "ParkAreaS",
+    "ParkAreaT",
+    "ParkAreaU",
+    "ParkAreaV",
+    "ParkAreaW",
+    "ParkAreaX"
+  ], 
+
+  "bins" : [
+    "BIN-A",
+    "BIN-B",
+    "BIN-C",
+    "BIN-D"
+  ]
+
+}
+
+

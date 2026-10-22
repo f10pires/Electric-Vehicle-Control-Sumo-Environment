@@ -1,7 +1,7 @@
 from datetime import datetime, timedelta
-from sumo import Sumo
-from sumo.results.__register__ import Register
-from ev import EV
+from EVGarbageCollector.Wastecollection.sumo import Sumo
+from EVGarbageCollector.Wastecollection.sumo.results.__register__ import Register
+from EVGarbageCollector.Wastecollection.ev import EV
 import random
 import traci
 import gymnasium as gym
@@ -34,22 +34,9 @@ class EVGarbageTruck(gym.Env):
         self.simulation = Sumo(config)                     # SUMO interface
 
         # -----------------------------
-        # Vehicle identification
-        # -----------------------------
-        self.id = list(vehicle.keys())[0]                  # Vehicle ID
-        self.type = vehicle[self.id]["type"]               # Vehicle type
-        self.init_route = vehicle[self.id]["initial_route"]# Initial route
-
-        # -----------------------------
         # EV agent
         # -----------------------------
-        self.ev = EV(
-            self.id,
-            self.type,
-            self.init_route,
-            config["mod dist"],
-            config["step"]
-        )
+        self.ev = EV(vehicle)
         
         self.config = config
         self.demand = self.ev.bin_edges                    # Demand list
@@ -66,10 +53,11 @@ class EVGarbageTruck(gym.Env):
         self.waiting_time = config["Waiting_time"]         # Auxiliary time control
         self.refTime = [-1, True]                          # Auxiliary time control
         
-    def step(self, action:list,params: tuple = (), return_to_landfill: bool = False):
+    def step(self, action:list):
         
         reward = 0
-
+        decod_number = int("".join(map(str, action)), 2)
+        
         if self.done:
             return
         
@@ -81,33 +69,8 @@ class EVGarbageTruck(gym.Env):
             self.registration.close()
             return
 
-        self.ev.general_up()
-        self.ev.int_and_set.color()
-        self.ev.step(action,params)
-        self.general.step()
-        self.updateinfo()
-        
-        if self.config["min_dist_dest"] <self.ev.dist_to_final < self.config["max_dist_dest"]:
-            self.ev.action.slow_down()
 
-        if self.ev.edge == self.ev.final_dest and self.ev.dist_to_final  <= self.config["min_dist_dest"] and self.refTime[1]:
-            traci.vehicle.setSpeed(self.id, 0)
 
-        # "return_to_landfill"    
-        if (self.ev.edge == self.ev.final_dest and self.ev.dist_to_final <= self.config["min_dist_dest"]) and (self.ev.speed == 0) and (return_to_landfill): 
-
-            landfill = "-E70"
-            landfillid = "ParkAreaL"
-            self.ev.action.new_route(landfill)
-
-            self.ev.all_up()
-            self.ev.action.stop_car()
-
-            self.ev.action.go_to_landfill(landfill, landfillid)
-
-            if self.refTime[1]:
-                refTime = traci.simulation.getTime() + self.waiting_time
-                self.refTime = [refTime,False]
 
         if traci.simulation.getTime() - self.refTime[0] >= 0 and not(self.refTime[1]):
             self.ev.action.resume_speed_control()
@@ -120,6 +83,8 @@ class EVGarbageTruck(gym.Env):
         return # state, reward, terminated, truncated, info
 
     def get_obs(self):
+        # observation: what the agent can "see" - EV position, velocity, soc, etc.
+
         obs = []
         # observaçõe do ambiente (horário etc)
 

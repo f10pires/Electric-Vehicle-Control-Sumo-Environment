@@ -4,13 +4,12 @@ from .__action__ import Action
 from .__interpreter_and_set__ import InterpreterAndSet
 
 class EV:
-    def __init__(self,vehicle_id: str,vehicle_type: str,initial_route: dict[str, str],reflength: float,step_length: float):
+    def __init__(self,vehicle : dict):
         # -----------------------------
         # Vehicle identification
         # -----------------------------
-        self.vehicle_id = vehicle_id                                                       # Vehicle ID
-        self.vehicle_type = vehicle_type                                                   # Vehicle type
-        self.step_length = step_length                                                     # step of simulation
+        self.vehicle_id = list(vehicle.keys())[0]                                          # Vehicle ID
+        self.vehicle_type = vehicle[self.vehicle_id]["type"]                               # Vehicle type
         self.remaining_bins = 0
         
         # -----------------------------
@@ -32,9 +31,9 @@ class EV:
         # Add the vehicle
         # -----------------------------
         self._add_vehicle(
-            initial_route["destination_id"],
-            initial_route["initial_edge"],
-            initial_route["route_id"])
+            vehicle["destination_id"],
+            vehicle["initial_edge"],
+            vehicle["route_id"])
 
         # -----------------------------
         # Energy state
@@ -72,7 +71,7 @@ class EV:
         self.total_dist    = np.inf                                                 # Total distance traveled (m)
         self.current_pos   = np.inf                                                 # Vehicle position in lane
         self.dist_to_local = np.inf                                                 # Distance to specific location(m)
-        self.reflength   = reflength                                                # Total network lengh
+        self.reflength   = 1000                                                     
 
         # -----------------------------
         # ID list

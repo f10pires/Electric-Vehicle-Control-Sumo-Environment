@@ -1,8 +1,8 @@
-from sumo import Sumo
+from EVGarbageCollector.Wastecollection.sumo import Sumo
 import traci
 import json
 from datetime import datetime, timedelta
-from environment.WasteCollectionEnv import EVGarbageTruck
+from EVGarbageCollector.Wastecollection.environment.WasteCollectionEnv import EVGarbageTruck
 import random
 
 """Load config at config/config.json"""

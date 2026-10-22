@@ -1,0 +1,1 @@
+obs = [soc, dist_final, dist_dest, currently_edge, dest, dist_final, velocity, status]
