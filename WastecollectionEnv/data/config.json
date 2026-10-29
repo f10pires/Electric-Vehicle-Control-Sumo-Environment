@@ -1,6 +1,6 @@
 {
     "net-file": "Wastecollection/config/net.net.xml",
-    "route-files": "Wastecollection/config/routes.trip.xml",
+    "route-files": "WastecollectionEnv/config/routes.trip.xml",
     "route-mista": "Wastecollection/config/configActivitybasedDemandGeneration/routes_mista.trip.xml",
     "additional-files": "Wastecollection/config/additional.add.xml",
     "additional-random": "Wastecollection/config/additionalforRANDOMTRIPS.add.xml",

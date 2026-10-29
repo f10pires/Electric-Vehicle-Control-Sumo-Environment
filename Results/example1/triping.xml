@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2026-10-29T18:57:27.864540+00:00 by Eclipse SUMO GUI 1.26.0
+<sumoConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value="data/example1/xml/net.net.xml"/>
+        <route-files value="Results/example1/routes_mista.trip.xml"/>
+        <additional-files value="data/example1/xml/additional.add.xml"/>
+    </input>
+
+    <output>
+        <tripinfo-output value="Results/example1/triping.xml"/>
+        <statistic-output value="Results/example1/project.statistics.xml"/>
+    </output>
+
+    <time>
+        <step-length value="0.5"/>
+    </time>
+
+    <processing>
+        <time-to-teleport value="-1"/>
+    </processing>
+
+    <report>
+        <duration-log.statistics value="true"/>
+    </report>
+
+    <traci_server>
+        <remote-port value="57640"/>
+    </traci_server>
+
+    <random_number>
+        <seed value="42"/>
+    </random_number>
+
+    <gui_only>
+        <gui-settings-file value="data/example1/xml/viewssettings.xml"/>
+        <quit-on-end value="true"/>
+        <start value="true"/>
+        <delay value="80"/>
+    </gui_only>
+
+</sumoConfiguration>

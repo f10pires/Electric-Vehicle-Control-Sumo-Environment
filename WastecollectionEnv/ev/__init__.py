@@ -4,19 +4,15 @@ from .__action__ import Action
 from .__interpreter_and_set__ import InterpreterAndSet
 
 class EV:
-    def __init__(self,vehicle : dict):
+    def __init__(self, vehicles: dict, vehicle_id : str):
         # -----------------------------
         # Vehicle identification
         # -----------------------------
-        self.vehicle_id = list(vehicle.keys())[0]                                          # Vehicle ID
-        self.vehicle_type = vehicle[self.vehicle_id]["type"]                               # Vehicle type
+        self.vehicle_id     = vehicle_id                                          # Vehicle ID
+        self.vehicle_type   = vehicles[self.vehicle_id]["type"]                               # Vehicle type
         self.remaining_bins = 0
-        
-        # -----------------------------
-        # Instance of classes
-        # -----------------------------  
-        self.action = Action(self)
-        self.int_and_set = InterpreterAndSet(self)
+        self.action         = Action(self)
+        self.int_and_set    = InterpreterAndSet(self)
 
         # -----------------------------
         # Actions
@@ -31,46 +27,46 @@ class EV:
         # Add the vehicle
         # -----------------------------
         self._add_vehicle(
-            vehicle["destination_id"],
-            vehicle["initial_edge"],
-            vehicle["route_id"])
+            vehicles[self.vehicle_id]["destination_id"],
+            vehicles[self.vehicle_id]["initial_edge"],
+            vehicles[self.vehicle_id]["route_id"])
 
         # -----------------------------
         # Energy state
         # -----------------------------
-        self.energy = 0.0                                                           # Current battery charge (kWh)
-        self.energy_loaded = 0.0                                                    # Total energy charged over time (kWh)
-        self.energy_regen = 0.0                                                     # Total regenerated energy (kWh)
-        self.capacity = 0.0                                                         # Total battery capacity (kWh)
-        self.soc = 0.0                                                              # State of charge (%)
+        self.energy         = 0.0 # Current battery charge (kWh)
+        self.energy_loaded  = 0.0 # Total energy charged over time (kWh)
+        self.energy_regen   = 0.0 # Total regenerated energy (kWh)
+        self.capacity       = 0.0 # Total battery capacity (kWh)
+        self.soc            = 0.0 # State of charge (%)
 
         # -----------------------------
         # Location and route
         # -----------------------------
-        self.edge = None                                                            # Current edge
-        self.dest = None                                                            # Current intermediate destination
-        self.final_dest = None                                                      # Final trip destination
-        self.penultimate_dest = None                                                # Penultimate final trip destination
+        self.edge           = None # Current edge
+        self.dest           = None # Current intermediate destination
+        self.final_dest     = None # Final trip destination
+        self.penultimate_dest = None # Penultimate final trip destination
 
         # -----------------------------
         # Motion
         # -----------------------------
-        self.speed = 0.0                                                            # Current speed (m/s)
-        self.consumption = 0.0                                                      # Instantaneous electric consumption (kWh/s)
-        self.speedKm = 0.0                                                          # Current speed (km/h)
-        self.acceleration = 0.0                                                     # current aceleration (m/s²)
-        self.max_speed = traci.vehicle.getMaxSpeed(self.vehicle_id)                         # Max speed (m/s)
-        self.max_accel = traci.vehicle.getAccel(self.vehicle_id)                            # Max aceleration (m/s²)
-        self.max_decel = traci.vehicle.getDecel(self.vehicle_id)                            # Max deceleration (m/s²)
+        self.speed          = 0.0 # Current speed (m/s)
+        self.consumption    = 0.0 # Instantaneous electric consumption (kWh/s)
+        self.speedKm        = 0.0 # Current speed (km/h)
+        self.acceleration   = 0.0 # current aceleration (m/s²)
+        self.max_speed = traci.vehicle.getMaxSpeed(self.vehicle_id)   # Max speed (m/s)
+        self.max_accel = traci.vehicle.getAccel(self.vehicle_id)      # Max aceleration (m/s²)
+        self.max_decel = traci.vehicle.getDecel(self.vehicle_id)      # Max deceleration (m/s²)
 
         # -----------------------------
         # Distances
         # -----------------------------
-        self.dist_to_dest  = np.inf                                                 # Distance to current destination (m)
-        self.dist_to_final = np.inf                                                 # Distance to final destination (m)
-        self.total_dist    = np.inf                                                 # Total distance traveled (m)
-        self.current_pos   = np.inf                                                 # Vehicle position in lane
-        self.dist_to_local = np.inf                                                 # Distance to specific location(m)
+        self.dist_to_dest  = np.inf  # Distance to current destination (m)
+        self.dist_to_final = np.inf  # Distance to final destination (m)
+        self.total_dist    = np.inf  # Total distance traveled (m)
+        self.current_pos   = np.inf  # Vehicle position in lane
+        self.dist_to_local = np.inf  # Distance to specific location(m)
         self.reflength   = 1000                                                     
 
         # -----------------------------

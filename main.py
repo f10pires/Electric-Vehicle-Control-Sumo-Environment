@@ -1,27 +1,33 @@
-from environment import SingleEV
+from WastecollectionEnv.environment import WasteCollectionEnv
+from WastecollectionEnv.sumo import Sumo
+from TruckControl import Control
+from datetime import datetime
+import numpy as np
+import traci
+import json
 
 
-import json 
+FILE_PATH = "data/example1/"
 
 
-
-"""Load config at config/config.json"""
-with open('data/config.json', 'r') as config_file:
+# Load config and data file
+with open(FILE_PATH + "config.json", 'r') as config_file:
     config = json.load(config_file)
 
-with open('data/single_ev.json', "r", encoding="utf-8") as f:
-    vehicle = json.load(f)
+
+with open(FILE_PATH + "vehicles.json", "r", encoding="utf-8") as f:
+    vehicles = json.load(f)
 
 
-def main():
-    start = "00:00"  # definir um dia, mes e ano e usar datetime
-    env = SingleEV(config, vehicle, start)
-    
+start = datetime.strptime("2026-01-01 00:00:00", "%Y-%m-%d %H:%M:%S")
 
-    while env.done is False:
-        action = [0,0,0,0,0,0,0,1]
-        state, reward, done, truncated, info = env.step(action)
-        pass
+# Create enviromnent
+env = WasteCollectionEnv.EVGarbageTruck(config, vehicles, start)
 
-if __name__ == "__main__":
-    main()
+
+env.step(list(np.zeros(37)))
+
+while traci.simulation.getTime() < env.max_time:
+    obs = env.get_obs()
+
+    a = 1

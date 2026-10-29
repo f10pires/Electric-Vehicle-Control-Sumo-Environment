@@ -1,59 +1,61 @@
+from asyncio import tools
+
+from WastecollectionEnv.sumo.results.__register__ import Register
 from datetime import datetime, timedelta
-from EVGarbageCollector.Wastecollection.sumo import Sumo
-from EVGarbageCollector.Wastecollection.sumo.results.__register__ import Register
-from EVGarbageCollector.Wastecollection.ev import EV
-from EVGarbageCollector.TruckControl.__init__ import Control
-import random
-import traci
+from WastecollectionEnv.sumo import Sumo
+from WastecollectionEnv.ev import EV
+# from EVGarbageCollector.TruckControl.__init__ import Control
 import gymnasium as gym
 import numpy as np
+import random
+import traci
 
 # Fix random seed for reproducibility
 random.seed(42)
 
 class Initgeneral:
-    def __init__(self, config, start,tools: dict):
+    def __init__(self, config, start):
         self.start = start
         self.Δt = float(config["step"]) 
         self.time = start
-        self.tools = tools
     
     def step(self):
         self.time = self.time + timedelta(seconds=self.Δt)
 
-    pass
 
 
 class EVGarbageTruck(gym.Env):
-    def __init__(self, config, vehicle, start, tools,parameters):
+    def __init__(self, config, vehicles, start):
         super().__init__()
 
-        # -----------------------------
-        # General simulation settings
-        # -----------------------------
-        self.general = Initgeneral(config, start, tools)   # Time control and global parameters
-        self.simulation = Sumo(config)                     # SUMO interface
-
-        # -----------------------------
-        # EV agent
-        # -----------------------------
-        self.ev = EV(vehicle)
+        self.config     = config
+        simulation      = Sumo(self.config)
+        simulation.run()                              # Start simulation     
         
-        self.config = config
-        self.demand = self.ev.bin_edges                    # Demand list
+        self.ids        = vehicles.keys()
+        self.general    = Initgeneral(config, start)   # Time control and global parameters
+        self.evs       = [EV(vehicles, vehicle_id) for vehicle_id in self.ids]
+
+        a = 1
+        
+
+
+        
+        
+        
+        # self.demand = self.ev.bin_edges                    # Demand list
 
         # -----------------------------
         # Data registration
         # -----------------------------
-        self.registration = Register(self.id)              # Logger / data recorder
+        # self.registration = Register(self.id)              # Logger / data recorder
 
-        # -----------------------------
-        # Control
-        # -----------------------------
+       
         self.done = False                                  # Episode termination flag
-        self.waiting_time = config["Waiting_time"]         # Auxiliary time control
+        
+ 
         self.refTime = [-1, True]                          # Auxiliary time control
-        self.control = Control(self.get_obs(), parameters)                              
+        self.max_time = simulation.max_time
         
     def step(self, action: list):
 

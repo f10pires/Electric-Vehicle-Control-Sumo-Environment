@@ -1,0 +1,9 @@
+{
+    "evse1" :{
+        "id": "evse1",
+        "x": 0.0,
+        "y": 0.0,
+        "capacity": 2,
+        "charging_power": 22.0
+    }
+}

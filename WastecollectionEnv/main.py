@@ -33,7 +33,7 @@ def main():
     need_check = True
 
     while traci.simulation.getTime() < simulation.max_time:
-        env.step([1,0,0,0,0,0,0,0],(),return_to_landfill)
+        env.step([1,0,0,0,0,0,0,0],(), return_to_landfill)
 
         if env.ev.soc <= 10 :
             env.ev.action.recharge_substation("-E70", "Charge_ParkB")
