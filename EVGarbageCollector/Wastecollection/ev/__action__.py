@@ -7,6 +7,19 @@ class Action:
         self.stop_duration = 43200
         self.charging_stop_flag = 1
 
+        self.action_dict = {
+        0:  "Continue Travel",  # 00000
+        1:  "New Route",        # 00001
+        2:  "Return to Dest",   # 00010
+        3:  "Stop",             # 00011
+        4:  "Back normal speed",# 00100
+        5:  "Bin collection",   # 00101
+        6:  "Recharge",         # 00110
+        7:  "Parking",          # 00111
+        8:  "Skip stop",        # 01000
+        }
+
+
     # -----------------------------
     # Route control
     # -----------------------------
@@ -215,3 +228,5 @@ class Action:
     def skip_stop(self):
         """Resume the vehicle after a scheduled stop."""
         traci.vehicle.resume(self.ev.vehicle_id)
+
+
