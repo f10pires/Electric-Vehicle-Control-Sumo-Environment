@@ -1,9 +1,8 @@
-from asyncio import tools
-
-from WastecollectionEnv.sumo.results.__register__ import Register
+from Results.example1.results.__register__ import Register
 from datetime import datetime, timedelta
 from WastecollectionEnv.sumo import Sumo
 from WastecollectionEnv.ev import EV
+from WastecollectionEnv.sumo.__get_places__ import PlacesManager
 # from EVGarbageCollector.TruckControl.__init__ import Control
 import gymnasium as gym
 import numpy as np
@@ -35,12 +34,9 @@ class EVGarbageTruck(gym.Env):
         self.ids        = vehicles.keys()
         self.general    = Initgeneral(config, start)   # Time control and global parameters
         self.evs       = [EV(vehicles, vehicle_id) for vehicle_id in self.ids]
+        self.places    = PlacesManager()
 
         a = 1
-        
-
-
-        
         
         
         # self.demand = self.ev.bin_edges                    # Demand list

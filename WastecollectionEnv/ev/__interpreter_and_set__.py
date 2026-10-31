@@ -55,43 +55,44 @@ class InterpreterAndSet :
         traci.vehicle.setColor(self.ev.vehicle_id, color)
         return
 
+
 class Places:
     def __init__(self):
         self.charging_stations = {
-            9: "Charge_ParkA",
-            10: "Charge_ParkB",
-            11: "Charge_ParkC",
-            12: "Charge_ParkD",
-            13: "Charge_ParkE",
-            14: "Charge_ParkF",
-            15: "Charge_ParkW",
-            16: "Charge_ParkX",
+            6: "Charge_ParkA",
+            7: "Charge_ParkB",
+            8: "Charge_ParkC",
+            9: "Charge_ParkD",
+            10: "Charge_ParkE",
+            11: "Charge_ParkF",
+            12: "Charge_ParkW",
+            13: "Charge_ParkX",
         }
 
         self.parking_areas = {
-            17: "ParkAreaA",
-            18: "ParkAreaB",
-            19: "ParkAreaG",
-            20: "ParkAreaH",
-            21: "ParkAreaI",
-            22: "ParkAreaJ",
-            23: "ParkAreaM",
-            24: "ParkAreaN",
-            25: "ParkAreaO",
-            26: "ParkAreaP",
-            27: "ParkAreaQ",
-            28: "ParkAreaR",
-            29: "ParkAreaS",
-            30: "ParkAreaT",
-            31: "ParkAreaU",
-            32: "ParkAreaV",
+            14: "ParkAreaA",
+            15: "ParkAreaB",
+            16: "ParkAreaG",
+            17: "ParkAreaH",
+            18: "ParkAreaI",
+            19: "ParkAreaJ",
+            20: "ParkAreaM",
+            21: "ParkAreaN",
+            22: "ParkAreaO",
+            23: "ParkAreaP",
+            24: "ParkAreaQ",
+            25: "ParkAreaR",
+            26: "ParkAreaS",
+            27: "ParkAreaT",
+            28: "ParkAreaU",
+            29: "ParkAreaV",
         }
 
         self.bins = {
-            33: "BIN-A",
-            34: "BIN-B",
-            35: "BIN-C",
-            36: "BIN-D",
+            30: "BIN-A",
+            31: "BIN-B",
+            32: "BIN-C",
+            33: "BIN-D",
         }
 
     def get_id(self, position: int) -> str | None:

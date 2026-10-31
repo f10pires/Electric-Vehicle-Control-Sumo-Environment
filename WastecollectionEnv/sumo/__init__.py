@@ -2,8 +2,8 @@ import traci
 import random
 from sumolib import checkBinary
 import subprocess
-from WastecollectionEnv.Tools.convert_fleet import convert_fleet
-from WastecollectionEnv.Tools.random_vehicles import RandomVeh
+from Tools.convert_fleet import convert_fleet
+from Tools.random_vehicles import RandomVeh
 
 class Sumo:
 

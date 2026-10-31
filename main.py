@@ -22,7 +22,7 @@ with open(FILE_PATH + "vehicles.json", "r", encoding="utf-8") as f:
 start = datetime.strptime("2026-01-01 00:00:00", "%Y-%m-%d %H:%M:%S")
 
 # Create enviromnent
-env = WasteCollectionEnv.EVGarbageTruck(config, vehicles, start)
+env = WasteCoellectionEnv.EVGarbageTruck(config, vehicles, start)
 
 
 env.step(list(np.zeros(37)))

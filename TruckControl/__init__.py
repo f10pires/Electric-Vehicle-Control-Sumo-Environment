@@ -33,9 +33,8 @@ class Control:
         action = [0] * self.vector_size
 
         if soc < 0.55:
-            action[1] = 1
-            action[2] = 1
-            action[9] = 1
+            action[3] = 1
+            action[6] = 1
 
         else:
             action[0] = 1

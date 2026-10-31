@@ -9,7 +9,7 @@ class EV:
         # Vehicle identification
         # -----------------------------
         self.vehicle_id     = vehicle_id                                          # Vehicle ID
-        self.vehicle_type   = vehicles[self.vehicle_id]["type"]                               # Vehicle type
+        self.vehicle_type   = vehicles[self.vehicle_id]["type"]                   # Vehicle type
         self.remaining_bins = 0
         self.action         = Action(self)
         self.int_and_set    = InterpreterAndSet(self)
@@ -21,7 +21,10 @@ class EV:
             0: self.action.continue_travel,
             1: self.action.skip_stop,
             2: self.action.stop_parking,
-            3: self.action.recharge_substation}
+            3: self.action.recharge_substation
+            #4: self.action.bin_collection,
+            #5: self.action.return_to_landfill
+        }
         
         # -----------------------------
         # Add the vehicle
@@ -66,53 +69,7 @@ class EV:
         self.dist_to_final = np.inf  # Distance to final destination (m)
         self.total_dist    = np.inf  # Total distance traveled (m)
         self.current_pos   = np.inf  # Vehicle position in lane
-        self.dist_to_local = np.inf  # Distance to specific location(m)
-        self.reflength   = 1000                                                     
-
-        # -----------------------------
-        # ID list
-        # -----------------------------
-        self.parkings = sorted(traci.parkingarea.getIDList())
-        self.stations = sorted(traci.chargingstation.getIDList())
-        self.bins     = []
-
-        # -----------------------------
-        # Charging stations (EVSE)
-        # -----------------------------
-        self.station_edges = {
-            s: traci.chargingstation.getLaneID(s).split("_")[0]
-            for s in self.stations
-        }
-
-        self.station_pos = {
-            s: traci.chargingstation.getStartPos(s)
-            for s in self.stations
-        }
-
-        # -----------------------------
-        # Parkings and Bins
-        # -----------------------------
-        self.parking_edges = {}
-        self.parking_pos = {}
-
-        self.bin_edges = {}
-        self.bin_pos = {}
-
-        for p in self.parkings:
-            lane_id = traci.parkingarea.getLaneID(p)
-            edge_id = lane_id.split("_")[0]
-            pos = traci.parkingarea.getStartPos(p)
-            
-            if edge_id in self.stations:
-                continue
-
-            if p.startswith("BIN-"):
-                self.bins.append(p)
-                self.bin_edges[p] = edge_id
-                self.bin_pos[p] = pos
-            else:
-                self.parking_edges[p] = edge_id
-                self.parking_pos[p] = pos
+        self.dist_to_local = np.inf  # Distance to specific location(m)                                                       
 
         # -----------------------------
         # Initial initialization
@@ -207,7 +164,8 @@ class EV:
                 self.dist_to_local = dist
 
         return
-    
+
+    """
     def distances_to_parkings(self):
         if self.edge == "" or self.edge.startswith(":"):
             return {park: np.inf for park in self.parkings}
@@ -229,7 +187,7 @@ class EV:
             distances[parking] = np.inf if dist < 0 else round(dist, 2)
 
         return distances
-    
+
     def distances_to_stations(self):
         if self.edge == "" or self.edge.startswith(":"):
             return {station: np.inf for station in self.stations}
@@ -251,7 +209,7 @@ class EV:
             distances[evse] = np.inf if dist < 0 else round(dist, 2)
 
         return distances
-    
+    """
     def general_up(self): 
         self.update_energy()
         self.update_motion()
@@ -313,8 +271,8 @@ class EV:
             self.speed /  self.max_speed,
             self.acceleration / self.max_accel,
             self.soc/100,
-            self.dist_to_dest / self.reflength,
-            self.dist_to_final / self.reflength,
+            self.dist_to_dest / 1000,
+            self.dist_to_final / 1000,
             min(self.gap / 50, 1)
         ]
         return obs
