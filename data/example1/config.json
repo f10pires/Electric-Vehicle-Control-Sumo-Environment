@@ -2,7 +2,7 @@
     "net-file": "data/example1/xml/net.net.xml",
     "route-files": "Results/example1/routes.trip.xml",
     "route-mista": "Results/example1/routes_mista.trip.xml",
-    "additional-files": "data/example1/xml/additional.add.xml",
+    "additional-files": "data/example1/xml/additionalTest.add.xml",
     "additional-random": "data/example1/xml/additionalforRANDOMTRIPS.add.xml",
     "gui-settings-file": "data/example1/xml/viewssettings.xml",
     "trips-file": "data/example1/xml/trips.trips.xml",

@@ -4,6 +4,8 @@ from sumolib import checkBinary
 import subprocess
 from Tools.convert_fleet import convert_fleet
 from Tools.random_vehicles import RandomVeh
+from Tools.additionalxml import AdditionalXML
+
 
 class Sumo:
 
@@ -12,27 +14,22 @@ class Sumo:
         self.sumoBinary = checkBinary('sumo-gui')
         self.max_time = 0
          
-        self.config = config
-        self.refdist = 0.0
-        self.edges = [] 
-        self.streets = set()       
+        self.config = config 
+        self.additional = AdditionalXML()     
 
         # Fix random seed for reproducibility
         random.seed(int(self.config["seed"]))
         pass
 
     def run(self): 
-
         #Control
         self.uptime()
+        self.additional.additional_fileupdate()
         self.generate_activity_trips()
         self.apply_fleet_conversion()
         self.startSim()
 
         #Surface
-        self.up_streets()
-        self.streetslist = list(self.streets)
-        self.reference_length()
         self.randomveh = RandomVeh(self.config)
 
         return
@@ -95,39 +92,4 @@ class Sumo:
         traci.simulationStep()
         return
     
-    def up_streets(self):
-        self.edges = traci.edge.getIDList()
 
-        for edge in self.edges:
-            if not edge.startswith(":"):  # ignore internal edges 
-                self.streets.add(edge.split("_")[0])
-        return
-    
-    def reference_length(self):
-        
-        start = random.choice(self.streetslist)
-        
-        far_edge, _ = self.farthest_from(start)
-
-        _, self.refdist = self.farthest_from(far_edge)
-        
-        return self.refdist
-
-    def farthest_from(self,source_edge):
-        max_dist = 0.0
-        farthest_edge = source_edge
-
-        for target_edge in self.streetslist:
-            try:
-                dist = traci.simulation.getDistanceRoad(
-                    source_edge, 0,
-                    target_edge, 0,
-                    isDriving=True
-                )
-                if dist > max_dist:
-                    max_dist = dist
-                    farthest_edge = target_edge
-            except:
-                continue
-
-        return farthest_edge, max_dist
