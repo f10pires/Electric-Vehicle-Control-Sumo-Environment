@@ -1,4 +1,4 @@
-from Results.example1.results.__register__ import Register
+from Tools.register import Register
 from datetime import datetime, timedelta
 from WastecollectionEnv.sumo import Sumo
 from WastecollectionEnv.ev import EV
@@ -75,72 +75,14 @@ class EVGarbageTruck(gym.Env):
         # 3. Execute action
         action_name = self.ev.action.action_dict[decod_action]
 
-        if action_name == "Continue Travel":
-            self.ev.action.continue_travel()
 
-        elif action_name == "New Route":
-            position = place_destin.index(1)
-            position_id = self.dic_positions(position)
-
-            edge_dest = (
-                self.actions_and_edges["recharge_stations_dict"].get(position_id, {}).get("edge")
-                or self.actions_and_edges["parkings_dict"].get(position_id, {}).get("edge")
-                or self.actions_and_edges["bins_dict"].get(position_id, {}).get("edge")
-            )
-
-            self.ev.action.new_route(edge_dest)
-
-        elif action_name == "Return to Dest":
-            self.ev.action.set_target(self.ev.final_dest)
-
-        elif action_name == "Stop":
-            self.ev.action.stop_car()
-            self.refTime = [traci.simulation.getTime(), False]
-
-        elif action_name == "Back normal speed":
-            self.ev.action.resume_speed_control()
-
-        elif action_name == "Recharge":
-            position = place_destin.index(1)
-            
-            position_id = (
-                self.ev.int_and_set.places.charging_stations.get(position)
-            )
-
-            station_edge = (
-                self.parameters["recharge_stations_dict"]
-                .get(position_id, {})
-                .get("edge")
-            )
-
-            self.ev.action.recharge_substation(station_edge, position_id)
-
-        elif action_name == "Parking":
-            position = place_destin.index(1)
-            
-            position_id = (
-                self.ev.int_and_set.places
-                .get_parking_area_id(position)
-            )
-
-            parking_edge = (
-                self.parameters["parking_areas_dict"]
-                .get(position_id, {})
-                .get("edge")
-            )
-
-            self.ev.action.stop_parking(parking_edge, position_id)
-
-        elif action_name == "Skip stop":
-            self.ev.action.continue_travel()
-
-        # 4. Check stop timer
+        # Check stop timer
         if not self.refTime[1]:
             if traci.simulation.getTime() - self.refTime[0] >= self.stop_duration:
                 self.ev.action.resume_speed_control()
                 self.refTime = [-1, True]
 
-        # 5. Check simulation termination
+        # Check simulation termination
         if traci.simulation.getTime() >= self.simulation.max_time:
             self.done = True
             self.registration.close()
