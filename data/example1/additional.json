@@ -1,0 +1,424 @@
+{
+    "vTypes" : {
+        "EV" : {
+            "vClass" : "passenger",
+            "energyModel" : "electric",
+            "length" : 5.0,
+            "width" : 1.8,
+            "height" : 1.5,
+            "mass" : 1850,
+            "minGap" : 2.5,
+            "accel" : 2.6,
+            "decel" : 4.5,
+            "emergencyDecel" : 9.0,
+            "maxSpeed" : 33.33,
+            "personCapacity" : 4,
+            "guiShape" : "evehicle",
+            "emissionClass" : "Energy/unknown",
+            "params": {
+                "device.battery.probability": 1.0,
+                "has.battery.device": true,
+                "device.battery.capacity": 35000,
+                "device.battery.chargeLevel": 17500,
+                "device.battery.maximumPowerRate": 150000,
+                "constantPowerIntake": 2500
+            }
+        },
+        "BUS" : {
+            "vClass" : "bus",
+            "energyModel" : "electric",
+            "length" : 12.0,
+            "width" : 2.5,
+            "height" : 3.4,
+            "mass" : 12000,
+            "minGap" : 2.5,
+            "accel" : 1.0,
+            "decel" : 4.0,
+            "emergencyDecel" : 7.0,
+            "maxSpeed" : 24.0,
+            "personCapacity" : 85,
+            "guiShape" : "bus",
+            "emissionClass" : "Energy/unknown",
+            "params": {
+                "has.battery.device": true,
+                "device.battery.capacity": 80000,
+                "maximumPower": 1000,
+                "frontSurfaceArea": 5,
+                "airDragCoefficient": 0.6,
+                "rotatingMass": 1000,
+                "radialDragCoefficient": 0.5,
+                "rollDragCoefficient": 0.01,
+                "constantPowerIntake": 100,
+                "propulsionEfficiency": 0.9,
+                "recuperationEfficiency": 0.9,
+                "stoppingThreshold": 0.1,
+                "device.battery.maximumChargeRate": 150000
+            }
+        },
+        "TRUCK" : {
+            "vClass" : "truck",
+            "energyModel" : "electric",
+            "length" : 7.1,
+            "width" : 2.4,
+            "height" : 2.4,
+            "mass" : 4500,
+            "minGap" : 2.5,
+            "accel" : 1.3,
+            "decel" : 4.0,
+            "emergencyDecel" : 7.0,
+            "maxSpeed" : 30.0,
+            "personCapacity" : 3,
+            "guiShape" : "truck",
+            "emissionClass" : "Energy/unknown",
+            "params": {
+                "has.battery.device": true,
+                "device.battery.capacity": 80000,
+                "maximumPower": 1000,
+                "frontSurfaceArea": 5,
+                "airDragCoefficient": 0.6,
+                "rotatingMass": 1000,
+                "radialDragCoefficient": 0.5,
+                "rollDragCoefficient": 0.01,
+                "constantPowerIntake": 100,
+                "propulsionEfficiency": 0.9,
+                "recuperationEfficiency": 0.9,
+                "stoppingThreshold": 0.1,
+                "device.battery.maximumChargeRate": 150000
+            }
+        }
+
+    },
+    
+    "BUSSTOP" : {
+        "checkpoint1" : {
+            "lane" : "-arquimedes_0",
+            "startPos" : 20,
+            "endPos" : 30,
+            "color" : "255,145,4",
+            "emptyColor" : "1,1,1,0"
+        },
+        "checkpoint2" : {
+            "lane" : "arquimedes_0",
+            "startPos" : 20,
+            "endPos" : 30,
+            "color" : "255,145,4",
+            "emptyColor" : "1,1,1,0"
+        },
+        "checkpoint3" : {
+            "lane" : "ohm_0",
+            "startPos" : 20,
+            "endPos" : 30,
+            "color" : "255,145,4",
+            "emptyColor" : "1,1,1,0"
+        },
+        "checkpoint4" : {
+            "lane" : "-ohm_0",
+            "startPos" : 20,
+            "endPos" : 30,
+            "color" : "255,145,4",
+            "emptyColor" : "1,1,1,0"
+        }
+    },
+
+    "PLACES" : {
+        "Parking" : {
+            "ParkAreaA" : {
+                "lane" : "-E202_0",
+                "startPos" : 2.9,
+                "endPos" : 7.4,
+                "roadsideCapacity" : 1,
+                "angle" : 0,
+                "length" : 4.5
+            },
+            "ParkAreaB" : {
+                "lane" : "E202_0",
+                "startPos" : 2.9,
+                "endPos" : 7.4,
+                "roadsideCapacity" : 1,
+                "angle" : 0,
+                "length" : 4.5
+            },
+            "ParkAreaC" : {
+                "lane" : "-E133_0",
+                "startPos" : 5,
+                "endPos" : 25,
+                "roadsideCapacity" : 4,
+                "angle" : 0,
+                "length" : 4.5
+            },
+            "ParkAreaD" : {
+                "lane" : "-E131_0",
+                "startPos" : 5,
+                "endPos" : 25,
+                "roadsideCapacity" : 4,
+                "angle" : 0,
+                "length" : 4.5
+            },
+            "ParkAreaE" : {
+                "lane" : "E160_0",
+                "startPos" : 2,
+                "endPos" : 12,
+                "roadsideCapacity" : 2,
+                "angle" : 0,
+                "length" : 4.5
+            },
+            "ParkAreaF" : {
+                "lane" : "-E159_0",
+                "startPos" : 2,
+                "endPos" : 12,
+                "roadsideCapacity" : 2,
+                "angle" : 0,
+                "length" : 4.5
+            },
+            "ParkAreaG" : {
+                "lane" : "E95_0",
+                "startPos" : 10,
+                "endPos" : 25,
+                "roadsideCapacity" : 3,
+                "angle" : 0,
+                "length" : 4.5
+            },
+            "ParkAreaH" : {
+                "lane" : "E96_0",
+                "startPos" : 10,
+                "endPos" : 25,
+                "roadsideCapacity" : 3,
+                "angle" : 0,
+                "length" : 4.5
+            },
+            "ParkAreaI" : {
+                "lane" : "-E94_0",
+                "startPos" : 2,
+                "endPos" : 18,
+                "roadsideCapacity" : 3,
+                "angle" : 0,
+                "length" : 4.5
+            },
+            "ParkAreaJ" : {
+                "lane" : "E93_0",
+                "startPos" : 2,
+                "endPos" : 18,
+                "roadsideCapacity" : 3,
+                "angle" : 0,
+                "length" : 4.5
+            },
+            "ParkAreaK" : {
+                "lane" : "E69_0",
+                "startPos" : 10,
+                "endPos" : 30,
+                "roadsideCapacity" : 4,
+                "angle" : 0,
+                "length" : 4.5
+            },
+            "ParkAreaL" : {
+                "lane" : "-E70_0",
+                "startPos" : 10,
+                "endPos" : 30,
+                "roadsideCapacity" : 4,
+                "angle" : 0,
+                "length" : 4.5
+            },
+            "ParkAreaM" : {
+                "lane" : "-E206_0",
+                "startPos" : 2.9,
+                "endPos" : 7.4,
+                "roadsideCapacity" : 1,
+                "angle" : 0,
+                "length" : 4.5
+            },
+            "ParkAreaN" : {
+                "lane" : "E206_0",
+                "startPos" : 2.9,
+                "endPos" : 7.4,
+                "roadsideCapacity" : 1,
+                "angle" : 0,
+                "length" : 4.5
+            },
+            "ParkAreaO" : {
+                "lane" : "-E226_0",
+                "startPos" : 2.9,
+                "endPos" : 7.4,
+                "roadsideCapacity" : 1,
+                "angle" : 0,
+                "length" : 4.5
+            },
+            "ParkAreaP" : {
+                "lane" : "E226_0",
+                "startPos" : 2.9,
+                "endPos" : 7.4,
+                "roadsideCapacity" : 1,
+                "angle" : 0,
+                "length" : 4.5
+            },
+            "ParkAreaQ" : {
+                "lane" : "-E204_0",
+                "startPos" : 2.9,
+                "endPos" : 7.4,
+                "roadsideCapacity" : 1,
+                "angle" : 0,
+                "length" : 4.5
+            },
+            "ParkAreaR" : {
+                "lane" : "E204_0",
+                "startPos" : 2.9,
+                "endPos" : 7.4,
+                "roadsideCapacity" : 1,
+                "angle" : 0,
+                "length" : 4.5
+            },
+            "ParkAreaS" : {
+                "lane" : "E224_0",
+                "startPos" : 2.9,
+                "endPos" : 7.4,
+                "roadsideCapacity" : 1,
+                "angle" : 0,
+                "length" : 4.5
+            },
+            "ParkAreaT" : {
+                "lane" : "-E224_0",
+                "startPos" : 2.9,
+                "endPos" : 7.4,
+                "roadsideCapacity" : 1,
+                "angle" : 0,
+                "length" : 4.5
+            },
+            "ParkAreaU" : {
+                "lane" : "-E222_0",
+                "startPos" : 2.9,
+                "endPos" : 7.4,
+                "roadsideCapacity" : 1,
+                "angle" : 0,
+                "length" : 4.5
+            },
+            "ParkAreaV" : {
+                "lane" : "E222_0",
+                "startPos" : 2.9,
+                "endPos" : 7.4,
+                "roadsideCapacity" : 1,
+                "angle" : 0,
+                "length" : 4.5
+            },
+            "ParkAreaW" : {
+                "lane" : "E228_0",
+                "startPos" : 29.7,
+                "endPos" : 74.7,
+                "roadsideCapacity" : 10,
+                "angle" : 0
+            },
+            "ParkAreaX" : {
+                "lane" : "-E228_0",
+                "startPos" : 29.7,
+                "endPos" : 74.7,
+                "roadsideCapacity" : 10,
+                "angle" : 0
+            }
+        },
+        "BINS" : {
+            "BIN-A" : {
+                "lane" : "-E16_0",
+                "startPos" : 6.0,
+                "endPos" : 18.0,
+                "roadsideCapacity" : 1,
+                "angle" : 0
+            },
+            "BIN-B" : {
+                "lane" : "-E23_0",
+                "startPos" : 6.0,
+                "endPos" : 18.0,
+                "roadsideCapacity" : 1,
+                "angle" : 0
+            },
+            "BIN-C" : {
+                "lane" : "E170_0",
+                "startPos" : 6.0,
+                "endPos" : 18.0,
+                "roadsideCapacity" : 1,
+                "angle" : 0
+            },
+            "BIN-D" : {
+                "lane" : "-E186_0",
+                "startPos" : 6.0,
+                "endPos" : 18.0,
+                "roadsideCapacity" : 1,
+                "angle" : 0
+            }
+        },
+
+        "EVSEs" : {
+            "Charge_ParkA" : {
+                "lane" : "E69_0",
+                "startPos" : 10,
+                "endPos" : 30,
+                "power" : 30000,
+                "chargeDelay" : 2,
+                "chargeInTransit" : 0,
+                "efficiency" : 0.9
+            },
+            "Charge_ParkB" : {
+                "lane" : "-E70_0",
+                "startPos" : 10,
+                "endPos" : 30,
+                "power" : 30000,
+                "chargeDelay" : 2,
+                "chargeInTransit" : 0,
+                "efficiency" : 0.9
+            },
+            "Charge_ParkC" : {
+                "lane" : "-E133_0",
+                "startPos" : 5,
+                "endPos" : 25,
+                "power" : 30000,
+                "chargeDelay" : 2,
+                "chargeInTransit" : 0,
+                "efficiency" : 0.9
+            },
+            "Charge_ParkD" : {
+                "lane" : "-E131_0",
+                "startPos" : 5,
+                "endPos" : 25,
+                "power" : 30000,
+                "chargeDelay" : 2,
+                "chargeInTransit" : 0,
+                "efficiency" : 0.9
+            },
+            "Charge_ParkE" : {
+                "lane" : "E160_0",
+                "startPos" : 2,
+                "endPos" : 12,
+                "power" : 30000,
+                "chargeDelay" : 2,
+                "chargeInTransit" : 0,
+                "efficiency" : 0.9
+            },
+            "Charge_ParkF" : {
+                "lane" : "-E159_0",
+                "startPos" : 2,
+                "endPos" : 12,
+                "power" : 30000,
+                "chargeDelay" : 2,
+                "chargeInTransit" : 0,
+                "efficiency" : 0.9
+            },
+            "Charge_ParkG" : {
+                "lane" : "E228_0",
+                "startPos" : 29.7,
+                "endPos" : 74.7,
+                "power" : 30000,
+                "chargeDelay" : 2,
+                "chargeInTransit" : 0,
+                "efficiency" : 0.9
+            },
+            "Charge_ParkH" : {
+                "lane" : "-E228_0",
+                "startPos" : 29.7,
+                "endPos" : 74.7,
+                "power" : 30000,
+                "chargeDelay" : 2,
+                "chargeInTransit" : 0,
+                "efficiency" : 0.9
+            }
+            
+        }
+    }
+}
+
