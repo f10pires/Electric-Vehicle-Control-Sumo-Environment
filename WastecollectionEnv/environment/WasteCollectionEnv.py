@@ -1,4 +1,3 @@
-from Tools.register import Register
 from datetime import datetime, timedelta
 from WastecollectionEnv.sumo import Sumo
 from WastecollectionEnv.ev import EV
