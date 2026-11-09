@@ -1,4 +1,5 @@
 from datetime import datetime, timedelta
+from pathlib import Path
 from WastecollectionEnv.sumo import Sumo
 from WastecollectionEnv.ev import EV
 from WastecollectionEnv.sumo.__get_places__ import PlacesManager
@@ -23,11 +24,24 @@ class Initgeneral:
 
 
 class EVGarbageTruck(gym.Env):
-    def __init__(self, config, vehicles, start):
+    def __init__(
+        self, config, vehicles, start, *, additional, bins, evses, landfills, results_path
+    ):
         super().__init__()
 
-        self.config     = config
-        simulation      = Sumo(self.config)
+        self.additional = additional
+        self.bins = bins
+        self.evses = evses
+        self.landfills = landfills
+        self.results_path = Path(results_path)
+        self.config = config.copy()
+        self.config["additional-files"] = (
+            self.results_path / "additional.add.xml"
+        ).as_posix()
+        simulation = Sumo(
+            self.config, additional=additional, bins=bins, evses=evses, landfills=landfills
+        )
+        self.simulation = simulation
         simulation.run()                              # Start simulation     
         
         self.ids        = vehicles.keys()

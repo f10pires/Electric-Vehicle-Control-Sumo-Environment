@@ -2,20 +2,20 @@ import traci
 import random
 from sumolib import checkBinary
 import subprocess
-from Tools.convert_fleet import convert_fleet
-from Tools.random_vehicles import RandomVeh
-from Tools.additionalxml import AdditionalXML
+from WastecollectionEnv.Tools.convert_fleet import convert_fleet
+from WastecollectionEnv.Tools.random_vehicles import RandomVeh
+from WastecollectionEnv.Tools.additionalxml import AdditionalXML
 
 
 class Sumo:
 
-    def __init__(self, config):
+    def __init__(self, config, *, additional, bins, evses, landfills):
         
         self.sumoBinary = checkBinary('sumo-gui')
         self.max_time = 0
          
         self.config = config 
-        self.additional = AdditionalXML()     
+        self.additional = AdditionalXML(additional, bins, evses, landfills)
 
         # Fix random seed for reproducibility
         random.seed(int(self.config["seed"]))
@@ -24,7 +24,7 @@ class Sumo:
     def run(self): 
         #Control
         self.uptime()
-        self.additional.additional_fileupdate()
+        self.additional.additional_fileupdate(self.config["additional-files"])
         self.generate_activity_trips()
         self.apply_fleet_conversion()
         self.startSim()

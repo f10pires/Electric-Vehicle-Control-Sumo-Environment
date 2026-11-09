@@ -1,7 +1,10 @@
 {
-    "landfill1" :{
-        "id": "landfill1",
-        "x": 0.0,
-        "y": 0.0
+    "landfill1": {
+        "lane": "E103_0",
+        "startPos": 6.0,
+        "endPos": 18.0,
+        "roadsideCapacity": 1,
+        "angle": 0,
+        "max_capacity_kg": 100000
     }
 }
