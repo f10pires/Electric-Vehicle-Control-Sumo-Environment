@@ -49,7 +49,12 @@ env = WasteCollectionEnv.EVGarbageTruck(
 )
 
 
-env.step(list(np.zeros(37)))
+action = dict()
+for ev in env.evs:
+    action[ev.vehicle_id] = list(np.zeros(len(env.action_decoder), dtype=int))
+    action[ev.vehicle_id][0] = 1
+
+env.step(action)
 
 while traci.simulation.getTime() < env.max_time:
     obs = env.get_obs()

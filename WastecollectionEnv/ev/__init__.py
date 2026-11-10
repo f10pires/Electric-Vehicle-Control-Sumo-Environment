@@ -268,8 +268,8 @@ class EV:
 
     def get_obs(self):
         obs = [
-            self.speed /  self.max_speed,
-            self.acceleration / self.max_accel,
+            self.speed/self.max_speed,
+            self.acceleration/self.max_accel,
             self.soc/100,
             self.dist_to_dest / 1000,
             self.dist_to_final / 1000,

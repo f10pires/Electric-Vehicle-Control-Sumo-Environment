@@ -25,16 +25,18 @@ class Initgeneral:
 
 class EVGarbageTruck(gym.Env):
     def __init__(
-        self, config, vehicles, start, *, additional, bins, evses, landfills, results_path
+        self, config, vehicles, start, additional, bins, evses, landfills, results_path
     ):
         super().__init__()
 
         self.additional = additional
-        self.bins = bins
-        self.evses = evses
-        self.landfills = landfills
-        self.results_path = Path(results_path)
-        self.config = config.copy()
+        self.bins       = bins
+        self.evses      = evses
+        self.landfills  = landfills
+        self.destinations = {**bins, **evses, **landfills}
+        self.action_decoder = list(bins) + list(evses) + list(landfills)
+        self.results_path   = Path(results_path)
+        self.config         = config.copy()
         self.config["additional-files"] = (
             self.results_path / "additional.add.xml"
         ).as_posix()
@@ -46,33 +48,35 @@ class EVGarbageTruck(gym.Env):
         
         self.ids        = vehicles.keys()
         self.general    = Initgeneral(config, start)   # Time control and global parameters
-        self.evs       = [EV(vehicles, vehicle_id) for vehicle_id in self.ids]
-        self.places    = PlacesManager()
-
-        a = 1
+        self.evs        = [EV(vehicles, vehicle_id) for vehicle_id in self.ids]
         
         
-        # self.demand = self.ev.bin_edges                    # Demand list
-
-        # -----------------------------
-        # Data registration
-        # -----------------------------
-        # self.registration = Register(self.id)              # Logger / data recorder
-
+        self.done       = False                                  # Episode termination flag
+        self.max_time   = simulation.max_time
        
-        self.done = False                                  # Episode termination flag
         
- 
-        self.refTime = [-1, True]                          # Auxiliary time control
-        self.max_time = simulation.max_time
-        
-    def step(self, action: list):
+    def step(self, action: dict):
 
         reward = 0
 
+        # filtrar se a action já está no destino. Se já estiver faça nada
+        for ev in self.evs:
+            destination = self.action_decoder[action[ev.vehicle_id].index(1)]
+            if ev.final_dest == self.destinations[destination]["edge"]:
+                continue
+
+            else:
+                # O EV tem que ir para o outro destino
+                
+
+                a = 1
+                
+
+
+
         # 1. Decode action
-        decod_action = int("".join(map(str, action[:5])), 2)
-        place_destin = action[5:]
+        # decod_action = int("".join(map(str, action[:5])), 2)
+        # place_destin = action[5:]
 
         if self.done:
             return
@@ -80,35 +84,39 @@ class EVGarbageTruck(gym.Env):
         # 2. Simulation step
         traci.simulationStep()
 
-        if self.id not in traci.vehicle.getIDList():
-            self.done = True
-            self.registration.close()
-            return
+        #if self.id not in traci.vehicle.getIDList():
+        #    self.done = True
+        #    self.registration.close()
+        #     return
 
         # 3. Execute action
-        action_name = self.ev.action.action_dict[decod_action]
+        # action_name = self.ev.action.action_dict[decod_action]
 
-
-        # Check stop timer
-        if not self.refTime[1]:
-            if traci.simulation.getTime() - self.refTime[0] >= self.stop_duration:
-                self.ev.action.resume_speed_control()
-                self.refTime = [-1, True]
 
         # Check simulation termination
         if traci.simulation.getTime() >= self.simulation.max_time:
             self.done = True
-            self.registration.close()
+            # self.registration.close()
         
         return # state, reward, terminated, truncated, info
 
     def get_obs(self):
         # observation: what the agent can "see" - EV position, velocity, soc, etc.
 
-        self.ev.general_up(self)
-
-        obs = [self.ev.soc, self.ev.dist_to_final, self.ev.dist_to_dest, self.ev.edge, self.ev.dest, self.ev.final_dest, self.ev.speed]
-
+        obs = dict()
+        for ev in self.evs:
+            ev.general_up()
+            obs[ev.vehicle_id] = [ev.soc, ev.dist_to_final, ev.dist_to_dest, ev.edge, ev.dest, ev.final_dest, ev.speed]
+            obs[ev.vehicle_id] = [
+                #time encoder
+                # ev.speed / ev.max_speed,
+                # ev.acceleration / ev.max_accel,
+                # soc
+                # truck trash capacity
+                # for distance to bins
+                # for distance to evses
+                # for distance to landfills
+            ]
         return obs
 
 
